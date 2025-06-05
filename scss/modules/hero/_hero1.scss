@@ -14,86 +14,24 @@
     @include breakpoint (max-xs){
         padding: 50px 0 40px;
     }
-    &-thumb {
-        position: relative;
-    }
-    &__shape1 {
-        position: absolute;
-        top: 24%;
-        width: 481px;
-        height: 100px;
-        flex-shrink: 0;
-        border-radius: 0px 5px 5px 0px;
-        background: var(--P, #B8E451);
-        @include breakpoint (max-xxxl){
-            top: 22%;
-            width: 442px;
-        }
-        @include breakpoint (max-xxl){
-            display: none;
-        }
-    }   
-    &__shape2 {
-        position: absolute;
-        right: 7%;
-        bottom: 0;
-        width: 140px;
-        height: 609px;
-        flex-shrink: 0;
-        border-radius: 0px 0px 5px 0px;
-        background: var(--P, #B8E451);
-        @include breakpoint (max-xl2){
-            display: none;
-        }
-    } 
-    &__shape3 {
-        position: absolute;
-        bottom: 12%;
-        left: 47%;
-        @include breakpoint (max-xxl){
-            display: none;
-        }
-    }  
-    &__shape4 {
-        position: absolute;
-        top: 13%;
-        right: 2%;
-        @include breakpoint (max-xxxl){
-            display: none;
-        }
-    }  
-    &__shape5 {
-        position: absolute;
-        bottom: 0;
-        right: 13.6%;
-        z-index: 4;
-        font-feature-settings: 'liga' off, 'clig' off;
-        -webkit-text-stroke-width: 1.37px;
-        -webkit-text-stroke-color: var(--900, #010003);
-        font-family: Marcellus;
-        font-size: 137px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 137px; 
-        text-transform: uppercase;
-        @include breakpoint (max-xxxl){
-            right: 3%;
-        }
-        @include breakpoint (max-xxl){
-            display: none;
-        }
-    }  
     &-content {
         position: relative;
         z-index: 9;
         &__subtitle {
-            color: var(--900, #010003);
-            font-family: Urbanist;
-            font-size: 16px;
+            display: inline-flex;
+            padding: 13px 20px 13px 25px;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+            border-radius: 10px;
+            background: var(--White, #FFF);
+            box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+            color: var(--900, #0A0A0A);
+            font-family: Lato;
+            font-size: 17px;
             font-style: normal;
-            font-weight: 500;
-            line-height: 16px; 
-            letter-spacing: 1.5px;
+            font-weight: 700;
+            line-height: 17px; 
             text-transform: uppercase;
             margin-bottom: 22px;
             @include breakpoint (max-xsmall){
@@ -104,14 +42,14 @@
         }
         &__title { 
             padding-bottom: 20px;
-            color: var(--900, #010003);
-            font-feature-settings: 'liga' off, 'clig' off;
-            font-family: Marcellus;
-            font-size: 70px;
+            color: var(--900, #000);
+            text-align: center;
+            font-family: Lato;
+            font-size: 80px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 100px; /* 142.857% */
-            text-transform: uppercase;
+            font-weight: 800;
+            line-height: 100px; 
+            letter-spacing: 1px;
             span {
                 color: var(--P, #B8E451);
                 font-family: Marcellus;
