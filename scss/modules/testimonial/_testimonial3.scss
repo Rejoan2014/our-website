@@ -1,0 +1,92 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.testimonial3 {
+  background: var(--900, #010003);
+  &-card {
+    position: relative;
+    padding: 80px 38px 40px;
+    border-radius: 5px;
+    background: var(--700, #131215);
+    @include breakpoint (max-sm){
+        padding: 20px;
+    }
+    &__thumb {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      background-color: $theme-color;
+      @include transition;
+    }
+
+    &-content {
+        &__star {
+          text-align: center;
+          padding-bottom: 20px;
+          i {
+              color: #FFA800;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              padding-right: 8px;
+            }
+        }
+        &__desc {
+          color: var(--800, #CCCCCD);
+          text-align: center;
+          font-family: Urbanist;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px; /* 137.5% */
+          padding-bottom: 10px;
+        }
+        &__name {
+          color: var(--White, #FFF);
+          text-align: center;
+          font-family: Marcellus;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 36px; /* 128.571% */
+          padding-bottom: 10px;
+        }
+        &__label {
+          color: var(--White, #FFF);
+          text-align: center;
+          font-family: Urbanist;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 16px; /* 100% */
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
+    }
+    &:hover {
+      .testimonial3 {
+        &-card {
+          &-content {
+            &__desc {
+              color: $black;
+              @include transition;
+            }
+            &__name {
+              color: $black;
+              @include transition;
+            }
+            &__label {
+              color: $black;
+              @include transition;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  

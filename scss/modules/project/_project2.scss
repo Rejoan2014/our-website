@@ -1,0 +1,158 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.project2 {
+    position: relative;
+    &-card {
+        position: relative;
+        margin-bottom: 50px;
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $white;
+            padding-bottom: 30px;
+            &__title {
+                color: #FFF;
+                font-family: Marcellus;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 50px; 
+                @include breakpoint (max-md){
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                @include breakpoint (max-xs){
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+                @include breakpoint (max-xsmall){
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+            &__link {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                padding: 10px;
+                align-items: center;
+                flex-shrink: 0;
+                border-radius: 5px;
+                border: 1px solid var(--P, #B8E451);
+                background: var(--900, #010003);
+                i {
+                    color: $theme-color;
+                    transform: rotate(-45deg);
+                    @include transition;
+                }
+                @include breakpoint (max-xs){
+                    width: 35px;
+                    height: 35px;
+                    padding: 10px;
+                }
+            }
+        }
+        &.active {
+            .project2-card-content {
+                border-bottom: 1px solid transparent;
+            .project2-card-content__link {
+                background: var(--P, #B8E451);
+                i {
+                color: $black;
+                transform: rotate(45deg);
+                @include transition;
+                }
+            }
+            }
+
+            .project2-card-thumb {
+                max-height: 1000px;
+                opacity: 1;
+                visibility: visible;
+                @include transition;
+            }
+        }
+        &-thumb {
+            position: relative;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 5px;
+            @include transition;
+            &-info {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                border-radius: 5px;
+                background: var(--P, #B8E451);
+                padding: 35px;
+                max-width: 544px;
+                &__title {
+                    color: var(--900, #010003);
+                    font-family: Marcellus;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px; 
+                    padding-bottom: 10px;
+                }
+                &__desc {
+                    color: var(--900, #010003);
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    opacity: 0.8;
+                }
+                @include breakpoint (max-md){
+                    bottom: 30px;
+                    left: 30px;
+                    right: 30px;
+                    padding: 21px;
+                    max-width: 544px;
+                }
+                @include breakpoint (max-xs){
+                    display: none;
+                }
+            }
+
+            img {
+                border-radius: 5px;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        &:hover {
+            .project2 {
+                &-card {
+                    &-content {
+                        border-bottom: 1px solid transparent;
+                        &__link {
+                            background: var(--P, #B8E451);
+                            i {
+                                color: $black;
+                                transform: rotate(45deg);
+                                @include transition;
+                            }
+                        }
+                    }    
+                    &-thumb {
+                        max-height: 1000px; 
+                        opacity: 1;
+                        visibility: visible;
+                        @include transition;                        
+                    }
+                }
+            }
+        }
+
+    }
+}

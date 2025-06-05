@@ -1,0 +1,86 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.blog2 {
+    position: relative;;
+    background: var(--White, #FFF);
+    &-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--200, #CCCCCD);
+        padding: 30px;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 30px;
+        @include breakpoint (max-sm){
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        &-item {
+            &-meta {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                padding-bottom: 16px;
+                color: $black;
+                font-family: Urbanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px; 
+                opacity: 0.8;
+                @include breakpoint (max-xs) {
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                }
+                i {
+                    padding-right: 8px;
+                    color: var(--P, #B8E451);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            &__icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 120px;
+                height: 120px;
+                background: $theme-color;
+                border-radius: 5px;
+                img {
+                    width: 65px;
+                    height: 65px;
+                    aspect-ratio: 1/1;
+                }
+            }
+            &__numb {
+                color: var(--900, #010003);
+                font-family: Marcellus;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 50px; /* 125% */
+                max-width: 100px;
+            }
+            &__title {
+                color: var(--900, #010003);
+                font-family: Marcellus;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 50px; 
+                max-width: 460px;
+                @include breakpoint (max-md){
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+            }
+        }
+        &:hover {
+        }
+    }
+}

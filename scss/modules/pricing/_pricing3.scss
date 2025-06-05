@@ -1,0 +1,89 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.pricing3 {
+    position: relative;
+    &-card {
+        position: relative;
+        border-radius: 5px;
+        border: 1px solid var(--Gray-200, #E3E3E3);
+        &-header {
+            padding: 40px;
+            border-bottom: 1px solid $white;
+            &__title {
+                color: var(--White, #FFF);
+                font-family: Marcellus;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 75px; /* 125% */
+                margin-bottom: 10px;
+                @include breakpoint (max-xl) {
+                    font-size: 45px;
+                    line-height: 50px;
+                }
+                @include breakpoint (max-md) {
+                    font-size: 42px;
+                    line-height: 45px;
+                }
+                @include breakpoint (max-sm) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+            &__desc {
+                color: var(--White, #FFF);
+                font-family: Marcellus;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; /* 136.364% */
+            }
+        }
+        &-list {
+            padding: 40px;
+            border-radius: 20px;
+            &-item {
+                padding-bottom: 18px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                &__text {
+                    color: var(--White, #FFF);
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px; 
+                }
+            }
+            &__btn {
+                margin-top: 10px;
+                display: flex;
+                width: 100%;
+                height: 60px;
+                padding: 20px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 5px;
+                background-color: $theme-color;
+                color: $black;
+                text-align: center;
+                font-family: Urbanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 14px; 
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover {
+                    color: $black;
+                    background-color: $white;
+                    @include transition;
+                }
+            }
+        }
+    }
+}

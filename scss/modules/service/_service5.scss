@@ -1,0 +1,52 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.service5 {
+    &-card {
+        position: relative;
+        border-radius: 10px;
+        background: var(--700, #131215);
+        padding: 30px;
+        &__icon {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        &__title {
+            color: var(--White, #FFF);
+            text-align: center;
+            font-family: Marcellus;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; 
+            padding-bottom: 20px;
+        }
+        &__desc {
+            color: var(--White, #FFF);
+            text-align: center;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 137.5% */
+        }
+        &__mark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background: var(--P, #B8E451);
+            width: 60px;
+            height: 60px;
+            color: var(--900, #010003);
+            font-family: Marcellus;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 136.364% */
+        }
+    }
+}

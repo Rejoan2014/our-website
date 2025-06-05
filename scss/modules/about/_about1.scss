@@ -1,0 +1,129 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.about1 {
+    position: relative;
+    background: var(--White, #FFF);
+    &__shape1 {
+        position: absolute;
+        left: 33%;
+        top: 3%;
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+    &-thumb {
+        position: relative;
+        text-align: center;
+        margin-top: 55px;
+        &__one {
+            position: relative;
+  
+        }
+        &__two {
+            position: absolute;
+            top: -12%;
+            z-index: 9; 
+        }
+        
+        &-badge {
+            display: flex;
+            gap: 15px;
+            position: absolute;
+            top: 47%;
+            right: 0;
+            border-radius: 5px;
+            border-left: 2px dashed var(--P, #B8E451);
+            background: var(--White, #FFF);
+            box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+            padding: 25px 30px;
+            @include breakpoint (max-xl){
+                right: 30px;
+            }
+
+            &__text {
+                h2 {
+                    color: var(--900, #010003);
+                    font-family: Marcellus;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 50px; 
+                }
+                p {
+                    color: var(--700, #131215);
+                    font-family: Marcellus;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px; 
+                }
+            }
+
+        }
+    }
+    &-feature {
+        padding-bottom: 38px;
+        display: flex;
+        gap: 20px;
+        @include breakpoint (max-xl){
+            flex-wrap: wrap;
+        }
+        &-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 5px;
+            border: 1px solid var(--200, #CCC);
+            padding: 20px;
+            @include breakpoint (max-xs){
+                justify-content: start;
+                width: 100%;
+            }
+            &__icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                height: 80px;
+                flex-shrink: 0;
+                background: $theme-color;
+                border-radius: 50px;
+                @include breakpoint (max-xs){
+                    width: 65px;
+                    height: 65px;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                    flex-shrink: 0;
+                    aspect-ratio: 1/1;
+                    @include breakpoint (max-xs){
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            &__title {
+                color: var(--900, #010003);
+                font-family: Marcellus;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 36px; 
+            }
+        }
+    }
+    &-desc {
+        color: var(--900, #010003);
+        font-family: Urbanist;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; 
+        opacity: 0.8;
+    }
+}
+
+  

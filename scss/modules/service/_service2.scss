@@ -1,0 +1,94 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.service2 {
+    position: relative;;
+    background: var(--White, #FFF);
+    &__shape {
+        position: absolute;
+        top: 20px;
+        right: 12px;
+        @include breakpoint (max-xl3){
+            top: 10px;
+            right: 5px;
+        }
+        @include breakpoint (max-xl2){
+            display: none;
+        }
+    }
+    &-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 1px solid var(--200, #CCC);
+        padding: 30px;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 30px;
+        &-item {
+            &__icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 120px;
+                height: 120px;
+                background: $theme-color;
+                border-radius: 5px;
+                img {
+                    width: 65px;
+                    height: 65px;
+                    aspect-ratio: 1/1;
+                }
+            }
+            &__numb {
+                color: var(--900, #010003);
+                font-family: Marcellus;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 50px; /* 125% */
+                max-width: 100px;
+            }
+            &__title {
+                color: var(--900, #010003);
+                font-family: Marcellus;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 50px; /* 125% */
+                max-width: 260px;
+            }
+            &__desc {
+                color: var(--900, #010003);
+                font-family: Urbanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px; 
+                opacity: 0.8;
+                padding-bottom: 20px;
+            }
+            &__link {
+                color: var(--900, #010003);
+                font-family: Urbanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 14px; /* 87.5% */
+                letter-spacing: 2px;
+                text-transform: uppercase;
+
+                i {
+                    color: #B8E451;
+                    font-weight: 400;
+                }
+            }
+        }
+        &:hover {
+            background: var(--100, #FCF9EB);
+            border: 1px solid transparent;
+            @include transition;
+        }
+    }
+}

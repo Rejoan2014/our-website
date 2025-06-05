@@ -1,0 +1,105 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.blog1 {
+    &-card {
+        background: var(--700, #131215);
+        &__thumb {
+            position: relative;
+            border-radius: 0px 5px 5px 5px;
+            img {
+                border-radius: 0px 5px 5px 5px;
+                width: 100%;
+            }
+            &-date {
+                padding: 4px 13px;
+                border-radius: 5px 0px 0px 5px;
+                background: var(--P, #B8E451);
+                position: absolute;
+                bottom: -20px;
+                h3 {
+                    color: var(--900, #010003);
+                    font-family: Marcellus;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 36px; 
+                    @include breakpoint (max-md){
+                        font-size: 24px;
+                    }
+                }
+                &.except {
+                    top: -25px;
+                    right: 0;
+                    bottom: inherit;
+                }
+            }
+        }
+        &-content {
+            padding: 35px 30px 30px;
+            @include breakpoint (max-md){
+                padding: 30px 20px 20px;
+            }
+            &-meta {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                padding-bottom: 16px;
+                color: var(--800, #CCCCCD);
+                font-family: Urbanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px; 
+                @include breakpoint (max-xs) {
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                }
+                i {
+                    padding-right: 8px;
+                    color: var(--P, #B8E451);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            &__subtitle{
+                color: #FFF;
+                font-family: Marcellus;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; 
+                padding-bottom: 15px;
+                @include breakpoint (max-md){
+                    font-size: 20px;
+                }
+            }
+            &__title{
+                color: var(--White, #FFF);
+                font-family: Marcellus;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 36px; 
+                padding-bottom: 15px;
+                @include breakpoint (max-md){
+                    font-size: 24px;
+                }
+
+            }
+            &__link {
+                color: $theme-color;
+                font-family: $title-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px; 
+                letter-spacing: -0.32px;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+    }
+}

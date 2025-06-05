@@ -1,0 +1,136 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.hero2 {
+    position: relative;
+    overflow: hidden;
+    padding: 110px 0 92px;
+    margin-top: 95px;
+    background-color: rgb(23, 22, 24);
+    @include breakpoint (max-sm){
+        padding: 70px 0 80px;
+    }
+    @include breakpoint (max-xs){
+        padding: 50px 0 40px;
+    }
+    &-thumb {
+        position: relative;
+        text-align: end;
+        z-index: 4;
+    }
+    &__shape1 {
+        position: absolute;
+        top: 13%;
+        right: 35%;
+        z-index: 5;
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }   
+    &__shape2 {
+        position: absolute;
+        right: 8%;
+        top: 9%;
+        @include breakpoint (max-xl2){
+            display: none;
+        }
+    } 
+    &__shape3 {
+        position: absolute;
+        bottom: 8%;
+        right: 46%;
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }  
+    &-content {
+        position: relative;
+        z-index: 9;
+        &__subtitle {
+            color: $white;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px; 
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+            @include breakpoint (max-xsmall){
+                padding: 0 5px;
+                font-size: 14px;
+            }
+            
+        }
+        &__title { 
+            padding-bottom: 20px;
+            color: var(--White, #FFF);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: Marcellus;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100px; /* 125% */
+            text-transform: uppercase;
+            @include breakpoint (max-xxl){
+                font-size: 70px;
+                line-height: 85px;
+            }
+            @include breakpoint (max-xl){
+                font-size: 60px;
+                line-height: 70px;
+            }
+            @include breakpoint (max-md) {
+                font-size: 50px;
+                line-height: 70px;
+            }
+            @include breakpoint (max-sm) {
+                font-size: 45px;
+                line-height: 60px;
+            }
+        } 
+        &__desc {
+            max-width: 610px;
+            color: var(--White, #FFF);
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; 
+        } 
+        &-cta {
+            padding-top: 40px;
+            display: flex;
+            gap: 30px;
+            @include breakpoint (max-sm){
+                flex-direction: column;
+            }
+        }
+        &-ratting {
+            padding-top: 35px;
+            &__star {
+                padding-bottom: 10px;
+                i {
+                    color: #FFA800;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    &:last-child {
+                        color: var(--800, #CCCCCD);
+                    }
+                }
+            }
+            &__desc {
+                padding-top: 5px;
+                max-width: 251px;
+                color: var(--White, #FFF);
+                font-family: Marcellus;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; 
+            }
+        }   
+    }
+}

@@ -1,0 +1,55 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.faq2 {
+  &-thumb {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px dashed var(--P, #B8E451);
+    background: linear-gradient(0deg, #B8E451 0%, rgba(184, 228, 81, 0.00) 100%);
+    @include breakpoint (max-lg){
+      margin-bottom: 30px;
+    }
+    &-badge {
+      display: flex;
+      gap: 15px;
+      position: absolute;
+      bottom: 22%;
+      left: -11%;
+      border-radius: 5px;
+      background: var(--White, #FFF);
+      padding: 17px 25px;
+      @include breakpoint (max-xxl){
+        left: -3%;
+      }
+      @include breakpoint (max-xl){
+        display: none;
+      }
+
+      &__numb {
+        color: var(--900, #010003);
+        font-family: Marcellus;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px; /* 125% */
+      }
+      &__text {
+        color: var(--900, #010003);
+        font-family: Marcellus;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 113.636% */
+      }
+    }
+  }
+  &-content {
+    width: 100%;
+  }
+}
+  

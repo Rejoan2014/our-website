@@ -1,0 +1,36 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.video1 {
+    position: relative;
+    z-index: 1;
+    margin-top: -161px;
+    @include breakpoint (max-xl){
+        margin-top: -100px;
+    }
+    @include breakpoint (max-lg){
+        margin-top: -80px;
+    }
+    @include breakpoint (max-sm){
+        margin-top: 50px;
+    }
+    &-thumb {
+        position: relative;
+        &__videoIcon {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, 50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(50%, 50%);
+            -ms-transform: translate(50%, 50%);
+            -o-transform: translate(50%, 50%);
+            img {
+                @include breakpoint (max-lg){
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

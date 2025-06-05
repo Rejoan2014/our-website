@@ -1,0 +1,98 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.faq1 {
+    position: relative;
+  &__shape {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      @include breakpoint (max-xxxl){
+          display: none;
+      }
+  }
+  &-thumb {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px dashed var(--P, #B8E451);
+    background: linear-gradient(0deg, #B8E451 0%, rgba(184, 228, 81, 0.00) 100%);
+    @include breakpoint (max-lg){
+      margin-bottom: 30px;
+    }
+  }
+  &-content {
+    padding: 120px 60px;
+    background-color: $black;
+    width: 100%;
+    @include breakpoint (max-xl){
+      padding: 60px;
+    }
+    @include breakpoint (max-md){
+      padding: 30px;
+    }
+    .faq-group {
+      max-width: 554px;
+      @include breakpoint (max-xxl){
+        max-width: 470px;
+      }
+      @include breakpoint (max-xl){
+        max-width: 100%;
+      }
+    }
+  }
+
+  &-card {
+    position: relative;
+    z-index: 5;
+    border-radius: 5px;
+    background: var(--P, #B8E451);
+    padding: 60px;
+    margin-left: -160px;
+    margin-right: 115px;
+    @include breakpoint (max-xxxl){
+      margin-left: -120px;
+      margin-right: 90px;
+      padding: 40px;
+    }
+    @include breakpoint (max-xxl){
+      margin-left: -100px;
+      margin-right: 0;
+      padding: 40px;
+    }
+    @include breakpoint (max-xl){
+      margin-left: 0;
+      margin-right: 0;
+      padding: 40px;
+    }
+    @include breakpoint (max-xsmall){
+      padding: 20px;
+    }
+    &__title {
+        padding-bottom: 50px;
+        @include breakpoint (max-md){
+            padding-bottom: 20px;
+        }
+        h6 {
+            color: var(--900, #010003);
+            font-family: Marcellus;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 75px; /* 125% */
+            @include breakpoint (max-xl){
+                font-size: 52px;
+                line-height: 60px;
+            }
+            @include breakpoint (max-md){
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+    }
+  }
+}
+  

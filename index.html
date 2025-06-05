@@ -1,70 +1,1332 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
+    <!--=========== Meta Tags ==========-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoftCrafty</title>
-
-    <!-- Main StyleSheet -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="SoftCrafty">
+    <meta name="description" content="HairCut - Creative & Digital Agency Html Template">
+    <!--============= Page title ============ -->
+    <title>HairCut - Creative & Digital Agency Html Template</title>
+    <!--===== Favcion =====-->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!--===== Bootstrap min.css =====-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--===== All Min Css =====-->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!--===== Animate.css =====-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--===== Swiper Bundle.css =====-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--===== Magnific Popup.css =====-->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!--===== Text Splitting.css =====-->
+    <link rel="stylesheet" href="css/splitting.min.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <!--===== Main.css =====-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<!-- Hero Section - started -->
-<div class="hero">
-    <h2 class="hero-subtitle">
-        <img src="./assets/images/fi_16182723.png" alt="Sub icon">
-        More than 1k finished Project
-    </h2>
-
-    <h1 class="hero-title">
-        Turning Ideas into Digital Realities
-    </h1>
-
-    <div class="hero-description">
-        Softcrafty is a dynamic software development company dedicated innovative digital solutions for businesses of
-        all
-        sizes.
-    </div>
-
-    <div class="hero-btns">
-        <button class="hero-button">
-            <img src="./assets/images/right-down-arrow.png" alt="Arrow">
-            Free consulting
-        </button>
-
-        <button class="hero-icon-button">
-            <img src="./assets/images/envato-icons.png" alt="Envato">
-
-            <div class="hero-btn-text">
-                <img src="./assets/images/5star.png" alt="5 Star">
-                100+ 5star
-            </div>
-        </button>
-    </div>
-</div>
-<!-- Hero Section - ended -->
-
-<!-- Client section - started -->
-<div class="client-slider">
-    <div>
-        <img src="./assets/images/chemical.png" alt="client logo">
-        <img src="./assets/images/industry-co.png" alt="client logo">
-        <img src="./assets/images/design-studio.png" alt="client logo">
-        <img src="./assets/images/exclusive-design.png" alt="client logo">
-        <img src="./assets/images/florist.png" alt="client logo">
-        <img src="./assets/images/sunshine.png" alt="client logo">
-    </div>
-</div>
-<!-- Client section - ended -->
-
-
 
 <body>
 
+    <!--===== Preloader Start =====-->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="txt-loading">
+                <span data-text-preloader="H" class="letters-loading">
+                    H
+                </span>
+                <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="I" class="letters-loading">
+                    I
+                </span>
+                <span data-text-preloader="R" class="letters-loading">
+                    R
+                </span>
+                <span data-text-preloader="C" class="letters-loading">
+                    C
+                </span>
+                <span data-text-preloader="U" class="letters-loading">
+                    U
+                </span>
+                <span data-text-preloader="T" class="letters-loading">
+                    T
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--===== Mouse Cursor Start =====-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!--===== Back To Top Start =====-->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!--===== Search Box Popup =====-->
+    <div class="popup-search-box d-none d-lg-block">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" placeholder="What are you looking for?">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="images/logo/Logo-dark.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                            <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">3517 W. Gray St. Utica, Pennsylvania 57867</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:example@gmail.com"><span>tanya.hill@example.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+(123)456-7890">(123) 456-7890</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button">
+                            <div class="btnbox">
+                                <a class="theme-btn" href="contact.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                                            <path d="M18.45 8.70711C18.8406 8.31658 18.8406 7.68342 18.45 7.29289L12.0861 0.928932C11.6955 0.538408 11.0624 0.538408 10.6719 0.928932C10.2813 1.31946 10.2813 1.95262 10.6719 2.34315L16.3287 8L10.6719 13.6569C10.2813 14.0474 10.2813 14.6805 10.6719 15.0711C11.0624 15.4616 11.6955 15.4616 12.0861 15.0711L18.45 8.70711ZM0.74292 9H17.7429V7H0.74292V9Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    Get A Quote 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/?lang=en&mx=2"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+
+    <!-- header area start -->
+    <header>
+        <div class="header-1" id="header-sticky">
+            <div class="header-wrap">
+                <div class="logo">
+                    <a class="primary-logo" href="index.html"><img src="images/logo/Logo-white.png" alt="logo"></a>
+                    <a class="sticky-logo" href="index.html"><img src="images/logo/Logo-white.png" alt="logo"></a>
+                </div>
+                <div class="main-menu-wrap">
+                    <div class="main-menu">
+                        <nav id="mobile-menu">
+                            <ul>
+                                <li class="has-dropdown menu-thumb">
+                                    <a href="index.html">
+                                        Home  <span class="dropdown-icon"><img src="images/icon/dropdown-icon.svg" alt="icon"></span>                                                   
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="index.html">Home 01</a></li>
+                                        <li><a href="index2.html">Home 02</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="about.html">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service.html">
+                                        Services <span class="dropdown-icon"><img src="images/icon/dropdown-icon.svg" alt="icon"></span>                                                  
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="service.html">Service</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="pricing.html">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">
+                                        Blog <span class="dropdown-icon"><img src="images/icon/dropdown-icon.svg" alt="icon"></span>  
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Pages <span class="dropdown-icon"><img src="images/icon/dropdown-icon.svg" alt="icon"></span>  
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="project.html">Project</a></li>
+                                        <li><a href="project-details.html">Project Details</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="team-details.html">Team Details</a></li>
+                                        <li><a href="appiontment.html">Appiontment</a></li>
+                                        <li><a href="offers-packages.html">Offers & Packages</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="search search-trigger searchBoxToggler d-none d-xxl-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path d="M18.869 19.662L12.926 13.178C14.265 11.777 15.001 9.945 15.001 8C15.001 5.997 14.221 4.113 12.804 2.697C11.387 1.281 9.50398 0.5 7.50098 0.5C5.49798 0.5 3.61398 1.28 2.19798 2.697C0.781977 4.114 0.000976562 5.997 0.000976562 8C0.000976562 10.003 0.780977 11.887 2.19798 13.303C3.61498 14.719 5.49798 15.5 7.50098 15.5C9.22698 15.5 10.863 14.921 12.189 13.855L18.132 20.338C18.231 20.446 18.365 20.5 18.501 20.5C18.622 20.5 18.743 20.457 18.839 20.369C19.043 20.182 19.056 19.866 18.87 19.663L18.869 19.662ZM0.999977 8C0.999977 4.416 3.91598 1.5 7.49998 1.5C11.084 1.5 14 4.416 14 8C14 11.584 11.084 14.5 7.49998 14.5C3.91598 14.5 0.999977 11.584 0.999977 8Z" fill="black"/>
+                            </svg>
+                    </button>
+                    <button class="offcanvas-bar text-white sidebar__toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M21.875 6.25H3.125C2.78 6.25 2.5 5.97 2.5 5.625C2.5 5.28 2.78 5 3.125 5H21.875C22.22 5 22.5 5.28 22.5 5.625C22.5 5.97 22.22 6.25 21.875 6.25Z" fill="black"/>
+                                <path d="M16.875 15H3.125C2.78 15 2.5 14.72 2.5 14.375C2.5 14.03 2.78 13.75 3.125 13.75H16.875C17.22 13.75 17.5 14.03 17.5 14.375C17.5 14.72 17.22 15 16.875 15Z" fill="black"/>
+                                <path d="M21.875 23.75H3.125C2.78 23.75 2.5 23.47 2.5 23.125C2.5 22.78 2.78 22.5 3.125 22.5H21.875C22.22 22.5 22.5 22.78 22.5 23.125C22.5 23.47 22.22 23.75 21.875 23.75Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <div class="pl-30 btn-wrapper return-left d-none d-xxl-block">
+                            <a class="theme-btn style1" href="contact.html">Book a Call<i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+
+    <!--===== Hero Section    S T A R T =====-->      
+    <section class="hero1 fix">
+        <div class="hero1__shape1"></div>
+        <div class="hero1__shape2"></div>
+        <div class="hero1__shape3">
+            <img src="images/shape/hero-sahpe1_1.svg" alt="svg">
+        </div>
+        <div class="hero1__shape4">
+            <img src="images/shape/hero-sahpe1_1.svg" alt="svg">
+        </div>
+        <div class="hero1__shape5">30%Off</div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="hero1-content">
+                        <h6 class="hero1-content__subtitle">
+                            <img src="images/icon-test/head-icon.svg" alt="icon"> Best shop in town
+                        </h6>
+                        <h1 class="hero1-content__title">
+                            Classic to modern we’ve got your <span>style</span>
+                        </h1>
+                        <p class="hero1-content__desc">
+                            Welcome to Clipcut — where tradition meets style. Whether it’s a clean fade, a classic cut, or a precision beard trim, we bring craftsmanship, comfort, and confidence to every chair.
+                        </p>
+                        <div class="hero1-content-cta">
+                            <a class="theme-btn style1" href="contact.html">
+                                Book a chair <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-6 col-xl-5">
+                    <div class="hero1-thumb">
+                        <img src="images/hero/hero-thumb1_1.png" alt="png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== About Section    S T A R T =====-->
+    <section class="about1 section-padding fix">
+        <div class="about1__shape1"><img src="images/shape/about-sahpe1.svg" alt="svg"></div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="d-none d-lg-block col-lg-6">
+                    <div class="about1-thumb">
+                        <div class="about1-thumb__one">
+                            <img src="images/about/about-thumb1_1.png" alt="png">
+                        </div>
+                        <div class="about1-thumb__two">
+                            <img src="images/about/about-thumb1_2.png" alt="png">
+                            <div class="video1-icon">
+                                <a href="https://www.youtube.com/watch?v=QLLCjZl4YJk" class="popup-video">
+                                    <img src="images/icon-test/play-icon2.svg" alt="icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="about1-thumb-badge">
+                            <div class="about1-thumb-badge__icon"><img src="images/icon-test/about-icon3.svg" alt=""></div>
+                            <div class="about1-thumb-badge__text">
+                                <h2>15+Years</h2>
+                                <p>Of experience</p>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-top pb-35">
+                        <p class="section-top__subtitle">
+                            <span><img src="images/icon-test/head-icon.svg" alt="svg"></span>About us
+                        </p>
+                        <h2 class="section-top__title text-start pb-20 title-fade-up">Precision Cuts for the Modern Gentleman</h2>
+                    </div>
+                    <div class="about1-feature">
+                        <div class="about1-feature-item">
+                            <div class="about1-feature-item__icon"><img src="images/icon-test/about-icon1.svg" alt=""></div>
+                            <h3 class="about1-feature-item__text">Professional Skills</h3>
+                        </div>
+                        <div class="about1-feature-item">
+                            <div class="about1-feature-item__icon"><img src="images/icon-test/about-icon2.svg" alt=""></div>
+                            <h3 class="about1-feature-item__text">Precision Line-Up</h3>
+                        </div>
+                    </div>
+                    <div class="about1-desc">At ClipCut we believe a great haircut is more than just a trim — it’s a transformation. Founded on the passion for precision and a love for style, our shop is a place where tradition meets trend</div>
+                    <div class="btn-wrapper pt-30">
+                        <a class="theme-btn style1" href="contact.html">Book a Call<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>                    
+                </div>
+            </div>                                     
+        </div>
+    </section>
+
+    <!--===== Marque Section    S T A R T =====-->
+    <div class="marque-section fix">
+        <div class="marquee-wrapper">
+            <div class="marquee-inner to-left">
+                <ul class="marqee-list d-flex">
+                    <li class="marquee-item style-2">
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Custom Styling</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Look Sharp</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Feel Fresh</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Custom Styling</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Clean & Stylish</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Custom Styling</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Look Sharp</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Feel Fresh</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Custom Styling</span>
+                        <span class="text-slider"><img src="images/icon-test/marque.svg" alt="icon"></span><span class="text-slider text-style">Clean & Stylish</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--===== Service Section    S T A R T =====-->
+    <section class="service1 section-padding fix">
+        <div class="container">
+            <div class="row g-4 d-flex align-items-end fix-pb-50">
+                <div class="col-lg-6">
+                    <div class="section-top">
+                        <p class="section-top__subtitle">
+                            <span><img src="images/icon-test/head-icon.svg" alt="svg"></span>Our services
+                        </p>
+                        <h2 class="section-top__title title-fade-up">Crafting Confidence One Cut at a Time</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-top">
+                        <p class="section-top__desc">
+                            At ClipCut we believe a great haircut is more than just a trim — it’s a transformation. Founded on the passion for precision and a love for style, our shop is a place where tradition meets trend
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-9 col-xl-5">
+                    <div class="service1-thumb">
+                        <div class="service1-thumb__one">
+                            <img src="images/service/service-thumb1_1.png" alt="png">
+                        </div>
+                        <div class="service1-thumb__icon">
+                            <img src="images/icon-test/barber-chair.svg" alt="png">
+                        </div>
+                    </div>                      
+                </div>
+                <div class="col-lg-12 col-xl-7">
+                    <div class="service1-content">
+                        <h4 class="service1-content__title">
+                            <a href="service-details.html">Traditional Shave</a>
+                        </h4>
+                        <div class="service1-content__link">
+                            <a href="service-details.html">Read More <i class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service1-content">
+                        <h4 class="service1-content__title">
+                            <a href="service-details.html">Gentleman’s Cut</a>
+                        </h4>
+                        <div class="service1-content__link">
+                            <a href="service-details.html">Read More <i class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service1-content">
+                        <h4 class="service1-content__title">
+                            <a href="service-details.html">Skin Fade Perfection</a>
+                        </h4>
+                        <div class="service1-content__link">
+                            <a href="service-details.html">Read More <i class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service1-content">
+                        <h4 class="service1-content__title">
+                            <a href="service-details.html">The Executive Look</a>
+                        </h4>
+                        <div class="service1-content__link">
+                            <a href="service-details.html">Read More <i class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!--===== Pricing Section    S T A R T =====-->
+    <section class="pricing1 section-padding pb-140 fix">
+        <div class="container">
+            <div class="row g-4 d-flex justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-top pb-30">
+                        <p class="section-top__subtitle2 justify-content-center"><img src="images/icon-test/head-icon2.svg" alt="svg"> Our Pricing Plan<img src="images/icon-test/head-icon.svg" alt="svg"></p>
+                        <h2 class="section-top__title2 text-center">Tailored Grooming for the Everyday King</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="pricing1-card">
+                        <h4 class="pricing1-card__title">Haircuts</h4>
+                        <div class="pricing1-card-list">
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Gentleman’s Cut</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Skin Fade</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Scissor Cut Only</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Kids Cut </div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Buzz Cut </div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <a href="pricing.html" class="pricing1-card-list__btn">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="pricing1-card">
+                        <h4 class="pricing1-card__title">Beard & Shave</h4>
+                        <div class="pricing1-card-list">
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Beard Trim</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Shape-Up</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Hot Towel Shave</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Beard Fade </div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Facial Steam </div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <a href="pricing.html" class="pricing1-card-list__btn">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="pricing1-card">
+                        <h4 class="pricing1-card__title">Packages</h4>
+                        <div class="pricing1-card-list">
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Cut + Beard Trim</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Cut + Hot Towel</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">King’s Treatment</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Shave + Kids Cut</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <div class="pricing1-card-list-item">
+                                <div class="pricing1-card-list-item__text">Buzz Cut + Shave</div>
+                                <div class="pricing1-card-list-item__value"><span><img src="images/shape/dot-sahpe1.svg" alt="svg"></span> $25</div>
+                            </div>
+                            <a href="pricing.html" class="pricing1-card-list__btn">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Project Section    S T A R T =====-->
+    <section class="project1 section-padding pb-0 fix">
+        <div class="container">
+            <div class="row g-4 d-flex align-items-end fix-pb-80">
+                <div class="col-lg-7">
+                    <div class="section-top">
+                        <p class="section-top__subtitle2">
+                            <span><img src="images/icon-test/head-icon.svg" alt="svg"></span>Our Gallery
+                        </p>
+                        <h2 class="section-top__title2">Tailored Grooming for the Everyday King</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="section-top">
+                        <p class="section-top__desc2">
+                            At ClipCut we believe a great haircut is more than just a trim it’s a transformation. Founded on the passion for precision and a love for style, our shop is a place 
+                        </p>
+                        <div class="btn-wrapper pt-30">
+                            <a class="theme-btn style1" href="project.html">All Gallery<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project1-card">
+                        <div class="project1-card__thumb">
+                            <img src="images/project/project-thumb1_1.png" alt="png">
+                        </div>
+                        <div class="project1-card-content">
+                            <h4 class="project1-card-content__title"><a href="project-details.html">VIP Experiences</a></h4>
+                            <a href="project-details.html" class="project1-card-content__link"> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project1-card">
+                        <div class="project1-card__thumb">
+                            <img src="images/project/project-thumb1_2.png" alt="png">
+                        </div>
+                        <div class="project1-card-content">
+                            <h4 class="project1-card-content__title"><a href="project-details.html">Crafted for Your Style</a></h4>
+                            <a href="project-details.html" class="project1-card-content__link"> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project1-card">
+                        <div class="project1-card__thumb">
+                            <img src="images/project/project-thumb1_3.png" alt="png">
+                        </div>
+                        <div class="project1-card-content">
+                            <h4 class="project1-card-content__title"><a href="project-details.html">Your Hair Our Expertise</a></h4>
+                            <a href="project-details.html" class="project1-card-content__link"> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project1-card">
+                        <div class="project1-card__thumb">
+                            <img src="images/project/project-thumb1_4.png" alt="png">
+                        </div>
+                        <div class="project1-card-content">
+                            <h4 class="project1-card-content__title"><a href="project-details.html">Ignite Your Style Statement</a></h4>
+                            <a href="project-details.html" class="project1-card-content__link"> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                              
+            </div>            
+        </div>
+    </section>
+
+    <!--===== wcu Section    S T A R T =====-->
+    <section class="wcu1 section-padding fix fix-pb-50">
+        <div class="container">
+            <div class="row g-4 d-flex justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-top pb-50">
+                        <p class="section-top__subtitle justify-content-center"><img src="images/icon-test/head-icon2.svg" alt="svg">why choose us<img src="images/icon-test/head-icon.svg" alt="svg"></p>
+                        <h2 class="section-top__title text-center">Barbering Redefined for the Modern Gentleman</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="wcu1-progress">
+                        <div class="progress-wrap">
+                            <div class="progress-icon">
+                                <img src="images/icon-test/progress-icon1.svg" alt="svg">
+                            </div>
+                            <div class="progress-box">
+                                <div class="progress-meta">
+                                    <div class="title2">Experienced Barbers</div>
+                                    <div class="percentage2">85%</div>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar"
+                                        style="width: 85%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrap">
+                            <div class="progress-icon">
+                                <img src="images/icon-test/progress-icon2.svg" alt="svg">
+                            </div>
+                            <div class="progress-box">
+                                <div class="progress-meta">
+                                    <div class="title2">Precision & Quality</div>
+                                    <div class="percentage2">78%</div>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar"
+                                        style="width: 78%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-6 wcu1-fix">
+                    <div class="wcu1-info pb-30">
+                        <h4 class="wcu1-info__title">Clean & Comfortable Environment</h4>
+                        <p class="wcu1-info__desc">Step into a spotless, stylish space designed for comfort and relaxation. Whether you're coming in 
+                            for a quick touch-up or a full grooming session, our shop offers a welcoming, professional vibe</p>
+                    </div>
+                    <div class="wcu1-info">
+                        <h4 class="wcu1-info__title">Great Conversation, No Rush</h4>
+                        <p class="wcu1-info__desc">We take our time — because every cut deserves it. Plus, we’re always down for a good chat. You’re not
+                             just a customer, you’re part of the crew.</p>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </section> 
+
+    <!--===== Counter Section    S T A R T =====-->
+    <section class="counter section-padding fix bg-white">
+        <div class="container">
+            <div class="counter-item">
+                <div class="counter-item-box">
+                    <div class="counter-item-box__icon"><img src="images/icon-test/counter1.svg" alt="svg"></div>
+                    <h3 class="counter-item-box__value"><span class="counter-number">50</span>k+</h3>
+                    <div class="counter-item-box__label">
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="counter-item-box">
+                    <div class="counter-item-box__icon"><img src="images/icon-test/counter2.svg" alt="svg"></div>
+                    <h3 class="counter-item-box__value"><span class="counter-number">60</span>k+</h3>
+                    <div class="counter-item-box__label">
+                        <p>Cutting Hair</p>
+                    </div>
+                </div>
+                <div class="counter-item-box">
+                    <div class="counter-item-box__icon"><img src="images/icon-test/counter3.svg" alt="svg"></div>
+                    <h3 class="counter-item-box__value"><span class="counter-number">20</span>+</h3>
+                    <div class="counter-item-box__label">
+                        <p>Award Winner</p>
+                    </div>
+                </div>
+                <div class="counter-item-box">
+                    <div class="counter-item-box__icon"><img src="images/icon-test/counter4.svg" alt="svg"></div>
+                    <h3 class="counter-item-box__value"><span class="counter-number">50</span>+</h3>
+                    <div class="counter-item-box__label">
+                        <p>Team Member</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Faq Section    S T A R T =====-->
+    <section class="faq1 fix section-padding pb-0 bg-white">
+        <div class="faq1__shape"><img src="images/shape/faq-sahpe1_1.svg" alt="svg"></div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-12 col-xl-7 d-flex align-items-center">
+                    <div class="faq1-content">
+                        <div class="section-top pb-35">
+                            <p class="section-top__subtitle2">
+                                <span><img src="images/icon-test/scissors.svg" alt="svg"></span>Some Faq
+                            </p>
+                            <h2 class="section-top__title3 mxw-405 pb-20">Have Any <span>Question</span> Please?</h2>
+                        </div>
+                        <div class="faq-group">
+                            <div class="faq-accordion">
+                                <div class="accordion" id="accordion">
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                                                What services do you offer?
+                                            </button>
+                                        </h5>
+                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordion" style="">
+                                            <div class="accordion-body">
+                                                At ClipCut we believe a great haircut is more than just a trim it’s a transformation. Founded on the passion for precision and a love for style, our shop is a place 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                                How experienced is your team?
+                                            </button>
+                                        </h5>
+                                        <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#accordion" style="">
+                                            <div class="accordion-body">
+                                                At ClipCut we believe a great haircut is more than just a trim it’s a transformation. Founded on the passion for precision and a love for style, our shop is a place 
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                                Can you provide examples of past projects?
+                                            </button>
+                                        </h5>
+                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion" style="">
+                                            <div class="accordion-body">
+                                                At ClipCut we believe a great haircut is more than just a trim it’s a transformation. Founded on the passion for precision and a love for style, our shop is a place 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xl-5 d-flex align-items-center">
+                    <div class="faq1-card">
+                        <div class="section-top pb-35">
+                            <p class="section-top__subtitle">
+                                <span><img src="images/icon-test/head-icon.svg" alt="svg"></span>Book Appoinment
+                            </p>
+                            <h2 class="section-top__title5 pb-20">More Than a Haircut It’s an Experience</h2>
+                        </div>
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form__group mb-3">
+                                        <input type="text" name="name" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form__group mb-3">
+                                        <input type="email" name="email" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form__group mb-3">
+                                        <input type="text" name="text" placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form__group mb-3">
+                                        <input type="text" name="text" placeholder="Subject" required>
+                                    </div>
+                                </div>
+                            </div>                           
+                            <div class="form__group mb-4">
+                                <textarea name="message" rows="3" placeholder="Messege" required></textarea>
+                            </div>
+                        
+                            <div class="btn-wrapper text-center">
+                                <button type="submit" class="submit-btn style1">send now</button>
+                            </div>
+                        </form>                                               
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Brand Section    S T A R T =====-->
+    <div class="brandLogo1 section-padding pb-0 fix bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-xl-12">
+                    <div class="brandLogo1-slider">
+                        <div class="swiper global-slider" id="brandLogo1"
+                            data-slider-options='{"loop": true, "breakpoints": {"0": {"slidesPerView": 2}, "576": {"slidesPerView": 3, "centeredSlides": true}, "768": {"slidesPerView": 4}, "992": {"slidesPerView": 5}, "1200": {"slidesPerView": 6}, "1600": {"slidesPerView": 6}}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="brandLogo1-slider__thumb">
+                                        <img src="images/brand/brand-logo1_1.svg" alt="svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brandLogo1-slider__thumb">
+                                        <img src="images/brand/brand-logo1_2.svg" alt="svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brandLogo1-slider__thumb">
+                                        <img class="svg" src="images/brand/brand-logo1_3.svg" alt="svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brandLogo1-slider__thumb">
+                                        <img src="images/brand/brand-logo1_4.svg" alt="svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brandLogo1-slider__thumb">
+                                        <img src="images/brand/brand-logo1_5.svg" alt="svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brandLogo1-slider__thumb">
+                                        <img src="images/brand/brand-logo1_6.svg" alt="svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===== Team Section    S T A R T =====-->
+    <section class="team1 section-padding fix">
+        <div class="container">
+            <div class="row g-4 d-flex align-items-end pb-50">
+                <div class="col-lg-7">
+                    <div class="section-top">
+                        <p class="section-top__subtitle"> <span><img src="images/icon/cleaner-icon.svg" alt="svg"></span>Meet Our Experts</p>
+                        <h2 class="section-top__title title-fade-up">More Than a Haircut It’s an Experience</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="slider-btn justify-content-lg-end return-right">
+                        <button data-slider-prev="#serviceSlider1" class="slider-arrow style2"><i class="fa-regular fa-arrow-left-long"></i></button>
+                        <button data-slider-next="#serviceSlider1" class="slider-arrow style2 slider-next"><i class="fa-regular fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="swiper global-slider" id="serviceSlider1"
+                        data-slider-options='{"loop": true, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":2,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="team1-card">
+                                    <div class="team1-card-thumb">
+                                        <div class="team1-card-thumb__img">
+                                            <img src="images/team/team-thumb1_1.png" alt="png">
+                                            <div class="social-profile">
+                                                <ul>
+                                                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                                </li>
+                                                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                                </li>
+                                                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </li>
+                                                </ul>
+                                                <span class="plus-btn"><i class="fa-regular fa-share-nodes"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team1-card-content">
+                                        <h6 class="team1-card-content__title">
+                                            <a href="team-details.html">DR. Norman Gordon</a>
+                                        </h6>                              
+                                        <p class="team1-card-content__desc">Cardiologist</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="team1-card">
+                                    <div class="team1-card-thumb">
+                                        <div class="team1-card-thumb__img">
+                                            <img src="images/team/team-thumb1_2.png" alt="png">
+                                            <div class="social-profile">
+                                                <ul>
+                                                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                                </li>
+                                                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                                </li>
+                                                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </li>
+                                                </ul>
+                                                <span class="plus-btn"><i class="fa-regular fa-share-nodes"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team1-card-content">
+                                        <h6 class="team1-card-content__title">
+                                            <a href="team-details.html">DR. Valentino Morose</a>
+                                        </h6>                              
+                                        <p class="team1-card-content__desc">Dermatologist</p>
+                                    </div>
+                                </div>                                   
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="team1-card">
+                                    <div class="team1-card-thumb">
+                                        <div class="team1-card-thumb__img">
+                                            <img src="images/team/team-thumb1_3.png" alt="png">
+                                            <div class="social-profile">
+                                                <ul>
+                                                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                                </li>
+                                                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                                </li>
+                                                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </li>
+                                                </ul>
+                                                <span class="plus-btn"><i class="fa-regular fa-share-nodes"></i></span>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                    <div class="team1-card-content">
+                                        <h6 class="team1-card-content__title">
+                                            <a href="team-details.html">DR. Ingredia Nutrisha</a>
+                                        </h6>                              
+                                        <p class="team1-card-content__desc">Psychiatrist</p>
+                                    </div>
+                                </div>                                                                     
+                            </div>
+                        </div>
+                    </div>
+                </div>                           
+            </div>
+        </div>
+    </section>
+
+    <!--===== Testimonial Section    S T A R T =====-->   
+    <section class="testimonial1 section-padding pb-0 fix">
+        <div class="container">
+          <div class="row g-4">
+            <div class="d-none d-xxl-block col-xxl-6">
+                <div class="testimonial1__thumb">
+                    <img src="images/testimonial/testi-thumb1_3.png" alt="png">
+                </div>
+            </div>
+      
+            <div class="col-lg-12 col-xxl-6 d-flex flex-column justify-content-center">
+                <div class="section-top pb-35">
+                    <p class="section-top__subtitle2">
+                        <span><img src="images/icon-test/head-icon.svg" alt="svg"></span>Our Customer feedback<span></span>
+                    </p>
+                    <h2 class="section-top__title2">Experience the Art of Barbering</h2>
+                </div>
+                <div class="testimonial1-card">
+                    <div class="testimonial1-card__thumb">
+                        <img src="images/testimonial/testi-thumb1_1.png" alt="png">
+                    </div>
+                    <div class="testimonial1-card-content">
+                        <div class="testimonial1-card-content__star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="testimonial1-card-content__title">“Professional, clean, and friendly.”</h3>
+                        <p class="testimonial1-card-content__desc">The vibe here is top-tier, and the barbers actually listen to what you want. I showed 
+                            a photo of the style I was going for, and they nailed it. Definitely my go-to spot from now on.
+                        </p>
+                        <div class="author-meta">
+                            <div class="fancy-box1">
+                                <div class="fancy-box1__item">
+                                    <h6>Cameron Williamson</h6>
+                                    <p>President of Sales</p>
+                                </div>
+                            </div>
+                            <div class="testimonial1-card__quote">
+                                <i class="fa-regular fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial1-card">
+                    <div class="testimonial1-card__thumb">
+                        <img src="images/testimonial/testi-thumb1_2.png" alt="png">
+                    </div>
+                    <div class="testimonial1-card-content">
+                        <div class="testimonial1-card-content__star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3 class="testimonial1-card-content__title">“Best cut I’ve had in years!”</h3>
+                        <p class="testimonial1-card-content__desc">I took my son in for a haircut, and they were so good with him. The place is spotless, 
+                            the staff are super welcoming, and the cut was perfect
+                        </p>
+                        <div class="author-meta">
+                            <div class="fancy-box1">
+                                <div class="fancy-box1__item">
+                                    <h6>Jane Cooper</h6>
+                                    <p>Customer</p>
+                                </div>
+                            </div>
+                            <div class="testimonial1-card__quote">
+                                <i class="fa-regular fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-btn mt-30">
+                    <button data-slider-prev="#testimonialSlider1" class="slider-arrow style1"><i class="fa-regular fa-arrow-left"></i></button>
+                    <button data-slider-next="#testimonialSlider1" class="slider-arrow style1 slider-next"><i class="fa-regular fa-arrow-right"></i></button>
+                </div>                        
+            </div>
+          </div>
+        </div>
+    </section>   
+
+    <!--===== Blog Section    S T A R T =====-->
+    <section class="blog1 section-padding fix">
+        <div class="container">
+            <div class="row g-4 d-flex justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-top pb-30">
+                        <p class="section-top__subtitle2 justify-content-center"><img src="images/icon-test/head-icon2.svg" alt="svg">Our Latest Blog<img src="images/icon-test/head-icon.svg" alt="svg"></p>
+                        <h2 class="section-top__title2 text-center">Tailored Grooming for the Everyday King</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4">
+                    <div class="blog1-card">
+                        <div class="blog1-card__thumb">
+                            <img src="images/blog/blog-thumb1_1.png" alt="png">
+                            <div class="blog1-card__thumb-date">
+                                <h3>
+                                    Oct 19
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="blog1-card-content">
+                            <div class="blog1-card-content__subtitle">Hair Style</div>
+                            <h3 class="blog1-card-content__title">
+                                <a href="blog-details.html">Barbering the Way It Was Meant to Be</a>
+                            </h3>
+                            <div class="blog1-card-content-meta">
+                                <div class="blog1-card-content-meta__comment"><i class="fa-regular fa-comments"></i>Comments (05)</div>
+                                <div class="blog1-card-content-meta__user"><i class="fa-regular fa-user"></i>Admin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="blog1-card">
+                        <div class="blog1-card-content">
+                            <div class="blog1-card-content__subtitle">Hair Style</div>
+                            <h3 class="blog1-card-content__title">
+                                <a href="blog-details.html">Old School Feel New School Skill</a>
+                            </h3>
+                            <div class="blog1-card-content-meta">
+                                <div class="blog1-card-content-meta__comment"><i class="fa-regular fa-comments"></i>Comments (05)</div>
+                                <div class="blog1-card-content-meta__user"><i class="fa-regular fa-user"></i>Admin</div>
+                            </div>
+                        </div>
+                        <div class="blog1-card__thumb">
+                            <img src="images/blog/blog-thumb1_2.png" alt="png">
+                            <div class="blog1-card__thumb-date except">
+                                <h3>
+                                    Oct 19
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="blog1-card">
+                        <div class="blog1-card__thumb">
+                            <img src="images/blog/blog-thumb1_3.png" alt="png">
+                            <div class="blog1-card__thumb-date">
+                                <h3>
+                                    Oct 19
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="blog1-card-content">
+                            <div class="blog1-card-content__subtitle">Hair Style</div>
+                            <h3 class="blog1-card-content__title">
+                                <a href="blog-details.html">Gentlemen’s Grooming Since Day One</a>
+                            </h3>
+                            <div class="blog1-card-content-meta">
+                                <div class="blog1-card-content-meta__comment"><i class="fa-regular fa-comments"></i>Comments (05)</div>
+                                <div class="blog1-card-content-meta__user"><i class="fa-regular fa-user"></i>Admin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!--===== Footer Section    S T A R T =====-->
+    <footer class="footer2 fix footer1-bg pb-96">
+        <div class="footer2-shape1">
+            <img src="images/shape/footer-shape1.svg" alt="svg">
+        </div>
+        <div class="footer2-shape2">
+            <img src="images/shape/footer-shape2.svg" alt="svg">
+        </div>
+        <div class="footer2-wrapper">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer2-wrapper-logoInfo return-footer">
+                            <div class="footer2-wrapper-logoInfo__logo">
+                                <a href="index.html">
+                                    <img src="./images/logo/Logo-white.png" alt="logo">
+                                </a>
+                            </div>
+                            <p class="footer2-wrapper-logoInfo__desc">
+                                Hands down the best haircut I’ve had in years. The attention to detail is insane. Walked out feeling like a new man!
+                            </p>
+                            <div class="global-social3">
+                                <div class="global-social3__item">
+                                    <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="global-social3__item">
+                                    <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="global-social3__item">
+                                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <div class="global-social3__item">
+                                    <a href="https://vimeo.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-vimeo-v"></i>
+                                    </a>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer2-wrapper-service return-footer">
+                            <h5 class="footer2-wrapper-service__title">Services</h5>
+                            <ul class="footer2-wrapper-service-list">
+                                <li class="footer2-wrapper-service-list__item"><a href="service-details.html">Haircuts</a></li>
+                                <li class="footer2-wrapper-service-list__item"><a href="service-details.html">Beard Trim & Line Up</a></li>
+                                <li class="footer2-wrapper-service-list__item"><a href="service-details.html">Hot Towel Shave</a></li>
+                                <li class="footer2-wrapper-service-list__item"><a href="service-details.html">Hair Wash & Style</a></li>
+                                <li class="footer2-wrapper-service-list__item"><a href="service-details.html">Kids Haircuts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer2-wrapper-about return-footer">
+                            <h5 class="footer2-wrapper-about__title">About</h5>
+                            <ul class="footer2-wrapper-about-list">
+                                <li class="footer2-wrapper-about-list__item"><a href="about.html">Blade & Brush</a></li>
+                                <li class="footer2-wrapper-about-list__item"><a href="about.html">Grooming</a></li>
+                                <li class="footer2-wrapper-about-list__item"><a href="about.html">Lifestyle</a></li>
+                                <li class="footer2-wrapper-about-list__item"><a href="about.html">Complimentary</a></li>
+                                <li class="footer2-wrapper-about-list__item"><a href="about.html">Our craft</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer2-wrapper-contact return-footer">
+                            <ul class="footer2-wrapper-contact-list">  
+                                <li class="footer2-wrapper-contact-list__item">
+                                    <a href="tel:+2095550104" class="d-flex align-items-start">
+                                      <span class="icon me-3">
+                                        <i class="fa-solid fa-phone"></i>
+                                      </span>
+                                      <span class="text d-flex flex-column">
+                                        <span>Phone number</span>
+                                        <span>(209) 555-0104</span>
+                                      </span>
+                                    </a>
+                                </li>             
+                                <li class="footer2-wrapper-contact-list__item">
+                                    <a href="https://www.google.com/maps/search/?q=27+Division+St,+New+York,+NY+10002,+USA" target="_blank" class="d-flex align-items-start">
+                                      <span class="icon me-3">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                      </span>
+                                      <span class="text d-flex flex-column">
+                                        <span>Location</span>
+                                        <span>6391 Elgin St. Celina, Delaware 10299</span>
+                                      </span>
+                                    </a>
+                                </li>                                  
+                                <li class="footer2-wrapper-contact-list__item">
+                                    <a href="mailto:helpClaoseing@gmail.com" class="d-flex align-items-start">
+                                      <span class="icon me-3">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                      </span>
+                                      <span class="text d-flex flex-column">
+                                        <span>Mail Address</span>
+                                        <span>willie.jennings@example.com</span>
+                                      </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                   
+                </div>
+            </div>            
+        </div>
+        <div class="footer2-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer2-bottom-info">
+                            <p>© Yoursitename  2025 | All Rights Reserved</p>
+                            <div class="footer2-bottom-info__links">
+                                <a href="contact.html">Trams & Condition</a>                                
+                                <a href="contact.html">Privacy Policy</a>
+                                <a href="contact.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+</div>
+
+    <!--===== All JS Plugins =====-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--===== Bootstrap Js =====-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--===== Waypoints Js =====-->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!--===== Counterup Js =====-->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!--===== Viewport Js =====-->
+    <script src="js/viewport.jquery.min.js"></script>
+    <!--===== Tilt Js =====-->
+    <script src="js/tilt.min.js"></script>
+    <!--===== Splitting Animation Js =====-->
+    <script src="js/splitting.min.js"></script>
+    <!--===== Swiper Slider Js =====-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--===== Magnific Js =====-->
+    <script src="js/magnific-popup.min.js"></script>
+        <!--===== Meanmenu Js =====-->
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <!--===== Wow Animation Js =====-->
+    <script src="js/wow.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Gsap -->
+    <script src="js/plugins/gsap.min.js"></script>
+    <script src="js/plugins/ScrollSmoother.min.js"></script>
+    <script src="js/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <script src="js/plugins/ScrollMagic.min.js"></script>
+    <script src="js/plugins/animation.gsap.min.js"></script>    
+    <script src="js/plugins/ui-draggable.min.js"></script>    
+    <script src="js/plugins/gsap-ease-pack.min.js"></script>    
+    <script src="js/plugins/SplitText.min.js"></script> 
+    <script src="js/gsap-comp/return-img-gsap.min.js"></script>
+    <script src="js/gsap-comp/gsap-split.min.js"></script>       
+    <script src="js/gsap-comp/pin-spacer.min.js"></script>    
+    <script src="js/gsap-comp/title-fade-up.min.js"></script>
+    <script src="js/gsap-comp/scroll-fixing.min.js"></script>
+
+    <!--===== Main.js =====-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,110 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.project4 {  
+    &__title {
+        color: var(--White, #FFF);
+        font-family: Marcellus;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 75px;
+        padding-bottom: 30px;
+    }
+    &-groupBtn {
+        display: flex;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        gap: 40px;
+        &-item {
+            border-radius: 5px;
+            background: var(--White, #FFF);
+            padding: 12px 15px 12px 25px;
+            width: 320px;
+            @include breakpoint (max-xxsmall){
+                padding: 12px 15px;
+            }
+            &__text {
+                color: var(--900, #010003);
+                font-family: Marcellus;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; /* 136.364% */
+                span {
+                    padding-left: 15px;
+                    color: var(--900, #010003);
+                    font-family: Urbanist;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px; /* 137.5% */
+                }
+            }
+        }
+    }
+    &__thumb {
+        padding-bottom: 30px;
+        border-radius: 5px;
+        img {
+            border-radius: 5px;
+        }
+    }
+    &-overview {
+        &__title {
+            color: var(--White, #FFF);
+            font-family: Marcellus;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 50px; /* 125% */
+            padding-bottom: 25px;
+        }
+        &-meta {
+            display: flex;
+            gap: 60px;
+            margin-bottom: 40px;
+            &__item {
+                color: var(--White, #FFF);
+                font-family: Marcellus;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 36px; /* 128.571% */
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        }
+        &-content {
+            &__text {
+                color: var(--White, #FFF);
+                font-family: Marcellus;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; 
+                padding-bottom: 20px;
+            }
+            &__desc {
+                color: var(--White, #FFF);
+                font-family: Urbanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px; 
+            }
+            &-list {
+                margin-top: 50px;
+                &__title {
+                    color: var(--White, #FFF);
+                    font-family: Marcellus;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 36px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.subscribe2 {
+    &-info {
+        display: flex;
+        gap: 80px;
+        padding: 114px 135px;
+        border-radius: 5px;
+        border: 1px solid var(--P, #B8E451);
+        background: var(--700, #131215);
+        @include breakpoint (max-xxxl) {
+            padding: 90px 70px;
+            gap: 30px;
+        }
+        @include breakpoint (max-xxl) {
+            padding: 65px 45px;
+        }
+        @include breakpoint (max-xl) {
+            flex-direction: column;
+        }
+        &-titleArea {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            @include breakpoint (max-sm) {
+                flex-direction: column;
+                align-items: start;
+            }
+            &__icon {
+                @include breakpoint (max-xxl) {
+                    img {
+                        width: 70%;
+                    }
+                }
+                @include breakpoint (max-md) {
+                    img {
+                        width: 50%;
+                    }
+                    gap: 0;
+                }
+            }
+            &__title {
+                color: var(--White, #FFF);
+                font-family: Marcellus;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 50px; 
+                @include breakpoint (max-xxl) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                @include breakpoint (max-xxsmall) {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+        &-form {
+            display: flex;
+            align-items: center;
+            &-wrap {
+                display: flex;
+                gap: 60px;
+                @include breakpoint (max-md) {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+            }
+        }
+    }
+}
