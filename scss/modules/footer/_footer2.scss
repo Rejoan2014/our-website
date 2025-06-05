@@ -185,7 +185,7 @@
         }
         &__numb {
           color: $title-color;
-          font-family: $title-font;
+          font-family: $body-font;
           font-size: 20px;
           font-style: normal;
           font-weight: 600;
@@ -324,7 +324,7 @@
       }
       &__title {
         color: #FFF;
-        font-family: $title-font;
+        font-family: $body-font;
         font-size: 20px;
         font-style: normal;
         font-weight: 600;
@@ -338,7 +338,7 @@
           }
           a {
             color: $white;
-            font-family: $title-font;
+            font-family: $body-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
@@ -362,7 +362,7 @@
       }
       &__title {
         color: #FFF;
-        font-family: $title-font;
+        font-family: $body-font;
         font-size: 20px;
         font-style: normal;
         font-weight: 600;
@@ -430,7 +430,7 @@
       }
       &__title {
         color: #FFF;
-        font-family: $title-font;
+        font-family: $body-font;
         font-size: 20px;
         font-style: normal;
         font-weight: 600;

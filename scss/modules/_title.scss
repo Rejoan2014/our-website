@@ -9,14 +9,13 @@
     &__subtitle {
         display: flex;
         gap: 8px;
-        color: $black;
-        font-family: $body-font;
+        color: var(--P3, #6A5ACD);
+        font-family: Lato;
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 16px; 
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 22.5px; 
+        letter-spacing: 0.14px;
         margin-bottom: 12px;
         span {
             padding-right: 8px;
@@ -35,28 +34,15 @@
         text-transform: uppercase;
         margin-bottom: 12px;
     }
-    &__subtitle2 {
-        display: flex;
-        gap: 8px;
-        color: $white;
-        font-family: $body-font;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 16px; 
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        margin-bottom: 12px;
-    }
 
     &__title {
-        color: $black;
-        font-feature-settings: 'liga' off, 'clig' off;
-        font-family: $title-font;
-        font-size: 60px;
+        color: var(--900, #000);
+        font-family: Lato;
+        font-size: 48px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 75px; 
+        font-weight: 900;
+        line-height: 65px; /* 135.417% */
+        letter-spacing: 0.49px;
         @include breakpoint (max-xl) {
             font-size: 45px;
             line-height: 50px;
@@ -69,11 +55,14 @@
             font-size: 30px;
             line-height: 40px;
         }
+        span {
+            color: $theme-color;
+        }
     }
     &__title2 {
         color: $white;
         font-feature-settings: 'liga' off, 'clig' off;
-        font-family: $title-font;
+        font-family: $body-font;
         font-size: 60px;
         font-style: normal;
         font-weight: 400;

@@ -36,7 +36,7 @@
         }
 
         .txt-loading {
-            font: bold 5em $title-font, $body-font;
+            font: bold 5em $body-font, $body-font;
             text-align: center;
             user-select: none;
 
@@ -82,7 +82,7 @@
                     content: attr(data-text-preloader);
                     left: 0;
                     opacity: 0;
-                    font-family: $title-font;
+                    font-family: $body-font;
                     position: absolute;
                     top: -3px;
                     transform: rotateY(-90deg);

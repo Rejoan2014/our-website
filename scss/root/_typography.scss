@@ -4,18 +4,10 @@
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */ 
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
- $body-font: 'Urbanist', sans-serif;
- $title-font: 'Marcellus', serif;
-
- $title-font2: "Poppins", sans-serif;
- $title-font3: "Manrope", sans-serif;
- $paragraph-font: "Inter", sans-serif;
- $paragraph-font2: "Outfit", sans-serif;
- $faq-font: "Archivo", sans-serif;
- 
- 
+ $body-font: "Lato", sans-serif;
+ $faq-font: "Archivo", sans-serif; 
  
 $fa: "Font Awesome 6 Pro";
 
@@ -68,13 +60,14 @@ h6 {
 }
 
 h1 {
-    color: var(--900, #010003);
-    font-family: Marcellus;
-    font-size: 60px;
+    color: var(--900, #000);
+    font-family: Lato;
+    font-size: 80px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 75px; 
-    @include breakpoint(max-xxl) {
+    font-weight: 800;
+    line-height: 100px; /* 125% */
+    letter-spacing: 1px;
+    @include breakpoint(max-xl) {
         font-size: 50px;
     }
     @include breakpoint(max-md) {
@@ -83,30 +76,31 @@ h1 {
 }
 
 h2 {
-    color: var(--900, #010003);
-    font-family: Marcellus;
-    font-size: 40px;
+    color: var(--900, #000);
+    font-family: Lato;
+    font-size: 48px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 50px; 
-    @include breakpoint(max-xxl) {
-        font-size: 35px;
+    font-weight: 900;
+    line-height: 65px; 
+    letter-spacing: 0.49px;
+    @include breakpoint(max-xl) {
+        font-size: 40px;
     }
     @include breakpoint(max-md) {
-        font-size: 30px;
+        font-size: 35px;
     }
 }
 
 h3 { 
-    color: var(--900, #010003);
-    font-family: Marcellus;
-    font-size: 28px;
+    color: var(--White, #FFF);
+    font-family: Lato;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 36px;
-
+    font-weight: 900;
+    line-height: 44px; /* 110% */
+    letter-spacing: 0.36px;
     @include breakpoint(max-xl) {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     @include breakpoint (max-md) {
@@ -115,34 +109,36 @@ h3 {
 }
 
 h4 {
-    color: $title-color;
-    font-family: $title-font;
-    font-size: 36px;
+    color: var(--900, #000);
+    font-family: Lato;
+    font-size: 30px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: -0.46px;
-    @include breakpoint(max-xxl) {
+    font-weight: 900;
+    line-height: 44px; 
+    letter-spacing: 0.36px;
+    @include breakpoint(max-xl) {
         font-size: 20px;
     }
 }
 
 h5 {
-    color: $white;
-    font-family: $title-font;
-    font-size: 30px;
+    color: var(--900, #000);
+    font-family: Lato;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
+    font-weight: 900;
+    line-height: 34px; 
+    letter-spacing: 0.36px;
 }
 
 h6 {
-    color: $title-color;
-    font-family: $title-font;
-    font-size: 24px;
+    color: var(--900, #000);
+    font-family: Lato;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 34px;
+    font-weight: 900;
+    line-height: 30px; 
+    letter-spacing: 0.36px;
 }
 
 p {
