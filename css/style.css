@@ -5906,6 +5906,29 @@ img {
   margin-top: 145px;
   background: var(--White, #FFF);
 }
+.hero1-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero1-icon__topLayer {
+  display: flex;
+  justify-content: center;
+  gap: 600px;
+  padding-bottom: 50px;
+}
+.hero1-icon__middleLayer {
+  display: flex;
+  justify-content: center;
+  gap: 800px;
+  padding-bottom: 50px;
+}
+.hero1-icon__bottomLayer {
+  display: flex;
+  justify-content: center;
+  gap: 600px;
+}
 .hero1__shape1 {
   position: absolute;
   top: 50%;
