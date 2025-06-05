@@ -52,7 +52,7 @@ Description: CleanPro - Creative & Digital Agency Html Template
   --smoke2: #ECF1F5;
   --smoke3: #F4F4F4;
   --theme: #6A5ACD;
-  --theme2: #FCF9F7;
+  --theme2: #F7FAFF;
   --theme3: #077CEA;
   --box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
   --icon-font: "Font Awesome 6 Pro";
@@ -591,7 +591,7 @@ body {
   font-weight: 400;
   line-height: 22px;
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--white);
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -756,7 +756,7 @@ span {
 ----------------------------------------------*/
 @media (min-width: 1600px) {
   .container {
-    max-width: 1424px;
+    max-width: 1644px;
   }
 }
 /*----------------------------------------------
@@ -1840,28 +1840,23 @@ span {
 ----------------------------------------------*/
 .theme-btn.style1 {
   display: inline-flex;
-  height: 54px;
-  padding: 20px 20px;
+  height: 50px;
+  padding: 20px;
   align-items: center;
   gap: 8px;
-  border-radius: 5px;
-  background: var(--P, #B8E451);
-  color: var(--900, #010003);
-  font-family: Urbanist;
-  font-size: 16px;
+  border-radius: 10px;
+  background: #6A5ACD;
+  color: var(--White, #FFF);
+  font-family: Lato;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 14px; /* 87.5% */
-  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 17px;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
   .theme-btn.style1 {
@@ -1873,8 +1868,9 @@ span {
   display: inline-block;
 }
 .theme-btn.style1 i {
-  color: var(--black);
-  font-weight: 400;
+  color: var(--white);
+  font-weight: 500;
+  transform: rotate(45deg);
   transition: all 0.4s ease-in-out;
 }
 .theme-btn.style1:before {
@@ -1885,7 +1881,7 @@ span {
   content: "";
   top: 162%;
   left: 50%;
-  background: var(--title);
+  background: var(--black);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%) rotate(-8deg);
   border-radius: 80%;
@@ -1899,6 +1895,7 @@ span {
 }
 .theme-btn.style1:hover i {
   color: var(--white);
+  transform: rotate(0deg);
   transition: all 0.4s ease-in-out;
 }
 
