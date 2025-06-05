@@ -10,28 +10,48 @@
 .fancy-box1 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
-    &__item {
-      h6 {
-        color: var(--White, #FFF);
-        font-feature-settings: 'liga' off, 'clig' off;
-        font-family: Marcellus;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px; /* 136.364% */
-        padding-bottom: 3px;
+    &-item {
+      &__icon {
+        border-radius: 50px;
+        background: white;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed black;
       }
-
-      p {
-        color: var(--White, #FFF);
+      &__star {
+        i {
+          color: #FFA800;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+        }
+      }
+      h4 {
+        color: var(--900, #000);
         font-feature-settings: 'liga' off, 'clig' off;
-        font-family: Urbanist;
-        font-size: 16px;
+        font-family: Lato;
+        font-size: 20px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 22px; /* 137.5% */
+        font-weight: 900;
+        line-height: 44px; /* 220% */
+        letter-spacing: 0.36px;
+        span {
+          color: var(--900, #000);
+          text-align: center;
+          font-family: Lato;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 30px; /* 166.667% */
+          letter-spacing: 0.16px;
+        }
       }
     }
 }
