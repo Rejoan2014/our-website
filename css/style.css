@@ -5368,6 +5368,10 @@ img {
   color: var(--black);
 }
 
+.brandLogo1-slider__thumb {
+  text-align: center;
+}
+
 /* 2. Header */
 /*------------------------------------
 		3.1 Header Style 1
