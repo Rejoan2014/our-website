@@ -3,15 +3,33 @@
 
 .about1 {
     position: relative;
-    background: var(--White, #FFF);
-    &__shape1 {
-        position: absolute;
-        left: 33%;
-        top: 3%;
-        @include breakpoint (max-xxl){
-            display: none;
-        }
+    .row {
+        padding: 120px 50px;
+        border-radius: 20px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
     }
+    &__title {
+        color: #000;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 34px; 
+        letter-spacing: 0.36px;
+        padding-bottom: 20px;
+    }
+    &__desc {
+        color: var(--800, #6B7280);
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; 
+        letter-spacing: 0.16px;
+        padding-bottom: 20px;
+    }
+
     &-thumb {
         position: relative;
         text-align: center;
@@ -62,6 +80,64 @@
 
         }
     }
+    &-counter {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            &__icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 94px;
+                height: 94px;
+                flex-shrink: 0;
+                aspect-ratio: 1/1;
+                border-radius: 999px;
+                border: 2px dashed var(--900, #000);
+                background: var(--100, #F7FAFF);
+                @include breakpoint (max-xs){
+                    width: 65px;
+                    height: 65px;
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                    flex-shrink: 0;
+                    aspect-ratio: 1/1;
+                    @include breakpoint (max-xs){
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            &-info {
+                &__numb {
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 65px;
+                    letter-spacing: 0.49px;
+                    padding-bottom: 5px;
+                }
+                &__label {
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 21.6px; /* 120% */
+                }
+            }
+        }
+    }
+
+
     &-feature {
         padding-bottom: 38px;
         display: flex;

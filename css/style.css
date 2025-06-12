@@ -6233,17 +6233,32 @@ img {
 /* 4. About */
 .about1 {
   position: relative;
+}
+.about1 .row {
+  padding: 120px 50px;
+  border-radius: 20px;
   background: var(--White, #FFF);
+  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
 }
-.about1__shape1 {
-  position: absolute;
-  left: 33%;
-  top: 3%;
+.about1__title {
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px;
+  letter-spacing: 0.36px;
+  padding-bottom: 20px;
 }
-@media (max-width: 1399px) {
-  .about1__shape1 {
-    display: none;
-  }
+.about1__desc {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.16px;
+  padding-bottom: 20px;
 }
 .about1-thumb {
   position: relative;
@@ -6290,6 +6305,64 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+}
+.about1-counter {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.about1-counter-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.about1-counter-item__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 94px;
+  height: 94px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  border: 2px dashed var(--900, #000);
+  background: var(--100, #F7FAFF);
+}
+@media (max-width: 499px) {
+  .about1-counter-item__icon {
+    width: 65px;
+    height: 65px;
+  }
+}
+.about1-counter-item__icon img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+@media (max-width: 499px) {
+  .about1-counter-item__icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.about1-counter-item-info__numb {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 65px;
+  letter-spacing: 0.49px;
+  padding-bottom: 5px;
+}
+.about1-counter-item-info__label {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.6px; /* 120% */
 }
 .about1-feature {
   padding-bottom: 38px;
