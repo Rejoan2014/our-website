@@ -7649,18 +7649,6 @@ img {
 }
 .project1-card {
   position: relative;
-  margin-bottom: 50px;
-  border-radius: 5px;
-}
-@media (max-width: 1199px) {
-  .project1-card {
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .project1-card {
-    padding: 20px;
-  }
 }
 .project1-card-thumb {
   border-radius: 20px 20px 0px 0px;
@@ -7707,25 +7695,28 @@ img {
   aspect-ratio: 33.33/33.33;
 }
 .project1-card--fix-padding1 {
-  padding: 43px;
+  padding: 83px;
   padding-left: 0;
 }
 .project1-card--fix-padding2 {
-  padding: 43px;
+  padding: 83px;
   padding-right: 0;
 }
-.project1-card:hover .project1-card-content {
+.project1-card:hover .project1-card-thumb-content {
   background: var(--P3, #6A5ACD);
   transition: all 0.4s ease-in-out;
 }
-.project1-card:hover .project1-card-content__title {
+.project1-card:hover .project1-card-thumb-content__title {
   color: var(--White, #FFF);
   transition: all 0.4s ease-in-out;
 }
-.project1-card:hover .project1-card-content__link {
+.project1-card:hover .project1-card-thumb-content__title a {
+  color: var(--white);
+}
+.project1-card:hover .project1-card-thumb-content__link {
   background: var(--white);
 }
-.project1-card:hover .project1-card-content__link svg path {
+.project1-card:hover .project1-card-thumb-content__link svg path {
   fill: var(--black);
 }
 

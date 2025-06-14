@@ -5,14 +5,6 @@
     position: relative;
     &-card {
         position: relative;
-        margin-bottom: 50px;
-        border-radius: 5px;
-        @include breakpoint (max-xl){
-            margin-bottom: 20px;
-        }
-        @include breakpoint (max-md){
-            padding: 20px;
-        }
         &-thumb {
             border-radius: 20px 20px 0px 0px;
             img {
@@ -58,27 +50,32 @@
             }
         }
         &--fix-padding1 {
-            padding: 43px;
+            padding: 83px;
             padding-left: 0;
         }
         &--fix-padding2 {
-            padding: 43px;
+            padding: 83px;
             padding-right: 0;
         }
         &:hover {
             .project1 {
                 &-card {
-                    &-content {
-                        background: var(--P3, #6A5ACD);
-                        @include transition;
-                        &__title {
-                            color: var(--White, #FFF);
+                    &-thumb {
+                        &-content {
+                            background: var(--P3, #6A5ACD);
                             @include transition;
-                        }
-                        &__link {
-                            background: $white;
-                            svg path {
-                                fill: $black;
+                            &__title {
+                                color: var(--White, #FFF);
+                                @include transition;
+                                a {
+                                    color: $white;
+                                }
+                            }
+                            &__link {
+                                background: $white;
+                                svg path {
+                                    fill: $black;
+                                }
                             }
                         }
                     }
