@@ -48,14 +48,16 @@
                     }
                 }
             }
-        }
-        &--fix-padding1 {
-            padding: 83px;
-            padding-left: 0;
-        }
-        &--fix-padding2 {
-            padding: 83px;
-            padding-right: 0;
+            &--fix-padding1 {
+                padding: 83px;
+                padding-left: 0;
+                // margin-top: 80px;
+            }
+            &--fix-padding2 {
+                padding: 83px;
+                padding-right: 0;
+                // margin-bottom: 80px;
+            }
         }
         &:hover {
             .project1 {

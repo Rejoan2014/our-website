@@ -7694,11 +7694,11 @@ img {
   flex-shrink: 0;
   aspect-ratio: 33.33/33.33;
 }
-.project1-card--fix-padding1 {
+.project1-card-thumb--fix-padding1 {
   padding: 83px;
   padding-left: 0;
 }
-.project1-card--fix-padding2 {
+.project1-card-thumb--fix-padding2 {
   padding: 83px;
   padding-right: 0;
 }
