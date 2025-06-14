@@ -30,7 +30,7 @@ Description: CleanPro - Creative & Digital Agency Html Template
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /*----------------------------------------------
     # All Variables here
 ----------------------------------------------*/
@@ -7071,31 +7071,34 @@ img {
   color: var(--theme);
 }
 .section-top__title2 {
-  color: var(--white);
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: "Lato", sans-serif;
-  font-size: 60px;
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 80px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 75px; /* 125% */
+  font-weight: 900;
+  line-height: 65px;
+  letter-spacing: 0.49px;
 }
 @media (max-width: 1199px) {
   .section-top__title2 {
-    font-size: 45px;
+    font-size: 54px;
     line-height: 50px;
   }
 }
 @media (max-width: 767px) {
   .section-top__title2 {
-    font-size: 42px;
+    font-size: 46px;
     line-height: 45px;
   }
 }
 @media (max-width: 575px) {
   .section-top__title2 {
-    font-size: 30px;
+    font-size: 36px;
     line-height: 40px;
   }
+}
+.section-top__title2 span {
+  color: var(--theme);
 }
 .section-top__title3 {
   color: var(--White, #FFF);
@@ -8602,43 +8605,40 @@ img {
 
 /* 11. Blog */
 .blog1-card {
-  background: var(--700, #131215);
+  border-radius: 5.682px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 0px 68.182px 0px rgba(0, 0, 0, 0.05);
 }
-.blog1-card__thumb {
+.blog1-card-thumb {
   position: relative;
-  border-radius: 0px 5px 5px 5px;
+  border-radius: 11.364px 11.364px 0px 0px;
 }
-.blog1-card__thumb img {
-  border-radius: 0px 5px 5px 5px;
+.blog1-card-thumb img {
   width: 100%;
+  border-radius: 11.364px 11.364px 0px 0px;
 }
-.blog1-card__thumb-date {
-  padding: 4px 13px;
-  border-radius: 5px 0px 0px 5px;
-  background: var(--P, #B8E451);
+.blog1-card-thumb__badge {
   position: absolute;
-  bottom: -20px;
-}
-.blog1-card__thumb-date h3 {
-  color: var(--900, #010003);
-  font-family: Marcellus;
-  font-size: 28px;
+  left: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  border-radius: 0px 10px 0px 0px;
+  background: var(--P3, #6A5ACD);
+  color: var(--White, #FFF);
+  font-family: Lato;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
+  font-weight: 900;
+  line-height: 30px;
 }
-@media (max-width: 767px) {
-  .blog1-card__thumb-date h3 {
-    font-size: 24px;
-  }
-}
-.blog1-card__thumb-date.except {
-  top: -25px;
-  right: 0;
-  bottom: inherit;
+.blog1-card-thumb__badge img {
+  padding-right: 5px;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1/1;
 }
 .blog1-card-content {
-  padding: 35px 30px 30px;
+  padding: 32px 40px 40px;
 }
 @media (max-width: 767px) {
   .blog1-card-content {
@@ -8647,68 +8647,93 @@ img {
 }
 .blog1-card-content-meta {
   display: flex;
-  align-items: center;
-  gap: 14px;
-  padding-bottom: 16px;
-  color: var(--800, #CCCCCD);
-  font-family: Urbanist;
-  font-size: 16px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.blog1-card-content-meta__category {
+  color: var(--900, #000);
+  font-family: Inter;
+  font-size: 15.909px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 22.727px;
 }
-@media (max-width: 499px) {
-  .blog1-card-content-meta {
-    flex-wrap: wrap;
-    row-gap: 10px;
-  }
-}
-.blog1-card-content-meta i {
-  padding-right: 8px;
-  color: var(--P, #B8E451);
-  font-size: 12px;
+.blog1-card-content-meta__sales {
+  color: var(--800, #6B7280);
+  font-family: Inter;
+  font-size: 15.909px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-}
-.blog1-card-content__subtitle {
-  color: #FFF;
-  font-family: Marcellus;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  padding-bottom: 15px;
-}
-@media (max-width: 767px) {
-  .blog1-card-content__subtitle {
-    font-size: 20px;
-  }
+  line-height: 22.727px;
 }
 .blog1-card-content__title {
-  color: var(--White, #FFF);
-  font-family: Marcellus;
-  font-size: 28px;
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+  padding-bottom: 15px;
+  max-width: 380px;
+}
+.blog1-card-content__author {
+  color: var(--800, #6B7280);
+  font-family: Inter;
+  font-size: 18.182px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px;
-  padding-bottom: 15px;
+  line-height: 30.909px;
+  padding-bottom: 35px;
 }
-@media (max-width: 767px) {
-  .blog1-card-content__title {
-    font-size: 24px;
-  }
+.blog1-card-content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.blog1-card-content__link {
-  color: var(--theme);
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+.blog1-card-content-footer-btn {
+  display: flex;
+  gap: 24px;
+}
+.blog1-card-content-footer-btn__demo {
+  display: inline-flex;
+  height: 45px;
+  padding: 0px 20.455px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1.136px solid var(--P3, #6A5ACD);
+  color: var(--P3, #6A5ACD);
+  font-family: Lato;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.32px;
-  text-transform: uppercase;
-  text-decoration: underline;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+  cursor: pointer;
+}
+.blog1-card-content-footer-btn__cart {
+  cursor: pointer;
+}
+.blog1-card-content-footer__price {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+}
+.blog1-card-content-footer__price span {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px; /* 141.667% */
+  letter-spacing: 0.36px;
 }
 
 .blog2 {

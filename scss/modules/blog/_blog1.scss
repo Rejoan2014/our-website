@@ -3,102 +3,131 @@
 
 .blog1 {
     &-card {
-        background: var(--700, #131215);
-        &__thumb {
+        border-radius: 5.682px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 0px 68.182px 0px rgba(0, 0, 0, 0.05);
+        &-thumb {
             position: relative;
-            border-radius: 0px 5px 5px 5px;
+            border-radius: 11.364px 11.364px 0px 0px;
             img {
-                border-radius: 0px 5px 5px 5px;
                 width: 100%;
+                border-radius: 11.364px 11.364px 0px 0px;
             }
-            &-date {
-                padding: 4px 13px;
-                border-radius: 5px 0px 0px 5px;
-                background: var(--P, #B8E451);
+            &__badge {
                 position: absolute;
-                bottom: -20px;
-                h3 {
-                    color: var(--900, #010003);
-                    font-family: Marcellus;
-                    font-size: 28px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 36px; 
-                    @include breakpoint (max-md){
-                        font-size: 24px;
-                    }
-                }
-                &.except {
-                    top: -25px;
-                    right: 0;
-                    bottom: inherit;
+                left: 0;
+                bottom: 0;
+                padding: 10px 20px;
+                border-radius: 0px 10px 0px 0px;
+                background: var(--P3, #6A5ACD);
+                color: var(--White, #FFF);
+                font-family: Lato;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 30px; 
+                img {
+                    padding-right: 5px;
+                    width: 30px;
+                    height: 30px;
+                    aspect-ratio: 1/1;
                 }
             }
         }
         &-content {
-            padding: 35px 30px 30px;
+            padding: 32px 40px 40px;
             @include breakpoint (max-md){
                 padding: 30px 20px 20px;
             }
             &-meta {
                 display: flex;
-                align-items: center;
-                gap: 14px;
-                padding-bottom: 16px;
-                color: var(--800, #CCCCCD);
-                font-family: Urbanist;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 22px; 
-                @include breakpoint (max-xs) {
-                    flex-wrap: wrap;
-                    row-gap: 10px;
-                }
-                i {
-                    padding-right: 8px;
-                    color: var(--P, #B8E451);
-                    font-size: 12px;
+                justify-content: space-between;
+                padding-bottom: 30px;
+                &__category {
+                    color: var(--900, #000);
+                    font-family: Inter;
+                    font-size: 15.909px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: normal;
+                    line-height: 22.727px; 
                 }
-            }
-            &__subtitle{
-                color: #FFF;
-                font-family: Marcellus;
-                font-size: 22px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 30px; 
-                padding-bottom: 15px;
-                @include breakpoint (max-md){
-                    font-size: 20px;
+                &__sales {
+                    color: var(--800, #6B7280);
+                    font-family: Inter;
+                    font-size: 15.909px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22.727px; 
                 }
             }
             &__title{
-                color: var(--White, #FFF);
-                font-family: Marcellus;
-                font-size: 28px;
+                color: var(--900, #000);
+                font-family: Lato;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 30px; /* 150% */
+                letter-spacing: 0.36px;
+                padding-bottom: 15px;
+                max-width: 380px;
+            }
+            &__author {
+                color: var(--800, #6B7280);
+                font-family: Inter;
+                font-size: 18.182px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 36px; 
-                padding-bottom: 15px;
-                @include breakpoint (max-md){
-                    font-size: 24px;
-                }
-
+                line-height: 30.909px; 
+                padding-bottom: 35px;
             }
-            &__link {
-                color: $theme-color;
-                font-family: $body-font;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 20px; 
-                letter-spacing: -0.32px;
-                text-transform: uppercase;
-                text-decoration: underline;
+            &-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-btn {
+                    display: flex;
+                    gap: 24px;
+                    &__demo {
+                        display: inline-flex;
+                        height: 45px;
+                        padding: 0px 20.455px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        border-radius: 5px;
+                        border: 1.136px solid var(--P3, #6A5ACD);
+                        color: var(--P3, #6A5ACD);
+                        font-family: Lato;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 30px; /* 150% */
+                        letter-spacing: 0.36px;
+                        cursor: pointer;
+                    }
+                    &__cart {
+                        cursor: pointer;
+                    }
+                }
+                &__price {
+                    color: var(--800, #6B7280);
+                    font-family: Lato;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 30px; 
+                    letter-spacing: 0.36px;
+                    span {
+                        color: var(--900, #000);
+                        font-family: Lato;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 34px; /* 141.667% */
+                        letter-spacing: 0.36px;
+                    }
+                }
             }
         }
     }

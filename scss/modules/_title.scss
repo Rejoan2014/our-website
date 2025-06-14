@@ -60,24 +60,27 @@
         }
     }
     &__title2 {
-        color: $white;
-        font-feature-settings: 'liga' off, 'clig' off;
-        font-family: $body-font;
-        font-size: 60px;
+        color: var(--900, #000);
+        font-family: Lato;
+        font-size: 80px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 75px; /* 125% */
+        font-weight: 900;
+        line-height: 65px; 
+        letter-spacing: 0.49px;
         @include breakpoint (max-xl) {
-            font-size: 45px;
+            font-size: 54px;
             line-height: 50px;
         }
         @include breakpoint (max-md) {
-            font-size: 42px;
+            font-size: 46px;
             line-height: 45px;
         }
         @include breakpoint (max-sm) {
-            font-size: 30px;
+            font-size: 36px;
             line-height: 40px;
+        }
+        span {
+            color: $theme-color;
         }
     }
     &__title3 {
