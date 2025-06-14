@@ -3,7 +3,7 @@
 
 .service1 {
     position: relative;;
-    background: var(--White, #FFF);
+    background: var(--100, #F7FAFF);
     &__thumb {
         border-radius: 20px;
         img {
@@ -11,19 +11,27 @@
         }
     }
     &-content {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid $theme-color;
-        padding-bottom: 30px;
-        margin-bottom: 30px;
-        @include breakpoint(max-xsmall){
-            padding-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding: 57px 60px;
+        @include breakpoint (xxl){
+            margin-left: 30px;
         }
-        @include breakpoint(max-xxsmall){
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #C1C1C1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
+
         &__title {
             color: var(--900, #000);
             font-family: Lato;
@@ -41,20 +49,12 @@
                 line-height: 24px;
             }
         }
-        &__link {
-            color: var(--900, #010003);
-            font-family: Urbanist;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 14px; /* 87.5% */
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            @include breakpoint(max-xsmall){
-                font-size: 14px;
-            }
-            i {
-                font-size: 24px;
+        &:hover {
+            border: 1px solid rgba(193, 193, 193, 0.30);
+            background: var(--White, #FFF);
+            box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+            &::before {
+                background: none;
             }
         }
     }
