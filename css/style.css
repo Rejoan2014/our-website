@@ -7231,7 +7231,14 @@ img {
   bottom: 0;
   left: 0;
 }
+.service1-content__icon {
+  flex-shrink: 0;
+  margin-right: 84px;
+}
 .service1-content__title {
+  flex: 1;
+  text-align: left;
+  margin: 0;
   color: var(--900, #000);
   font-family: Lato;
   font-size: 30px;
@@ -7251,6 +7258,26 @@ img {
     font-size: 18px;
     line-height: 24px;
   }
+}
+.service1-content__link {
+  flex-shrink: 0;
+  margin-right: 20px;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: var(--White, #FFF);
+}
+.service1-content__link img {
+  width: 53.333px;
+  height: 53.333px;
+  flex-shrink: 0;
+  aspect-ratio: 53.33/53.33;
 }
 .service1-content:hover {
   border: 1px solid rgba(193, 193, 193, 0.3);

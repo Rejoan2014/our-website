@@ -31,8 +31,16 @@
             bottom: 0;
             left: 0;
         }
+        &__icon {
+            flex-shrink: 0; 
+            margin-right: 84px;
+        }
 
         &__title {
+            flex: 1; 
+            text-align: left; 
+            margin: 0; 
+
             color: var(--900, #000);
             font-family: Lato;
             font-size: 30px;
@@ -49,6 +57,27 @@
                 line-height: 24px;
             }
         }
+        &__link {
+            flex-shrink: 0; 
+            margin-right: 20px;
+
+            display: flex;
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 40px;
+            background: var(--White, #FFF);
+            img {
+                width: 53.333px;
+                height: 53.333px;
+                flex-shrink: 0;
+                aspect-ratio: 53.33/53.33;
+            }
+        }
         &:hover {
             border: 1px solid rgba(193, 193, 193, 0.30);
             background: var(--White, #FFF);
@@ -59,3 +88,50 @@
         }
     }
 }
+
+
+// .service1-content {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 57px 60px;
+//   position: relative;
+//   border-radius: 10px;
+//   border: 1px solid transparent;
+
+//   &__icon {
+//     flex-shrink: 0; // prevents it from shrinking
+//     margin-right: 20px;
+//   }
+
+//   &__title {
+//     flex: 1; // takes remaining space between icon and arrow
+//     text-align: left; // ensures it's left-aligned inside its container
+//     margin: 0; // remove default margin
+//   }
+
+//   &__link {
+//     flex-shrink: 0; // icon stays on right, doesn't shrink
+//     margin-left: 20px;
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 1px;
+//     background: #C1C1C1;
+//   }
+
+//   &:hover {
+//     border: 1px solid rgba(193, 193, 193, 0.30);
+//     background: var(--White, #FFF);
+//     box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+
+//     &::before {
+//       background: none;
+//     }
+//   }
+// }
