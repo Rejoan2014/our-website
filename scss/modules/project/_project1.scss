@@ -3,74 +3,80 @@
 
 .project1 {
     position: relative;
-    // .section-top {
-    //     padding-bottom: 60px;
-    //     @include breakpoint (max-lg){
-    //         padding-bottom: 30px;
-    //     }
-    // }
     &-card {
-        margin-bottom: 50px;
-        padding: 40px 40px 30px 40px;
-        border-radius: 5px;
-        border: 1px solid transparent;
         position: relative;
+        margin-bottom: 50px;
+        border-radius: 5px;
         @include breakpoint (max-xl){
             margin-bottom: 20px;
         }
         @include breakpoint (max-md){
             padding: 20px;
         }
-        &:hover {
-            border: 1px solid var(--P, #B8E451);
-        }
         &__thumb {
-            padding-bottom: 30px;
-            border-radius: 5px;
+            border-radius: 20px 20px 0px 0px;
             img {
-                border-radius: 5px;
+                border-radius: 20px 20px 0px 0px;
+                width: 100%;
             }
         }
         &-content {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0px 0px 20px 20px;
+            background: var(--100, #F7FAFF);
+            padding: 30px;
             &__title {
                 color: var(--White, #FFF);
-                font-family: Marcellus;
-                font-size: 22px;
+                color: $black;
+                font-family: Lato;
+                font-size: 40px;
                 font-style: normal;
-                font-weight: 400;
-                line-height: 30px; /* 136.364% */
+                font-weight: 900;
+                line-height: 44px; 
+                letter-spacing: 0.36px;
             }
             &__link {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
+                display: flex;
                 width: 50px;
                 height: 50px;
-                padding: 10px;
+                padding: 6.25px;
+                justify-content: center;
                 align-items: center;
+                gap: 6.25px;
                 flex-shrink: 0;
-                border-radius: 5px;
-                border: 1px solid var(--P, #B8E451);
-                background: var(--900, #010003);
-                i {
-                    color: $theme-color;
-                    transform: rotate(-45deg);
-                    @include transition;
+                border-radius: 25px;
+                background: var(--White, #FFF);
+                background: $theme-color;
+                img {
+                    width: 33.333px;
+                    height: 33.333px;
+                    flex-shrink: 0;
+                    aspect-ratio: 33.33/33.33;
                 }
             }
+        }
+        &--fix-padding1 {
+            padding: 42px;
+        }
+        &--fix-padding2 {
+            padding: 42px;
         }
         &:hover {
             .project1 {
                 &-card {
                     &-content {
+                        background: var(--P3, #6A5ACD);
+                        @include transition;
+                        &__title {
+                            color: var(--White, #FFF);
+                            @include transition;
+                        }
                         &__link {
-                            background: var(--P, #B8E451);
-                            i {
-                                color: $black;
-                                @include transition;
+                            background: $white;
+                            svg path {
+                                fill: $black;
                             }
                         }
                     }

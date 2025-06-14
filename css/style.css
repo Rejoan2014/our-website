@@ -7648,11 +7648,9 @@ img {
   position: relative;
 }
 .project1-card {
-  margin-bottom: 50px;
-  padding: 40px 40px 30px 40px;
-  border-radius: 5px;
-  border: 1px solid transparent;
   position: relative;
+  margin-bottom: 50px;
+  border-radius: 5px;
 }
 @media (max-width: 1199px) {
   .project1-card {
@@ -7664,53 +7662,69 @@ img {
     padding: 20px;
   }
 }
-.project1-card:hover {
-  border: 1px solid var(--P, #B8E451);
-}
 .project1-card__thumb {
-  padding-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 20px 20px 0px 0px;
 }
 .project1-card__thumb img {
-  border-radius: 5px;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 .project1-card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 0px 0px 20px 20px;
+  background: var(--100, #F7FAFF);
+  padding: 30px;
 }
 .project1-card-content__title {
   color: var(--White, #FFF);
-  font-family: Marcellus;
-  font-size: 22px;
+  color: var(--black);
+  font-family: Lato;
+  font-size: 40px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px; /* 136.364% */
+  font-weight: 900;
+  line-height: 44px;
+  letter-spacing: 0.36px;
 }
 .project1-card-content__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;
   width: 50px;
   height: 50px;
-  padding: 10px;
+  padding: 6.25px;
+  justify-content: center;
   align-items: center;
+  gap: 6.25px;
   flex-shrink: 0;
-  border-radius: 5px;
-  border: 1px solid var(--P, #B8E451);
-  background: var(--900, #010003);
+  border-radius: 25px;
+  background: var(--White, #FFF);
+  background: var(--theme);
 }
-.project1-card-content__link i {
-  color: var(--theme);
-  transform: rotate(-45deg);
+.project1-card-content__link img {
+  width: 33.333px;
+  height: 33.333px;
+  flex-shrink: 0;
+  aspect-ratio: 33.33/33.33;
+}
+.project1-card--fix-padding1 {
+  padding: 42px;
+}
+.project1-card--fix-padding2 {
+  padding: 42px;
+}
+.project1-card:hover .project1-card-content {
+  background: var(--P3, #6A5ACD);
+  transition: all 0.4s ease-in-out;
+}
+.project1-card:hover .project1-card-content__title {
+  color: var(--White, #FFF);
   transition: all 0.4s ease-in-out;
 }
 .project1-card:hover .project1-card-content__link {
-  background: var(--P, #B8E451);
+  background: var(--white);
 }
-.project1-card:hover .project1-card-content__link i {
-  color: var(--black);
-  transition: all 0.4s ease-in-out;
+.project1-card:hover .project1-card-content__link svg path {
+  fill: var(--black);
 }
 
 .project2 {
