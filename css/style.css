@@ -3577,6 +3577,7 @@ img {
 }
 
 .author-meta {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3629,24 +3630,43 @@ img {
 .fancy-box2 {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 24px;
 }
-.fancy-box2__item h4 {
-  color: var(--900, #010003);
-  font-family: Marcellus;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+.fancy-box2-item__icon {
+  border-radius: 50px;
+  background: white;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed black;
 }
-.fancy-box2__item p {
-  color: var(--900, #010003);
-  font-family: Urbanist;
+.fancy-box2-item__star i {
+  color: #FFA800;
   font-size: 16px;
   font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.fancy-box2-item h6 {
+  color: var(--900, #000);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+}
+.fancy-box2-item p {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 22px;
-  opacity: 0.8;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
 }
 
 .fancy-box3 {
@@ -8049,85 +8069,62 @@ img {
 }
 
 /* 9. Testimonial */
-.testimonial1 {
-  background: var(--700, #131215);
-}
-@media (max-width: 1399px) {
-  .testimonial1 {
-    padding-bottom: 80px !important;
-  }
-}
 .testimonial1-card {
-  position: relative;
+  border-radius: 12.195px;
+  background: var(--100, #F7FAFF);
+}
+.testimonial1-card-content {
+  padding: 40px;
+}
+.testimonial1-card-content__title {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+  padding-bottom: 20px;
+  max-width: 273px;
+}
+.testimonial1-card-content__star {
+  padding-bottom: 30px;
+}
+.testimonial1-card-content__star i {
+  color: #FFBA08;
+}
+.testimonial1-card-content__desc {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
+}
+.testimonial1-card .author-meta {
+  border-top: 1px solid #C1C1C1;
+  padding: 40px;
+}
+.testimonial1-card__quote {
+  position: absolute;
+  bottom: 80%;
+  right: 7%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
-  padding: 50px 50px 50px 109px;
-  border-radius: 5px;
-  background: var(--900, #010003);
-  margin-left: 95px;
-  margin-bottom: 40px;
-}
-@media (max-width: 767px) {
-  .testimonial1-card {
-    padding: 50px;
-    margin-left: 0;
-  }
-}
-@media (max-width: 575px) {
-  .testimonial1-card {
-    padding: 20px;
-  }
-}
-.testimonial1-card__thumb {
-  flex: none;
-  position: absolute;
-  left: -90px;
-}
-@media (max-width: 767px) {
-  .testimonial1-card__thumb {
-    display: none;
-  }
-}
-.testimonial1-card-content__star {
-  padding-bottom: 10px;
-}
-.testimonial1-card-content__star i {
-  color: #FFA800;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-}
-.testimonial1-card-content__star i:last-child {
-  color: var(--800, #CCCCCD);
-}
-.testimonial1-card-content__title {
-  color: var(--White, #FFF);
-  font-family: Marcellus;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  padding-bottom: 10px;
-}
-.testimonial1-card-content__desc {
-  color: var(--800, #CCCCCD);
-  font-family: Urbanist;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  padding-bottom: 10px;
+  border-radius: 50px;
+  background-color: #6A5ACD;
+  width: 60.976px;
+  height: 60.976px;
+  flex-shrink: 0;
 }
 .testimonial1-card__quote i {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--200, #CCC);
-  font-size: 64px;
+  color: var(--White, #FFF);
+  font-size: 29.268px;
   font-style: normal;
   font-weight: 900;
-  line-height: normal;
+  line-height: 110%;
 }
 
 .testimonial2 {

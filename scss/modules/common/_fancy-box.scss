@@ -2,9 +2,10 @@
 @use '../../utilities' as *;
 
 .author-meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .fancy-box1 {
@@ -59,29 +60,51 @@
 .fancy-box2 {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 24px;
 
-    &__item {
-      h4 {
-        color: var(--900, #010003);
-        font-family: Marcellus;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px; 
+    &-item {
+      &__icon {
+        border-radius: 50px;
+        background: white;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed black;
       }
-
+      &__star {
+        i {
+          color: #FFA800;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+        }
+      }
+      h6 {
+        color: var(--900, #000);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Lato;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 30px; /* 150% */
+      }
       p {
-        color: var(--900, #010003);
-        font-family: Urbanist;
-        font-size: 16px;
+        color: var(--800, #6B7280);
+        font-family: Lato;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 22px; 
-        opacity: 0.8;
+        line-height: 30px; /* 166.667% */
+        letter-spacing: 0.16px;
       }
     }
 }
+
+
 
 .fancy-box3 {
     display: flex;
