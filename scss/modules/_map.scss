@@ -1,0 +1,11 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.map {
+    background: var(--P3, #6A5ACD);
+    &-area {
+        &__img {
+            text-align: center;
+        }
+    }
+}
