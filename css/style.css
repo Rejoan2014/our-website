@@ -6288,17 +6288,12 @@ img {
 .about1-thumb__one {
   position: relative;
 }
-.about1-thumb__two {
-  position: absolute;
-  top: -12%;
-  z-index: 9;
-}
 .about1-thumb-badge {
   display: flex;
   gap: 15px;
   position: absolute;
-  top: 47%;
-  right: 0;
+  top: 58%;
+  left: 0;
   border-radius: 5px;
   border-left: 2px dashed var(--P, #B8E451);
   background: var(--White, #FFF);
@@ -6329,12 +6324,15 @@ img {
 .about1-counter {
   display: flex;
   align-items: center;
-  gap: 90px;
+  flex-wrap: wrap;
+  column-gap: 141px;
+  row-gap: 80px;
 }
 .about1-counter-item {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 300px;
 }
 .about1-counter-item__icon {
   display: inline-flex;
