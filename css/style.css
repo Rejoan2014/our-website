@@ -10653,6 +10653,58 @@ img {
   }
 }
 
+/* 17. Appointment */
+.review1-card {
+  position: relative;
+  border-radius: 20px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 65px 110px 65px 115px;
+  margin-left: 101px;
+}
+.review1-card__icon {
+  position: absolute;
+  left: -10%;
+  top: 28%;
+  border-radius: 10px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 5px 60px 0px rgba(29, 57, 223, 0.2);
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+.review1-card-rating {
+  padding-bottom: 15px;
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+}
+.review1-card-rating__star i {
+  color: #6A5ACD;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.review1-card-rating__star i:last-child {
+  color: var(--black);
+}
+.review1-card__source {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+  max-width: 120px;
+}
+
 /* 17. Video */
 .video1 {
   position: relative;
