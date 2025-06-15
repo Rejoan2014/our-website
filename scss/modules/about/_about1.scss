@@ -45,31 +45,57 @@
             position: absolute;
             top: 58%;
             left: 0;
-            border-radius: 5px;
-            border-left: 2px dashed var(--P, #B8E451);
+            border-radius: 10px;
             background: var(--White, #FFF);
-            box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-            padding: 25px 30px;
+            box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+            padding: 25px 100px 25px 30px;
             @include breakpoint (max-xl){
                 right: 30px;
+            }
+            &__icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 94px;
+                height: 94px;
+                flex-shrink: 0;
+                aspect-ratio: 1/1;
+                border-radius: 999px;
+                border: 2px dashed var(--900, #000);
+                background: var(--100, #F7FAFF);
+                @include breakpoint (max-xs){
+                    width: 65px;
+                    height: 65px;
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                    flex-shrink: 0;
+                    aspect-ratio: 1/1;
+                    @include breakpoint (max-xs){
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
             }
 
             &__text {
                 h2 {
-                    color: var(--900, #010003);
-                    font-family: Marcellus;
-                    font-size: 40px;
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 48px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 50px; 
+                    font-weight: 900;
+                    line-height: 65px; /* 135.417% */
+                    letter-spacing: 0.49px;
                 }
                 p {
-                    color: var(--700, #131215);
-                    font-family: Marcellus;
-                    font-size: 22px;
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 18px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 30px; 
+                    font-weight: 700;
+                    line-height: 21.6px; /* 120% */
                 }
             }
 
