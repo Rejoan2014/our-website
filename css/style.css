@@ -10374,6 +10374,139 @@ img {
   width: 100%;
 }
 
+/* 15. Product */
+.product1-card {
+  border-radius: 5.682px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 0px 68.182px 0px rgba(0, 0, 0, 0.05);
+}
+.product1-card-thumb {
+  position: relative;
+  border-radius: 11.364px 11.364px 0px 0px;
+}
+.product1-card-thumb img {
+  width: 100%;
+  border-radius: 11.364px 11.364px 0px 0px;
+}
+.product1-card-thumb__badge {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  border-radius: 0px 10px 0px 0px;
+  background: var(--P3, #6A5ACD);
+  color: var(--White, #FFF);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+}
+.product1-card-thumb__badge img {
+  padding-right: 5px;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1/1;
+}
+.product1-card-content {
+  padding: 32px 40px 40px;
+}
+@media (max-width: 767px) {
+  .product1-card-content {
+    padding: 30px 20px 20px;
+  }
+}
+.product1-card-content-meta {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.product1-card-content-meta__category {
+  color: var(--900, #000);
+  font-family: Inter;
+  font-size: 15.909px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.727px;
+}
+.product1-card-content-meta__sales {
+  color: var(--800, #6B7280);
+  font-family: Inter;
+  font-size: 15.909px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.727px;
+}
+.product1-card-content__title {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+  padding-bottom: 15px;
+  max-width: 380px;
+}
+.product1-card-content__author {
+  color: var(--800, #6B7280);
+  font-family: Inter;
+  font-size: 18.182px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.909px;
+  padding-bottom: 35px;
+}
+.product1-card-content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product1-card-content-footer-btn {
+  display: flex;
+  gap: 24px;
+}
+.product1-card-content-footer-btn__demo {
+  display: inline-flex;
+  height: 45px;
+  padding: 0px 20.455px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1.136px solid var(--P3, #6A5ACD);
+  color: var(--P3, #6A5ACD);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+  cursor: pointer;
+}
+.product1-card-content-footer-btn__cart {
+  cursor: pointer;
+}
+.product1-card-content-footer__price {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+}
+.product1-card-content-footer__price span {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px; /* 141.667% */
+  letter-spacing: 0.36px;
+}
+
 /* 16. Work Process */
 .resume1 {
   position: relative;
