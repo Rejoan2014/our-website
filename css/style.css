@@ -2408,7 +2408,7 @@ span {
   --tagcloud-animation-play-state: running;
   --tagcloud-diameter: 32rem;
   --tagcloud-start-rotation: 54;
-  --tagcloud-controls-diameter: 256rem;
+  --tagcloud-controls-diameter: 25rem;
   --tagcloud-control-bg-color: transparent;
   --tagcloud-control-bg-hover-color: transparent;
   --tagcloud-control-bg-checked-color: transparent;
