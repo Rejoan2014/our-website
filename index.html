@@ -922,7 +922,7 @@
     </section>
 
     <!--===== Tag Cloud Section    S T A R T =====-->
-    <section class="tag-cloud fix section-padding">
+    <!-- <section class="tag-cloud fix section-padding">
         <div class="container">
             <div class="row g-4 d-flex justify-content-center pb-100">
                 <div class="col-lg-5">
@@ -935,7 +935,164 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <!--===== Tag Cloud Section    S T A R T =====-->
+    <section class="tag-cloud-section fix section-padding">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-xl-8 col-xxl-5 pb-100">
+                    <div class="section-top">
+                        <h2 class="section-top__title text-center">
+                            Technologies used to <span>develop our</span> products
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <canvas width="1644px" height="1000px" id="myCanvas"></canvas>
+                    <div id="tags-list" style="display: none;">
+                        <ul>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#"><img src="images/tagcloud/tag1.png" alt="png"></a></li>
+                            <li><a href="#">CSS3</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Bootstrap</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">Laravel</a></li>
+                            <li><a href="#">Node.js</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <div class="tagcloud-container">
+        <div class="tagcloud-wrapper">
+            <div class="tagcloud-controls" style="--num-elements: 40">
+            <div class="tagcloud-control-button" style="--index: 1"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 2"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 3"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 4"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 5"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 6"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 7"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 8"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 9"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 10"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 11"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 12"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 13"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 14"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 15"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 16"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 17"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 18"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 19"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 20"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 21"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 22"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 23"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 24"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 25"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 26"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 27"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 28"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 29"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 30"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 31"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 32"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 33"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 34"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 35"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 36"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 37"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 38"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 39"><input type="radio" name="tagcloud-control-input"></div>
+            <div class="tagcloud-control-button" style="--index: 40"><input type="radio" name="tagcloud-control-input"></div>   
+
+            <div class="tagcloud-rotation">
+                <ul class="tagcloud-tags" style="--num-elements: 40">
+                    <li class="tagcloud-tag" style="--index: 1"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 2"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 3"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 4"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 5"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 6"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 7"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 8"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 9"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 10"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 11"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 12"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 13"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 14"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 15"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 16"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 17"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 18"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 19"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 20"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 21"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 22"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 23"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 24"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 25"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 26"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 27"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 28"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 29"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 30"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 31"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 32"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 33"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 34"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 35"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 36"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 37"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 38"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 39"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <li class="tagcloud-tag" style="--index: 40"><div><a href="#"><img src="images/tagcloud/tag1.png" alt=""></a></div></li>
+                    <!-- <li class="tagcloud-tag" style="--index: 2"><div><a href="#">jQueryScript</a></div></li>
+                    <li class="tagcloud-tag" style="--index: 3"><div><a href="#">ReactScript</a></div></li>
+                    <li class="tagcloud-tag" style="--index: 4"><div><a href="#">ReactScript</a></div></li>
+                    <li class="tagcloud-tag" style="--index: 5"><div><a href="#">ReactScript</a></div></li>
+                    <li class="tagcloud-tag" style="--index: 6"><div><a href="#">ReactScript</a></div></li>
+                    <li class="tagcloud-tag" style="--index: 7"><div><a href="#">ReactScript</a></div></li>
+                    <li class="tagcloud-tag" style="--index: 8"><div><a href="#">ReactScript</a></div></li>
+                    <li class="tagcloud-tag" style="--index: 9"><div><a href="#">ReactScript</a></div></li> -->
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <!--===== Footer Section    S T A R T =====-->
     <footer class="footer2 fix footer1-bg pb-96">
@@ -1113,8 +1270,8 @@
     <!--===== Main.js =====-->
     <script src="js/main.js"></script>
 
-
-    <script src="https://www.jqueryscript.net/demo/3D-Interactive-SVG-Tag-Cloud-Plugin-With-jQuery-SVG-3D-Tag-Cloud/jquery.svg3dtagcloud.min.js"></script>
+    <!-- TAG CLOUD -->
+    <!-- <script src="https://www.jqueryscript.net/demo/3D-Interactive-SVG-Tag-Cloud-Plugin-With-jQuery-SVG-3D-Tag-Cloud/jquery.svg3dtagcloud.min.js"></script>
     <script>
 
         $( document ).ready( function() {
@@ -1181,7 +1338,32 @@
 
         } );
         
+    </script> -->
+
+
+    <!-- TAG CANVAS -->
+    <script src="https://www.goat1000.com/tagcanvas.min.js"></script>
+    <script>
+        window.onload = function () {
+            try {
+            TagCanvas.Start('myCanvas', 'tags-list', {
+                textColour: '#000',
+                outlineColour: '#ffb703',
+                reverse: true,
+                depth: 0.9,
+                maxSpeed: 0.06,
+                weight: true,
+                weightFrom: 'data-weight',
+                initial: [0.1, -0.1],
+                zoom: 1.1,
+                wheelZoom: false,
+            });
+            } catch (e) {
+            document.getElementById('myCanvasContainer').style.display = 'none';
+            }
+        };
     </script>
+
 </body>
 
 </html>
