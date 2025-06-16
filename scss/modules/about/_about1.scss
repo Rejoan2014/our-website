@@ -107,11 +107,20 @@
         flex-wrap: wrap;
         column-gap: 141px;
         row-gap: 80px;
+        @include breakpoint (max-xl2){
+            column-gap: 80px;
+        }
         &-item {
             display: flex;
             align-items: center;
             gap: 20px;
             width: 300px;
+            @include breakpoint (max-xl2){
+                width: 280px;
+            }
+            @include breakpoint (max-xxxl){
+                width: 230px;
+            }
             &__icon {
                 display: inline-flex;
                 align-items: center;

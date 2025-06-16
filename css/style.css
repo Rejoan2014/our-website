@@ -6616,11 +6616,26 @@ img {
   column-gap: 141px;
   row-gap: 80px;
 }
+@media (max-width: 1699px) {
+  .about1-counter {
+    column-gap: 80px;
+  }
+}
 .about1-counter-item {
   display: flex;
   align-items: center;
   gap: 20px;
   width: 300px;
+}
+@media (max-width: 1699px) {
+  .about1-counter-item {
+    width: 280px;
+  }
+}
+@media (max-width: 1599px) {
+  .about1-counter-item {
+    width: 230px;
+  }
 }
 .about1-counter-item__icon {
   display: inline-flex;
