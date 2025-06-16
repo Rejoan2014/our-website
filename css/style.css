@@ -11151,7 +11151,7 @@ img {
   left: 0;
   opacity: 0.1;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1599px) {
   .map__shape1 {
     display: none;
   }
@@ -11162,7 +11162,7 @@ img {
   right: 0;
   opacity: 0.1;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1599px) {
   .map__shape2 {
     display: none;
   }
