@@ -11142,10 +11142,105 @@ img {
 
 /* 17. Map */
 .map {
+  position: relative;
   background: var(--P3, #6A5ACD);
+}
+.map__shape1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+@media (max-width: 1399px) {
+  .map__shape1 {
+    display: none;
+  }
+}
+.map__shape2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+}
+@media (max-width: 1399px) {
+  .map__shape2 {
+    display: none;
+  }
+}
+.map__shape3 {
+  position: absolute;
+  bottom: 23%;
+  right: 20.5%;
+}
+@media (max-width: 1399px) {
+  .map__shape3 {
+    display: none;
+  }
+}
+.map__country {
+  position: absolute;
+  bottom: 22%;
+  right: 14.5%;
+  display: flex;
+  width: 100px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--P2, #FFD700);
+  color: #000;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+}
+@media (max-width: 1399px) {
+  .map__country {
+    display: none;
+  }
+}
+.map-area {
+  position: relative;
 }
 .map-area__img {
   text-align: center;
+}
+.map-area__icon1 {
+  position: absolute;
+  top: 18%;
+  left: 28%;
+}
+.map-area__icon2 {
+  position: absolute;
+  top: 36%;
+  left: 29%;
+}
+.map-area__icon3 {
+  position: absolute;
+  bottom: 23%;
+  left: 37%;
+}
+.map-area__icon4 {
+  position: absolute;
+  right: 34%;
+  top: 16%;
+}
+.map-area__icon5 {
+  position: absolute;
+  right: 39%;
+  top: 31%;
+}
+.map-area__icon6 {
+  position: absolute;
+  right: 46%;
+  top: 60%;
+}
+.map-area__icon7 {
+  position: absolute;
+  right: 26%;
+  bottom: 17%;
 }
 
 /* 17. Video */

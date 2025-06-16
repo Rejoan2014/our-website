@@ -2,10 +2,95 @@
 @use '../utilities' as *;
 
 .map {
+    position: relative;
     background: var(--P3, #6A5ACD);
+    &__shape1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.1;
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+    &__shape2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.1;
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+    &__shape3 {
+        position: absolute;
+        bottom: 23%;
+        right: 20.5%;
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+    &__country {
+        position: absolute;
+        bottom: 22%;
+        right: 14.5%;
+        display: flex;
+        width: 100px;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--P2, #FFD700);
+        color: #000;
+        font-family: Lato;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 30px; /* 150% */
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
     &-area {
+        position: relative;
         &__img {
             text-align: center;
+        }
+        &__icon1 {
+            position: absolute;
+            top: 18%;
+            left: 28%;
+        }
+        &__icon2 {
+            position: absolute;
+            top: 36%;
+            left: 29%;
+        }
+        &__icon3 {
+            position: absolute;
+            bottom: 23%;
+            left: 37%;
+        }
+        &__icon4 {
+            position: absolute;
+            right: 34%;
+            top: 16%;
+        }
+        &__icon5 {
+            position: absolute;
+            right: 39%;
+            top: 31%;
+        }
+        &__icon6 {
+            position: absolute;
+            right: 46%;
+            top: 60%;
+        }
+        &__icon7 {
+        position: absolute;
+        right: 26%;
+        bottom: 17%;
         }
     }
 }
