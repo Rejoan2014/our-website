@@ -2776,25 +2776,25 @@ img {
   text-align: right;
 }
 
-.checklist {
+.list.style1 .checklist {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.checklist-item {
+.list.style1 .checklist-item {
   display: flex;
   align-items: center;
 }
-.checklist-item:not(:last-child) {
+.list.style1 .checklist-item:not(:last-child) {
   margin-bottom: 20px;
 }
-.checklist-item__icon {
+.list.style1 .checklist-item__icon {
   padding-right: 15px;
 }
-.checklist-item__icon i {
+.list.style1 .checklist-item__icon i {
   color: #1D39DF;
 }
-.checklist-item__text {
+.list.style1 .checklist-item__text {
   color: var(--900, #000);
   font-family: Lato;
   font-size: 20px;
@@ -2804,11 +2804,11 @@ img {
   letter-spacing: 0.36px;
 }
 @media (max-width: 1199px) {
-  .checklist-item__text {
+  .list.style1 .checklist-item__text {
     font-size: 18px;
   }
 }
-.checklist-item__text span {
+.list.style1 .checklist-item__text span {
   color: var(--White, #FFF);
   font-family: Urbanist;
   font-size: 16px;
