@@ -10409,86 +10409,43 @@ img {
 }
 .team3-card {
   position: relative;
-  border-radius: 6.731px;
-  border: 1.346px solid var(--P, #B8E451);
-  background: linear-gradient(0deg, #131215 0%, rgba(111, 105, 123, 0) 100%);
 }
 .team3-card-thumb {
   position: relative;
 }
-.team3-card-thumb__img {
-  position: relative;
-  padding: 17px 17px 0;
-  text-align: center;
-}
-.team3-card-thumb__img-shape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.team3-card-thumb__img img {
-  position: relative;
-  z-index: 5;
-}
-.team3-card-thumb__link {
-  opacity: 0;
-  visibility: hidden;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  z-index: 9;
-}
-.team3-card-thumb__link img {
-  border-radius: 30px;
-  background: var(--title2);
-  padding: 9px;
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
-}
-.team3-card-thumb__link p {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 30px;
-  background: var(--title2);
-  color: var(--title);
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 56px; /* 350% */
-  width: 101px;
-  height: 32px;
+.team3-card-thumb img {
+  width: 100%;
 }
 .team3-card-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   text-align: center;
-  padding: 40px 30px 40px;
+  padding: 20px 30px 20px;
+  border-radius: 0px 0px 20px 20px;
+  background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
 }
 .team3-card-content__title {
   color: var(--White, #FFF);
   text-align: center;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: Marcellus;
-  font-size: 29.615px;
+  font-family: Lato;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 40.385px; /* 136.364% */
+  font-weight: 900;
+  line-height: 34px; /* 141.667% */
+  letter-spacing: 0.36px;
   padding-bottom: 8px;
 }
 .team3-card-content__desc {
   color: var(--White, #FFF);
   text-align: center;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: Urbanist;
-  font-size: 21.538px;
+  font-family: Lato;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 29.615px; /* 137.5% */
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
+  opacity: 0.8;
 }
 .team3-card:hover .team3-card-thumb__img::before {
   opacity: 1;
