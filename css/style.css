@@ -2365,8 +2365,8 @@ span {
   }
 }
 
-.mxw-363 {
-  max-width: 363px;
+.mxw-636 {
+  max-width: 636px;
 }
 
 .mxw-570 {
@@ -7656,31 +7656,15 @@ img {
 
 .service2 {
   position: relative;
-  background: var(--White, #FFF);
-}
-.service2__shape {
-  position: absolute;
-  top: 20px;
-  right: 12px;
-}
-@media (max-width: 1799px) {
-  .service2__shape {
-    top: 10px;
-    right: 5px;
-  }
-}
-@media (max-width: 1699px) {
-  .service2__shape {
-    display: none;
-  }
+  background: var(--100, #F7FAFF);
 }
 .service2-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 5px;
-  border: 1px solid var(--200, #CCC);
-  padding: 30px;
+  border-radius: 10px;
+  background: var(--White, #FFF);
+  padding: 35px 40px;
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 30px;
@@ -7689,62 +7673,38 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 120px;
-  background: var(--theme);
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
   border-radius: 5px;
+  background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
 }
 .service2-card-item__icon img {
-  width: 65px;
-  height: 65px;
-  aspect-ratio: 1/1;
-}
-.service2-card-item__numb {
-  color: var(--900, #010003);
-  font-family: Marcellus;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px; /* 125% */
-  max-width: 100px;
+  width: 78.252px;
+  height: 90px;
+  flex-shrink: 0;
+  aspect-ratio: 78.25/90;
 }
 .service2-card-item__title {
-  color: var(--900, #010003);
-  font-family: Marcellus;
-  font-size: 40px;
+  color: #000;
+  font-family: Lato;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 50px; /* 125% */
-  max-width: 260px;
+  font-weight: 900;
+  line-height: 44px;
+  letter-spacing: 0.36px;
+  max-width: 211px;
 }
 .service2-card-item__desc {
-  color: var(--900, #010003);
-  font-family: Urbanist;
-  font-size: 16px;
+  color: #000;
+  font-family: Lato;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
-  opacity: 0.8;
+  line-height: 30px;
+  letter-spacing: 0.16px;
   padding-bottom: 20px;
-}
-.service2-card-item__link {
-  color: var(--900, #010003);
-  font-family: Urbanist;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 14px; /* 87.5% */
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.service2-card-item__link i {
-  color: #B8E451;
-  font-weight: 400;
-}
-.service2-card:hover {
-  background: var(--100, #FCF9EB);
-  border: 1px solid transparent;
-  transition: all 0.4s ease-in-out;
 }
 
 .service3 {
