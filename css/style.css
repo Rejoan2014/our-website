@@ -2789,10 +2789,17 @@ img {
   margin-bottom: 20px;
 }
 .list.style1 .checklist-item__icon {
-  padding-right: 15px;
+  padding-right: 10px;
 }
 .list.style1 .checklist-item__icon i {
-  color: #1D39DF;
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 .list.style1 .checklist-item__text {
   color: var(--900, #000);
@@ -5644,6 +5651,10 @@ img {
 /*------------------------------------
 		3.1 Header Style 1
 ----------------------------------*/
+.header-pb-150 {
+  padding-bottom: 150px;
+}
+
 .header-wrap {
   margin-top: 20px;
   display: flex;
