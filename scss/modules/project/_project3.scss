@@ -49,6 +49,7 @@
             position: absolute;
             top: -4%;
             left: 4%;
+            z-index: 1;
             @include breakpoint (max-xxl){
                 display: none;
             }
@@ -57,6 +58,7 @@
             position: absolute;
             right: 0;
             bottom: -5%;
+            z-index: 1;
             @include breakpoint (max-xxl){
                 display: none;
             }
@@ -65,12 +67,15 @@
             position: absolute;
             bottom: -5%;
             left: 5%;
+            z-index: 1;
             @include breakpoint (max-xxl){
                 display: none;
             }
         }
         img {
             border-radius: 27.065px;
+            position: relative;
+            z-index: 3;
         }
     }
     &-thumb3 {
@@ -78,16 +83,18 @@
         border-radius: 27.065px;
         &__shape7 {
             position: absolute;
-            top: 10%;
-            right: 15%;
+            top: -4%;
+            left: -4%;
+            z-index: 1;
             @include breakpoint (max-xxl){
                 display: none;
             }
         }
         &__shape8 {
             position: absolute;
-            top: 0%;
-            left: -3%;
+            top: -8%;
+            left: -7%;
+            z-index: 1;
             @include breakpoint (max-xxl){
                 display: none;
             }
@@ -102,6 +109,8 @@
         }
         img {
             border-radius: 27.065px;
+            position: relative;
+            z-index: 3;
         }
     }
     &-content {
