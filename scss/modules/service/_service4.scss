@@ -6,111 +6,75 @@
     background: var(--100, #F7FAFF);
     &-card {
         position: relative;
-        display: flex;
-        align-items: center;
+        padding: 50px;
         border-radius: 5px;
         background: var(--White, #FFF);
-        &:hover {
-            border-radius: 10px;
-            background: #4D7B6B;
-            box-shadow: 0px 1px 2px 0px rgba(13, 18, 30, 0.08);
-            @include transition;
+
+        &__icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            margin-bottom: 20px;
         }
-
-        &-content {
-            padding: 40px 30px 40px 40px;
-            @include breakpoint (max-xxl){
-                padding: 30px 20px 30px 20px;
-            }
-            @include breakpoint (max-xl){
-                padding: 40px;
-            }
-
-            &__icon {
-                padding-bottom: 35px;
-                svg path {
-                    fill: $title-color;
-                }
-                &.except {
-                    svg path {
-                        fill: $white;
-                    }
-                }
-
-                @include breakpoint (max-md){
-                    padding-bottom: 20px;
-                }
-            }
-            &__title {
-                color: $title-color;
-                font-family: $body-font;
-                font-size: 22px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                padding-bottom: 16px;
-            }
-            &__desc {
-                padding-bottom: 50px;
-                p {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px; 
-                    opacity: 0.7;
-                }
-            }
-            &__link {
-                color: $title-color;
-                font-family: $body-font;
+        &__numb {
+            position: absolute;
+            top: 15%;
+            right: 9%;
+            color: #1D2027;
+            text-align: right;
+            font-family: Lato;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px; /* 110% */
+            letter-spacing: 0.36px;
+            opacity: 0.1;
+        }
+        &__title {
+            color: #1D2027;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 34px; /* 141.667% */
+            letter-spacing: 0.36px;
+            padding-bottom: 25px;
+        }
+        &__desc {
+            padding-bottom: 50px;
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 166.667% */
+            letter-spacing: 0.16px;
+            padding-bottom: 20px;
+        }
+        &__link {
+            color: #1D2027;
+            font-family: Lato;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px; /* 100% */
+            text-transform: uppercase;
+            i {
                 font-size: 16px;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 900;
                 line-height: normal;
-
-                svg {
-                    width: 12px;
-                    height: 12px;
-                }
+                background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
-        }
-        &:hover {
-            .service4 {
-                &-card {
-                    &-content {
-                        &__icon {
-                            svg path {
-                                fill: $white;
-                                stroke: $white;
-                            }
-                        }
-                        &__title {
-                            a {
-                                color: $white;
-                            }
-                        }
-                        &__desc {
-                            p {
-                                color: $white;
-                                @include transition;
 
-                            }
-                        }
-                        &__link {
-                            color: $white;
-                            @include transition; 
-
-                            svg path {
-                                stroke: $white;
-                                @include transition; 
-                            }                
-
-                        }
-                    }
-                }
-            }
         }
     }
 }
