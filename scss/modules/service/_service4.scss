@@ -2,134 +2,112 @@
 @use '../../utilities' as *;
 
 .service4 {
-    &-details {
-        @include breakpoint (xxl){
-            padding-right: 20px;
-        }
-        &__title {
-            color: var(--White, #FFF);
-            font-family: Marcellus;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 50px; 
-            padding-bottom: 15px;
-        }
-        &__desc {
-            color: var(--White, #FFF);
-            font-family: Urbanist;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 22px; 
-        }
-        &__list {
-            padding-top: 30px;
-            display: flex;
-            gap: 115px;
-            @include breakpoint(max-xxl){
-                flex-wrap: wrap;
-                gap: 60px;
-            }
-            @include breakpoint(max-xl){
-                flex-wrap: wrap;
-                gap: 20px;
-            }
-        }
-        &-card {
-            display: flex;
-            gap: 30px;
-            margin-top: 30px;
-            &-item {
-                border-radius: 5px;
-                border: 1px solid var(--White, #FFF);
-                padding: 30px;
-                &-header {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 20px;
-                    padding-bottom: 30px;
-                    &__icon {
-                        display: inline-flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 5px;
-                        background: var(--P, #B8E451);
-                        width: 82.254px;
-                        height: 80px;
-                        flex-shrink: 0;
-                        img {
-                            width: 45px;
-                            height: 45px;
-                            flex-shrink: 0;
-                            aspect-ratio: 1/1;
-                        }
-                    }
-                    &__text {
-                        color: var(--White, #FFF);
-                        font-family: Marcellus;
-                        font-size: 22px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 30px; 
-                    }
-                }
-            }
-        }
-    }
-    &-gallery{
-        background: var(--100, #FCF9EB);
+    border-radius: 20px;
+    background: var(--100, #F7FAFF);
+    &-card {
+        position: relative;
+        display: flex;
+        align-items: center;
         border-radius: 5px;
-        padding: 50px;
-        @include breakpoint (max-lg) {
-            padding-top: 25px;
-        }
-        @include breakpoint (max-md) {
-            padding: 15px;
+        background: var(--White, #FFF);
+        &:hover {
+            border-radius: 10px;
+            background: #4D7B6B;
+            box-shadow: 0px 1px 2px 0px rgba(13, 18, 30, 0.08);
+            @include transition;
         }
 
         &-content {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 45px;
-            @include breakpoint (max-lg) {
-                padding-bottom: 25px;
+            padding: 40px 30px 40px 40px;
+            @include breakpoint (max-xxl){
+                padding: 30px 20px 30px 20px;
+            }
+            @include breakpoint (max-xl){
+                padding: 40px;
+            }
+
+            &__icon {
+                padding-bottom: 35px;
+                svg path {
+                    fill: $title-color;
+                }
+                &.except {
+                    svg path {
+                        fill: $white;
+                    }
+                }
+
+                @include breakpoint (max-md){
+                    padding-bottom: 20px;
+                }
             }
             &__title {
-                color: #000;
-                font-family: Marcellus;
-                font-size: 60px;
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 22px;
                 font-style: normal;
-                font-weight: 400;
-                line-height: 75px; /* 125% */
-                @include breakpoint (max-xl) {
-                    font-size: 40px;
-                    line-height: 50px;
+                font-weight: 600;
+                line-height: normal;
+                padding-bottom: 16px;
+            }
+            &__desc {
+                padding-bottom: 50px;
+                p {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; 
+                    opacity: 0.7;
                 }
-                @include breakpoint (max-md) {
-                    font-size: 35px;
-                    line-height: 45px;
-                }
-                @include breakpoint (max-xsmall) {
-                    font-size: 24px;
+            }
+            &__link {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                svg {
+                    width: 12px;
+                    height: 12px;
                 }
             }
         }
-        &-thumb {
-            display: flex;
-            position: relative;
-            &__icon {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                transform: translate(-50%, -50%);
-                top: 50%;
-                left: 49.7%;
-                @include breakpoint (max-lg) {
-                    img {
-                        width: 60%;
+        &:hover {
+            .service4 {
+                &-card {
+                    &-content {
+                        &__icon {
+                            svg path {
+                                fill: $white;
+                                stroke: $white;
+                            }
+                        }
+                        &__title {
+                            a {
+                                color: $white;
+                            }
+                        }
+                        &__desc {
+                            p {
+                                color: $white;
+                                @include transition;
+
+                            }
+                        }
+                        &__link {
+                            color: $white;
+                            @include transition; 
+
+                            svg path {
+                                stroke: $white;
+                                @include transition; 
+                            }                
+
+                        }
                     }
                 }
             }
