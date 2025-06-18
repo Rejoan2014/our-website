@@ -3,6 +3,8 @@
 
 .faq1 {
     position: relative;
+    background: var(--White, #FFF);
+    box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
     &-content {
       text-align: center;
       &__title {

@@ -10603,6 +10603,8 @@ img {
 /* 15. FAQ */
 .faq1 {
   position: relative;
+  background: var(--White, #FFF);
+  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
 }
 .faq1-content {
   text-align: center;
@@ -11277,6 +11279,99 @@ img {
   font-weight: 400;
   line-height: 30px; /* 166.667% */
   letter-spacing: 0.16px;
+}
+
+/* 17. CTA */
+.cta1 {
+  position: relative;
+}
+.cta1-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #6A5ACD 0%, #352D67 100%);
+  padding: 106px 30px;
+}
+.cta1-banner__shape1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 1399px) {
+  .cta1-banner__shape1 {
+    display: none;
+  }
+}
+.cta1-banner__shape2 {
+  position: absolute;
+  top: 0%;
+  left: 4%;
+}
+@media (max-width: 1399px) {
+  .cta1-banner__shape2 {
+    display: none;
+  }
+}
+.cta1-banner__shape3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 1399px) {
+  .cta1-banner__shape3 {
+    display: none;
+  }
+}
+.cta1-banner__shape4 {
+  position: absolute;
+  top: 0;
+  right: 4%;
+}
+@media (max-width: 1399px) {
+  .cta1-banner__shape4 {
+    display: none;
+  }
+}
+.cta1-banner__title {
+  text-align: center;
+  max-width: 807px;
+  padding-bottom: 30px;
+}
+.cta1-banner__btn {
+  display: inline-flex;
+  height: 50px;
+  padding: 20px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--White, #FFF);
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px; /* 100% */
+  text-transform: uppercase;
+}
+.cta1-banner__btn i {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.cta1-banner__btn:hover {
+  background-color: var(--theme);
+  color: var(--white);
+  transition: all 0.4s ease-in-out;
+}
+.cta1-banner__btn:hover i {
+  transform: rotate(0deg);
+  transition: all 0.4s ease-in-out;
 }
 
 /* 17. Map */
