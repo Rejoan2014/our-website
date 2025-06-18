@@ -10,8 +10,9 @@
   
     .accordion-item {
       margin-bottom: 25px;
-      border-radius: 6px;
-      border: 1px solid rgba(31, 31, 31, 0.12);
+      border-radius: 5px;
+      border: 1px solid var(--200, #C1C1C1);
+      box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
       overflow: hidden;
   
       .accordion-header {
@@ -24,16 +25,35 @@
           border: none;
           border-radius: 0;
           box-shadow: none;
-          background: #4D7B6B;
+          background: $white;
 
-          color: $white;
-          font-family: $body-font;
-          font-size: 22px;
+          color: var(--900, #000);
+          font-family: Lato;
+          font-size: 20px;
           font-style: normal;
-          font-weight: 600;
-          line-height: 28px;
+          font-weight: 900;
+          line-height: 30px; 
+          letter-spacing: 0.36px;
 
           padding: 0 30px;
+          span {
+            display: inline-flex;
+            padding: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+            background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+            color: var(--White, #FFF);
+            text-align: center;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21.6px; 
+            margin-right: 20px;
+          }
           @include breakpoint (max-sm) {
             font-size: 18px;
           }
@@ -44,7 +64,25 @@
           &.collapsed {
             padding: 0 30px;
             background: $white;
-            color: $title-color;
+            color: $black;
+            span {
+                display: inline-flex;
+                padding: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 5px;
+                background: var(--100, #F3F5FA);
+                color: var(--900, #000);
+                text-align: center;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 21.6px; 
+                margin-right: 20px;
+            }
           }
   
           &:after {
@@ -67,15 +105,16 @@
         border: none;
   
         .accordion-body {
-          padding: 20px 30px 23px;
-          background-color: $theme-color;
-          box-shadow: 0px 1px 2px 0px rgba(13, 18, 30, 0.08);
-          color: $white;
-          font-family: $body-font;
-          font-size: 16px;
+          padding: 0px 78px 23px 90px;
+          background-color: $white;
+          color: var(--800, #6B7280);
+          text-align: start;
+          font-family: Lato;
+          font-size: 18px;
           font-style: normal;
           font-weight: 400;
-          line-height: 26px;
+          line-height: 30px;
+          letter-spacing: 0.16px;
   
           @include breakpoint(max-xxl) {
             padding-right: 50px;
