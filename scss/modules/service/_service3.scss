@@ -3,61 +3,81 @@
 
 .service3 {
     position: relative;;
-    background: var(--White, #FFF);
-    &-thumb {
-        position: relative;
-        &__one {
-            position: relative;
-  
-        }
-        &__icon {
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 9; 
-            padding: 54px;
-            border-radius: 5px;
-            border: 1px solid var(--P, #B8E451);
-            background: var(--P, #B8E451);
-        }       
-
-    }
     &-content {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid $theme-color;
-        padding-bottom: 30px;
-        margin-bottom: 30px;
-        @include breakpoint (max-lg){
-            flex-direction: column;
-            gap: 30px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding: 57px 60px;
+        @include breakpoint (xxl){
+            margin-left: 30px;
         }
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #C1C1C1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &__icon {
+            flex-shrink: 0; 
+            margin-right: 84px;
+        }
+
         &__title {
-            color: var(--900, #010003);
-            font-family: Marcellus;
-            font-size: 40px;
+            flex: 1; 
+            text-align: left; 
+            margin: 0; 
+
+            color: var(--900, #000);
+            font-family: Lato;
+            font-size: 30px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 50px; 
-            @include breakpoint (max-xl){
-                font-size: 32px;
-                line-height: 40px;
-            }
-            @include breakpoint (max-md){
+            font-weight: 900;
+            line-height: 44px; 
+            letter-spacing: 0.36px;
+            @include breakpoint(max-xsmall){
                 font-size: 24px;
                 line-height: 30px;
             }
+            @include breakpoint(max-xxsmall){
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
         &__link {
-            color: var(--900, #010003);
-            font-family: Urbanist;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 14px; 
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            flex-shrink: 0; 
+            margin-right: 20px;
+
+            display: flex;
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 40px;
+            background: var(--White, #FFF);
+            img {
+                width: 53.333px;
+                height: 53.333px;
+                flex-shrink: 0;
+                aspect-ratio: 53.33/53.33;
+            }
+        }
+        &:hover {
+            border: 1px solid rgba(193, 193, 193, 0.30);
+            background: var(--White, #FFF);
+            box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+            &::before {
+                background: none;
+            }
         }
     }
 }
