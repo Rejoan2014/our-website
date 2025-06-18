@@ -7734,6 +7734,12 @@ img {
   bottom: 0;
   left: 0;
 }
+.service3-content__thumb {
+  position: absolute;
+  right: 25%;
+  opacity: 0;
+  visibility: hidden;
+}
 .service3-content__icon {
   flex-shrink: 0;
   margin-right: 84px;
@@ -7774,7 +7780,7 @@ img {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: var(--White, #FFF);
+  background: var(--100, #F7FAFF);
 }
 .service3-content__link img {
   width: 53.333px;
@@ -7789,6 +7795,11 @@ img {
 }
 .service3-content:hover::before {
   background: none;
+}
+.service3-content:hover .service3-content__thumb {
+  opacity: 1;
+  visibility: visible;
+  z-index: 3;
 }
 
 @media (min-width: 1400px) {

@@ -24,6 +24,12 @@
             bottom: 0;
             left: 0;
         }
+        &__thumb {
+            position: absolute;
+            right: 25%;
+            opacity: 0;
+            visibility: hidden;
+        }
         &__icon {
             flex-shrink: 0; 
             margin-right: 84px;
@@ -63,7 +69,7 @@
             gap: 10px;
             flex-shrink: 0;
             border-radius: 40px;
-            background: var(--White, #FFF);
+            background: var(--100, #F7FAFF);
             img {
                 width: 53.333px;
                 height: 53.333px;
@@ -77,6 +83,15 @@
             box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
             &::before {
                 background: none;
+            }
+            .service3 {
+                &-content {
+                    &__thumb {
+                        opacity: 1;
+                        visibility: visible;
+                        z-index: 3;
+                    }
+                }
             }
         }
     }
