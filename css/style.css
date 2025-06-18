@@ -3042,11 +3042,24 @@ img {
   position: absolute;
   text-align: center;
   top: 50%;
-  left: 50%;
+  right: -8%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 991px) {
   .video1-icon img {
+    width: 70%;
+  }
+}
+
+.video2-icon {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 991px) {
+  .video2-icon img {
     width: 70%;
   }
 }
@@ -10916,6 +10929,89 @@ img {
   .resume1-info-form-wrap__button i {
     display: none;
   }
+}
+
+/* 16. UI Feature */
+.uiux {
+  position: relative;
+}
+@media (min-width: 1400px) {
+  .uiux-content {
+    padding-left: 109px;
+  }
+}
+.uiux-content__title {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px; /* 110% */
+  letter-spacing: 0.36px;
+  padding-bottom: 20px;
+}
+.uiux-content__desc {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
+  padding-bottom: 20px;
+}
+.uiux-thumb {
+  position: relative;
+}
+.uiux-thumb__img {
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 1199px) {
+  .uiux-thumb__img {
+    text-align: center;
+  }
+}
+.uiux-thumb-badge {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  left: -7%;
+  bottom: -13%;
+  border-radius: 10px;
+  background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
+  padding: 30px 40px;
+}
+@media (max-width: 1199px) {
+  .uiux-thumb-badge {
+    right: 30px;
+    width: fit-content;
+  }
+}
+.uiux-thumb-badge__icon {
+  padding-right: 10px;
+}
+.uiux-thumb-badge__text h4 {
+  color: var(--White, #FFF);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+  padding-bottom: 20px;
+}
+.uiux-thumb-badge__text p {
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.16px;
+  max-width: 325px;
 }
 
 /* 17. Appointment */

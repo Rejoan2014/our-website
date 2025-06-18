@@ -3013,11 +3013,24 @@ img {
   position: absolute;
   text-align: center;
   top: 50%;
-  left: 50%;
+  right: -8%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 991px) {
   .video1-icon img {
+    width: 70%;
+  }
+}
+
+.video2-icon {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 991px) {
+  .video2-icon img {
     width: 70%;
   }
 }

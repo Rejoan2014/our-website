@@ -1,0 +1,84 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.uiux {
+    position: relative;
+    &-content {
+        @include breakpoint (xxl){
+            padding-left: 109px;
+        }
+        &__title {
+            color: var(--900, #000);
+            font-family: Lato;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px; /* 110% */
+            letter-spacing: 0.36px;
+            padding-bottom: 20px;
+        }
+        &__desc {
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 166.667% */
+            letter-spacing: 0.16px;
+            padding-bottom: 20px;
+        }
+    }
+    &-thumb {
+        position: relative;
+        &__img {
+            position: relative;
+            z-index: 5;
+            @include breakpoint (max-xl){
+                text-align: center;
+            }
+        }
+        &-badge {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: absolute;
+            left: -7%;
+            bottom: -13%;
+            border-radius: 10px;
+            background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
+            padding: 30px 40px;
+            @include breakpoint (max-xl){
+                right: 30px;
+                width: fit-content;
+            }
+            &__icon {
+                padding-right: 10px;
+            }
+
+            &__text {
+                h4 {
+                    color: var(--White, #FFF);
+                    font-family: Lato;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 30px; /* 150% */
+                    letter-spacing: 0.36px;
+                    padding-bottom: 20px;
+                }
+                p {
+                    color: var(--White, #FFF);
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 171.429% */
+                    letter-spacing: 0.16px;
+                    max-width: 325px;
+                }
+            }
+
+        }
+    }
+}
