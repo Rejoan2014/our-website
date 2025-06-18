@@ -1,7 +1,6 @@
 @use '../../root' as *;
 @use '../../utilities' as *;
 
-
 /*----------------------------------------------
     # Faq style here
 ----------------------------------------------*/
@@ -23,54 +22,42 @@
           justify-content: space-between;
   
           border: none;
-          border-radius: 5px;
-          background: var(--700, #131215);
-          box-shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
+          border-radius: 0;
+          box-shadow: none;
+          background: #4D7B6B;
 
-          color: var(--White, #FFF);
-          font-family: Marcellus;
+          color: $white;
+          font-family: $body-font;
           font-size: 22px;
           font-style: normal;
-          font-weight: 400;
-          line-height: 30px; 
+          font-weight: 600;
+          line-height: 28px;
 
           padding: 0 30px;
-          padding: 0 30px 0 70px;
           @include breakpoint (max-sm) {
             font-size: 18px;
           }
           @include breakpoint (max-xsmall) {
             font-size: 16px;
-            padding: 50px 30px 50px 70px;
           }
   
           &.collapsed {
             padding: 0 30px;
-            padding: 0 30px 0 70px;
-            border-radius: 5px;
-            background: var(--700, #131215);
-            box-shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
-            color: $white;
-            @include breakpoint (max-xsmall){
-              padding: 50px 20px 50px 70px;
-            }
+            background: $white;
+            color: $title-color;
           }
   
           &:after {
             font-weight: 500;
             transition: all 0.3s ease-in-out !important;
-            background-image: url(../images/icon-test/faq1.svg);
+            background-image: url(../images/icon/faq-plus.svg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 30px 30px;
-            width: 35px;
-            height: 35px;
-            position: absolute;
-            left: 18px;
+            background-size: 18px 18px;
           }
   
           &:not(.collapsed):after {
-            background-image: url(../images/icon-test/faq2.svg);
+            background-image: url(../images/icon/faq-minus.svg);
             transform: rotate(0deg);
           }
         }
@@ -81,10 +68,8 @@
   
         .accordion-body {
           padding: 20px 30px 23px;
-          padding: 20px 30px 23px 70px;
-          border-radius: 5px;
-          background: var(--700, #131215);
-          box-shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
+          background-color: $theme-color;
+          box-shadow: 0px 1px 2px 0px rgba(13, 18, 30, 0.08);
           color: $white;
           font-family: $body-font;
           font-size: 16px;
