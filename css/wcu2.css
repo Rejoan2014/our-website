@@ -3013,8 +3013,9 @@ img {
   position: absolute;
   text-align: center;
   top: 50%;
-  right: -8%;
+  right: -20%;
   transform: translate(-50%, -50%);
+  z-index: 7;
 }
 @media (max-width: 991px) {
   .video1-icon img {

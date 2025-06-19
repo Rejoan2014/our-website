@@ -30,12 +30,34 @@
     }
     &-thumb {
         position: relative;
-        &__img {
+        &__one {
+            padding-left: 54px;
             position: relative;
             z-index: 5;
-            @include breakpoint (max-xl){
-                text-align: center;
-            }
+        }
+        &__two {
+            position: relative;
+            z-index: 3;
+        }
+        &__shape1 {
+            position: absolute;
+            bottom: -55px;
+            left: 0;
+            border-radius: 26.981px;
+            background: var(--100, #F7FAFF);
+            width: 559px;
+            height: 618px;
+            flex-shrink: 0;
+        }
+        &__shape2 {
+            position: absolute;
+            bottom: -61px;
+            left: -54px;
+            border-radius: 26.981px;
+            background: var(--100, #F7FAFF);
+            width: 559px;
+            height: 623px;
+            flex-shrink: 0;
         }
         &-badge {
             display: flex;
@@ -44,6 +66,7 @@
             position: absolute;
             left: -7%;
             bottom: -13%;
+            z-index: 5;
             border-radius: 10px;
             background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
             padding: 30px 40px;
