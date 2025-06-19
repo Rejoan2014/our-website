@@ -8,50 +8,242 @@
 
 .footer1 {
   position: relative;
-  &-shape {
-    position: absolute;
-    z-index: 5;
-    @include breakpoint (max-xl2){
-      display: none;
-    }
-  }
+  background: var(--100, #F7FAFF);
   &-wrapper {   
-    display: flex;
-    justify-content: space-between;
-    position: relative;   
-    z-index: 9; 
-
-    &-service {
+    position: relative;
+    z-index: 9;
+    &-logoInfo {
       padding-bottom: 70px;
-      padding-top: 32px;
-      @include breakpoint (xxl){
-        border-right: 1px solid rgb(69, 69, 72);
-        margin-right: 47px;
-      }
+      padding-top: 75px;
       @include breakpoint (max-lg){
         padding-bottom: 25px;
       }
-      &__title {
-        color: #FFF;
+      &__logo {
+        padding-bottom: 24px;
+      }
+      &__desc {
+        color: var(--White, #FFF);
         font-family: $body-font;
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 30px; /* 150% */
+        font-weight: 400;
+        line-height: 26px; 
+        padding-bottom: 22px;
+        @include breakpoint (xl){
+          padding-right: 60px;
+        }
+      }
+    }
+
+    &-company {
+      padding-bottom: 70px;
+      padding-top: 75px;
+      @include breakpoint (max-lg){
+        padding-bottom: 25px;
+      }
+      @include breakpoint (max-md){
+        padding-bottom: 5px;
+        padding-top: 7px;
+      }
+      &__title {
+        color: var(--900, #000);
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 34px; 
+        letter-spacing: 0.36px;
         padding-bottom: 27px;
       }
       &-list {
         &__item {    
           &:not(:last-child) {
-            padding-bottom: 10px;
+            padding-bottom: 20px;
           }
           a {
-            color: $white;
-            font-family: $body-font;
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.16px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+
+    &-service {
+      padding-bottom: 70px;
+      padding-top: 75px;
+      @include breakpoint (max-lg){
+        padding-bottom: 25px;
+      }
+      @include breakpoint (max-md){
+        padding-bottom: 5px;
+        padding-top: 7px;
+      }
+      &__title {
+        color: var(--900, #000);
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 34px; 
+        letter-spacing: 0.36px;
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 20px;
+          }
+          a {
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.16px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    &-solution {
+      padding-bottom: 70px;
+      padding-top: 75px;
+      @include breakpoint (max-lg){
+        padding-bottom: 25px;
+      }
+      @include breakpoint (max-md){
+        padding-bottom: 5px;
+        padding-top: 7px;
+      }
+      &__title {
+        color: var(--900, #000);
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 34px; 
+        letter-spacing: 0.36px;
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 20px;
+          }
+          a {
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.16px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    &-product {
+      padding-bottom: 70px;
+      padding-top: 75px;
+      @include breakpoint (max-lg){
+        padding-bottom: 25px;
+      }
+      @include breakpoint (max-md){
+        padding-bottom: 5px;
+        padding-top: 7px;
+      }
+      &__title {
+        color: var(--900, #000);
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 34px; 
+        letter-spacing: 0.36px;
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 20px;
+          }
+          a {
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.16px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+
+    &-about {
+      padding-bottom: 70px;
+      padding-top: 75px;
+      @include breakpoint (xxl){
+        padding-left: 65px;
+      }
+      @include breakpoint (max-lg){
+        padding-bottom: 25px;
+      }
+      @include breakpoint (max-md){
+        padding-bottom: 5px;
+        padding-top: 7px;
+      }
+      &__title {
+        color: var(--White, #FFF);
+        font-family: Marcellus;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 136.364% */
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 20px;
+          }
+          a {
+            color: var(--White, #FFF);
+            font-family: Urbanist;
             font-size: 16px;
             font-style: normal;
-            font-weight: 600;
-            line-height: 26px;
+            font-weight: 400;
+            line-height: 26px; 
+            opacity: 0.9;
             &:hover {
               color: $theme-color;
             }
@@ -64,11 +256,7 @@
     }
     &-link {
       padding-bottom: 70px;
-      padding-top: 32px;
-      @include breakpoint (xxl){
-        border-right: 1px solid rgb(69, 69, 72);
-        margin-right: 24px;
-      }
+      padding-top: 75px;
       @include breakpoint (max-lg){
         padding-bottom: 25px;
       }
@@ -104,13 +292,76 @@
       }
     }    
     &-contact {
+      padding-bottom: 50px;
+      padding-top: 20px;
+      @include breakpoint (max-md){
+        padding-bottom: 0px;
+        padding-top: 7px;
+      }
+      &__title {
+        color: #FFF;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 150% */
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 40px;
+          }
+          a {
+            display: flex !important;
+            align-items: center !important;
+            color: var(--900, #000);
+            font-family: Outfit;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28.05px;
+            &:hover {
+              color: $theme-color;
+            }
+
+            img {
+              padding-right: 10px;
+            }
+            .icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 999px;
+              border: 1px solid var(--P, #B8E451);
+              background: var(--P, #B8E451);
+              width: 65px;
+              height: 65px;
+              flex-shrink: 0;
+              i {
+                color: var(--900, #010003);
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+              }
+            }
+            .text span:first-child {
+              color: var(--800, #6B7280);
+              font-family: "DM Sans";
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 28.05px; /* 165% */
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+    &-posts {
       padding-bottom: 100px;
       padding-top: 32px;
-      @include breakpoint (xxl){
-        border-right: 1px solid rgb(69, 69, 72);
-        margin-right: 65px;
-        padding-left: 30px;
-      }
       @include breakpoint (max-md){
         padding-bottom: 25px;
       }
@@ -124,172 +375,96 @@
         padding-bottom: 27px;
       }
       &-list {
-        &__item {    
+        &__item {   
+          display: flex;
+          align-items: center;
+          gap: 14px; 
           &:not(:last-child) {
-            padding-bottom: 10px;
+            padding-bottom: 32px;
           }
-          a {
-            display: flex !important;
-            align-items: center !important;
-            color: $white;
+          .icon {
+            flex: none;
+          }
+          &__desc {
+            display: flex;
+            flex-direction: column;
+            color: var(--White-Color-01, #FFF);
             font-family: $body-font;
             font-size: 16px;
             font-style: normal;
-            font-weight: 600;
-            line-height: 26px;
-            &:hover {
-              color: $theme-color;
-            }
-
-            img {
-              padding-right: 10px;
-            }
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
           }
         }
       }
     }
-    &-schedule {
-      padding-top: 32px;
-      @include breakpoint (max-md){
-        padding-bottom: 50px;
-      }
-      &__title {
-        color: #FFF;
-        font-family: $body-font;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 30px; /* 150% */
-        padding-bottom: 27px;
-      }
-      &-list {
-        &__item {    
-          color: $white;
-          font-family: $body-font;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 26px; /* 162.5% */
-          &:not(:last-child) {
-            padding-bottom: 10px;
-          }
-          &--week {
-            padding-right: 58px;
-            &.fix-pr {
-              padding-right: 40px;
-            }
-            &.fix-pr2 {
-              padding-right: 68px;
-            }
-          }
-        }
-      }
-    }
-    &-subscribe {
-      border-radius: 10px;
-      padding-top: 30px;
-      &-form {
-        position: relative;
-        &__input {
-          border-radius: 999px;
-          background: rgb(25, 25, 25); 
-          width: 300px;
-          height: 58px;
-          padding: 15px 30px;
-          border: none;
-          outline: none;
-          box-sizing: border-box;
-
-          color: var(--White, #FFF);
-          font-feature-settings: 'liga' off, 'clig' off;
-          font-family: Rajdhani;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 26.1px; 
-          @include breakpoint (max-xxl){
-            width: 100%;
-          }
-        }
-        &__button {
-          position: absolute;
-          right: 115px;
-          top: 2px;
-          @include breakpoint (max-xxl){
-            right: 0;
-          }
-          img {
-            border-radius: 999px;
-            background: var(--Secondary, #C11425);
-            padding: 22px;
-          }
-          :hover {
-            background: $black;
-            border: 1px solid $white;
-          }
-        }
-      }
-    }    
   }
 
   &-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgb(69, 69, 72);
-    padding-top: 21px;
-    @include breakpoint (lg){
-      flex-direction: row;
-      gap: 10px;
-    }
+    background: $theme-color;
+    position: relative;
+    z-index: 9;
 
-    p {
-      color: $white;
-      font-family: $body-font;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 26px; /* 162.5% */
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      @include breakpoint (lg){
+        flex-direction: row;
+        gap: 10px;
+      }
       @include breakpoint (max-xs){
-        font-size: 14px;
+        padding: 10px;
       }
-      @include breakpoint (max-xxsmall){
-        font-size: 12px;
-      }
-
-      span {
-        color: $theme-color;
-      }
-    }
-
-    &__links {
-      a {
+  
+      p {
         color: $white;
         font-family: $body-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 26px; /* 162.5% */
-
-        &:not(:last-child) {
-          padding-right: 20px;
-        }
         @include breakpoint (max-xs){
           font-size: 14px;
         }
         @include breakpoint (max-xxsmall){
           font-size: 12px;
         }
-
-        &:hover {
-          color: $white;
+  
+        span {
+          color: $yellow;
         }
-
+      }
+  
+      &__links {
+        a {
+          color: $white;
+          font-family: $body-font;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px; /* 162.5% */
+  
+          &:not(:last-child) {
+            padding-right: 20px;
+          }
+          @include breakpoint (max-xs){
+            font-size: 14px;
+          }
+          @include breakpoint (max-xxsmall){
+            font-size: 12px;
+          }
+  
+          &:hover {
+            color: white;
+          }
+  
+        }
       }
     }
+    }
   }
-}
-
   
 
