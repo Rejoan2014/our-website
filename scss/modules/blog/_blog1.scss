@@ -3,131 +3,127 @@
 
 .blog1 {
     &-card {
-        border-radius: 5.682px;
-        background: var(--White, #FFF);
-        box-shadow: 0px 0px 68.182px 0px rgba(0, 0, 0, 0.05);
-        &-thumb {
-            position: relative;
-            border-radius: 11.364px 11.364px 0px 0px;
+        border-radius: 10px;
+        background: $theme-color;
+        margin-bottom: 40px;
+        &__thumb {
+            border-radius: 20px;
             img {
-                width: 100%;
-                border-radius: 11.364px 11.364px 0px 0px;
-            }
-            &__badge {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                padding: 10px 20px;
-                border-radius: 0px 10px 0px 0px;
-                background: var(--P3, #6A5ACD);
-                color: var(--White, #FFF);
-                font-family: Lato;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 900;
-                line-height: 30px; 
-                img {
-                    padding-right: 5px;
-                    width: 30px;
-                    height: 30px;
-                    aspect-ratio: 1/1;
-                }
+                border-radius: 20px;
             }
         }
         &-content {
-            padding: 32px 40px 40px;
-            @include breakpoint (max-md){
-                padding: 30px 20px 20px;
+            padding: 0 40px 40px;
+            @include breakpoint (max-md) {
+                padding: 30px;
             }
             &-meta {
                 display: flex;
-                justify-content: space-between;
-                padding-bottom: 30px;
-                &__category {
-                    color: var(--900, #000);
-                    font-family: Inter;
-                    font-size: 15.909px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 22.727px; 
+                align-items: center;
+                gap: 18px;
+                padding-top: 30px;
+                padding-bottom: 11px;
+                color: rgba(31, 31, 31, 0.60);
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+                @include breakpoint (max-xxl) {
+                    gap: 15px;
                 }
-                &__sales {
-                    color: var(--800, #6B7280);
-                    font-family: Inter;
-                    font-size: 15.909px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 22.727px; 
+                @include breakpoint (max-md) {
+                    gap: 10px;
+                    padding-top: 0px;
+                }
+                @include breakpoint (max-sm) {
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                }
+                img {
+                    padding-right: 6px;
+                }
+                &__user {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                    @include breakpoint (max-xl) {
+                        display: none;
+                    }
+                }
+                &__care {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                }
+                &__calendar {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                }
+                &__comment {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
                 }
             }
             &__title{
-                color: var(--900, #000);
-                font-family: Lato;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 900;
-                line-height: 30px; /* 150% */
-                letter-spacing: 0.36px;
                 padding-bottom: 15px;
-                max-width: 380px;
+                h5 {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 38px; /* 126.667% */
+                    @include breakpoint (max-sm){
+                        font-size: 28px;
+                    }
+                }
             }
-            &__author {
-                color: var(--800, #6B7280);
-                font-family: Inter;
-                font-size: 18.182px;
+            &__desc {
+                padding-right: 5px;    
+                p {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    opacity: 0.7;
+                }            
+            }
+        }
+        &__quote {
+            margin-bottom: 40px;
+            text-align: center;
+            padding: 50px 50px;
+            border-radius: 10px;
+            background: #EBF3ED;
+            @include breakpoint (max-xs){
+                padding: 25px 28px 50px;
+            }
+            img {
+                padding-bottom: 21px;
+            }
+            p {
+                color: #1F1F1F;
+                text-align: center;
+                font-family: Roboto;
+                font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 30.909px; 
-                padding-bottom: 35px;
+                line-height: 28px; 
+                padding-bottom: 32px;
+                opacity: 0.7;
             }
-            &-footer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                &-btn {
-                    display: flex;
-                    gap: 24px;
-                    &__demo {
-                        display: inline-flex;
-                        height: 45px;
-                        padding: 0px 20.455px;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        flex-shrink: 0;
-                        border-radius: 5px;
-                        border: 1.136px solid var(--P3, #6A5ACD);
-                        color: var(--P3, #6A5ACD);
-                        font-family: Lato;
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 900;
-                        line-height: 30px; /* 150% */
-                        letter-spacing: 0.36px;
-                        cursor: pointer;
-                    }
-                    &__cart {
-                        cursor: pointer;
-                    }
-                }
-                &__price {
-                    color: var(--800, #6B7280);
-                    font-family: Lato;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 900;
-                    line-height: 30px; 
-                    letter-spacing: 0.36px;
-                    span {
-                        color: var(--900, #000);
-                        font-family: Lato;
-                        font-size: 24px;
-                        font-style: normal;
-                        font-weight: 900;
-                        line-height: 34px; /* 141.667% */
-                        letter-spacing: 0.36px;
-                    }
-                }
+            h4 {
+                color: #1F1F1F;
+                font-family: Roboto;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34px; 
             }
         }
     }
