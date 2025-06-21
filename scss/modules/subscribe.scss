@@ -1,0 +1,78 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.subscribe {
+    &-info {
+        position: relative;
+        display: flex;
+        gap: 80px;
+        padding: 90px 100px;
+        border-radius: 20px;
+        background: linear-gradient(90deg, #9708CC -82.71%, #43CBFF 144.38%);
+        max-width: 1290px;
+        @include breakpoint (max-xxxl) {
+            padding: 90px 70px;
+            gap: 30px;
+        }
+        @include breakpoint (max-xxl) {
+            padding: 65px 45px;
+        }
+        @include breakpoint (max-xl) {
+            flex-direction: column;
+        }
+        &__shape1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @include breakpoint (max-xxl){
+                display: none;
+            }
+        }
+        &__shape2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0.5;
+            @include breakpoint (max-xxl){
+                display: none;
+            }
+        }
+        &__shape3 {
+            position: absolute;
+            top: -64%;
+            right: 3%;
+            @include breakpoint (max-xxl){
+                display: none;
+            }
+        }
+        &__title {
+            color: var(--White, #FFF);
+            font-family: Lato;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px; 
+            letter-spacing: 0.36px;
+            @include breakpoint (max-xxl) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @include breakpoint (max-xxsmall) {
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+        &-form {
+            display: flex;
+            align-items: center;
+            &-wrap {
+                display: flex;
+                gap: 20px;
+                @include breakpoint (max-md) {
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            }
+        }
+    }
+}
