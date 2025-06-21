@@ -20,11 +20,17 @@
         @include breakpoint (max-xl) {
             flex-direction: column;
         }
+        @include breakpoint (max-xs) {
+            padding: 40px 45px;
+        }
+        @include breakpoint (max-xsmall) {
+            padding: 30px;
+        }
         &__shape1 {
             position: absolute;
             bottom: 0;
             left: 0;
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
@@ -33,7 +39,7 @@
             bottom: 0;
             right: 0;
             opacity: 0.5;
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
@@ -42,6 +48,14 @@
             top: -64%;
             right: 3%;
             @include breakpoint (max-xxl){
+                top: -53%;
+                right: 0%;
+                text-align: center;
+                img {
+                    width: 65%;
+                }
+            }
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
@@ -68,9 +82,14 @@
             &-wrap {
                 display: flex;
                 gap: 20px;
-                @include breakpoint (max-md) {
+                @include breakpoint (max-xs) {
                     flex-direction: column;
                     gap: 15px;
+                    .submit-btn {
+                        &.style1 {
+                            width: 100%;
+                        }
+                    } 
                 }
             }
         }
