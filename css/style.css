@@ -5147,29 +5147,23 @@ img {
 .page-nav-wrap ul {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 .page-nav-wrap ul li .page-numbers {
   display: flex;
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  color: var(--White, #FFF);
-  text-align: center;
-  font-family: Urbanist;
-  font-size: 16px;
+  border-radius: 999px;
+  border: 1px solid var(--200, #C1C1C1);
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
-  border-radius: 5px;
-  background: var(--black);
-  border: 1px solid rgb(52, 51, 53);
-}
-.page-nav-wrap ul li .page-numbers.current {
-  background: var(--theme);
-  color: var(--white);
+  line-height: 30px;
+  letter-spacing: 0.16px;
 }
 @media (max-width: 767px) {
   .page-nav-wrap ul li .page-numbers {
@@ -5187,8 +5181,8 @@ img {
   line-height: 28px; /* 175% */
 }
 .page-nav-wrap ul li .page-numbers:hover {
-  background: var(--theme);
   color: var(--white);
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
 }
 .page-nav-wrap ul li .page-numbers:hover i {
   color: var(--white);
