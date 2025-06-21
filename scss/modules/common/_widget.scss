@@ -7,16 +7,6 @@
     padding: 40px 40px;
     border-radius: 5px;
     background: var(--100, #F7FAFF);
-    // &--except {
-    //   border-radius: 5px;
-    //   border: 1px solid var(--White, #FFF);
-    //   background: var(--White, #FFF);
-    //   &__title {
-    //     h6 {
-    //       color: var(--900, #010003) !important;
-    //     }
-    //   }
-    // }
 
     &:not(:last-child) {
       margin-bottom: 60px;
@@ -266,22 +256,23 @@
         li {
           a {
             display: inline-flex;
-            padding: 8px 18px;
+            height: 40px;
+            padding: 9px 14px;
             justify-content: center;
             align-items: center;
             gap: 10px;
+            flex-shrink: 0;
             border-radius: 5px;
-            background: var(--700, #131215);
+            background: var(--700, #1F2125);
             color: var(--White, #FFF);
-            font-family: Urbanist;
-            font-size: 16px;
+            font-family: Lato;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: 22px; /* 137.5% */
+            line-height: 30px; 
+            letter-spacing: 0.16px;
             &:hover {
-              color: $black;
               background: $theme-color;
-
             } 
           }
         }
