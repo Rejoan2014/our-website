@@ -2852,6 +2852,40 @@ img {
   line-height: 22px; /* 137.5% */
   padding-left: 25px;
 }
+.list.style2 {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (max-width: 1399px) {
+  .list.style2 {
+    gap: 20px;
+  }
+}
+.list.style2 .checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+.list.style2 .checklist-item__text {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
+}
+.list.style2 .checklist-item__text--bold {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+}
 
 .map-section {
   height: 100%;
@@ -9281,8 +9315,8 @@ img {
 .blog2-card-content__quote {
   text-align: center;
   padding: 50px 50px;
-  border-radius: 10px;
-  background: #EBF3ED;
+  border-radius: 20px;
+  background: var(--100, #F7FAFF);
 }
 @media (max-width: 499px) {
   .blog2-card-content__quote {
@@ -9293,23 +9327,24 @@ img {
   padding-bottom: 21px;
 }
 .blog2-card-content__quote p {
-  color: #1F1F1F;
+  color: var(--800, #6B7280);
   text-align: center;
-  font-family: Roboto;
+  font-family: Lato;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
-  padding-bottom: 32px;
-  opacity: 0.7;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
+  padding-bottom: 20px;
 }
 .blog2-card-content__quote h4 {
-  color: #1F1F1F;
-  font-family: Roboto;
-  font-size: 24px;
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 34px;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
 }
 .blog2-card-content-profile {
   margin-top: 40px;
@@ -9416,16 +9451,6 @@ img {
 }
 .blog2-card-content-thumb img {
   border-radius: 20px;
-}
-.blog2-card-content-list {
-  display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-@media (max-width: 1399px) {
-  .blog2-card-content-list {
-    gap: 20px;
-  }
 }
 .blog2-card-content-tagShare {
   display: flex;

@@ -2823,6 +2823,40 @@ img {
   line-height: 22px; /* 137.5% */
   padding-left: 25px;
 }
+.list.style2 {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (max-width: 1399px) {
+  .list.style2 {
+    gap: 20px;
+  }
+}
+.list.style2 .checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+.list.style2 .checklist-item__text {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
+}
+.list.style2 .checklist-item__text--bold {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+}
 
 .map-section {
   height: 100%;

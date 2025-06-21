@@ -99,8 +99,8 @@
             &__quote {
                 text-align: center;
                 padding: 50px 50px;
-                border-radius: 10px;
-                background: #EBF3ED;
+                border-radius: 20px;
+                background: var(--100, #F7FAFF);
                 @include breakpoint (max-xs){
                     padding: 6px 28px 50px;
                 }
@@ -108,23 +108,24 @@
                     padding-bottom: 21px;
                 }
                 p {
-                    color: #1F1F1F;
+                    color: var(--800, #6B7280);
                     text-align: center;
-                    font-family: Roboto;
+                    font-family: Lato;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 28px; 
-                    padding-bottom: 32px;
-                    opacity: 0.7;
+                    line-height: 30px; /* 166.667% */
+                    letter-spacing: 0.16px;
+                    padding-bottom: 20px;
                 }
                 h4 {
-                    color: #1F1F1F;
-                    font-family: Roboto;
-                    font-size: 24px;
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 20px;
                     font-style: normal;
-                    font-weight: 500;
-                    line-height: 34px; 
+                    font-weight: 900;
+                    line-height: 30px; /* 150% */
+                    letter-spacing: 0.36px;
                 }
             }
             &-profile {
@@ -232,14 +233,6 @@
 
                 img {
                     border-radius: 20px;
-                }
-            }
-            &-list {
-                display: flex;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                @include breakpoint (max-xxl){
-                    gap: 20px;
                 }
             }
             &-tagShare {

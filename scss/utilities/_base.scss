@@ -174,7 +174,44 @@ img {
         } 
       }
     }
+
+    &.style2 {
+      display: flex;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @include breakpoint (max-xxl){
+          gap: 20px;
+      }
+      .checklist {
+        &-item {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          padding-bottom: 10px;
+          &__text {
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 166.667% */
+            letter-spacing: 0.16px;
+              &--bold {
+                color: var(--900, #000);
+                font-family: Lato;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 30px; /* 150% */
+                letter-spacing: 0.36px;
+              }
+          }
+        }
+      }
+    }
   }
+
+
   
   // Map Section
   .map-section {
