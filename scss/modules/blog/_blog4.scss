@@ -3,12 +3,15 @@
 
 .blog4 {
     &-card {
+        background: $white;
         margin-bottom: 40px;
+        @include breakpoint (max-sm){
+            margin-bottom: 15px;
+        }
         &__thumb {
-            border-radius: 5px;
+            border-radius: 20px;
             img {
-                border-radius: 5px;
-                width: 100%;
+                border-radius: 20px;
             }
         }
         &-content {
@@ -16,15 +19,14 @@
                 display: flex;
                 align-items: center;
                 gap: 18px;
-                padding-top: 30px;
-                padding-bottom: 11px;
-                color: var(--White, #FFF);
-                text-align: center;
-                font-family: Urbanist;
-                font-size: 16px;
+                padding-top: 35px;
+                padding-bottom: 6px;
+                color: $gray2;
+                font-family: $body-font;
+                font-size: 14px;
                 font-style: normal;
-                font-weight: 400;
-                line-height: 22px; 
+                font-weight: 700;
+                line-height: 24px; 
                 @include breakpoint (max-xs) {
                     flex-wrap: wrap;
                     row-gap: 10px;
@@ -33,17 +35,6 @@
                     padding-right: 6px;
                 }
                 &__user {
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    color: var(--White, #FFF);
-                    font-family: Marcellus;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 30px; /* 136.364% */
-                }
-                &__tag {
                     display: flex;
                     align-items: center;
                     gap: 7px;
@@ -67,12 +58,12 @@
             &__title{
                 padding-bottom: 15px;
                 h5 {
-                    color: var(--White, #FFF);
-                    font-family: Marcellus;
-                    font-size: 28px;
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 30px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 36px; /* 128.571% */
+                    font-weight: 700;
+                    line-height: 38px; /* 126.667% */
                     @include breakpoint (max-sm){
                         font-size: 28px;
                     }
@@ -81,41 +72,44 @@
             &__desc {
                 padding-right: 5px;    
                 p {
-                    color: var(--White, #FFF);
-                    font-family: Urbanist;
+                    color: $title-color;
+                    font-family: $body-font;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 22px; /* 137.5% */
+                    line-height: 26px;
+                    opacity: 0.7;
                 }            
             }
             &__quote {
-                margin-bottom: 40px;
+                text-align: center;
                 padding: 50px 50px;
                 border-radius: 10px;
-                background: #FCF9EB;
+                background: #EBF3ED;
                 @include breakpoint (max-xs){
-                    padding: 25px 28px 50px;
+                    padding: 6px 28px 50px;
                 }
                 img {
                     padding-bottom: 21px;
                 }
                 p {
-                    color: var(--900, #010003);
-                    font-family: Urbanist;
-                    font-size: 16px;
+                    color: #1F1F1F;
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 18px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 22px; /* 137.5% */
-                    padding-bottom: 15px;
+                    line-height: 28px; 
+                    padding-bottom: 32px;
+                    opacity: 0.7;
                 }
                 h4 {
-                    color: var(--900, #010003);
-                    font-family: Marcellus;
-                    font-size: 22px;
+                    color: #1F1F1F;
+                    font-family: Roboto;
+                    font-size: 24px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 30px; /* 136.364% */
+                    font-weight: 500;
+                    line-height: 34px; 
                 }
             }
             &-profile {
@@ -128,21 +122,79 @@
                     }
                 }
                 &__title {
-                    color: var(--White, #FFF);
-                    font-family: Marcellus;
-                    font-size: 28px;
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 24px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 36px; /* 128.571% */
+                    font-weight: 600;
+                    line-height: 34px;
                     padding-bottom: 30px;
                 }
                 &__desc {
-                    color: var(--White, #FFF);
-                    font-family: Urbanist;
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    opacity: 0.7;
+                }
+            }
+            &-profile2 {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    background: $theme-color;
+                &__thumb {
+                    border-radius: 10px;
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+                &__subtitle {
+                    display: inline-flex;
+                    padding: 6px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    border-radius: 100px;
+                    background: $theme-color;
+                    width: max-content;
+                    margin-bottom: 30px;
+                }
+                &__title {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-bottom: 30px;
+                }
+                &__desc {
+                    color: $title-color;
+                    font-family: $body-font;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 22px; /* 137.5% */
+                    line-height: 26px; 
+                    opacity: 0.7;
+                    padding-bottom: 40px;
+                }
+                &__link {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
                 }
             }
             &__title2{
@@ -171,7 +223,6 @@
                 display: flex;
                 padding-top: 30px;
                 padding-bottom: 30px;
-                gap: 30px;
                 @include breakpoint (max-xxl){
                     gap: 20px;
                 }
@@ -193,32 +244,37 @@
                     display: flex;
                     gap: 10px;
                     &__title {
-                        color: var(--White, #FFF);
-                        font-family: Marcellus;
-                        font-size: 22px;
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 24px;
                         font-style: normal;
-                        font-weight: 400;
-                        line-height: 30px;
+                        font-weight: 600;
+                        line-height: normal;
+                        @include breakpoint (max-xs){
+                            font-size: 22px;
+                        }
                     }
                     &__name {
                         a {
+                            height: 40px;
                             display: inline-flex;
-                            padding: 8px 18px;
+                            padding: 9px 14px;
                             justify-content: center;
                             align-items: center;
                             gap: 10px;
-                            border-radius: 5px;
-                            background: var(--700, #131215);
-                            color: var(--White, #FFF);
-                            font-family: Urbanist;
+                            border-radius: 4px;
+                            border: 1px solid rgba(31, 31, 31, 0.14);
+                            background: rgba(255, 255, 255, 0.00);
+                            color: rgba(31, 31, 31, 0.70);
+                            font-family: $body-font;
                             font-size: 16px;
                             font-style: normal;
-                            font-weight: 400;
-                            line-height: 22px; 
+                            font-weight: 500;
+                            line-height: normal;
                             &:hover {
-                                color: $black;
-                                background: $theme-color;
-                            } 
+                                background-color: $theme-color;
+                                color: $white;
+                            }
                         }
                     }
                 }
@@ -228,12 +284,15 @@
                     gap: 10px;
                     &__title {
                         padding-right: 5px;
-                        color: var(--White, #FFF);
-                        font-family: Marcellus;
-                        font-size: 22px;
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 24px;
                         font-style: normal;
-                        font-weight: 400;
-                        line-height: 30px; /* 136.364% */
+                        font-weight: 600;
+                        line-height: normal;
+                        @include breakpoint (max-xs){
+                            font-size: 22px;
+                        }
                     }
                 }
             }
@@ -242,12 +301,15 @@
             &__title {
                 padding-bottom: 30px;
                 h3 {
-                    color: var(--White, #FFF);
-                    font-family: Marcellus;
-                    font-size: 40px;
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 50px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 50px; /* 125% */
+                    font-weight: 600;
+                    line-height: normal;
+                    @include breakpoint (max-xs){
+                        font-size: 35px;
+                    }
                     i {
                         color: $theme-color;
                         font-size: 24px;
@@ -264,6 +326,8 @@
                 gap: 20px;
                 padding: 0 0 0;
                 border-radius: 14px;
+                background: $white;
+                border: 1px solid transparent;
                 margin-bottom: 30px;
                 &:last-child {
                     margin-bottom: 0px;
@@ -273,7 +337,7 @@
                 }
 
                 &:nth-of-type(2) {
-                    padding-bottom: 10px;
+                    padding-bottom: 35px;
                     padding-right: 17px;
                 }
                 &:nth-of-type(3) {
@@ -293,60 +357,52 @@
                 &-content {
                     &__author {
                         h5 {
-                            color: var(--White, #FFF);
-                            font-family: Marcellus;
-                            font-size: 22px;
+                            color: $title-color;
+                            font-family: $body-font;
+                            font-size: 18px;
                             font-style: normal;
-                            font-weight: 400;
-                            line-height: 30px; /* 136.364% */
+                            font-weight: 500;
+                            line-height: 26px; /* 144.444% */
                         }
                     }
                     &__date {
                         padding-bottom: 17px;
                         p {
-                            color: var(--White, #FFF);
-                            font-family: Urbanist;
+                            color: rgba(31, 31, 31, 0.70);
+                            font-family: $body-font;
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 400;
-                            line-height: 22px;
-                            opacity: 0.8;
+                            line-height: normal;
                         }
                     }
                     &__desc {
                         p {
-                            color: var(--White, #FFF);
-                            font-family: Urbanist;
+                            color: $title-color;
+                            font-family: $body-font;
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 400;
-                            line-height: 22px; /* 137.5% */
+                            line-height: 26px; /* 162.5% */
+                            opacity: 0.7;
                         }
                     }
                     &__reply {
                         position: absolute;
-                        top: 0;
-                        right: 0;
+                        top: 17%;
+                        right: 17%;
                         .btn {
-                            display: inline-flex;
-                            height: 40px;
-                            padding: 9px 14px;
-                            align-items: center;
-                            gap: 6px;
-                            flex-shrink: 0;
-                            border-radius: 5px;
-                            background: var(--P, #B8E451);
-                            color: var(--900, #010003);
-                            font-family: Urbanist;
+                            display: flex;
+                            color: rgba(31, 31, 31, 0.70);
+                            font-family: $body-font;
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
-                            line-height: 14px; 
-                            letter-spacing: 2px;
-                            text-transform: uppercase;  
+                            line-height: normal;   
+                            border: 1px solid rgba(31, 31, 31, 0.10);
+                            background: rgba(255, 255, 255, 0.00); 
                             &:hover {
-                                background-color: $title-color;
-                                border: 1px solid $white;
+                                background-color: $theme-color;
                                 color: $white;
                             }
                             span {
@@ -374,18 +430,26 @@
         }
     }
     &-form {
-        padding: 0;
+        padding: 30px 40px 40px;
         border-radius: 10px;
+        background: $white;
+        box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.05);
         margin-bottom: 40px;
+        @include breakpoint (max-xs){
+            padding: 15px;
+        }
         &__title {
             padding-bottom: 14px;
             h6 {
-                color: var(--White, #FFF);
-                font-family: Marcellus;
-                font-size: 40px;
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 50px;
                 font-style: normal;
-                font-weight: 400;
-                line-height: 50px; /* 125% */
+                font-weight: 600;
+                line-height: normal;
+                @include breakpoint (max-xs){
+                    font-size: 35px;
+                }
                 i {
                     color: $theme-color;
                     font-size: 24px;
@@ -408,12 +472,12 @@
             }
         }
         .form-check-label {
-            color: var(--White, #FFF);
-            font-family: Marcellus;
-            font-size: 22px;
+            color: $gray2;
+            font-family: $body-font;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
-            line-height: 30px; 
+            line-height: 26px; /* 162.5% */
         }
     }
 }

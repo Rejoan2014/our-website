@@ -4,8 +4,7 @@
 .blog3 {
     &-card {
         border-radius: 10px;
-        border-radius: 0px 0px 5px 5px;
-        background: var(--700, #131215);
+        background: $theme-color;
         margin-bottom: 40px;
         &__thumb {
             border-radius: 20px;
@@ -24,13 +23,12 @@
                 gap: 18px;
                 padding-top: 30px;
                 padding-bottom: 11px;
-                color: var(--White, #FFF);
-                text-align: center;
-                font-family: Urbanist;
+                color: rgba(31, 31, 31, 0.60);
+                font-family: $body-font;
                 font-size: 16px;
                 font-style: normal;
-                font-weight: 400;
-                line-height: 22px; /* 137.5% */
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
                 @include breakpoint (max-xxl) {
                     gap: 15px;
                 }
@@ -53,7 +51,7 @@
                         display: none;
                     }
                 }
-                &__tag {
+                &__care {
                     display: flex;
                     align-items: center;
                     gap: 7px;
@@ -72,12 +70,12 @@
             &__title{
                 padding-bottom: 15px;
                 h5 {
-                    color: var(--White, #FFF);
-                    font-family: Marcellus;
-                    font-size: 40px;
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 30px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 50px; /* 125% */
+                    font-weight: 700;
+                    line-height: 38px; /* 126.667% */
                     @include breakpoint (max-sm){
                         font-size: 28px;
                     }
@@ -86,20 +84,22 @@
             &__desc {
                 padding-right: 5px;    
                 p {
-                    color: var(--White, #FFF);
-                    font-family: Urbanist;
+                    color: $title-color;
+                    font-family: $body-font;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 22px; /* 137.5% */
+                    line-height: 26px;
+                    opacity: 0.7;
                 }            
             }
         }
         &__quote {
             margin-bottom: 40px;
+            text-align: center;
             padding: 50px 50px;
             border-radius: 10px;
-            background: #FCF9EB;
+            background: #EBF3ED;
             @include breakpoint (max-xs){
                 padding: 25px 28px 50px;
             }
@@ -107,21 +107,23 @@
                 padding-bottom: 21px;
             }
             p {
-                color: var(--900, #010003);
-                font-family: Urbanist;
-                font-size: 16px;
+                color: #1F1F1F;
+                text-align: center;
+                font-family: Roboto;
+                font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 22px; /* 137.5% */
-                padding-bottom: 15px;
+                line-height: 28px; 
+                padding-bottom: 32px;
+                opacity: 0.7;
             }
             h4 {
-                color: var(--900, #010003);
-                font-family: Marcellus;
-                font-size: 22px;
+                color: #1F1F1F;
+                font-family: Roboto;
+                font-size: 24px;
                 font-style: normal;
-                font-weight: 400;
-                line-height: 30px; /* 136.364% */
+                font-weight: 500;
+                line-height: 34px; 
             }
         }
     }
