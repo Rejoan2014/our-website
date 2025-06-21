@@ -12234,6 +12234,15 @@ img {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 991px) {
+  .footer1-bottom-info__links {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+}
 .footer1-bottom-info__links p {
   color: var(--900, #000);
   font-family: Inter;
@@ -12264,6 +12273,11 @@ img {
 }
 .footer1-bottom-info__links a:not(:last-child) {
   padding-right: 20px;
+}
+@media (max-width: 499px) {
+  .footer1-bottom-info__links a:not(:last-child) {
+    padding-right: 10px;
+  }
 }
 @media (max-width: 499px) {
   .footer1-bottom-info__links a {

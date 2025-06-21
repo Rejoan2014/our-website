@@ -402,6 +402,13 @@
       &__links {
         display: flex;
         gap: 20px;
+        @include breakpoint (max-lg){
+          display: flex;
+          gap: 5px;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-bottom: 14px;
+        }
         p {
           color: var(--900, #000);
           font-family: Inter;
@@ -428,6 +435,9 @@
   
           &:not(:last-child) {
             padding-right: 20px;
+            @include breakpoint (max-xs){
+              padding-right: 10px;
+            }
           }
           @include breakpoint (max-xs){
             font-size: 14px;
