@@ -1916,7 +1916,7 @@ span {
   content: "";
   top: 162%;
   left: 50%;
-  background: var(--black);
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%) rotate(-8deg);
   border-radius: 80%;
@@ -1936,28 +1936,25 @@ span {
 
 .theme-btn.style3 {
   display: inline-flex;
-  height: 54px;
-  padding: 20px 20px;
+  height: 50px;
+  padding: 20px 25px;
+  justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
   color: var(--White, #FFF);
-  font-family: Urbanist;
-  font-size: 16px;
+  font-family: Lato;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 14px; /* 87.5% */
-  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 17px;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
   .theme-btn.style3 {
@@ -1970,7 +1967,8 @@ span {
 }
 .theme-btn.style3 i {
   color: var(--white);
-  font-weight: 400;
+  font-weight: 500;
+  transform: rotate(45deg);
   transition: all 0.4s ease-in-out;
 }
 .theme-btn.style3:before {
@@ -1981,7 +1979,7 @@ span {
   content: "";
   top: 162%;
   left: 50%;
-  background: var(--yellow2);
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%) rotate(-8deg);
   border-radius: 80%;
@@ -1995,6 +1993,7 @@ span {
 }
 .theme-btn.style3:hover i {
   color: var(--white);
+  transform: rotate(0deg);
   transition: all 0.4s ease-in-out;
 }
 

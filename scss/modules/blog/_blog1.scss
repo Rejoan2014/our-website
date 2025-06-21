@@ -3,13 +3,14 @@
 
 .blog1 {
     &-card {
-        border-radius: 10px;
-        background: $theme-color;
+        border-radius: 20px;
+        background: var(--100, #F5F9FF);
         margin-bottom: 40px;
         &__thumb {
-            border-radius: 20px;
+            border-radius: 20px 20px 0px 0px;
             img {
-                border-radius: 20px;
+                border-radius: 20px 20px 0px 0px;
+                width: 100%;
             }
         }
         &-content {
@@ -23,12 +24,13 @@
                 gap: 18px;
                 padding-top: 30px;
                 padding-bottom: 11px;
-                color: rgba(31, 31, 31, 0.60);
-                font-family: $body-font;
-                font-size: 16px;
+                color: var(--800, #6B7280);
+                font-family: Lato;
+                font-size: 18px;
                 font-style: normal;
-                font-weight: 500;
-                line-height: 26px; /* 162.5% */
+                font-weight: 400;
+                line-height: 30px; 
+                letter-spacing: 0.16px;
                 @include breakpoint (max-xxl) {
                     gap: 15px;
                 }
@@ -47,11 +49,18 @@
                     display: flex;
                     align-items: center;
                     gap: 7px;
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 30px; 
+                    letter-spacing: 0.36px;
                     @include breakpoint (max-xl) {
                         display: none;
                     }
                 }
-                &__care {
+                &__skill {
                     display: flex;
                     align-items: center;
                     gap: 7px;
@@ -69,37 +78,34 @@
             }
             &__title{
                 padding-bottom: 15px;
-                h5 {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 30px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 38px; /* 126.667% */
-                    @include breakpoint (max-sm){
-                        font-size: 28px;
-                    }
+                color: var(--900, #000);
+                font-family: Lato;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 44px; /* 110% */
+                letter-spacing: 0.36px;
+                @include breakpoint (max-sm){
+                    font-size: 28px;
                 }
             }
             &__desc {
                 padding-right: 5px;    
-                p {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px;
-                    opacity: 0.7;
-                }            
+                color: var(--800, #6B7280);
+                font-family: Lato;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; 
+                letter-spacing: 0.16px;           
             }
         }
         &__quote {
             margin-bottom: 40px;
             text-align: center;
-            padding: 50px 50px;
-            border-radius: 10px;
-            background: #EBF3ED;
+            padding: 40px 42px;
+            border-radius: 20px;
+            background: var(--100, #F7FAFF);
             @include breakpoint (max-xs){
                 padding: 25px 28px 50px;
             }
@@ -107,23 +113,24 @@
                 padding-bottom: 21px;
             }
             p {
-                color: #1F1F1F;
+                color: var(--800, #6B7280);
                 text-align: center;
-                font-family: Roboto;
+                font-family: Lato;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 28px; 
-                padding-bottom: 32px;
-                opacity: 0.7;
+                line-height: 30px; /* 166.667% */
+                letter-spacing: 0.16px;
+                margin-bottom: 20px;
             }
             h4 {
-                color: #1F1F1F;
-                font-family: Roboto;
-                font-size: 24px;
+                color: var(--900, #000);
+                font-family: Lato;
+                font-size: 20px;
                 font-style: normal;
-                font-weight: 500;
-                line-height: 34px; 
+                font-weight: 900;
+                line-height: 30px; 
+                letter-spacing: 0.36px;
             }
         }
     }
