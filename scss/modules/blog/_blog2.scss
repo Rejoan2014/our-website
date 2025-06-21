@@ -18,16 +18,24 @@
             &-meta {
                 display: flex;
                 align-items: center;
-                gap: 18px;
-                padding-top: 35px;
-                padding-bottom: 6px;
-                color: $gray2;
-                font-family: $body-font;
-                font-size: 14px;
+                gap: 25px;
+                padding-top: 30px;
+                padding-bottom: 11px;
+                color: var(--800, #6B7280);
+                font-family: Lato;
+                font-size: 18px;
                 font-style: normal;
-                font-weight: 700;
-                line-height: 24px; 
-                @include breakpoint (max-xs) {
+                font-weight: 400;
+                line-height: 30px; 
+                letter-spacing: 0.16px;
+                @include breakpoint (max-xxl) {
+                    gap: 15px;
+                }
+                @include breakpoint (max-md) {
+                    gap: 10px;
+                    padding-top: 0px;
+                }
+                @include breakpoint (max-sm) {
                     flex-wrap: wrap;
                     row-gap: 10px;
                 }
@@ -38,8 +46,18 @@
                     display: flex;
                     align-items: center;
                     gap: 7px;
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 30px; 
+                    letter-spacing: 0.36px;
+                    @include breakpoint (max-xl) {
+                        display: none;
+                    }
                 }
-                &__care {
+                &__skill {
                     display: flex;
                     align-items: center;
                     gap: 7px;
@@ -57,29 +75,26 @@
             }
             &__title{
                 padding-bottom: 15px;
-                h5 {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 30px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 38px; /* 126.667% */
-                    @include breakpoint (max-sm){
-                        font-size: 28px;
-                    }
+                color: var(--900, #000);
+                font-family: Lato;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 44px; /* 146.667% */
+                letter-spacing: 0.36px;
+                @include breakpoint (max-sm){
+                    font-size: 26px;
                 }
             }
             &__desc {
                 padding-right: 5px;    
-                p {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px;
-                    opacity: 0.7;
-                }            
+                color: var(--800, #6B7280);
+                font-family: Lato;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; /* 166.667% */
+                letter-spacing: 0.16px;            
             }
             &__quote {
                 text-align: center;
