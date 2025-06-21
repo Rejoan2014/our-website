@@ -12,38 +12,20 @@
   &-wrapper {   
     position: relative;
     z-index: 9;
-    &-logoInfo {
-      padding-bottom: 70px;
+    &__logo {
       padding-top: 75px;
-      @include breakpoint (max-lg){
-        padding-bottom: 25px;
-      }
-      &__logo {
-        padding-bottom: 24px;
-      }
-      &__desc {
-        color: var(--White, #FFF);
-        font-family: $body-font;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px; 
-        padding-bottom: 22px;
-        @include breakpoint (xl){
-          padding-right: 60px;
-        }
-      }
+      padding-bottom: 10px;
     }
 
     &-company {
-      padding-bottom: 70px;
       padding-top: 75px;
+      padding-bottom: 70px;
       @include breakpoint (max-lg){
         padding-bottom: 25px;
       }
       @include breakpoint (max-md){
+        padding-top: 75px;
         padding-bottom: 5px;
-        padding-top: 7px;
       }
       &__title {
         color: var(--900, #000);
@@ -316,7 +298,7 @@
             display: flex !important;
             align-items: center !important;
             color: var(--900, #000);
-            font-family: Outfit;
+            font-family: $text-font2;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -333,26 +315,24 @@
               align-items: center;
               justify-content: center;
               border-radius: 999px;
-              border: 1px solid var(--P, #B8E451);
-              background: var(--P, #B8E451);
-              width: 65px;
-              height: 65px;
+              border: 1px solid #C1C1C1;
+              width: 50px;
+              height: 50px;
               flex-shrink: 0;
               i {
-                color: var(--900, #010003);
-                font-size: 25px;
-                font-style: normal;
-                font-weight: 900;
-                line-height: normal;
+                background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
               }
             }
             .text span:first-child {
               color: var(--800, #6B7280);
-              font-family: "DM Sans";
+              font-family: $text-font1;
               font-size: 17px;
               font-style: normal;
               font-weight: 400;
-              line-height: 28.05px; /* 165% */
+              line-height: 28.05px; 
               padding-bottom: 5px;
             }
           }
@@ -401,7 +381,6 @@
   }
 
   &-bottom {
-    background: $theme-color;
     position: relative;
     z-index: 9;
 
@@ -411,41 +390,41 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px;
+      border-top: 1px solid #C1C1C1;;
       @include breakpoint (lg){
         flex-direction: row;
         gap: 10px;
       }
       @include breakpoint (max-xs){
         padding: 10px;
-      }
-  
-      p {
-        color: $white;
-        font-family: $body-font;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px; /* 162.5% */
-        @include breakpoint (max-xs){
-          font-size: 14px;
-        }
-        @include breakpoint (max-xxsmall){
-          font-size: 12px;
-        }
-  
-        span {
-          color: $yellow;
-        }
-      }
-  
+      }  
+      
       &__links {
-        a {
-          color: $white;
-          font-family: $body-font;
+        display: flex;
+        gap: 20px;
+        p {
+          color: var(--900, #000);
+          font-family: Inter;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
-          line-height: 26px; /* 162.5% */
+          line-height: 27.2px; 
+          opacity: 0.8;
+          @include breakpoint (max-xs){
+            font-size: 14px;
+          }
+          @include breakpoint (max-xxsmall){
+            font-size: 12px;
+          }
+        }
+        a {
+          color: var(--900, #000);
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27.2px; 
+          opacity: 0.8;
   
           &:not(:last-child) {
             padding-right: 20px;
@@ -458,10 +437,14 @@
           }
   
           &:hover {
-            color: white;
+            color: $theme-color;
           }
   
         }
+      }
+      &__payment {
+        display: flex;
+        gap: 20px;
       }
     }
     }

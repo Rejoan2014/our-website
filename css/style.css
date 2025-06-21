@@ -30,7 +30,7 @@ Description: CleanPro - Creative & Digital Agency Html Template
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=DM+Sans:wght@100..900&family=Outfit:wght@100..900&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /*----------------------------------------------
     # All Variables here
 ----------------------------------------------*/
@@ -11847,35 +11847,13 @@ img {
   position: relative;
   z-index: 9;
 }
-.footer1-wrapper-logoInfo {
-  padding-bottom: 70px;
+.footer1-wrapper__logo {
   padding-top: 75px;
-}
-@media (max-width: 991px) {
-  .footer1-wrapper-logoInfo {
-    padding-bottom: 25px;
-  }
-}
-.footer1-wrapper-logoInfo__logo {
-  padding-bottom: 24px;
-}
-.footer1-wrapper-logoInfo__desc {
-  color: var(--White, #FFF);
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  padding-bottom: 22px;
-}
-@media (min-width: 1200px) {
-  .footer1-wrapper-logoInfo__desc {
-    padding-right: 60px;
-  }
+  padding-bottom: 10px;
 }
 .footer1-wrapper-company {
-  padding-bottom: 70px;
   padding-top: 75px;
+  padding-bottom: 70px;
 }
 @media (max-width: 991px) {
   .footer1-wrapper-company {
@@ -11884,8 +11862,8 @@ img {
 }
 @media (max-width: 767px) {
   .footer1-wrapper-company {
+    padding-top: 75px;
     padding-bottom: 5px;
-    padding-top: 7px;
   }
 }
 .footer1-wrapper-company__title {
@@ -12153,7 +12131,7 @@ img {
   display: flex !important;
   align-items: center !important;
   color: var(--900, #000);
-  font-family: Outfit;
+  font-family: "Outfit", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -12170,26 +12148,24 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  border: 1px solid var(--P, #B8E451);
-  background: var(--P, #B8E451);
-  width: 65px;
-  height: 65px;
+  border: 1px solid #C1C1C1;
+  width: 50px;
+  height: 50px;
   flex-shrink: 0;
 }
 .footer1-wrapper-contact-list__item a .icon i {
-  color: var(--900, #010003);
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .footer1-wrapper-contact-list__item a .text span:first-child {
   color: var(--800, #6B7280);
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28.05px; /* 165% */
+  line-height: 28.05px;
   padding-bottom: 5px;
 }
 .footer1-wrapper-posts {
@@ -12232,7 +12208,6 @@ img {
   line-height: 26px; /* 162.5% */
 }
 .footer1-bottom {
-  background: var(--theme);
   position: relative;
   z-index: 9;
 }
@@ -12242,6 +12217,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  border-top: 1px solid #C1C1C1;
 }
 @media (min-width: 992px) {
   .footer1-bottom-info {
@@ -12254,34 +12230,37 @@ img {
     padding: 10px;
   }
 }
-.footer1-bottom-info p {
-  color: var(--white);
-  font-family: "Lato", sans-serif;
+.footer1-bottom-info__links {
+  display: flex;
+  gap: 20px;
+}
+.footer1-bottom-info__links p {
+  color: var(--900, #000);
+  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 27.2px;
+  opacity: 0.8;
 }
 @media (max-width: 499px) {
-  .footer1-bottom-info p {
+  .footer1-bottom-info__links p {
     font-size: 14px;
   }
 }
 @media (max-width: 374px) {
-  .footer1-bottom-info p {
+  .footer1-bottom-info__links p {
     font-size: 12px;
   }
 }
-.footer1-bottom-info p span {
-  color: var(--yellow);
-}
 .footer1-bottom-info__links a {
-  color: var(--white);
-  font-family: "Lato", sans-serif;
+  color: var(--900, #000);
+  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 27.2px;
+  opacity: 0.8;
 }
 .footer1-bottom-info__links a:not(:last-child) {
   padding-right: 20px;
@@ -12297,7 +12276,11 @@ img {
   }
 }
 .footer1-bottom-info__links a:hover {
-  color: white;
+  color: var(--theme);
+}
+.footer1-bottom-info__payment {
+  display: flex;
+  gap: 20px;
 }
 
 /*----------------------------------------------
