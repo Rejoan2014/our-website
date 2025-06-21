@@ -6,17 +6,17 @@
   &-card {
     padding: 40px 40px;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.20);
-    &--except {
-      border-radius: 5px;
-      border: 1px solid var(--White, #FFF);
-      background: var(--White, #FFF);
-      &__title {
-        h6 {
-          color: var(--900, #010003) !important;
-        }
-      }
-    }
+    background: var(--100, #F7FAFF);
+    // &--except {
+    //   border-radius: 5px;
+    //   border: 1px solid var(--White, #FFF);
+    //   background: var(--White, #FFF);
+    //   &__title {
+    //     h6 {
+    //       color: var(--900, #010003) !important;
+    //     }
+    //   }
+    // }
 
     &:not(:last-child) {
       margin-bottom: 60px;
@@ -29,12 +29,13 @@
     &__title {
       padding-bottom: 11px;
       h6 {
-        color: var(--White, #FFF);
-        font-family: Marcellus;
-        font-size: 28px;
+        color: var(--900, #000);
+        font-family: Lato;
+        font-size: 30px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 36px; /* 128.571% */ 
+        font-weight: 900;
+        line-height: 44px; /* 146.667% */
+        letter-spacing: 0.36px;
       }
     }
     &-search {
@@ -42,35 +43,41 @@
         position: relative;
         input {
             padding: 20px 70px 20px 20px;
+            height: 54px;
             width: 100%;
             border-radius: 5px;
-            background: var(--700, #131215);
+            background: var(--900, #000);
             border: none;
 
             color: var(--White, #FFF);
-            font-family: Urbanist;
+            font-family: Inter;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
-            line-height: 22px; /* 137.5% */          
+            line-height: 27.2px; /* 170% */  
+
+            &::placeholder {
+              color: var(--White, #FFF);
+          }      
         }
 
         button {
           position: absolute;
           right: 0;
           top: 0;
-          width: 60px;
+          width: 54px;
           height: 100%;
+          aspect-ratio: 1/1;
           border-radius: 0px 5px 5px 0px;
-          background: var(--P, #B8E451);
-          font-size: 16px;
+          background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
 
-          text-align: center;
-          color: var(--900, #010003);
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: normal;
+          i {
+            color: var(--White, #FFF);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+          }
         }
       }
     }
@@ -126,12 +133,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            color: var(--900, #010003);
-            font-family: Urbanist;
-            font-size: 16px;
+            color: var(--900, #000);
+            font-family: Lato;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: 22px; /* 137.5% */
+            line-height: 30px; /* 166.667% */
+            letter-spacing: 0.16px;
             span>i {
               padding-right: 13px;
               color: $gray2;
@@ -150,8 +158,9 @@
           }
           &:hover {
             a {
-              color: $black;
-              background: $theme-color;
+              color: $white;
+              border-radius: 5px;
+              background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
               i {
                   color: $theme-color;
               }
@@ -217,12 +226,13 @@
         &-content {
           h5 {
             padding-bottom: 12px;
-            color: var(--White, #FFF);
-            font-family: Marcellus;
-            font-size: 22px;
+            color: var(--900, #000);
+            font-family: Lato;
+            font-size: 20px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 30px; /* 136.364% */
+            font-weight: 900;
+            line-height: 30px; /* 150% */
+            letter-spacing: 0.36px;
             &:hover {
               a {
                 color: $theme-color;
@@ -232,14 +242,15 @@
           p {
             display: flex;
             gap: 10px;
-            color: var(--White, #FFF);
-            font-family: Urbanist;
-            font-size: 14px;
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: 18px; /* 128.571% */
+            line-height: 30px; /* 166.667% */
+            letter-spacing: 0.16px;
             padding-top: 4px;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
           }
         }
       }
