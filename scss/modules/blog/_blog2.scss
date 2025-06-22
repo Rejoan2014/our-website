@@ -449,25 +449,31 @@
             padding: 15px;
         }
         &__title {
-            padding-bottom: 14px;
             color: var(--900, #000);
             font-family: Lato;
             font-size: 40px;
             font-style: normal;
             font-weight: 900;
-            line-height: 44px; /* 110% */
+            line-height: 44px;
             letter-spacing: 0.36px;
+            padding-bottom: 30px;
             @include breakpoint (max-xs){
                 font-size: 35px;
             }
         }
-        .form-check-label {
-            color: $gray2;
-            font-family: $body-font;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px; /* 162.5% */
+        .form-check {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .form-check-label {
+                color: var(--800, #6B7280);
+                font-family: Lato;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; 
+                letter-spacing: 0.16px;
+            }
         }
     }
 }
