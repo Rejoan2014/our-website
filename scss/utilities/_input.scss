@@ -2,6 +2,9 @@
 
 .form {
   &__group {
+    @include breakpoint (max-md){
+      margin-bottom: 26px !important;
+    }
     label {
       color: #000;
       font-family: Lato;

@@ -3419,6 +3419,11 @@ img {
   color: var(--white);
 }
 
+@media (max-width: 767px) {
+  .form__group {
+    margin-bottom: 26px !important;
+  }
+}
 .form__group label {
   color: #000;
   font-family: Lato;
