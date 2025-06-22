@@ -2286,6 +2286,69 @@ span {
   transform: rotate(0deg);
   transition: all 0.4s ease-in-out;
 }
+.submit-btn.style3 {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  color: var(--White, #FFF);
+  font-family: Lato;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 100% */
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .submit-btn.style3 {
+    padding: 15px 28px;
+  }
+}
+.submit-btn.style3 a {
+  color: var(--white) !important;
+  display: inline-block;
+}
+.submit-btn.style3 i {
+  color: var(--white);
+  font-weight: 500;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+.submit-btn.style3:before {
+  transition-duration: 800ms;
+  position: absolute;
+  width: 210%;
+  height: 290%;
+  content: "";
+  top: 162%;
+  left: 50%;
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%) rotate(-8deg);
+  border-radius: 80%;
+  z-index: -1;
+}
+.submit-btn.style3:hover {
+  color: var(--white) !important;
+}
+.submit-btn.style3:hover:before {
+  top: -96%;
+}
+.submit-btn.style3:hover i {
+  color: var(--white);
+  transform: rotate(0deg);
+  transition: all 0.4s ease-in-out;
+}
 
 /*----------------------------------------------
     # Helping  style here
@@ -3327,35 +3390,40 @@ img {
   color: var(--white);
 }
 
-.form__group span {
-  color: var(--title);
-  font-weight: 600;
-  text-transform: capitalize;
+.form__group label {
+  color: #000;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0.36px;
 }
 .form__group input,
 .form__group textarea {
-  border-radius: 5px;
   border: 1px solid var(--900, #010003);
   background-color: transparent;
-  padding: 17px 21px;
   width: 100%;
-  height: 70px;
+  height: 50px;
   outline: none;
-  color: var(--900, #010003);
-  font-family: Urbanist;
-  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  border-radius: 0;
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 30px;
+  letter-spacing: 0.16px;
 }
 .form__group input::placeholder,
 .form__group textarea::placeholder {
-  color: var(--black);
+  color: var(--800, #6B7280);
 }
 .form__group textarea {
   padding-top: 18px;
-  height: 130px;
-  border-radius: 10px;
+  height: 50px;
 }
 .form__group--large textarea {
   height: 189px;
