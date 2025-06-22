@@ -9357,29 +9357,30 @@ img {
   border-radius: 10px;
 }
 .blog2-card-content-profile__title {
-  color: var(--title);
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 34px;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
   padding-bottom: 30px;
 }
 .blog2-card-content-profile__desc {
-  color: var(--title);
-  font-family: "Lato", sans-serif;
+  color: var(--800, #6B7280);
+  font-family: Lato;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
-  opacity: 0.7;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
 }
 .blog2-card-content-profile2 {
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 20px;
-  border-radius: 10px;
-  background: var(--theme);
+  border-radius: 20px;
+  background: var(--100, #F7FAFF);
 }
 .blog2-card-content-profile2__thumb {
   border-radius: 10px;
@@ -9393,43 +9394,46 @@ img {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  color: var(--white);
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  width: fit-content;
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border-radius: 100px;
-  background: var(--theme);
-  width: max-content;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.16px;
   margin-bottom: 30px;
 }
 .blog2-card-content-profile2__title {
-  color: var(--title);
-  font-family: "Lato", sans-serif;
+  color: var(--900, #000);
+  font-family: Lato;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
   padding-bottom: 30px;
 }
 .blog2-card-content-profile2__desc {
-  color: var(--title);
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
-  opacity: 0.7;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
   padding-bottom: 40px;
 }
 .blog2-card-content-profile2__link {
-  color: var(--title);
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
 }
 .blog2-card-content__title2 {
   padding-top: 48px;
