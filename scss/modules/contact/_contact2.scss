@@ -1,99 +1,20 @@
 @use '../../root' as *;
 @use '../../utilities' as *;
 
-.contact2 {
-    .section-fix {
-        border-radius: 20px;
-        background: var(--White, #FFF);
-        box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
-        padding: 60px;
-    }
+.contactForm {
+    background: var(--100, #F7FAFF);
     &-card {
         &__title {
             padding-bottom: 50px;
+            color: var(--900, #000);
+            font-family: Lato;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px; 
+            letter-spacing: 0.36px;
             @include breakpoint (max-md){
                 padding-bottom: 20px;
-            }
-            h6 {
-                color: var(--900, #010003);
-                font-family: Marcellus;
-                font-size: 60px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 75px; /* 125% */
-                @include breakpoint (max-xl){
-                    font-size: 52px;
-                    line-height: 60px;
-                }
-                @include breakpoint (max-md){
-                    font-size: 40px;
-                    line-height: 45px;
-                }
-            }
-        }
-    }
-    &-groups {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        &-item {
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 30px 30px 30px 77px;
-            border-radius: 10.853px;
-            border: 1.085px solid var(--200, #C1C1C1);
-            background: var(--100, #F7FAFF);
-            width: 100%;
-            height: 159px;
-            max-width: 545px;
-            flex-shrink: 0;
-            &__icon {
-                position: absolute;
-                left: -40px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 10px;
-                background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-                width: 75px;
-                height: 75px;
-                flex-shrink: 0;
-                @include breakpoint (max-xxsmall){
-                    width: 40px;
-                    height: 40px;
-                }
-
-                i {
-                    color: var(--White, #FFF);
-                    font-size: 27.132px;
-                    font-style: normal;
-                    font-weight: 900;
-                    line-height: normal;
-                }
-            }
-            &-info {
-                &__text {
-                    color: var(--900, #000);
-                    font-family: Lato;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 900;
-                    line-height: 34px; /* 141.667% */
-                    letter-spacing: 0.36px;
-                    padding-bottom: 7px;
-                }
-                &__desc {
-                    color: var(--800, #6B7280);
-                    font-family: Lato;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 30px; /* 166.667% */
-                    letter-spacing: 0.16px;
-                }
             }
         }
     }

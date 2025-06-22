@@ -8943,100 +8943,21 @@ img {
 }
 
 /* 10. Contact */
-.contact1-box {
-  text-align: center;
-  padding: 48px 20px;
-  border-radius: 20px;
-  border: 2px solid rgb(52, 51, 53);
-  background: rgba(184, 228, 81, 0.7);
-  backdrop-filter: blur(50px);
-}
-.contact1-box__title {
-  margin-bottom: 30px;
-  color: var(--900, #010003);
-  font-family: Marcellus;
-  text-align: center;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px; /* 128.571% */
-}
-.contact1-box__icon {
-  margin-bottom: 30px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  background-color: var(--theme);
-  width: 86px;
-  height: 86px;
-  flex-shrink: 0;
-}
-.contact1-box__icon i {
-  color: var(--900, #010003);
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-}
-.contact1-box__numb {
-  color: var(--900, #010003);
-  text-align: center;
-  font-family: Marcellus;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px; /* 128.571% */
-}
-@media (min-width: 1200px) {
-  .contact1-content {
-    margin-left: 30px;
-  }
-}
-.contact1-content__title {
-  color: var(--White, #FFF);
-  font-family: Marcellus;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px; /* 125% */
-  padding-bottom: 25px;
-}
-.contact1-content__desc {
-  color: var(--White, #FFF);
-  font-family: Urbanist;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px; /* 137.5% */
-}
-.contact1-content-ratting {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-top: 40px;
-}
-@media (max-width: 767px) {
-  .contact1-content-ratting {
-    flex-wrap: wrap;
-  }
-}
-
-.contact2 .section-fix {
+.contact1 .section-fix {
   border-radius: 20px;
   background: var(--White, #FFF);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   padding: 60px;
 }
-.contact2-card__title {
+.contact1-card__title {
   padding-bottom: 50px;
 }
 @media (max-width: 767px) {
-  .contact2-card__title {
+  .contact1-card__title {
     padding-bottom: 20px;
   }
 }
-.contact2-card__title h6 {
+.contact1-card__title h6 {
   color: var(--900, #010003);
   font-family: Marcellus;
   font-size: 60px;
@@ -9045,24 +8966,24 @@ img {
   line-height: 75px; /* 125% */
 }
 @media (max-width: 1199px) {
-  .contact2-card__title h6 {
+  .contact1-card__title h6 {
     font-size: 52px;
     line-height: 60px;
   }
 }
 @media (max-width: 767px) {
-  .contact2-card__title h6 {
+  .contact1-card__title h6 {
     font-size: 40px;
     line-height: 45px;
   }
 }
-.contact2-groups {
+.contact1-groups {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.contact2-groups-item {
+.contact1-groups-item {
   position: relative;
   display: flex;
   align-items: center;
@@ -9076,7 +8997,7 @@ img {
   max-width: 545px;
   flex-shrink: 0;
 }
-.contact2-groups-item__icon {
+.contact1-groups-item__icon {
   position: absolute;
   left: -40px;
   display: inline-flex;
@@ -9089,19 +9010,19 @@ img {
   flex-shrink: 0;
 }
 @media (max-width: 374px) {
-  .contact2-groups-item__icon {
+  .contact1-groups-item__icon {
     width: 40px;
     height: 40px;
   }
 }
-.contact2-groups-item__icon i {
+.contact1-groups-item__icon i {
   color: var(--White, #FFF);
   font-size: 27.132px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
-.contact2-groups-item-info__text {
+.contact1-groups-item-info__text {
   color: var(--900, #000);
   font-family: Lato;
   font-size: 24px;
@@ -9111,7 +9032,7 @@ img {
   letter-spacing: 0.36px;
   padding-bottom: 7px;
 }
-.contact2-groups-item-info__desc {
+.contact1-groups-item-info__desc {
   color: var(--800, #6B7280);
   font-family: Lato;
   font-size: 18px;
@@ -9119,6 +9040,25 @@ img {
   font-weight: 400;
   line-height: 30px; /* 166.667% */
   letter-spacing: 0.16px;
+}
+
+.contactForm {
+  background: var(--100, #F7FAFF);
+}
+.contactForm-card__title {
+  padding-bottom: 50px;
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+  letter-spacing: 0.36px;
+}
+@media (max-width: 767px) {
+  .contactForm-card__title {
+    padding-bottom: 20px;
+  }
 }
 
 /* 11. Blog */
