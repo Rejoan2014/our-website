@@ -314,14 +314,15 @@
             &__title {
                 padding-bottom: 30px;
                 h3 {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 50px;
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 30px;
                     font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
+                    font-weight: 900;
+                    line-height: 44px; /* 146.667% */
+                    letter-spacing: 0.36px;
                     @include breakpoint (max-xs){
-                        font-size: 35px;
+                        font-size: 26px;
                     }
                     i {
                         color: $theme-color;
@@ -361,43 +362,44 @@
                 }
                 
                 &__thumb {
-                    border-radius: 20px;
+                    border-radius: 6px;
                     img {
-                        border-radius: 20px;
+                        border-radius: 6px;
                         max-width: fit-content;
                     }
                 }
                 &-content {
                     &__author {
                         h5 {
-                            color: $title-color;
-                            font-family: $body-font;
-                            font-size: 18px;
+                            color: var(--900, #000);
+                            font-family: Inter;
+                            font-size: 16px;
                             font-style: normal;
-                            font-weight: 500;
-                            line-height: 26px; /* 144.444% */
+                            font-weight: 400;
+                            line-height: 27.2px; /* 170% */
                         }
                     }
                     &__date {
                         padding-bottom: 17px;
                         p {
-                            color: rgba(31, 31, 31, 0.70);
-                            font-family: $body-font;
-                            font-size: 16px;
+                            color: var(--800, #6B7280);
+                            font-family: Lato;
+                            font-size: 18px;
                             font-style: normal;
                             font-weight: 400;
-                            line-height: normal;
+                            line-height: 30px; /* 166.667% */
+                            letter-spacing: 0.16px;
                         }
                     }
                     &__desc {
                         p {
-                            color: $title-color;
-                            font-family: $body-font;
-                            font-size: 16px;
+                            color: var(--800, #6B7280);
+                            font-family: Lato;
+                            font-size: 18px;
                             font-style: normal;
                             font-weight: 400;
-                            line-height: 26px; /* 162.5% */
-                            opacity: 0.7;
+                            line-height: 30px; /* 166.667% */
+                            letter-spacing: 0.16px;
                         }
                     }
                     &__reply {
@@ -406,20 +408,19 @@
                         right: 17%;
                         .btn {
                             display: flex;
-                            color: rgba(31, 31, 31, 0.70);
-                            font-family: $body-font;
-                            font-size: 16px;
+                            gap: 7px;
+                            border-radius: 5px;
+                            border: 1px solid rgba(28, 28, 28, 0.10);
+                            background: var(--White, #FFF);
+                            color: var(--900, #000);
+                            font-family: Lato;
+                            font-size: 17px;
                             font-style: normal;
-                            font-weight: 500;
-                            line-height: normal;   
-                            border: 1px solid rgba(31, 31, 31, 0.10);
-                            background: rgba(255, 255, 255, 0.00); 
-                            &:hover {
-                                background-color: $theme-color;
-                                color: $white;
-                            }
+                            font-weight: 400;
+                            line-height: 17px;
+                            text-transform: uppercase;
+                            cursor: pointer;
                             span {
-                                cursor: pointer;
                                 i {
                                     padding-right: 5px;
                                 }
@@ -443,45 +444,21 @@
         }
     }
     &-form {
-        padding: 30px 40px 40px;
-        border-radius: 10px;
-        background: $white;
-        box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.05);
         margin-bottom: 40px;
         @include breakpoint (max-xs){
             padding: 15px;
         }
         &__title {
             padding-bottom: 14px;
-            h6 {
-                color: $title-color;
-                font-family: $body-font;
-                font-size: 50px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                @include breakpoint (max-xs){
-                    font-size: 35px;
-                }
-                i {
-                    color: $theme-color;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 900;
-                    line-height: normal;
-                    padding-right: 10px;
-                }
-            }
-        }
-        &__desc {
-            padding-bottom: 22px;
-            p {
-                color: $gray2;
-                font-family: $body-font;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 26px; /* 162.5% */
+            color: var(--900, #000);
+            font-family: Lato;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px; /* 110% */
+            letter-spacing: 0.36px;
+            @include breakpoint (max-xs){
+                font-size: 35px;
             }
         }
         .form-check-label {

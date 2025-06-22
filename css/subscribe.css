@@ -2738,12 +2738,14 @@ img {
   }
 }
 .preview-area .preview-item .content p {
-  color: var(--Black-03, #6F6E77);
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 17px; /* 100% */
+  text-transform: uppercase;
+  padding-bottom: 15px;
 }
 @media (max-width: 767px) {
   .preview-area .preview-item .content p {
@@ -2751,12 +2753,14 @@ img {
   }
 }
 .preview-area .preview-item .content h5 {
-  color: var(--White, #FFF);
-  font-family: Marcellus;
-  font-size: 22px;
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 136.364% */
+  line-height: 30px;
+  letter-spacing: 0.16px;
+  max-width: 187px;
 }
 @media (max-width: 767px) {
   .preview-area .preview-item .content h5 {
