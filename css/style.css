@@ -9028,93 +9028,65 @@ img {
     line-height: 45px;
   }
 }
-.contact2-content {
+.contact2-groups {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
 }
-@media (max-width: 1199px) {
-  .contact2-content {
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .contact2-content {
-    gap: 30px;
-  }
-}
-.contact2-content-item {
+.contact2-groups-item {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 23px 30px;
-  border-radius: 5px;
-  border: 1px solid rgb(52, 51, 53);
-  background: var(--700, #131215);
-  width: 440px;
-  height: 102px;
+  border-radius: 10.853px;
+  border: 1.085px solid var(--200, #C1C1C1);
+  background: var(--100, #F7FAFF);
+  width: 100%;
+  height: 159px;
+  max-width: 545px;
+  flex-shrink: 0;
 }
-@media (max-width: 1599px) {
-  .contact2-content-item {
-    width: 410px;
-  }
-}
-@media (max-width: 1399px) {
-  .contact2-content-item {
-    width: 350px;
-  }
-}
-@media (max-width: 991px) {
-  .contact2-content-item {
-    width: 322px;
-    padding: 23px 15px;
-  }
-}
-@media (max-width: 767px) {
-  .contact2-content-item {
-    width: 100%;
-  }
-}
-.contact2-content-item__icon {
+.contact2-groups-item__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
-  background: var(--theme);
-  width: 57px;
-  height: 57px;
+  border-radius: 10px;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  width: 75px;
+  height: 75px;
   flex-shrink: 0;
 }
 @media (max-width: 374px) {
-  .contact2-content-item__icon {
+  .contact2-groups-item__icon {
     width: 40px;
     height: 40px;
   }
 }
-.contact2-content-item__icon i {
-  color: var(--900, #010003);
-  font-size: 20px;
+.contact2-groups-item__icon i {
+  color: var(--White, #FFF);
+  font-size: 27.132px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
-.contact2-content-item-info__text {
-  color: var(--White, #FFF);
-  font-family: Marcellus;
-  font-size: 22px;
+.contact2-groups-item-info__text {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px; /* 136.364% */
+  font-weight: 900;
+  line-height: 34px; /* 141.667% */
+  letter-spacing: 0.36px;
   padding-bottom: 7px;
 }
-.contact2-content-item-info__desc {
-  color: var(--White, #FFF);
-  font-family: Urbanist;
-  font-size: 16px;
+.contact2-groups-item-info__desc {
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 137.5% */
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.16px;
 }
 
 /* 11. Blog */

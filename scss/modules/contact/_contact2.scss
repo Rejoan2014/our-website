@@ -37,48 +37,30 @@
             }
         }
     }
-    &-content {
+    &-groups {
         display: flex;
-        justify-content: space-between;
-        @include breakpoint (max-xl){
-            flex-wrap: wrap;
-            justify-content: start;
-            gap: 50px;
-        }
-        @include breakpoint (max-md){
-            gap: 30px;
-        }
+        flex-direction: column;
+        gap: 40px;
         &-item {
             display: flex;
             align-items: center;
             gap: 20px;
             padding: 23px 30px;
-            border-radius: 5px;
-            border: 1px solid rgb(52, 51, 53);
-            background: var(--700, #131215);
-            width: 440px;
-            height: 102px;
-            @include breakpoint (max-xxxl){
-                width: 410px;
-            }
-            @include breakpoint (max-xxl){
-                width: 350px;
-            }
-            @include breakpoint (max-lg){
-                width: 322px;
-                padding: 23px 15px;
-            }
-            @include breakpoint (max-md){
-                width: 100%;
-            }
+            border-radius: 10.853px;
+            border: 1.085px solid var(--200, #C1C1C1);
+            background: var(--100, #F7FAFF);
+            width: 100%;
+            height: 159px;
+            max-width: 545px;
+            flex-shrink: 0;
             &__icon {
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 50px;
-                background: $theme-color;
-                width: 57px;
-                height: 57px;
+                border-radius: 10px;
+                background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+                width: 75px;
+                height: 75px;
                 flex-shrink: 0;
                 @include breakpoint (max-xxsmall){
                     width: 40px;
@@ -86,8 +68,8 @@
                 }
 
                 i {
-                    color: var(--900, #010003);
-                    font-size: 20px;
+                    color: var(--White, #FFF);
+                    font-size: 27.132px;
                     font-style: normal;
                     font-weight: 900;
                     line-height: normal;
@@ -95,21 +77,23 @@
             }
             &-info {
                 &__text {
-                    color: var(--White, #FFF);
-                    font-family: Marcellus;
-                    font-size: 22px;
+                    color: var(--900, #000);
+                    font-family: Lato;
+                    font-size: 24px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 30px; /* 136.364% */
+                    font-weight: 900;
+                    line-height: 34px; /* 141.667% */
+                    letter-spacing: 0.36px;
                     padding-bottom: 7px;
                 }
                 &__desc {
-                    color: var(--White, #FFF);
-                    font-family: Urbanist;
-                    font-size: 16px;
+                    color: var(--800, #6B7280);
+                    font-family: Lato;
+                    font-size: 18px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 22px; /* 137.5% */
+                    line-height: 30px; /* 166.667% */
+                    letter-spacing: 0.16px;
                 }
             }
         }
