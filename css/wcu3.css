@@ -2774,6 +2774,11 @@ img {
     height: 50px;
   }
 }
+@media (max-width: 499px) {
+  .preview-area .preview-item img {
+    display: none;
+  }
+}
 .preview-area .preview-item .content p {
   color: var(--900, #000);
   font-family: Lato;
@@ -2872,6 +2877,14 @@ img {
 @media (max-width: 1399px) {
   .list.style2 {
     gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .list.style2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 .list.style2 .checklist-item {

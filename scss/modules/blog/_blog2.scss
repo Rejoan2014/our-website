@@ -33,7 +33,6 @@
                 }
                 @include breakpoint (max-md) {
                     gap: 10px;
-                    padding-top: 0px;
                 }
                 @include breakpoint (max-sm) {
                     flex-wrap: wrap;
@@ -101,8 +100,11 @@
                 padding: 50px 50px;
                 border-radius: 20px;
                 background: var(--100, #F7FAFF);
-                @include breakpoint (max-xs){
-                    padding: 6px 28px 50px;
+                @include breakpoint (max-md){
+                    padding: 30px 30px;
+                }
+                @include breakpoint (max-sm){
+                    padding: 20px 20px 20px;
                 }
                 img {
                     padding-bottom: 21px;

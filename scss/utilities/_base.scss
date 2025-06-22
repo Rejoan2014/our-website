@@ -87,6 +87,11 @@ img {
           }
 
         }
+        img {
+          @include breakpoint (max-xs) {
+            display: none;
+          }
+        }
         .content {
           p {
             color: var(--900, #000);
@@ -185,6 +190,12 @@ img {
       padding-bottom: 30px;
       @include breakpoint (max-xxl){
           gap: 20px;
+      }
+      @include breakpoint (max-md){
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 0px;
       }
       .checklist {
         &-item {
