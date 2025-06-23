@@ -63,16 +63,20 @@
         font-weight: 900;
         line-height: 65px; 
         letter-spacing: 0.49px;
-        @include breakpoint (max-xl) {
-            font-size: 54px;
+        @include breakpoint (max-xl){
+            font-size: 64px;
+            line-height: 76px;
+        }
+        @include breakpoint (max-lg){
+            font-size: 52px;
+            line-height: 64px;
+        }
+        @include breakpoint (max-md){
+            font-size: 40px;
             line-height: 50px;
         }
-        @include breakpoint (max-md) {
-            font-size: 46px;
-            line-height: 45px;
-        }
-        @include breakpoint (max-sm) {
-            font-size: 36px;
+        @include breakpoint (max-sm){
+            font-size: 32px;
             line-height: 40px;
         }
         span {

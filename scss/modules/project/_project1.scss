@@ -5,6 +5,9 @@
     position: relative;
     &-card {
         position: relative;
+        @include breakpoint (max-lg){
+            margin-bottom: 40px;
+        }
         &-thumb {
             border-radius: 20px 20px 0px 0px;
             img {
@@ -18,8 +21,10 @@
                 border-radius: 0px 0px 20px 20px;
                 background: var(--100, #F7FAFF);
                 padding: 30px;
+                @include breakpoint (max-sm){
+                    padding: 20px;
+                }
                 &__title {
-                    color: var(--White, #FFF);
                     color: $black;
                     font-family: Lato;
                     font-size: 40px;
@@ -27,6 +32,18 @@
                     font-weight: 900;
                     line-height: 44px; 
                     letter-spacing: 0.36px;
+                    @include breakpoint (max-lg){
+                        font-size: 36px;
+                        line-height: 42px;
+                    }
+                    @include breakpoint (max-md){
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                    @include breakpoint (max-sm){
+                        font-size: 28px;
+                        line-height: 34px;
+                    }
                 }
                 &__link {
                     display: flex;
@@ -40,23 +57,51 @@
                     border-radius: 25px;
                     background: var(--White, #FFF);
                     background: $theme-color;
+                    @include breakpoint (max-sm){
+                        width: 40px;
+                        height: 40px;
+                    }
+                    svg {
+                        width: 33.333px;
+                        height: 33.333px;
+                        flex-shrink: 0;
+                        aspect-ratio: 33.33/33.33;
+                        @include breakpoint (max-sm){
+                            width: 23px;
+                            height: 23px;
+                        }
+                    }
                     img {
                         width: 33.333px;
                         height: 33.333px;
                         flex-shrink: 0;
                         aspect-ratio: 33.33/33.33;
+                        @include breakpoint (max-sm){
+                            width: 25px;
+                            height: 25px;
+                        }
                     }
                 }
             }
             &--fix-padding1 {
                 padding: 83px;
                 padding-left: 0;
-                // margin-top: 80px;
+                @include breakpoint (max-xl){
+                    padding: 30px;
+                }
+                @include breakpoint (max-lg){
+                    padding: 0px;
+                }
             }
             &--fix-padding2 {
                 padding: 83px;
                 padding-right: 0;
-                // margin-bottom: 80px;
+                @include breakpoint (max-xl){
+                    padding: 30px;
+                }
+                @include breakpoint (max-lg){
+                    padding: 0px;
+                }
             }
         }
         &:hover {
