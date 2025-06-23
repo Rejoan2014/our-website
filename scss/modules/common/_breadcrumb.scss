@@ -4,14 +4,22 @@
 //>>>>> Breadcrumb Start <<<<<//
 .breadcrumb {
     overflow: hidden;
-    padding: 62px 0 148px 0;
+    padding: 238px 0 148px 0;
     margin: 0 auto;
-    margin-top: 93px;
 
     position: relative;
 	overflow: hidden;
+    @include breakpoint (max-xl) {
+        padding: 162px 0 148px 0;
+    } 
     @include breakpoint (max-md) {
-        padding: 40px 40px ;
+        padding: 140px 0 110px 0;
+    } 
+    @include breakpoint (max-sm) {
+        padding: 130px 0 85px 0;
+    } 
+    @include breakpoint (max-xs) {
+        padding: 120px 0 70px 0;
     } 
     &__shape1 {
         position: absolute;
@@ -24,7 +32,7 @@
         width: 478px;
         height: 478px;
         flex-shrink: 0;
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-lg){
             display: none;
         }
     } 
@@ -39,7 +47,7 @@
         width: 478px;
         height: 478px;
         flex-shrink: 0;
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-lg){
             display: none;
         }
     } 
@@ -62,7 +70,7 @@
             margin-bottom: 20px;
     
             @include breakpoint (max-md) {
-            margin-top: 15px;
+                padding: 7px 15px;
             }
     
             li {
@@ -122,7 +130,7 @@
             line-height: 90px; /* 112.5% */
             letter-spacing: 0.36px;
             max-width: 1184px;
-            padding: 20px;
+            padding-bottom: 15px;
             span {
                 background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
                 background-clip: text;
@@ -130,6 +138,22 @@
                 -webkit-text-fill-color: transparent;
                 font-feature-settings: 'liga' off, 'clig' off;
                 font-style: italic;
+            }
+            @include breakpoint (max-xl){
+                font-size: 64px;
+                line-height: 76px;
+            }
+            @include breakpoint (max-lg){
+                font-size: 52px;
+                line-height: 64px;
+            }
+            @include breakpoint (max-md){
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @include breakpoint (max-sm){
+                font-size: 32px;
+                line-height: 40px;
             }
         }
         &__desc {
