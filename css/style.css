@@ -5393,7 +5393,7 @@ img {
 
 .breadcrumb {
   overflow: hidden;
-  padding: 62px 0 52px 0;
+  padding: 62px 0 148px 0;
   margin: 0 auto;
   margin-top: 93px;
   position: relative;
@@ -5406,8 +5406,12 @@ img {
 }
 .breadcrumb__shape1 {
   position: absolute;
-  bottom: 12px;
+  bottom: 18%;
   left: 0;
+  border-radius: 478px;
+  opacity: 0.2;
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+  filter: blur(150px);
   width: 478px;
   height: 478px;
   flex-shrink: 0;
@@ -5419,8 +5423,12 @@ img {
 }
 .breadcrumb__shape2 {
   position: absolute;
-  bottom: 12px;
+  bottom: 18%;
   right: 0;
+  border-radius: 478px;
+  opacity: 0.2;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  filter: blur(150px);
   width: 478px;
   height: 478px;
   flex-shrink: 0;
