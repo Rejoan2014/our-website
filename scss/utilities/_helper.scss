@@ -108,6 +108,9 @@
 }
 .fix-pb-100 {
   padding-bottom: 100px;
+  @include breakpoint (max-lg){
+    padding-bottom: 70px;
+  }
   @include breakpoint (max-md){
     padding-bottom: 40px;
   }

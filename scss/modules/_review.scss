@@ -9,6 +9,14 @@
         box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
         padding: 65px 110px 65px 115px;
         margin-left: 101px;
+        @include breakpoint (max-xxxl){
+            padding: 65px 45px 65px 90px;
+            margin-left: 80px;
+        }
+        @include breakpoint (max-xxl){
+            padding: 50px 45px 50px 95px;
+            margin-left: 45px;
+        }
         &__icon {
             position: absolute;
             left: -10%;
@@ -20,6 +28,9 @@
             height: 100px;
             flex-shrink: 0;
             aspect-ratio: 1/1;
+            @include breakpoint (max-xxl){
+                left: -14%;
+            }
         }
         &-rating {
             padding-bottom: 15px;

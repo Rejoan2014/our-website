@@ -2506,6 +2506,11 @@ span {
 .fix-pb-100 {
   padding-bottom: 100px;
 }
+@media (max-width: 991px) {
+  .fix-pb-100 {
+    padding-bottom: 70px;
+  }
+}
 @media (max-width: 767px) {
   .fix-pb-100 {
     padding-bottom: 40px;
