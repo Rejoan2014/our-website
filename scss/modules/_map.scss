@@ -3,7 +3,7 @@
 
 .map {
     position: relative;
-    background: var(--P3, #6A5ACD);
+    background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
     &__shape1 {
         position: absolute;
         top: 0;
@@ -26,6 +26,9 @@
         position: absolute;
         bottom: 23%;
         right: 20.5%;
+        @include breakpoint (max-xxxl){
+            right: 10.5%;
+        }
         @include breakpoint (max-xxl){
             display: none;
         }
@@ -41,13 +44,16 @@
         align-items: center;
         gap: 10px;
         border-radius: 5px;
-        background: var(--P2, #FFD700);
-        color: #000;
+        background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+        color: var(--White, #FFF);
         font-family: Lato;
         font-size: 20px;
         font-style: normal;
         font-weight: 900;
-        line-height: 30px; /* 150% */
+        line-height: 30px; 
+        @include breakpoint (max-xxxl){
+            right: 4.5%;
+        }
         @include breakpoint (max-xxl){
             display: none;
         }
@@ -61,36 +67,107 @@
             position: absolute;
             top: 18%;
             left: 28%;
+            @include breakpoint (max-xxxl){
+                left: 23%;
+            }
+            @include breakpoint (max-xxl){
+                left: 19%;
+            }
+            @include breakpoint (max-xl){
+                left: 15%;
+            }
+            @include breakpoint (max-md){
+                img {
+                    width: 70%;
+                }
+            }
         }
         &__icon2 {
             position: absolute;
             top: 36%;
             left: 29%;
+            @include breakpoint (max-xxxl){
+                left: 25%;
+            }
+            @include breakpoint (max-xxl){
+                left: 21%;
+            }
+            @include breakpoint (max-xl){
+                left: 18%;
+            }
+            @include breakpoint (max-md){
+                img {
+                    width: 70%;
+                }
+            }
         }
         &__icon3 {
             position: absolute;
             bottom: 23%;
             left: 37%;
+            @include breakpoint (max-xxxl){
+                left: 34%;
+            }            
+            @include breakpoint (max-xxl){
+                left: 31%;
+            }            
+            @include breakpoint (max-xl){
+                left: 28%;
+            } 
+            @include breakpoint (max-md){
+                img {
+                    width: 70%;
+                }
+            }
         }
         &__icon4 {
             position: absolute;
             right: 34%;
             top: 16%;
+            @include breakpoint (max-md){
+                img {
+                    width: 70%;
+                }
+            }
         }
         &__icon5 {
             position: absolute;
             right: 39%;
             top: 31%;
+            @include breakpoint (max-md){
+                img {
+                    width: 70%;
+                }
+            }
         }
         &__icon6 {
             position: absolute;
             right: 46%;
             top: 60%;
+            @include breakpoint (max-md){
+                img {
+                    width: 70%;
+                }
+            }
         }
         &__icon7 {
-        position: absolute;
-        right: 26%;
-        bottom: 17%;
+            position: absolute;
+            right: 26%;
+            bottom: 17%;
+            @include breakpoint (max-xxxl){
+                right: 20%;
+            }  
+            @include breakpoint (max-xxl){
+                right: 16%;
+            }  
+            @include breakpoint (max-xl){
+                right: 10%;
+            }  
+            @include breakpoint (max-md){
+                img {
+                    width: 70%;
+                }
+            }
         }
     }
 }

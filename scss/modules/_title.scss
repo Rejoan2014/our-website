@@ -52,7 +52,11 @@
             line-height: 40px;
         }
         span {
-            color: $theme-color;
+            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-feature-settings: 'liga' off, 'clig' off;
         }
     }
     &__title2 {
