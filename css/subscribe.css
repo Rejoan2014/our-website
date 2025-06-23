@@ -1830,9 +1830,28 @@ span {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 991px) {
+  .theme-btn.style1 {
+    height: 56px;
+    padding: 18px 24px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
 @media (max-width: 767px) {
   .theme-btn.style1 {
-    padding: 15px 28px;
+    height: 52px;
+    padding: 16px 22px;
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .theme-btn.style1 {
+    height: 48px;
+    padding: 14px 18px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 .theme-btn.style1 a {
@@ -1844,6 +1863,11 @@ span {
   font-weight: 500;
   transform: rotate(45deg);
   transition: all 0.4s ease-in-out;
+}
+@media (max-width: 767px) {
+  .theme-btn.style1 i {
+    font-size: 15px;
+  }
 }
 .theme-btn.style1:before {
   transition-duration: 800ms;
@@ -1925,6 +1949,7 @@ span {
   color: var(--white);
   font-weight: 500;
   transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
 }
 @media (max-width: 767px) {
   .theme-btn.style2 i {

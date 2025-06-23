@@ -27,8 +27,23 @@
         overflow: hidden;
         transition: all 0.3s ease-in-out;
 
+        @include breakpoint (max-lg) {
+            height: 56px;
+            padding: 18px 24px;
+            font-size: 16px;
+            line-height: 17px;
+        }
         @include breakpoint (max-md) {
-            padding: 15px 28px;
+            height: 52px;
+            padding: 16px 22px;
+            font-size: 15px;
+            line-height: 16px;
+        }
+        @include breakpoint (max-sm) {
+            height: 48px;
+            padding: 14px 18px;
+            font-size: 14px;
+            line-height: 16px;
         }
         a {
             color: $white!important;
@@ -39,6 +54,9 @@
             font-weight: 500;
             transform: rotate(45deg);
             @include transition;
+            @include breakpoint (max-md) {
+                font-size: 15px;
+            }
         }
         &:before {
             transition-duration: 800ms;
@@ -118,6 +136,7 @@
             color: $white;
             font-weight: 500;
             transform: rotate(45deg);
+            @include transition;
             @include breakpoint (max-md) {
                 font-size: 15px;
             }
