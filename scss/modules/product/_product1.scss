@@ -108,13 +108,17 @@
                         gap: 10px;
                         flex-shrink: 0;
                         border-radius: 5px;
-                        border: 1.136px solid var(--P3, #6A5ACD);
-                        color: var(--P3, #6A5ACD);
+                        border: 1px solid var(--200, #C1C1C1);
+                        background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-feature-settings: 'liga' off, 'clig' off;
                         font-family: Lato;
                         font-size: 20px;
                         font-style: normal;
                         font-weight: 900;
-                        line-height: 30px; /* 150% */
+                        line-height: 30px; 
                         letter-spacing: 0.36px;
                         cursor: pointer;
                         @include breakpoint (max-lg){
