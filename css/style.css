@@ -5398,11 +5398,36 @@ img {
   margin-top: 93px;
   position: relative;
   overflow: hidden;
-  background: var(--100, #F7FAFF);
 }
 @media (max-width: 767px) {
   .breadcrumb {
     padding: 40px 40px;
+  }
+}
+.breadcrumb__shape1 {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 478px;
+  height: 478px;
+  flex-shrink: 0;
+}
+@media (max-width: 1399px) {
+  .breadcrumb__shape1 {
+    display: none;
+  }
+}
+.breadcrumb__shape2 {
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+  width: 478px;
+  height: 478px;
+  flex-shrink: 0;
+}
+@media (max-width: 1399px) {
+  .breadcrumb__shape2 {
+    display: none;
   }
 }
 .breadcrumb-heading {
@@ -5429,14 +5454,17 @@ img {
   }
 }
 .breadcrumb-heading__items li {
-  color: var(--900, #000);
-  font-feature-settings: "liga" off, "clig" off;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: Lato;
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 0.36px;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.216px;
+  text-transform: capitalize;
 }
 .breadcrumb-heading__items li:hover {
   color: var(--theme);
@@ -5448,20 +5476,21 @@ img {
   color: var(--800, #6B7280);
   font-feature-settings: "liga" off, "clig" off;
   font-family: Lato;
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 0.36px;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.216px;
+  text-transform: capitalize;
   transition: all 0.4s ease-in-out;
 }
 .breadcrumb-heading__items li a:hover {
   color: var(--theme);
 }
 .breadcrumb-heading__items li i {
-  color: var(--white);
+  color: var(--black);
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -5469,13 +5498,14 @@ img {
 .breadcrumb-heading__title {
   color: var(--900, #000);
   text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
   font-family: Lato;
-  font-size: 40px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 900;
-  line-height: 44px; /* 110% */
+  line-height: 90px; /* 112.5% */
   letter-spacing: 0.36px;
-  max-width: 573px;
+  max-width: 1184px;
   padding: 20px;
 }
 .breadcrumb-heading__title span {
@@ -5493,9 +5523,9 @@ img {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 30px; /* 166.667% */
   letter-spacing: 0.16px;
-  max-width: 689px;
+  max-width: 794px;
 }
 .breadcrumb-shape1 {
   position: absolute;
