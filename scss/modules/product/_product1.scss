@@ -36,6 +36,9 @@
         }
         &-content {
             padding: 32px 40px 40px;
+            @include breakpoint (max-xxl){
+                padding: 30px 20px 30px;
+            }
             @include breakpoint (max-md){
                 padding: 30px 20px 20px;
             }
@@ -43,6 +46,9 @@
                 display: flex;
                 justify-content: space-between;
                 padding-bottom: 30px;
+                @include breakpoint (max-sm){
+                    padding-bottom: 20px;
+                }
                 &__category {
                     color: var(--900, #000);
                     font-family: Inter;
@@ -79,6 +85,9 @@
                 font-weight: 400;
                 line-height: 30.909px; 
                 padding-bottom: 35px;
+                @include breakpoint (max-sm){
+                    padding-bottom: 20px;
+                }
             }
             &-footer {
                 display: flex;
@@ -87,6 +96,9 @@
                 &-btn {
                     display: flex;
                     gap: 24px;
+                    @include breakpoint (max-xxl){
+                        gap: 10px;
+                    }
                     &__demo {
                         display: inline-flex;
                         height: 45px;
@@ -105,9 +117,21 @@
                         line-height: 30px; /* 150% */
                         letter-spacing: 0.36px;
                         cursor: pointer;
+                        @include breakpoint (max-lg){
+                            height: 40px;
+                        }
+                        @include breakpoint (max-sm){
+                            padding: 0px 10.455px;
+                            font-size: 16px;
+                        }
                     }
                     &__cart {
                         cursor: pointer;
+                        @include breakpoint (max-lg){
+                            img {
+                                width: 90%;
+                            }
+                        }
                     }
                 }
                 &__price {
@@ -118,6 +142,12 @@
                     font-weight: 900;
                     line-height: 30px; 
                     letter-spacing: 0.36px;
+                    @include breakpoint (max-xxl){
+                        font-size: 18px;
+                    }
+                    @include breakpoint (max-lg){
+                        font-size: 16px;
+                    }
                     span {
                         color: var(--900, #000);
                         font-family: Lato;
@@ -126,6 +156,12 @@
                         font-weight: 900;
                         line-height: 34px; /* 141.667% */
                         letter-spacing: 0.36px;
+                        @include breakpoint (max-xxl){
+                            font-size: 20px;
+                        }
+                        @include breakpoint (max-lg){
+                            font-size: 18px;
+                        }
                     }
                 }
             }

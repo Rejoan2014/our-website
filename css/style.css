@@ -10950,6 +10950,11 @@ img {
 .product1-card-content {
   padding: 32px 40px 40px;
 }
+@media (max-width: 1399px) {
+  .product1-card-content {
+    padding: 30px 20px 30px;
+  }
+}
 @media (max-width: 767px) {
   .product1-card-content {
     padding: 30px 20px 20px;
@@ -10959,6 +10964,11 @@ img {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+}
+@media (max-width: 575px) {
+  .product1-card-content-meta {
+    padding-bottom: 20px;
+  }
 }
 .product1-card-content-meta__category {
   color: var(--900, #000);
@@ -10996,6 +11006,11 @@ img {
   line-height: 30.909px;
   padding-bottom: 35px;
 }
+@media (max-width: 575px) {
+  .product1-card-content__author {
+    padding-bottom: 20px;
+  }
+}
 .product1-card-content-footer {
   display: flex;
   justify-content: space-between;
@@ -11004,6 +11019,11 @@ img {
 .product1-card-content-footer-btn {
   display: flex;
   gap: 24px;
+}
+@media (max-width: 1399px) {
+  .product1-card-content-footer-btn {
+    gap: 10px;
+  }
 }
 .product1-card-content-footer-btn__demo {
   display: inline-flex;
@@ -11024,8 +11044,24 @@ img {
   letter-spacing: 0.36px;
   cursor: pointer;
 }
+@media (max-width: 991px) {
+  .product1-card-content-footer-btn__demo {
+    height: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .product1-card-content-footer-btn__demo {
+    padding: 0px 10.455px;
+    font-size: 16px;
+  }
+}
 .product1-card-content-footer-btn__cart {
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  .product1-card-content-footer-btn__cart img {
+    width: 90%;
+  }
 }
 .product1-card-content-footer__price {
   color: var(--800, #6B7280);
@@ -11036,6 +11072,16 @@ img {
   line-height: 30px;
   letter-spacing: 0.36px;
 }
+@media (max-width: 1399px) {
+  .product1-card-content-footer__price {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .product1-card-content-footer__price {
+    font-size: 16px;
+  }
+}
 .product1-card-content-footer__price span {
   color: var(--900, #000);
   font-family: Lato;
@@ -11044,6 +11090,16 @@ img {
   font-weight: 900;
   line-height: 34px; /* 141.667% */
   letter-spacing: 0.36px;
+}
+@media (max-width: 1399px) {
+  .product1-card-content-footer__price span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .product1-card-content-footer__price span {
+    font-size: 18px;
+  }
 }
 
 /* 16. UI Feature */
