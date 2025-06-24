@@ -286,7 +286,7 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <div class="service">
+                        <div class="service service-main">
                             <div class="service__shape1"></div>
                             <div class="service-thumb">
                                 <div class="service-thumb__one">
@@ -337,14 +337,66 @@
                                 </div>                    
                             </div>
                         </div>
+                        <div class="service service-alt">
+                            <div class="service__shape1"></div>
+                                                        <div class="service-list">
+                                <div class="service-list-item">
+                                    <div class="service-list-item__icon">
+                                        <img src="images/icon/mobile.svg" alt="icon">
+                                    </div>
+                                    <div class="service-list-item-content">
+                                        <h5 class="service-list-item-content__title">Mobile App Development</h5>
+                                        <p class="service-list-item-content__desc">Mobile app development is the process of creating software applications</p>
+                                        <div class="service-list-item-content__border"></div>
+                                    </div>
+                                </div>
+                                <div class="service-list-item">
+                                    <div class="service-list-item__icon">
+                                        <img src="images/icon/web-dev.svg" alt="icon">
+                                    </div>
+                                    <div class="service-list-item-content">
+                                        <h5 class="service-list-item-content__title">Web Development</h5>
+                                        <p class="service-list-item-content__desc">Web development involves creating and websites and web applications</p>
+                                        <div class="service-list-item-content__border"></div>
+                                    </div>
+                                </div>
+                                <div class="service-list-item">
+                                    <div class="service-list-item__icon">
+                                        <img src="images/icon/wordpress.svg" alt="icon">
+                                    </div>
+                                    <div class="service-list-item-content">
+                                        <h5 class="service-list-item-content__title">Wordpress Development</h5>
+                                        <p class="service-list-item-content__desc">WordPress development involves creating and customizing websites using</p>
+                                        <div class="service-list-item-content__border"></div>
+                                    </div>
+                                </div>
+                                <div class="service-list-item">
+                                    <div class="service-list-item__icon">
+                                        <img src="images/icon/uiux.svg" alt="icon">
+                                    </div>
+                                    <div class="service-list-item-content">
+                                        <h5 class="service-list-item-content__title">UI/UX Design</h5>
+                                        <p class="service-list-item-content__desc">UI/UX design focuses on creating user-friendly digital experiences.</p>
+                                    </div>
+                                </div>                    
+                            </div>
+                            <div class="service-thumb">
+                                <div class="service-thumb__one">
+                                    <img src="images/service/service-thumb.png" alt="thumb">
+                                </div>
+                                <div class="service-thumb__title">Xume-Corporate Project</div>
+                                <div class="service-thumb__desc">Our new corporate project focuses on developing a cutting-edge digital platform to streamline internal communications </div>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                         <div class="project-nav">
                             <a href="#" class="project-nav__btn">WORK</a>
-                            <a href="#" class="project-nav__btn">SERVICE</a>
+                            <a href="#" class="project-nav__btn"  data-service="main">SERVICE</a>
                             <a href="#" class="project-nav__btn project-nav__btn--start">START A PROJECT <img src="images/icon/message-icon.svg" alt="icon"></a>
                             <a href="#" class="project-nav__btn">PRICING</a>
-                            <a href="#" class="project-nav__btn">MORE</a>
+                            <a href="#" class="project-nav__btn"  data-service="alt">MORE</a>
                         </div>
                     </div>
                 </div>
@@ -1657,49 +1709,170 @@
         };
     </script>
 
+    <!-- <script>
+        const blurOverlay = document.querySelector('.blur-overlay');
+        const service = document.querySelector('.service');
+        const navBtns = document.querySelectorAll('.project-nav__btn');
+
+        let isHovering = false;
+
+        function showServiceAndBlur() {
+            blurOverlay.classList.add('active');
+            service.classList.add('visible');
+        }
+
+        function hideServiceAndBlur() {
+            blurOverlay.classList.remove('active');
+            service.classList.remove('visible');
+        }
+
+        // Hover on nav buttons
+        navBtns.forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+            isHovering = true;
+            showServiceAndBlur();
+            });
+            btn.addEventListener('mouseleave', () => {
+            isHovering = false;
+            setTimeout(() => {
+                if (!isHovering) hideServiceAndBlur();
+            }, 200);
+            });
+        });
+
+        // Hover on service box
+        service.addEventListener('mouseenter', () => {
+            isHovering = true;
+            showServiceAndBlur();
+        });
+        service.addEventListener('mouseleave', () => {
+            isHovering = false;
+            setTimeout(() => {
+            if (!isHovering) hideServiceAndBlur();
+            }, 200);
+        });
+    </script> -->
+
+    <!-- <script>
+        const blurOverlay = document.querySelector('.blur-overlay');
+        const navBtns = document.querySelectorAll('.project-nav__btn');
+        const serviceMain = document.querySelector('.service-main');
+        const serviceAlt = document.querySelector('.service-alt');
+
+        let isHovering = false;
+
+        function showBlur() {
+            blurOverlay.classList.add('active');
+        }
+
+        function hideBlurAndServices() {
+            blurOverlay.classList.remove('active');
+            serviceMain.classList.remove('visible');
+            serviceAlt.classList.remove('visible');
+        }
+
+        function showService(type) {
+            showBlur();
+            if (type === 'main') {
+            serviceMain.classList.add('visible');
+            serviceAlt.classList.remove('visible');
+            } else if (type === 'alt') {
+            serviceAlt.classList.add('visible');
+            serviceMain.classList.remove('visible');
+            }
+        }
+
+        navBtns.forEach(btn => {
+            const type = btn.dataset.service;
+            btn.addEventListener('mouseenter', () => {
+            isHovering = true;
+            if (type) showService(type);
+            });
+            btn.addEventListener('mouseleave', () => {
+            isHovering = false;
+            setTimeout(() => {
+                if (!isHovering) hideBlurAndServices();
+            }, 200);
+            });
+        });
+
+        [serviceMain, serviceAlt].forEach(serviceBox => {
+            serviceBox.addEventListener('mouseenter', () => {
+            isHovering = true;
+            showBlur();
+            });
+            serviceBox.addEventListener('mouseleave', () => {
+            isHovering = false;
+            setTimeout(() => {
+                if (!isHovering) hideBlurAndServices();
+            }, 200);
+            });
+        });
+    </script> -->
+
     <script>
-  const blurOverlay = document.querySelector('.blur-overlay');
-  const service = document.querySelector('.service');
-  const navBtns = document.querySelectorAll('.project-nav__btn');
+        const blurOverlay = document.querySelector('.blur-overlay');
+        const navBtns = document.querySelectorAll('.project-nav__btn');
+        const serviceMain = document.querySelector('.service-main');
+        const serviceAlt = document.querySelector('.service-alt');
 
-  let isHovering = false;
+        let isHovering = false;
 
-  function showServiceAndBlur() {
-    blurOverlay.classList.add('active');
-    service.classList.add('visible');
-  }
+        function showBlur() {
+            blurOverlay.classList.add('active');
+        }
 
-  function hideServiceAndBlur() {
-    blurOverlay.classList.remove('active');
-    service.classList.remove('visible');
-  }
+        function hideBlurAndServices() {
+            blurOverlay.classList.remove('active');
+            serviceMain.classList.remove('visible');
+            serviceAlt.classList.remove('visible');
+        }
 
-  // Hover on nav buttons
-  navBtns.forEach(btn => {
-    btn.addEventListener('mouseenter', () => {
-      isHovering = true;
-      showServiceAndBlur();
-    });
-    btn.addEventListener('mouseleave', () => {
-      isHovering = false;
-      setTimeout(() => {
-        if (!isHovering) hideServiceAndBlur();
-      }, 200);
-    });
-  });
+        function showService(type) {
+            showBlur();
+            if (type === 'main') {
+            serviceMain.classList.add('visible');
+            serviceAlt.classList.remove('visible');
+            } else if (type === 'alt') {
+            serviceAlt.classList.add('visible');
+            serviceMain.classList.remove('visible');
+            }
+        }
 
-  // Hover on service box
-  service.addEventListener('mouseenter', () => {
-    isHovering = true;
-    showServiceAndBlur();
-  });
-  service.addEventListener('mouseleave', () => {
-    isHovering = false;
-    setTimeout(() => {
-      if (!isHovering) hideServiceAndBlur();
-    }, 200);
-  });
-</script>
+        navBtns.forEach(btn => {
+            const type = btn.dataset.service;
+
+            btn.addEventListener('mouseenter', () => {
+            isHovering = true;
+            if (type === 'main' || type === 'alt') {
+                showService(type);
+            } else {
+                // Do nothing if not main/alt
+                hideBlurAndServices();
+            }
+            });
+
+            btn.addEventListener('mouseleave', () => {
+            isHovering = false;
+            setTimeout(() => {
+                if (!isHovering) hideBlurAndServices();
+            }, 200);
+            });
+        });
+
+        [serviceMain, serviceAlt].forEach(serviceBox => {
+            serviceBox.addEventListener('mouseenter', () => {
+            isHovering = true;
+            showBlur();
+            });
+            serviceBox.addEventListener('mouseleave', () => {
+            isHovering = false;
+            setTimeout(() => {
+                if (!isHovering) hideBlurAndServices();
+            }, 200);
+            });
+        });
+    </script>
 
 </body>
 
