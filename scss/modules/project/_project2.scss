@@ -3,120 +3,42 @@
 
 .project2 {
     &-card {
-        background: $white;
-        margin-bottom: 40px;
         &__thumb {
+            padding-bottom: 30px;
             border-radius: 20px;
             img {
                 border-radius: 20px;
             }
         }
-        &-content {
-            position: relative;
-            &__line {
-                position: absolute;
-                width: 880px;
-                height: 1px;
-                background: rgba(35, 35, 35, 0.10);
-                top: 32.5%;
-                @include breakpoint (max-xxl){
-                    top: 31.5%;
-                }
-                @include breakpoint (max-xl){
-                    display: none;
-                }
-            }
-            &__title{
-                padding-top: 40px;
-                padding-bottom: 15px;
-                h5 {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 30px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 38px; /* 126.667% */
-                    @include breakpoint (max-sm){
-                        font-size: 28px;
-                    }
-                }
-            }
-            &__desc {
-                padding-right: 5px;    
-                p {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px;
-                    opacity: 0.7;
-                    padding-bottom: 20px;
-                }            
-            }
-
-            &-profile {
-                    margin-top: 40px;
-                    margin-bottom: 40px;
-                &__thumb {
-                    border-radius: 10px;
-                    img {
-                        border-radius: 10px;
-                    }
-                }
-                &__title {
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 34px;
-                    padding-bottom: 30px;
-                }
-                &__desc {
-                    padding-bottom: 45px;
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 28px;
-                    opacity: 0.7;
-                }
-            }
-            &-step {
-                &__numb {
-                    color: #1F1F1F;
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px; 
-                    opacity: 0.7;
-                    padding-bottom: 10px;
-                }
-                &__title {
-                    color: #1F1F1F;
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px; 
-                    padding-bottom: 16px;
-                }
-                &__icon {
-                    padding-bottom: 20px;
-                }
-                &__desc {
-                    color: #1F1F1F;
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px; 
-                }
-
-            }
+        &__title {
+            color: var(--900, #000);
+            font-family: Lato;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px; /* 110% */
+            letter-spacing: 0.36px;
+            padding-bottom: 20px;
+        }
+        &__desc {
+            color: var(--800, #6B7280);
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 166.667% */
+            letter-spacing: 0.16px;
+            padding-bottom: 30px;
+        }
+        &__title2 {
+            color: var(--900, #000);
+            font-family: Lato;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px; /* 146.667% */
+            letter-spacing: 0.36px;
+            padding-bottom: 20px;
         }
     }
 }
