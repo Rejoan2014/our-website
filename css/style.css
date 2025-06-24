@@ -2983,16 +2983,42 @@ span {
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
 }
 
+.service-project {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 998;
+  transition: opacity 0.4s ease;
+}
+
+.blur-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .service-wrapper {
   position: relative;
 }
 .service-wrapper .service {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20px);
   transition: all 0.4s ease-in-out;
   position: absolute;
-  top: -740px;
+  top: -650px;
   z-index: 10;
 }
 .service-wrapper .project-nav__btn:hover ~ .service,
@@ -3006,7 +3032,6 @@ span {
 .service {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20px);
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .service.visible {
