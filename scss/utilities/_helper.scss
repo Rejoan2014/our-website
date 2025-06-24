@@ -401,6 +401,17 @@
   border-radius: 20px;
   border: 1px solid var(--P2, #E5087B);
   background: var(--100, #F7FAFF);
+  position: relative;
+  &__shape1 {
+    position: absolute;
+    border-radius: 478px;
+    opacity: 0.2;
+    background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+    filter: blur(150px);
+    width: 478px;
+    height: 478px;
+    flex-shrink: 0;
+  }
 
   &-thumb {
     padding: 20px;
@@ -408,6 +419,8 @@
     background: var(--White, #FFF);
     box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
     max-width: 485px;
+    position: relative;
+    z-index: 5;
     &__one {
       border-radius: 20px;
       padding-bottom: 30px;
@@ -444,6 +457,7 @@
       gap: 20px;
       &__icon {
         padding-bottom: 40px;
+        flex: none;
       }
       &-content {
         &__title {
@@ -486,6 +500,7 @@
   max-width: 835px;
   height: 110px;
   flex-shrink: 0;
+  align-items: center;
 
   border-radius: 5px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
@@ -507,6 +522,18 @@
     font-weight: 700;
     line-height: 17px; 
     text-transform: uppercase;
+    &--start {
+      border-radius: 10px;
+      background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+      display: inline-flex;
+      height: 70px;
+      padding: 40px 20px;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border: none;
+    }
+
 
     &:hover {
       color: $white;
