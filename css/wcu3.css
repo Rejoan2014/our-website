@@ -2954,6 +2954,39 @@ span {
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
 }
 
+.service-wrapper {
+  position: relative;
+}
+.service-wrapper .service {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: -740px;
+  z-index: 10;
+}
+.service-wrapper .project-nav__btn:hover ~ .service,
+.service-wrapper .project-nav:hover ~ .service,
+.service-wrapper .service:hover {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+}
+
+.service {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.service.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: all 0.4s ease-in-out;
+}
+
 img {
   max-width: 100%;
   height: auto;

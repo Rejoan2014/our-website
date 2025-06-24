@@ -492,8 +492,6 @@
   }
 }
 
-
-
 .project-nav {
   display: flex;
   gap: 30px;
@@ -539,5 +537,47 @@
       color: $white;
       background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
     }
+  }
+}
+
+
+
+.service-wrapper {
+  position: relative;
+  .service {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    @include transition;
+
+
+    position: absolute;
+    top: -740px; 
+    // left: 50%;
+    // transform: translate(-50%, 20px);
+    z-index: 10;
+  }
+
+  .project-nav__btn:hover ~ .service,
+  .project-nav:hover ~ .service,
+  .service:hover {
+    opacity: 1;
+    visibility: visible;
+    @include transition;
+  }
+}
+
+
+.service {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    @include transition;
   }
 }
