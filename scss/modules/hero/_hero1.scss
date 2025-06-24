@@ -16,19 +16,55 @@
         &__topLayer {
             display: flex;
             justify-content: center;
-            gap: 600px;
-            padding-bottom: 50px;
+            gap: 759px;
+            padding-bottom: 135px;
+            &--one {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background: var(--White, #FFF);
+                box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
+                width: 100px;
+                height: 100px;
+                flex-shrink: 0;
+                aspect-ratio: 1/1;
+            }
         }
         &__middleLayer {
             display: flex;
             justify-content: center;
-            gap: 800px;
-            padding-bottom: 50px;
+            gap: 1030px;
+            padding-bottom: 135px;
+            &--two {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background: var(--White, #FFF);
+                box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
+                width: 100px;
+                height: 100px;
+                flex-shrink: 0;
+                aspect-ratio: 1/1;
+            }
         }
         &__bottomLayer {
             display: flex;
             justify-content: center;
-            gap: 600px;
+            gap: 759px;
+            &--three {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background: var(--White, #FFF);
+                box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
+                width: 100px;
+                height: 100px;
+                flex-shrink: 0;
+                aspect-ratio: 1/1;
+            }
         }
     }
     &__shape1 {
