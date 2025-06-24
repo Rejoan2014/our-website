@@ -11500,6 +11500,7 @@ img {
   font-weight: 700;
   line-height: 17px; /* 100% */
   text-transform: uppercase;
+  cursor: pointer;
 }
 .cta1-banner__btn i {
   transform: rotate(45deg);
