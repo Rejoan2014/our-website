@@ -138,6 +138,7 @@
                 -webkit-text-fill-color: transparent;
                 font-feature-settings: 'liga' off, 'clig' off;
                 font-style: italic;
+                font-weight: 600;
             }
             @include breakpoint (max-xl){
                 font-size: 64px;
