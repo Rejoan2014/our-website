@@ -11693,20 +11693,16 @@ img {
   border-radius: 0px 20px 20px 20px;
   background: var(--100, #F7FAFF);
   padding: 80px 50px 50px;
-}
-.milestone1-card.style1 {
-  margin-right: 160px;
-}
-.milestone1-card.style2 {
-  margin-left: 160px;
+  max-width: 640px;
 }
 .milestone1-card__badge {
   position: absolute;
   top: -30px;
+  left: 0;
   display: inline-flex;
   padding: 8px 35px;
   border-radius: 10px 10px 0px 0px;
-  background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   color: var(--White, #FFF);
   font-family: Lato;
   font-size: 30px;
@@ -11726,6 +11722,11 @@ img {
   height: 70px;
   flex-shrink: 0;
   aspect-ratio: 1/1;
+}
+@media (max-width: 1399px) {
+  .milestone1-card__icon {
+    top: 15%;
+  }
 }
 .milestone1-card__title {
   color: #000;
