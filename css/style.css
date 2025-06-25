@@ -2546,6 +2546,34 @@ span {
   }
 }
 
+.fix-mb-120 {
+  margin-bottom: 120px;
+}
+@media (max-width: 991px) {
+  .fix-mb-120 {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .fix-mb-120 {
+    margin-bottom: 40px;
+  }
+}
+
+.fix-mb-220 {
+  margin-bottom: 220px;
+}
+@media (max-width: 991px) {
+  .fix-mb-220 {
+    margin-bottom: 140px;
+  }
+}
+@media (max-width: 767px) {
+  .fix-mb-220 {
+    margin-bottom: 80px;
+  }
+}
+
 .mxw-405 {
   max-width: 405px;
 }
@@ -8902,13 +8930,25 @@ img {
 .project3-thumb1 {
   position: relative;
   border-radius: 27.065px;
+  padding-left: 36px;
+}
+@media (max-width: 1199px) {
+  .project3-thumb1 {
+    padding-left: 0;
+  }
 }
 .project3-thumb1__shape1 {
   position: absolute;
   top: 10%;
-  right: 15%;
+  right: 11.5%;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1599px) {
+  .project3-thumb1__shape1 {
+    top: 6%;
+    right: -7%;
+  }
+}
+@media (max-width: 1199px) {
   .project3-thumb1__shape1 {
     display: none;
   }
@@ -8916,9 +8956,9 @@ img {
 .project3-thumb1__shape2 {
   position: absolute;
   bottom: 7%;
-  left: -5%;
+  left: 0;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
   .project3-thumb1__shape2 {
     display: none;
   }
@@ -8926,9 +8966,9 @@ img {
 .project3-thumb1__shape3 {
   position: absolute;
   bottom: 10%;
-  right: 9%;
+  right: 4%;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1599px) {
   .project3-thumb1__shape3 {
     display: none;
   }
@@ -9020,6 +9060,21 @@ img {
   position: relative;
   z-index: 3;
 }
+@media (max-width: 1599px) {
+  .project3-content--one {
+    padding-left: 85px;
+  }
+}
+@media (max-width: 1399px) {
+  .project3-content--one {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .project3-content--one {
+    padding-left: 0;
+  }
+}
 .project3-content__title {
   color: var(--900, #000);
   font-family: Lato;
@@ -9029,6 +9084,16 @@ img {
   line-height: 44px; /* 110% */
   letter-spacing: 0.36px;
   padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .project3-content__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .project3-content__title {
+    font-size: 32px;
+  }
 }
 .project3-content__desc {
   color: var(--800, #6B7280);

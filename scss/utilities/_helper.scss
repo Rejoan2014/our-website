@@ -115,6 +115,24 @@
     padding-bottom: 40px;
   }
 }
+.fix-mb-120 {
+  margin-bottom: 120px;
+  @include breakpoint (max-lg){
+    margin-bottom: 70px;
+  }
+  @include breakpoint (max-md){
+    margin-bottom: 40px;
+  }
+}
+.fix-mb-220 {
+  margin-bottom: 220px;
+  @include breakpoint (max-lg){
+    margin-bottom: 140px;
+  }
+  @include breakpoint (max-md){
+    margin-bottom: 80px;
+  }
+}
 
 .mxw-405 {
   max-width: 405px;

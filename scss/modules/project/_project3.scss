@@ -13,27 +13,35 @@
     &-thumb1 {
         position: relative;
         border-radius: 27.065px;
+        padding-left: 36px;
+        @include breakpoint (max-xl){
+            padding-left: 0;
+        }
         &__shape1 {
             position: absolute;
             top: 10%;
-            right: 15%;
-            @include breakpoint (max-xxl){
+            right: 11.5%;
+            @include breakpoint (max-xxxl){
+                top: 6%;
+                right: -7%;
+            }
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
         &__shape2 {
             position: absolute;
             bottom: 7%;
-            left: -5%;
-            @include breakpoint (max-xxl){
+            left: 0;
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
         &__shape3 {
             position: absolute;
             bottom: 10%;
-            right: 9%;
-            @include breakpoint (max-xxl){
+            right: 4%;
+            @include breakpoint (max-xxxl){
                 display: none;
             }
         }
@@ -114,6 +122,17 @@
         }
     }
     &-content {
+        &--one {
+            @include breakpoint (max-xxxl){
+                padding-left: 85px;
+            }
+            @include breakpoint (max-xxl){
+                padding-left: 50px;
+            }
+            @include breakpoint (max-xl){
+                padding-left: 0;
+            }
+        }
         &__title {
             color: var(--900, #000);
             font-family: Lato;
@@ -123,6 +142,12 @@
             line-height: 44px; /* 110% */
             letter-spacing: 0.36px;
             padding-bottom: 20px;
+            @include breakpoint (max-md){
+                font-size: 35px;
+            }
+            @include breakpoint (max-sm){
+                font-size: 32px;
+            }
         }
         &__desc {
             color: var(--800, #6B7280);
