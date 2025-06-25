@@ -404,6 +404,20 @@
   border: 1px solid var(--P2, #E5087B);
   background: var(--100, #F7FAFF);
   position: relative;
+  &.service-alt {
+    .service-alt__indicator {
+      position: absolute;
+      bottom: -31px;
+      right: 17%;
+    }
+  }
+  &.service-main {
+    .service-main__indicator {
+      position: absolute;
+      bottom: -31px;
+      left: 30%;
+    }
+  }
   &__shape1 {
     position: absolute;
     border-radius: 478px;
@@ -567,14 +581,11 @@
       align-items: center;
       gap: 10px;
       flex-shrink: 0;
-      border: 1px solid transparent; 
+      border: none;
     }
-
 
     &:hover {
       color: $white;
-      border: 1px solid transparent;
-      background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
     }
   }
 }

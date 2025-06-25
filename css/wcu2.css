@@ -2827,6 +2827,16 @@ span {
   background: var(--100, #F7FAFF);
   position: relative;
 }
+.service.service-alt .service-alt__indicator {
+  position: absolute;
+  bottom: -31px;
+  right: 17%;
+}
+.service.service-main .service-main__indicator {
+  position: absolute;
+  bottom: -31px;
+  left: 30%;
+}
 .service__shape1 {
   position: absolute;
   border-radius: 478px;
@@ -2981,12 +2991,10 @@ span {
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  border: 1px solid transparent;
+  border: none;
 }
 .project-nav__btn:hover {
   color: var(--white);
-  border: 1px solid transparent;
-  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
 }
 
 .service-project {
