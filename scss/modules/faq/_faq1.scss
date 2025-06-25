@@ -17,6 +17,28 @@
         font-weight: 700;
         line-height: 192.877px;
         padding-bottom: 10px;
+        @include breakpoint (max-xxl){
+          font-size: 130.731px;
+          line-height: 172.877px;
+        }
+        @include breakpoint (max-lg){
+          font-size: 80.731px;
+          line-height: 95.877px;
+        }
+        @include breakpoint (max-sm){
+          font-size: 62.731px;
+          line-height: 65.877px;
+        }
+      }
+      &__link {
+        @include breakpoint (max-lg){
+          display: none;
+        }
+        img {
+          @include breakpoint (max-xxl){
+            width: 40%;
+          }
+        }
       }
       .faq-group {
         max-width: 790px;
