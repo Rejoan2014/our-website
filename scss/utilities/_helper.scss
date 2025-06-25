@@ -457,8 +457,8 @@
     }
     &__btn {
       position: absolute;
-      bottom: 34%;
-      left: 7%;
+      bottom: 35%;
+      left: 8%;
       display: inline-flex;
       height: 50px;
       padding: 20px;
@@ -480,26 +480,30 @@
         }
       }
     }
-    &__title {
-      color: var(--900, #000);
-      font-feature-settings: 'liga' off, 'clig' off;
-      font-family: Lato;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 30px; /* 150% */
-      letter-spacing: 0.36px;
-      padding-bottom: 30px;
-
-    }
-    &__desc {
-      color: var(--800, #6B7280);
-      font-family: Lato;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 30px; /* 166.667% */
-      letter-spacing: 0.16px;
+    &-content {
+      padding: 0px 20px;
+      &__title {
+        color: var(--900, #000);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Lato;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 150% */
+        letter-spacing: 0.36px;
+        padding-bottom: 18px;
+  
+      }
+      &__desc {
+        color: var(--800, #6B7280);
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; 
+        letter-spacing: 0.16px;
+        padding-bottom: 10px;
+      }
     }
   }
   &-list {

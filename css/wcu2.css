@@ -2876,8 +2876,8 @@ span {
 }
 .service-thumb__btn {
   position: absolute;
-  bottom: 34%;
-  left: 7%;
+  bottom: 35%;
+  left: 8%;
   display: inline-flex;
   height: 50px;
   padding: 20px;
@@ -2897,7 +2897,10 @@ span {
 .service-thumb__btn:hover a {
   color: var(--white);
 }
-.service-thumb__title {
+.service-thumb-content {
+  padding: 0px 20px;
+}
+.service-thumb-content__title {
   color: var(--900, #000);
   font-feature-settings: "liga" off, "clig" off;
   font-family: Lato;
@@ -2906,16 +2909,17 @@ span {
   font-weight: 600;
   line-height: 30px; /* 150% */
   letter-spacing: 0.36px;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
 }
-.service-thumb__desc {
+.service-thumb-content__desc {
   color: var(--800, #6B7280);
   font-family: Lato;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
   letter-spacing: 0.16px;
+  padding-bottom: 10px;
 }
 .service-list-item {
   display: flex;
