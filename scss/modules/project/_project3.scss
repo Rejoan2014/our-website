@@ -51,31 +51,46 @@
     }
     &-thumb2 {
         position: relative;
-        text-align: center;
+        text-align: end;
         border-radius: 27.065px;
+        padding-right: 60px;
+        @include breakpoint (max-xl){
+            text-align: start;
+            padding-right: 0;
+        }
         &__shape4 {
             position: absolute;
-            top: -4%;
-            left: 4%;
+            top: -2.5%;
+            left: 8.5%;
             z-index: 1;
+            @include breakpoint (max-xxxl){
+                left: -3%;
+            }
             @include breakpoint (max-xxl){
+                top: -4.5%;
+                left: -5%;
+            }
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
         &__shape5 {
             position: absolute;
             right: 0;
-            bottom: -5%;
+            bottom: -8.5%;
             z-index: 1;
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
         &__shape6 {
             position: absolute;
-            bottom: -5%;
-            left: 5%;
+            bottom: -7%;
+            left: 3%;
             z-index: 1;
+            @include breakpoint (max-xxxl){
+                left: -9%;
+            }
             @include breakpoint (max-xxl){
                 display: none;
             }
@@ -89,29 +104,47 @@
     &-thumb3 {
         position: relative;
         border-radius: 27.065px;
+        padding-left: 60px;
+        @include breakpoint (max-xxl){
+            padding-left: 40px;
+        }
+        @include breakpoint (max-xl){
+            padding-left: 0;
+        }
         &__shape7 {
             position: absolute;
             top: -4%;
-            left: -4%;
+            left: 4%;
             z-index: 1;
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xxxl){
                 display: none;
             }
         }
         &__shape8 {
             position: absolute;
-            top: -8%;
-            left: -7%;
+            top: -7%;
+            left: 0;
             z-index: 1;
+            @include breakpoint (max-xxxl){
+                top: -6%;
+                left: 21px;
+            }
             @include breakpoint (max-xxl){
+                top: -6%;
+                left: 10px;
+            }
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
         &__shape9 {
             position: absolute;
             bottom: 10%;
-            right: 9%;
-            @include breakpoint (max-xxl){
+            right: 3%;
+            @include breakpoint (max-xxxl){
+                right: -12%;
+            }
+            @include breakpoint (max-xl){
                 display: none;
             }
         }
@@ -128,6 +161,28 @@
             }
             @include breakpoint (max-xxl){
                 padding-left: 50px;
+            }
+            @include breakpoint (max-xl){
+                padding-left: 0;
+            }
+        }
+        &--two {
+            @include breakpoint (max-xxxl){
+                padding-right: 85px;
+            }
+            @include breakpoint (max-xxl){
+                padding-right: 50px;
+            }
+            @include breakpoint (max-xl){
+                padding-right: 0;
+            }
+        }
+        &--three {
+            @include breakpoint (max-xxxl){
+                padding-left: 85px;
+            }
+            @include breakpoint (max-xxl){
+                padding-left: 35px;
             }
             @include breakpoint (max-xl){
                 padding-left: 0;

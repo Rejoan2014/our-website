@@ -117,20 +117,26 @@
 }
 .fix-mb-120 {
   margin-bottom: 120px;
+  @include breakpoint (max-xl){
+    margin-bottom: 80px;
+  }
   @include breakpoint (max-lg){
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
   @include breakpoint (max-md){
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 .fix-mb-220 {
   margin-bottom: 220px;
-  @include breakpoint (max-lg){
-    margin-bottom: 140px;
+  @include breakpoint (max-xxl){
+    margin-bottom: 170px;
   }
-  @include breakpoint (max-md){
-    margin-bottom: 80px;
+  @include breakpoint (max-xl){
+    margin-bottom: 90px;
+  }
+  @include breakpoint (max-lg){
+    margin-bottom: 60px;
   }
 }
 

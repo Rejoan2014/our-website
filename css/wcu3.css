@@ -2520,28 +2520,38 @@ span {
 .fix-mb-120 {
   margin-bottom: 120px;
 }
+@media (max-width: 1199px) {
+  .fix-mb-120 {
+    margin-bottom: 80px;
+  }
+}
 @media (max-width: 991px) {
   .fix-mb-120 {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
   .fix-mb-120 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
 .fix-mb-220 {
   margin-bottom: 220px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1399px) {
   .fix-mb-220 {
-    margin-bottom: 140px;
+    margin-bottom: 170px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .fix-mb-220 {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 991px) {
+  .fix-mb-220 {
+    margin-bottom: 60px;
   }
 }
 
