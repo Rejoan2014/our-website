@@ -4160,6 +4160,11 @@ img {
   transition: all 0.4s ease-in-out;
 }
 
+.subscribe {
+  margin-bottom: -133px;
+  position: relative;
+  z-index: 7;
+}
 .subscribe-info {
   position: relative;
   display: flex;

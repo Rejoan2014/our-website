@@ -12128,6 +12128,11 @@ img {
 }
 
 /* 17. Subscribe */
+.subscribe {
+  margin-bottom: -133px;
+  position: relative;
+  z-index: 7;
+}
 .subscribe-info {
   position: relative;
   display: flex;
@@ -12253,7 +12258,8 @@ img {
 }
 .footer1-wrapper {
   position: relative;
-  z-index: 9;
+  z-index: 4;
+  padding-top: 134px;
 }
 .footer1-wrapper__logo {
   padding-top: 75px;
@@ -12617,7 +12623,7 @@ img {
 }
 .footer1-bottom {
   position: relative;
-  z-index: 9;
+  z-index: 5;
 }
 .footer1-bottom-info {
   display: flex;

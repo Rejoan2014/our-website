@@ -2,6 +2,9 @@
 @use '../utilities' as *;
 
 .subscribe {
+    margin-bottom: -133px;
+    position: relative;
+    z-index: 7;
     &-info {
         position: relative;
         display: flex;
