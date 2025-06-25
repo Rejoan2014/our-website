@@ -9,6 +9,9 @@
         padding: 50px;
         border-radius: 5px;
         background: var(--White, #FFF);
+        @include breakpoint (max-lg){
+            padding: 30px 25px;
+        }
 
         &__icon {
             display: inline-flex;
