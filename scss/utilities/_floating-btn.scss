@@ -1,0 +1,270 @@
+@use '../root' as *;
+
+// Floating cta section 
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 1080px;
+  height: 705px;
+  padding: 40px;
+  gap: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--P2, #E5087B);
+  background: var(--100, #F7FAFF);
+  position: relative;
+  &.service-alt {
+    .service-alt__indicator {
+      position: absolute;
+      bottom: -31px;
+      right: 17%;
+    }
+  }
+  &.service-main {
+    .service-main__indicator {
+      position: absolute;
+      bottom: -31px;
+      left: 30%;
+    }
+  }
+  &__shape1 {
+    position: absolute;
+    border-radius: 478px;
+    opacity: 0.2;
+    background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+    filter: blur(150px);
+    width: 478px;
+    height: 478px;
+    flex-shrink: 0;
+  }
+  &__shape2 {
+    position: absolute;
+    border-radius: 478px;
+    opacity: 0.2;
+    background: linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%);
+    filter: blur(150px);
+    width: 478px;
+    height: 478px;
+    flex-shrink: 0;
+  }
+
+  &-thumb {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+    max-width: 485px;
+    position: relative;
+    z-index: 5;
+    &__one {
+      border-radius: 20px;
+      padding-bottom: 30px;
+      img {
+        border-radius: 20px;
+      }
+    }
+    &__btn {
+      position: absolute;
+      bottom: 35%;
+      left: 8%;
+      display: inline-flex;
+      height: 50px;
+      padding: 20px;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+      color: var(--White, #FFF);
+      font-family: Lato;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 17px; /* 100% */
+      text-transform: uppercase;
+      &:hover {
+        a {
+          color: $white;
+        }
+      }
+    }
+    &-content {
+      padding: 0px 20px;
+      &__title {
+        color: var(--900, #000);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Lato;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 150% */
+        letter-spacing: 0.36px;
+        padding-bottom: 18px;
+  
+      }
+      &__desc {
+        color: var(--800, #6B7280);
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; 
+        letter-spacing: 0.16px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  &-list {
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &__icon {
+        padding-bottom: 40px;
+        flex: none;
+      }
+      &-content {
+        &__title {
+          color: var(--900, #000);
+          font-feature-settings: 'liga' off, 'clig' off;
+          font-family: Lato;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30px; /* 150% */
+          letter-spacing: 0.36px;
+          padding-bottom: 15px;
+        }
+        &__desc {
+          color: var(--800, #6B7280);
+          font-family: Lato;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; /* 166.667% */
+          letter-spacing: 0.16px;
+        }
+        &__border {
+          margin-top: 20px;
+          margin-bottom: 25px;
+          background: linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%);
+          width: 405px;
+          height: 1px;
+        }
+      }
+    }
+  }
+}
+
+.project-nav {
+  display: flex;
+  gap: 30px;
+  max-width: 835px;
+  height: 110px;
+  flex-shrink: 0;
+  align-items: center;
+
+  border-radius: 5px;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  padding: 30px 50px;
+
+  &__btn {
+    display: inline-flex;
+    height: 50px;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid var(--100, #F7FAFF);
+    color: var(--White, #FFF);
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px; 
+    text-transform: uppercase;
+    &--start {
+      border-radius: 10px;
+      background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+      display: inline-flex;
+      height: 70px;
+      padding: 40px 20px;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border: none;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+
+.service-project {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; 
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 998;
+  transition: opacity 0.4s ease;
+}
+.blur-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.service-wrapper {
+  position: relative;
+  .service {
+    opacity: 0;
+    visibility: hidden;
+    @include transition;
+
+
+    position: absolute;
+    top: -650px; 
+    z-index: 10;
+  }
+
+  .project-nav__btn:hover ~ .service,
+  .project-nav:hover ~ .service,
+  .service:hover {
+    opacity: 1;
+    visibility: visible;
+    @include transition;
+  }
+}
+
+
+.service {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    @include transition;
+  }
+}
