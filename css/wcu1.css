@@ -3023,40 +3023,70 @@ img {
     font-size: 18px;
   }
 }
-.list.style1 .checklist-item__text span {
-  color: var(--White, #FFF);
-  font-family: Urbanist;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px; /* 137.5% */
-  padding-left: 25px;
+.list.style2 .checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.list.style2 {
+.list.style2 .checklist-item {
+  display: flex;
+  align-items: center;
+}
+.list.style2 .checklist-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.list.style2 .checklist-item__icon {
+  padding-right: 10px;
+}
+.list.style2 .checklist-item__icon i {
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.list.style2 .checklist-item__text {
+  color: var(--900, #000);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+}
+@media (max-width: 1199px) {
+  .list.style2 .checklist-item__text {
+    font-size: 18px;
+  }
+}
+.list.style3 {
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 @media (max-width: 1399px) {
-  .list.style2 {
+  .list.style3 {
     gap: 20px;
   }
 }
 @media (max-width: 767px) {
-  .list.style2 {
+  .list.style3 {
     display: flex;
     flex-direction: column;
     padding-top: 0px;
     padding-bottom: 0px;
   }
 }
-.list.style2 .checklist-item {
+.list.style3 .checklist-item {
   display: flex;
   align-items: center;
   gap: 16px;
   padding-bottom: 10px;
 }
-.list.style2 .checklist-item__text {
+.list.style3 .checklist-item__text {
   color: var(--800, #6B7280);
   font-family: Lato;
   font-size: 18px;
@@ -3065,7 +3095,7 @@ img {
   line-height: 30px; /* 166.667% */
   letter-spacing: 0.16px;
 }
-.list.style2 .checklist-item__text--bold {
+.list.style3 .checklist-item__text--bold {
   color: var(--900, #000);
   font-family: Lato;
   font-size: 20px;
