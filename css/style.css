@@ -7384,6 +7384,11 @@ img {
     right: -4%;
   }
 }
+@media (max-width: 1399px) {
+  .about1-thumb__shape4 {
+    display: none;
+  }
+}
 .about1-thumb-badge {
   display: flex;
   align-items: center;
@@ -7405,6 +7410,7 @@ img {
 @media (max-width: 1199px) {
   .about1-thumb-badge {
     right: 30px;
+    left: -15px;
     width: fit-content;
   }
 }
