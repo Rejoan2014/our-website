@@ -2494,6 +2494,15 @@ span {
   }
 }
 
+.section-padding-footer {
+  padding: 180px 0;
+}
+@media (max-width: 1399px) {
+  .section-padding-footer {
+    padding: 0;
+  }
+}
+
 @media (min-width: 1700px) {
   .wcu1-fix {
     padding-left: 62px;

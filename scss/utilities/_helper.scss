@@ -101,6 +101,14 @@
   }
 }
 
+.section-padding-footer {
+  padding: 180px 0;
+
+  @include breakpoint(max-xxl) {
+    padding: 0;
+  }
+}
+
 
 .wcu1-fix {
   @include breakpoint (xl2){
@@ -129,6 +137,7 @@
     padding-bottom: 40px;
   }
 }
+
 .fix-mb-120 {
   margin-bottom: 120px;
   @include breakpoint (max-xl){
