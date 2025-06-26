@@ -37,6 +37,15 @@
             line-height: 44px; /* 110% */
             letter-spacing: 0.36px;
             opacity: 0.1;
+            @include breakpoint (max-xxl){
+                top: 12%;
+            }
+            @include breakpoint (max-lg){
+                top: 10%;
+            }
+            @include breakpoint (max-md){
+                font-size: 36px;
+            }
         }
         &__title {
             color: #1D2027;

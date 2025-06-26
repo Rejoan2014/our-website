@@ -4,10 +4,13 @@
 .about1 {
     position: relative;
     .row {
-        padding: 120px 50px;
+        padding: 120px 68px;
         border-radius: 20px;
         background: var(--White, #FFF);
         box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+        @include breakpoint (max-xl2){
+            padding: 68px 55px;
+        }
         @include breakpoint (max-xxl){
             padding: 30px 30px;
         }
@@ -33,7 +36,7 @@
         font-weight: 400;
         line-height: 30px; 
         letter-spacing: 0.16px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     &-thumb {
@@ -50,7 +53,7 @@
             align-items: center;
             gap: 15px;
             position: absolute;
-            top: 58%;
+            top: 62%;
             left: 0;
             border-radius: 10px;
             background: var(--White, #FFF);
@@ -80,8 +83,8 @@
                     height: 60px;
                 }
                 @include breakpoint (max-xs){
-                    width: 55px;
-                    height: 55px;
+                    width: 65px;
+                    height: 65px;
                 }
                 img {
                     width: 50px;
@@ -133,7 +136,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        column-gap: 141px;
+        column-gap: 65px;
         row-gap: 80px;
         @include breakpoint (max-xl2){
             column-gap: 80px;

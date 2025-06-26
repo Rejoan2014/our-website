@@ -9,7 +9,10 @@
     &__subtitle {
         display: flex;
         gap: 8px;
-        color: var(--P3, #6A5ACD);
+        background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: Lato;
         font-size: 16px;
         font-style: normal;
