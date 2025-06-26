@@ -3378,9 +3378,19 @@ img {
   transform: translate(-50%, -50%);
   z-index: 7;
 }
-@media (max-width: 991px) {
+@media (max-width: 1599px) {
+  .video1-icon {
+    right: -28%;
+  }
+}
+@media (max-width: 1199px) {
+  .video1-icon {
+    right: -6%;
+  }
+}
+@media (max-width: 767px) {
   .video1-icon img {
-    width: 70%;
+    display: none;
   }
 }
 

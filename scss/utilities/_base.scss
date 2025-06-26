@@ -539,9 +539,15 @@ img {
       right: -20%;
       transform: translate(-50%, -50%);
       z-index: 7;
+      @include breakpoint (max-xxxl){
+        right: -28%;
+      }
+      @include breakpoint (max-xl){
+        right: -6%;
+      }
       img {
-          @include breakpoint (max-lg){
-              width: 70%;
+          @include breakpoint (max-md){
+              display: none;
           }
       }
     }
