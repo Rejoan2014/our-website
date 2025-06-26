@@ -47,6 +47,15 @@
             position: relative;
   
         }
+        &__shape3 {
+            position: absolute;
+            top: 20px;
+        }
+        &__shape4 {
+            position: absolute;
+            bottom: -7%;
+            right: 7%;
+        }
         
         &-badge {
             display: flex;
@@ -55,6 +64,7 @@
             position: absolute;
             top: 62%;
             left: 0;
+            z-index: 4;
             border-radius: 10px;
             background: var(--White, #FFF);
             box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
@@ -133,11 +143,40 @@
         }
     }
     &-counter {
+        position: relative;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         column-gap: 65px;
         row-gap: 80px;
+        &__shape1 {
+            position: absolute;
+            left: 40%;
+            width: 1px;
+            height: 268px;
+            background: #C1C1C1;
+            @include breakpoint (max-xxxl){
+                left: 45%;
+            }
+            @include breakpoint (max-xxl){
+                left: 46%;
+            }
+            @include breakpoint (max-xl){
+                display: none;
+            }
+        }
+        &__shape2 {
+            position: absolute;
+            width: 603px;
+            height: 1px;
+            background: #C1C1C1;
+            @include breakpoint (max-xxl){
+                width: 498px;
+            }
+            @include breakpoint (max-xl){
+                display: none;
+            }
+        }
         @include breakpoint (max-xl2){
             column-gap: 80px;
         }

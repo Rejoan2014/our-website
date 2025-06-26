@@ -7365,6 +7365,15 @@ img {
 .about1-thumb__one {
   position: relative;
 }
+.about1-thumb__shape3 {
+  position: absolute;
+  top: 20px;
+}
+.about1-thumb__shape4 {
+  position: absolute;
+  bottom: -7%;
+  right: 7%;
+}
 .about1-thumb-badge {
   display: flex;
   align-items: center;
@@ -7372,6 +7381,7 @@ img {
   position: absolute;
   top: 62%;
   left: 0;
+  z-index: 4;
   border-radius: 10px;
   background: var(--White, #FFF);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
@@ -7461,11 +7471,50 @@ img {
   line-height: 21.6px; /* 120% */
 }
 .about1-counter {
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 65px;
   row-gap: 80px;
+}
+.about1-counter__shape1 {
+  position: absolute;
+  left: 40%;
+  width: 1px;
+  height: 268px;
+  background: #C1C1C1;
+}
+@media (max-width: 1599px) {
+  .about1-counter__shape1 {
+    left: 45%;
+  }
+}
+@media (max-width: 1399px) {
+  .about1-counter__shape1 {
+    left: 46%;
+  }
+}
+@media (max-width: 1199px) {
+  .about1-counter__shape1 {
+    display: none;
+  }
+}
+.about1-counter__shape2 {
+  position: absolute;
+  width: 603px;
+  height: 1px;
+  background: #C1C1C1;
+}
+@media (max-width: 1399px) {
+  .about1-counter__shape2 {
+    width: 498px;
+  }
+}
+@media (max-width: 1199px) {
+  .about1-counter__shape2 {
+    display: none;
+  }
 }
 @media (max-width: 1699px) {
   .about1-counter {
