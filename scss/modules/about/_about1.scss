@@ -50,11 +50,17 @@
         &__shape3 {
             position: absolute;
             top: 20px;
+            @include breakpoint (max-xxxl){
+                left: -50px;
+            }
         }
         &__shape4 {
             position: absolute;
-            bottom: -7%;
+            bottom: -5%;
             right: 7%;
+            @include breakpoint (max-xxxl){
+                right: -4%;
+            }
         }
         
         &-badge {
@@ -69,6 +75,9 @@
             background: var(--White, #FFF);
             box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
             padding: 25px 100px 25px 30px;
+            @include breakpoint (max-xxxl){
+                left: -36px;
+            }
             @include breakpoint (max-xl){
                 right: 30px;
                 width: fit-content;

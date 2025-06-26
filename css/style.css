@@ -7369,10 +7369,20 @@ img {
   position: absolute;
   top: 20px;
 }
+@media (max-width: 1599px) {
+  .about1-thumb__shape3 {
+    left: -50px;
+  }
+}
 .about1-thumb__shape4 {
   position: absolute;
-  bottom: -7%;
+  bottom: -5%;
   right: 7%;
+}
+@media (max-width: 1599px) {
+  .about1-thumb__shape4 {
+    right: -4%;
+  }
 }
 .about1-thumb-badge {
   display: flex;
@@ -7386,6 +7396,11 @@ img {
   background: var(--White, #FFF);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   padding: 25px 100px 25px 30px;
+}
+@media (max-width: 1599px) {
+  .about1-thumb-badge {
+    left: -36px;
+  }
 }
 @media (max-width: 1199px) {
   .about1-thumb-badge {
