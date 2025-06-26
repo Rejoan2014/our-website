@@ -44,9 +44,13 @@
             font-feature-settings: 'liga' off, 'clig' off;
             padding-bottom: 20px;
 
-            @include breakpoint(max-xl) {
+            @include breakpoint(max-xxl) {
                 font-size: 64px;
-                line-height: 76px;
+                line-height: 78px;
+            }
+            @include breakpoint(max-xl) {
+                font-size: 60px;
+                line-height: 72px;
             }
             @include breakpoint(max-lg) {
                 font-size: 52px;

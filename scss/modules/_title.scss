@@ -43,13 +43,21 @@
         font-weight: 900;
         line-height: 65px; /* 135.417% */
         letter-spacing: 0.49px;
-        @include breakpoint (max-xl) {
-            font-size: 34px;
-            line-height: 45px;
+        @include breakpoint(max-xl) {
+            font-size: 42px;
+            line-height: 56px;
         }
-        @include breakpoint (max-sm) {
+        @include breakpoint(max-lg) {
+            font-size: 36px;
+            line-height: 50px;
+        }
+        @include breakpoint(max-md) {
             font-size: 30px;
-            line-height: 40px;
+            line-height: 44px;
+        }
+        @include breakpoint(max-sm) {
+            font-size: 26px;
+            line-height: 38px;
         }
         span {
             background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
@@ -67,8 +75,12 @@
         font-weight: 900;
         line-height: 65px; 
         letter-spacing: 0.49px;
+        @include breakpoint (max-xxl){
+            font-size: 66px;
+            line-height: 76px;
+        }
         @include breakpoint (max-xl){
-            font-size: 64px;
+            font-size: 62px;
             line-height: 76px;
         }
         @include breakpoint (max-lg){
@@ -95,17 +107,21 @@
         font-weight: 900;
         line-height: 65px; 
         letter-spacing: 0.49px;
-        @include breakpoint (max-xl) {
-            font-size: 45px;
+        @include breakpoint(max-xl) {
+            font-size: 42px;
+            line-height: 56px;
+        }
+        @include breakpoint(max-lg) {
+            font-size: 36px;
             line-height: 50px;
         }
-        @include breakpoint (max-md) {
-            font-size: 42px;
-            line-height: 45px;
-        }
-        @include breakpoint (max-sm) {
+        @include breakpoint(max-md) {
             font-size: 30px;
-            line-height: 40px;
+            line-height: 44px;
+        }
+        @include breakpoint(max-sm) {
+            font-size: 26px;
+            line-height: 38px;
         }
         span {
             color: $theme-color;
