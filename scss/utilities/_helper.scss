@@ -433,3 +433,247 @@
   }
 }
 
+.cart {
+  &__title {
+    color: var(--900, #000);
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 44px; /* 110% */
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin-bottom: 40px;
+    @include breakpoint(max-lg) {
+      font-size: 34px;
+      line-height: 42px;
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint(max-md) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    @include breakpoint(max-sm) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__table {
+    margin: 0 auto;
+  }
+
+  &__header,
+  &__row {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    @include breakpoint (max-md){
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    @include breakpoint (max-xxsmall){
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__col {
+    color: var(--900, #000);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 34px; 
+    letter-spacing: 0.36px;
+    @include breakpoint (max-lg){
+      font-size: 20px;
+    }
+    @include breakpoint (max-md){
+      font-size: 18px;
+    }
+    @include breakpoint (max-sm){
+      font-size: 16px;
+    }
+    @include breakpoint (max-xxsmall){
+      font-size: 14px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @include breakpoint (max-lg){
+      gap: 30px;
+    }
+
+    img {
+      border-radius: 5px;
+      @include breakpoint (max-lg){
+        width: 40%;
+      }
+      @include breakpoint (max-md){
+        display: none;
+      }
+    }
+
+    @include breakpoint(max-md) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__details {
+    .cart__label {
+      display: block;
+      color: var(--900, #000);
+      font-family: Lato;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 30px; /* 150% */
+      letter-spacing: 0.36px;
+      padding-bottom: 10px;
+      @include breakpoint (max-xl){
+        font-size: 16px;
+      }
+      @include breakpoint (max-sm){
+        font-size: 14px;
+      }
+    }
+
+    .cart__name {
+      color: var(--900, #000);
+      font-family: Lato;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 44px;
+      letter-spacing: 0.36px;
+      padding-bottom: 10px;
+      @include breakpoint (max-xl){
+        font-size: 24px;
+        line-height: 36px;
+      }
+      @include breakpoint (max-lg){
+        font-size: 20px;
+        line-height: 28px;
+      }
+      @include breakpoint (max-sm){
+        font-size: 16px;
+      }
+      @include breakpoint (max-xs){
+        padding-bottom: 0;
+      }
+    }
+
+    .cart__link {
+      background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: Lato;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 34px; /* 141.667% */
+      letter-spacing: 0.36px;
+      text-decoration: underline;
+      @include breakpoint (max-xl){
+        font-size: 18px;
+      }
+      @include breakpoint (max-sm){
+        font-size: 16px;
+      }
+      @include breakpoint (max-xxsmall){
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__price,
+  &__total {
+    text-align: end;
+    color: var(--900, #000);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 34px; /* 141.667% */
+    letter-spacing: 0.36px;
+    @include breakpoint (max-lg){
+      font-size: 20px;
+    }
+    @include breakpoint (max-md){
+      font-size: 18px;
+    }
+    @include breakpoint (max-sm){
+      font-size: 16px;
+    }
+    @include breakpoint (max-xxsmall){
+      font-size: 14px;
+    }
+    span {
+      color: var(--900, #000);
+      font-family: Lato;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 44px; /* 110% */
+      letter-spacing: 0.36px;
+    }
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+
+    span {
+      color: var(--900, #000);
+      font-family: Lato;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 44px; /* 110% */
+      letter-spacing: 0.36px;
+    }
+
+    .qty-btn {
+      display: inline-flex;
+      height: 40px;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid var(--200, #C1C1C1);
+      @include breakpoint (max-md){
+        padding: 10px 15px;
+        height: 30px;
+      }
+      @include breakpoint (max-xsmall){
+        padding: 6px 10px;
+        height: 26px;
+      }
+      &__numb {
+        color: var(--900, #000);
+        font-family: Outfit;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0 10px;
+        @include breakpoint (max-xs){
+          padding: 0 6px;
+        }
+      }
+    }
+  }
+}
