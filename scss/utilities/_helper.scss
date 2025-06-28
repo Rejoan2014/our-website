@@ -626,6 +626,20 @@
       font-weight: 900;
       line-height: 44px; /* 110% */
       letter-spacing: 0.36px;
+      @include breakpoint(max-lg) {
+        font-size: 34px;
+        line-height: 42px;
+      }
+
+      @include breakpoint(max-md) {
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      @include breakpoint(max-sm) {
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
   }
 
@@ -635,7 +649,7 @@
     justify-content: end;
     gap: 8px;
 
-    span {
+    &--total {
       color: var(--900, #000);
       font-family: Lato;
       font-size: 40px;
@@ -643,6 +657,20 @@
       font-weight: 900;
       line-height: 44px; /* 110% */
       letter-spacing: 0.36px;
+      @include breakpoint(max-lg) {
+        font-size: 34px;
+        line-height: 42px;
+      }
+
+      @include breakpoint(max-md) {
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      @include breakpoint(max-sm) {
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
 
     .qty-btn {
