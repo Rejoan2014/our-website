@@ -41,6 +41,12 @@
             font-size: 18px;
             line-height: 26px;
           }
+          @include breakpoint (max-xsmall) {
+            padding: 0 10px;
+          }
+          @include breakpoint (max-xxsmall) {
+            height: 90px;
+          }
           span {
             display: inline-flex;
             padding: 10px;
@@ -70,6 +76,9 @@
             padding: 0 30px;
             background: $white;
             color: $black;
+            @include breakpoint (max-xsmall) {
+              padding: 0 10px;
+            }
             span {
                 display: inline-flex;
                 padding: 10px;
@@ -130,6 +139,9 @@
           }
           @include breakpoint (max-sm) {
             font-size: 14px;
+          }
+          @include breakpoint (max-xsmall) {
+            padding: 0px 60px 23px 73px;
           }
         }
       }

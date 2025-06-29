@@ -5590,6 +5590,16 @@ img {
     line-height: 26px;
   }
 }
+@media (max-width: 449px) {
+  .faq-group .accordion-item .accordion-header .accordion-button {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 374px) {
+  .faq-group .accordion-item .accordion-header .accordion-button {
+    height: 90px;
+  }
+}
 .faq-group .accordion-item .accordion-header .accordion-button span {
   display: inline-flex;
   padding: 10px;
@@ -5622,6 +5632,11 @@ img {
   padding: 0 30px;
   background: var(--white);
   color: var(--black);
+}
+@media (max-width: 449px) {
+  .faq-group .accordion-item .accordion-header .accordion-button.collapsed {
+    padding: 0 10px;
+  }
 }
 .faq-group .accordion-item .accordion-header .accordion-button.collapsed span {
   display: inline-flex;
@@ -5681,6 +5696,11 @@ img {
 @media (max-width: 575px) {
   .faq-group .accordion-item .accordion-collapse .accordion-body {
     font-size: 14px;
+  }
+}
+@media (max-width: 449px) {
+  .faq-group .accordion-item .accordion-collapse .accordion-body {
+    padding: 0px 60px 23px 73px;
   }
 }
 
