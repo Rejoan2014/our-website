@@ -38,6 +38,9 @@
             padding: 20px 30px 20px;
             border-radius: 0px 0px 20px 20px;
             background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+            @include breakpoint (max-lg){
+                padding: 5px 15px 5px;
+            }
 
             &__title {
                 color: var(--White, #FFF);
@@ -49,6 +52,10 @@
                 line-height: 34px; /* 141.667% */
                 letter-spacing: 0.36px;
                 padding-bottom: 8px;
+                @include breakpoint (max-lg){
+                    font-size: 20px;
+                    padding-bottom: 0;
+                }
             }
             &__desc {
                 color: var(--White, #FFF);
@@ -60,6 +67,9 @@
                 line-height: 30px; /* 166.667% */
                 letter-spacing: 0.16px;
                 opacity: 0.8;
+                @include breakpoint (max-lg){
+                    font-size: 16px;
+                }                
             }
         }
         &:hover {
