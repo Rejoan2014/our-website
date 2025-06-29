@@ -28,6 +28,18 @@
       padding: 30px;
       border-radius: 10px;
       background: var(--White, #FFF);
+      @include breakpoint (max-xl){
+        padding: 0;
+        background: var(--100, #F7FAFF);
+      }
+      @include breakpoint (max-lg){
+        padding: 30px;
+        background: var(--White, #FFF);
+      }
+      @include breakpoint (max-xxsmall){
+        padding: 0;
+        background: var(--100, #F7FAFF);
+      }
       &-content {
         display: flex;
         gap: 20px;

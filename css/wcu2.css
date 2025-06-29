@@ -2503,6 +2503,20 @@ span {
   }
 }
 
+.section-padding-footer2 {
+  padding: 180px 0;
+}
+@media (max-width: 1399px) {
+  .section-padding-footer2 {
+    padding: 120px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .section-padding-footer2 {
+    padding: 30px 0;
+  }
+}
+
 @media (min-width: 1700px) {
   .wcu1-fix {
     padding-left: 62px;
