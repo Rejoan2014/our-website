@@ -152,7 +152,8 @@
             line-height: 100px; 
             letter-spacing: 1px;
             @include breakpoint (max-xxl){
-                line-height: 85px;
+                font-size: 76px;
+                line-height: 90px;
             }
             @include breakpoint (max-xl){
                 font-size: 63px;
@@ -168,6 +169,10 @@
             @include breakpoint (max-sm) {
                 font-size: 45px;
                 line-height: 60px;
+            }
+            @include breakpoint (max-xsmall) {
+                font-size: 40px;
+                line-height: 55px;
             }
         } 
         &__desc {
@@ -186,7 +191,7 @@
             display: flex;
             align-items: center;
             gap: 25px;
-            @include breakpoint (max-sm){
+            @include breakpoint (max-md){
                 flex-direction: column;
             }
         }   

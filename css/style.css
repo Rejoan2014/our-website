@@ -4853,6 +4853,15 @@ img {
   justify-content: center;
   border: 1px dashed black;
 }
+@media (max-width: 575px) {
+  .fancy-box1-item__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .fancy-box1-item__icon img {
+    width: 50%;
+  }
+}
 .fancy-box1-item__star {
   display: flex;
   align-items: center;
@@ -7468,7 +7477,8 @@ img {
 }
 @media (max-width: 1399px) {
   .hero1-content__title {
-    line-height: 85px;
+    font-size: 76px;
+    line-height: 90px;
   }
 }
 @media (max-width: 1199px) {
@@ -7494,6 +7504,12 @@ img {
     line-height: 60px;
   }
 }
+@media (max-width: 449px) {
+  .hero1-content__title {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
 .hero1-content__desc {
   max-width: 610px;
   color: var(--900, #000);
@@ -7511,7 +7527,7 @@ img {
   align-items: center;
   gap: 25px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .hero1-content-cta {
     flex-direction: column;
   }
