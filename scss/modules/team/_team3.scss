@@ -29,13 +29,16 @@
 
         }
         &-content {
+            visibility: hidden;
+            opacity: 0;
             position: absolute;
             width: 100%;
             bottom: 0;
             text-align: center;
             padding: 20px 30px 20px;
             border-radius: 0px 0px 20px 20px;
-            background: var(--P1, linear-gradient(90deg, #9708CC 0%, #43CBFF 144.38%));
+            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+
             &__title {
                 color: var(--White, #FFF);
                 text-align: center;
@@ -75,6 +78,11 @@
                             visibility: visible;
                             @include transition;
                         }
+                    }
+                    &-content {
+                        visibility: visible;
+                        opacity: 1;
+                        @include transition;
                     }
                 }
             }            
