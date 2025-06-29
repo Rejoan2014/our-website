@@ -8,6 +8,9 @@
     padding: 227px 0 230px;
     margin-top: 145px;
     background: var(--White, #FFF);
+    @include breakpoint (max-lg){
+        padding: 110px 0 170px;
+    }
     &-icon {
         position: absolute;  
         top: 50%;
@@ -18,6 +21,18 @@
             justify-content: center;
             gap: 759px;
             padding-bottom: 135px;
+            @include breakpoint (max-xxxl){
+                gap: 730px;
+            }
+            @include breakpoint (max-xl){
+                gap: 665px;
+            }
+            @include breakpoint (max-lg){
+                gap: 505px;
+            }
+            @include breakpoint (max-md){
+                display: none;
+            }
             &--one {
                 display: flex;
                 align-items: center;
@@ -29,6 +44,13 @@
                 height: 100px;
                 flex-shrink: 0;
                 aspect-ratio: 1/1;
+                @include breakpoint (max-lg){
+                    width: 75px;
+                    height: 75px;
+                    img {
+                        width: 50%;
+                    }
+                }
             }
         }
         &__middleLayer {
@@ -36,6 +58,18 @@
             justify-content: center;
             gap: 1030px;
             padding-bottom: 135px;
+            @include breakpoint (max-xxxl){
+                gap: 920px;
+            }
+            @include breakpoint (max-xl){
+                gap: 767px;
+            }
+            @include breakpoint (max-lg){
+                gap: 578px;
+            }
+            @include breakpoint (max-md){
+                display: none;
+            }
             &--two {
                 display: flex;
                 align-items: center;
@@ -47,12 +81,31 @@
                 height: 100px;
                 flex-shrink: 0;
                 aspect-ratio: 1/1;
+                @include breakpoint (max-lg){
+                    width: 75px;
+                    height: 75px;
+                    img {
+                        width: 50%;
+                    }
+                }
             }
         }
         &__bottomLayer {
             display: flex;
             justify-content: center;
             gap: 759px;
+            @include breakpoint (max-xxxl){
+                gap: 730px;
+            }
+            @include breakpoint (max-xl){
+                gap: 665px;
+            }
+            @include breakpoint (max-lg){
+                gap: 505px;
+            }
+            @include breakpoint (max-md){
+                display: none;
+            }
             &--three {
                 display: flex;
                 align-items: center;
@@ -64,6 +117,10 @@
                 height: 100px;
                 flex-shrink: 0;
                 aspect-ratio: 1/1;
+                @include breakpoint (max-lg){
+                    width: 75px;
+                    height: 75px;
+                }
             }
         }
     }
@@ -79,6 +136,10 @@
         width: 759px;
         height: 759px;
         flex-shrink: 0;
+        @include breakpoint (max-lg){
+            width: 596px;
+            height: 596px;
+        }
     }
     &__shape2 {
         position: absolute;  
@@ -92,6 +153,10 @@
         border-radius: 557px;
         opacity: 0.03;
         background: var(--P3, #6A5ACD);
+        @include breakpoint (max-lg){
+            width: 457px;
+            height: 457px;
+        }
     }
     &__shape3 {
         position: absolute;  
@@ -105,6 +170,10 @@
         border-radius: 397px;
         opacity: 0.06;
         background: var(--P3, #6A5ACD);
+        @include breakpoint (max-lg){
+            width: 297px;
+            height: 297px;
+        }
     }
     @include breakpoint (max-sm){
         padding: 70px 0 80px;
