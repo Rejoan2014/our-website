@@ -131,8 +131,8 @@
         transform: translate(-50%, -50%);
         z-index: 3;  
         border-radius: 759px;
-        opacity: 0.03;
-        background: var(--P3, #6A5ACD);    
+        opacity: 0.02;
+        background: linear-gradient(90deg, rgba(151, 8, 204, 0.30) 0%, rgba(67, 203, 255, 0.70) 144.38%);  
         width: 759px;
         height: 759px;
         flex-shrink: 0;
@@ -152,7 +152,7 @@
         flex-shrink: 0;  
         border-radius: 557px;
         opacity: 0.03;
-        background: var(--P3, #6A5ACD);
+        background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
         @include breakpoint (max-lg){
             width: 457px;
             height: 457px;
@@ -168,8 +168,8 @@
         height: 397px;
         flex-shrink: 0;
         border-radius: 397px;
-        opacity: 0.06;
-        background: var(--P3, #6A5ACD);
+        opacity: 0.05;
+        background: linear-gradient(90deg, rgba(151, 8, 204, 0.30) 0%, rgba(67, 203, 255, 0.70) 144.38%);
         @include breakpoint (max-lg){
             width: 297px;
             height: 297px;
