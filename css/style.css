@@ -4861,6 +4861,11 @@ img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+@media (max-width: 1399px) {
+  .slider-arrow.style1 {
+    right: 94.5%;
+  }
+}
 .slider-arrow.style1:hover {
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   border: none;
@@ -12742,6 +12747,11 @@ img {
   max-width: 640px;
   margin-top: 35px;
 }
+@media (max-width: 449px) {
+  .milestone1-card {
+    padding: 50px 30px 40px;
+  }
+}
 .milestone1-card__badge {
   position: absolute;
   top: -30px;
@@ -12773,6 +12783,11 @@ img {
 @media (max-width: 1399px) {
   .milestone1-card__icon {
     top: 15%;
+  }
+}
+@media (max-width: 449px) {
+  .milestone1-card__icon {
+    top: 10%;
   }
 }
 .milestone1-card__title {
