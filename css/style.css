@@ -7330,6 +7330,24 @@ img {
     padding: 110px 0 170px;
   }
 }
+.hero1-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.hero1-lines::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(102, 102, 102, 0.02) 1px, transparent 1px, transparent 140px);
+}
 .hero1-icon {
   position: absolute;
   top: 50%;
