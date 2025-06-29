@@ -92,3 +92,82 @@
     }
 
 }
+
+// .slider-arrow {
+//     &.style1 {
+//         position: absolute;
+//         top: 63%;
+//         right: 97.5%;
+//         width: 56px;
+//         height: 56px;
+//         line-height: 36px;
+//         text-align: center;
+//         background-color: var(--title-color);
+//         border: 1px solid var(--title-color);
+//         z-index: 5;
+//         border-radius: 50%;
+//         -webkit-border-radius: 50%;
+//         -moz-border-radius: 50%;
+//         -ms-border-radius: 50%;
+//         -o-border-radius: 50%;
+//     }
+// }
+
+.slider-arrow {
+    &.style1 {
+        position: absolute;
+        top: 63%;
+        right: 95.5%;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        line-height: 36px;
+        text-align: center;
+        background: var(--100, #F7FAFF);
+        border: 1px solid $title-color;
+        z-index: 5;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        &:hover {
+            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+            border: none;
+            i {
+                color: $white;
+            }
+        }
+
+        &.slider-next {
+            position: absolute;
+            top: 63%;
+            right: 1%;
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            line-height: 36px;
+            text-align: center;
+            z-index: 5;
+            background: var(--100, #F7FAFF);
+            border: 1px solid $theme-color;
+            transition: all 0.4s ease;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -ms-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            &:hover {
+                background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+                border: none;
+                i {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
