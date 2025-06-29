@@ -3734,6 +3734,19 @@ img {
   }
 }
 
+.video3-icon {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 991px) {
+  .video3-icon img {
+    width: 70%;
+  }
+}
+
 .global-social {
   display: flex;
   justify-content: center;

@@ -2,9 +2,18 @@
 @use '../../utilities' as *;
 
 .testimonial1 {
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
   &-card {
     border-radius: 12.195px;
     background: var(--100, #F7FAFF);
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid #6A5ACD;
+      @include transition;
+    }
     &-content {
       padding: 40px;
       &__title {
@@ -22,6 +31,7 @@
         padding-bottom: 30px;
         i {
           color: #FFBA08;
+          font-size: 24px;
         }
       }
       &__desc {
@@ -32,6 +42,11 @@
         font-weight: 400;
         line-height: 30px; /* 166.667% */
         letter-spacing: 0.16px;
+      }
+      &__thumb {
+        position: relative;
+        display: none;
+        @include transition;
       }
     }
     .author-meta {
@@ -46,7 +61,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 50px;
-      background-color: #6A5ACD;
+      background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
       width: 60.976px;
       height: 60.976px;
       flex-shrink: 0;
@@ -56,6 +71,21 @@
         font-style: normal;
         font-weight: 900;
         line-height: 110%; 
+      }
+    }
+    &:hover {
+      .testimonial1 {
+        &-card {
+          &-content {
+            &__desc {
+              display: none;
+            }
+            &__thumb {
+              display: block;
+              @include transition;
+            }
+          }
+        }
       }
     }
   }
