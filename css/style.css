@@ -3552,8 +3552,8 @@ img {
 
 .social-profile {
   position: absolute;
-  right: 50px;
-  bottom: 20px;
+  left: 6%;
+  top: -17%;
   max-height: 380px;
   content: "";
   -webkit-transition: all 0.4s ease-in-out;
@@ -3615,27 +3615,27 @@ img {
   flex-shrink: 0;
   line-height: 44px;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 999px;
+  background: var(--100, #F7FAFF);
+  color: #43CBFF;
   font-size: 18px;
   display: inline-block;
-  background-color: var(--theme);
-  color: var(--title);
   transition: all 0.4s ease-in-out;
 }
 .social-profile .plus-btn:hover {
-  background-color: var(--theme);
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
 }
 .social-profile .plus-btn:hover i {
-  color: var(--title);
+  color: var(--white);
 }
 .social-profile:hover ul {
-  transform: translateY(-10%);
+  transform: translateY(133%);
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateY(-10%);
-  -moz-transform: translateY(-10%);
-  -ms-transform: translateY(-10%);
-  -o-transform: translateY(-10%);
+  -webkit-transform: translateY(133%);
+  -moz-transform: translateY(133%);
+  -ms-transform: translateY(133%);
+  -o-transform: translateY(133%);
 }
 
 .social-profile2 {
