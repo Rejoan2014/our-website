@@ -26,6 +26,18 @@
         border: 1px dashed black;
       }
       &__star {
+        display: flex;
+        align-items: center;
+        &--numb {
+          color: #000;
+          text-align: center;
+          font-family: Lato;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 30px; /* 150% */
+          letter-spacing: 0.36px;
+        }
         i {
           color: #FFA800;
           font-size: 16px;
@@ -53,6 +65,15 @@
           line-height: 30px; /* 166.667% */
           letter-spacing: 0.16px;
         }
+      }
+    }
+    .overlap {
+      display: flex;
+      &__two {
+        margin-left: -14px;
+      }
+      &__three {
+        margin-left: -14px;
       }
     }
 }

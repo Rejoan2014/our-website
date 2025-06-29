@@ -4853,6 +4853,20 @@ img {
   justify-content: center;
   border: 1px dashed black;
 }
+.fancy-box1-item__star {
+  display: flex;
+  align-items: center;
+}
+.fancy-box1-item__star--numb {
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.36px;
+}
 .fancy-box1-item__star i {
   color: #FFA800;
   font-size: 16px;
@@ -4879,6 +4893,15 @@ img {
   font-weight: 700;
   line-height: 30px; /* 166.667% */
   letter-spacing: 0.16px;
+}
+.fancy-box1 .overlap {
+  display: flex;
+}
+.fancy-box1 .overlap__two {
+  margin-left: -14px;
+}
+.fancy-box1 .overlap__three {
+  margin-left: -14px;
 }
 
 .fancy-box2 {
