@@ -3965,18 +3965,22 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 21px;
-  background: rgb(50, 50, 52);
+  border: 1px solid rgb(204, 204, 205);
+  border-radius: 999px;
+  background: var(--100, #F7FAFF);
 }
 .global-social3__item a i {
-  color: var(--yellow);
-  font-size: 15px;
+  color: var(--800, #6B7280);
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .global-social3__item a:hover {
-  background: var(--theme);
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+}
+.global-social3__item a:hover i {
+  color: var(--white);
 }
 
 .global-social4 {
@@ -9212,6 +9216,13 @@ img {
   -webkit-text-fill-color: transparent;
   font-feature-settings: "liga" off, "clig" off;
 }
+.section-top__title .tag-title {
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-feature-settings: "liga" off, "clig" off;
+}
 .section-top__title2 {
   color: var(--900, #000);
   font-family: Lato;
@@ -13613,7 +13624,7 @@ img {
 }
 @media (max-width: 767px) {
   .footer1-wrapper-company {
-    padding-top: 75px;
+    padding-top: 42px;
     padding-bottom: 5px;
   }
 }
@@ -13651,6 +13662,7 @@ img {
 }
 @media (max-width: 991px) {
   .footer1-wrapper-service {
+    padding-top: 0px;
     padding-bottom: 25px;
   }
 }
@@ -13691,6 +13703,11 @@ img {
 .footer1-wrapper-solution {
   padding-bottom: 70px;
   padding-top: 75px;
+}
+@media (max-width: 1199px) {
+  .footer1-wrapper-solution {
+    padding-top: 0px;
+  }
 }
 @media (max-width: 991px) {
   .footer1-wrapper-solution {
@@ -13734,6 +13751,11 @@ img {
 .footer1-wrapper-product {
   padding-bottom: 70px;
   padding-top: 75px;
+}
+@media (max-width: 1199px) {
+  .footer1-wrapper-product {
+    padding-top: 0px;
+  }
 }
 @media (max-width: 991px) {
   .footer1-wrapper-product {
@@ -13862,7 +13884,7 @@ img {
 }
 @media (max-width: 767px) {
   .footer1-wrapper-contact {
-    padding-bottom: 0px;
+    padding-bottom: 30px;
     padding-top: 7px;
   }
 }

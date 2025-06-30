@@ -675,19 +675,23 @@ img {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        border-radius: 21px;
-        background: rgb(50, 50, 52);
+        border: 1px solid rgb(204, 204, 205);
+        border-radius: 999px;
+        background: var(--100, #F7FAFF);
 
         i {
-          color: $yellow;
-          font-size: 15px;
+          color: var(--800, #6B7280);
+          font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
         }
 
         &:hover {
-          background: $theme-color;
+          background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+          i {
+            color: $white;
+          }
         }
       }
     }
