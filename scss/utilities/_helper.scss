@@ -715,3 +715,93 @@
     }
   }
 }
+
+
+// Check Out Section
+.checkOut {
+  &-billingCard {
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--200, #C1C1C1);
+    background: var(--White, #FFF);
+    &__title {
+      color: #000;
+      font-family: Lato;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 44px; 
+      letter-spacing: 0.36px;
+      padding-bottom: 15px;
+    }
+    &__text {
+      color: var(--800, #6B7280);
+      font-family: Lato;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 166.667% */
+      letter-spacing: 0.16px;
+      padding-bottom: 16px;
+    }
+  }
+  &-orderSummary {
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--200, #C1C1C1);
+    background: var(--100, #F7FAFF);
+    &__title {
+      border-bottom: 1px solid #C1C1C1;
+      color: #000;
+      font-family: Lato;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 44px; 
+      letter-spacing: 0.36px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      color: var(--800, #6B7280);
+      font-family: Lato;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 166.667% */
+      letter-spacing: 0.16px;
+      border-bottom: 1px solid #C1C1C1;
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+      &.total {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        color: var(--900, #000);
+        font-family: Lato;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 30px; /* 150% */
+        letter-spacing: 0.36px;
+      }
+    }
+  }
+  &-paymentCard {
+    padding: 40px;
+    border-radius: 20px;
+    background: var(--100, #F7FAFF);
+    &__title {
+      border-bottom: 1px solid #C1C1C1;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    &-info {
+      display: flex;
+      gap: 50px;
+    }
+
+  }
+}
