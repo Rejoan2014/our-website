@@ -371,6 +371,21 @@ img {
     @include breakpoint (max-lg){
       top: -56%;
     }
+    @include breakpoint (max-md){
+      top: -48%;
+    }
+    @include breakpoint (max-sm){
+      top: -122%;
+    }
+    @include breakpoint (max-xs){
+      top: -127%;
+    }
+    @include breakpoint (max-xsmall){
+      top: -130%;
+    }
+    @include breakpoint (max-xxsmall){
+      top: -144%;
+    }
   
     ul {
       max-width: 50px;
