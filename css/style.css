@@ -9521,6 +9521,9 @@ img {
     height: 25px;
   }
 }
+.service1-content__link:hover {
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+}
 .service1-content:hover {
   border: 1px solid rgba(193, 193, 193, 0.3);
   background: var(--White, #FFF);
@@ -9699,6 +9702,9 @@ img {
   height: 53.333px;
   flex-shrink: 0;
   aspect-ratio: 53.33/53.33;
+}
+.service3-content__link:hover {
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
 }
 .service3-content:hover {
   border: 1px solid rgba(193, 193, 193, 0.3);
