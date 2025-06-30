@@ -7,8 +7,17 @@
     overflow: hidden;
     padding: 350px 0 230px;
     background: var(--White, #FFF);
+    @include breakpoint (max-xl){
+        padding: 290px 0 172px;
+    }
     @include breakpoint (max-lg){
-        padding: 110px 0 170px;
+        padding: 235px 0 65px;
+    }
+    @include breakpoint (max-md){
+        padding: 167px 0 35px;
+    }
+    @include breakpoint (max-xs){
+        padding: 140px 0 35px;
     }
     &-lines {
         position: absolute;
@@ -37,7 +46,7 @@
     }
     &-icon {
         position: absolute;  
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         &__topLayer {
@@ -147,6 +156,9 @@
                 }
             }
         }
+        @include breakpoint (max-lg){
+            top: 61%;
+        }
     }
     &__shape1 {
         position: absolute;  
@@ -199,12 +211,7 @@
             height: 297px;
         }
     }
-    @include breakpoint (max-sm){
-        padding: 70px 0 80px;
-    }
-    @include breakpoint (max-xs){
-        padding: 50px 0 40px;
-    }
+
     &-content {
         position: relative;
         z-index: 9;
