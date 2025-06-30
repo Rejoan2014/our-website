@@ -9,6 +9,17 @@
         flex-wrap: wrap;
         column-gap: 141px;
         row-gap: 60px;
+        @include breakpoint (max-xxxl){
+            column-gap: 90px;
+        }
+        @include breakpoint (max-lg){
+            column-gap: 50px;
+            row-gap: 50px;
+        }
+        @include breakpoint (max-md){
+            column-gap: 30px;
+            row-gap: 30px;
+        }
         &__item {
             display: flex;
             align-items: center;
@@ -25,6 +36,36 @@
                 flex-shrink: 0;
                 aspect-ratio: 79.50/90.00;
             }
+            @include breakpoint (max-lg){
+                width: 120px;
+                height: 120px;
+                img {
+                    width: 59.5px;
+                    height: 70px;
+                    flex-shrink: 0;
+                    aspect-ratio: 79.50/90.00;
+                }
+            }
+            @include breakpoint (max-md){
+                width: 100px;
+                height: 100px;
+                img {
+                    width: 49.5px;
+                    height: 60px;
+                    flex-shrink: 0;
+                    aspect-ratio: 79.50/90.00;
+                }
+            }
+            @include breakpoint (max-xsmall){
+                width: 90px;
+                height: 90px;
+                img {
+                    width: 39.5px;
+                    height: 40px;
+                    flex-shrink: 0;
+                    aspect-ratio: 79.50/90.00;
+                }
+            }
         }
     }
     &__location {
@@ -38,8 +79,41 @@
         letter-spacing: 0.49px;
         padding-top: 60px;
         padding-bottom: 60px;
+        @include breakpoint(max-xxl) {
+            font-size: 44px;
+            line-height: 60px;
+        }
+
+        @include breakpoint(max-xl) {
+            font-size: 40px;
+            line-height: 55px;
+        }
+
+        @include breakpoint(max-lg) {
+            font-size: 36px;
+            line-height: 50px;
+        }
+
+        @include breakpoint(max-md) {
+            font-size: 32px;
+            line-height: 45px;
+        }
+
+        @include breakpoint(max-sm) {
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        @include breakpoint(max-xsmall) {
+            font-size: 24px;
+            line-height: 35px;
+        }
         span {
-            color: var(--P3, #6A5ACD);
+            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-feature-settings: 'liga' off, 'clig' off;
         }
     }
     &-card {
@@ -56,6 +130,16 @@
         border: 1px dashed var(--P3, #6A5ACD);
         background: var(--White, #FFF);
         box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+        @include breakpoint (max-lg){
+            width: 352px;
+            height: 130.59px;
+            padding: 30px;
+        }
+        @include breakpoint (max-sm){
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+        }
         &__country {
             color: var(--900, #000);
             text-align: center;
