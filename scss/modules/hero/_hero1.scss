@@ -5,8 +5,7 @@
 .hero1 {
     position: relative;
     overflow: hidden;
-    padding: 227px 0 230px;
-    margin-top: 145px;
+    padding: 350px 0 230px;
     background: var(--White, #FFF);
     @include breakpoint (max-lg){
         padding: 110px 0 170px;
@@ -151,7 +150,7 @@
     }
     &__shape1 {
         position: absolute;  
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 3;  
@@ -168,7 +167,7 @@
     }
     &__shape2 {
         position: absolute;  
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 4;
@@ -185,7 +184,7 @@
     }
     &__shape3 {
         position: absolute;  
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 5;
