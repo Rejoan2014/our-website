@@ -276,9 +276,19 @@ img {
       width: 322px;
       height: 98px;
       flex-shrink: 0;
+      @include breakpoint (max-xs){
+        margin-left: 0;
+      }
+      @include breakpoint (max-xsmall){
+        width: 100%;
+        margin-left: 0;
+      }
       &__star {
         position: absolute;
         left: -50px;
+        @include breakpoint (max-xsmall){
+          display: none;
+        }
       }
       &-info {
         &__text {

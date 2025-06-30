@@ -3563,9 +3563,25 @@ img {
   height: 98px;
   flex-shrink: 0;
 }
+@media (max-width: 499px) {
+  .map-section-card {
+    margin-left: 0;
+  }
+}
+@media (max-width: 449px) {
+  .map-section-card {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 .map-section-card__star {
   position: absolute;
   left: -50px;
+}
+@media (max-width: 449px) {
+  .map-section-card__star {
+    display: none;
+  }
 }
 .map-section-card-info__text {
   color: var(--900, #1A1A1A);
