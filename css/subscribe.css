@@ -4607,6 +4607,13 @@ img {
   letter-spacing: 0.36px;
   padding-bottom: 15px;
 }
+.service-list-item-content__title:hover {
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
 .service-list-item-content__desc {
   color: var(--800, #6B7280);
   font-family: Lato;
