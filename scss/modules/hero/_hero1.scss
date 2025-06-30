@@ -49,6 +49,7 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 5;
         &__topLayer {
             display: flex;
             justify-content: center;
@@ -165,7 +166,7 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 3;  
+        z-index: 4;  
         border-radius: 759px;
         opacity: 0.02;
         background: linear-gradient(90deg, rgba(151, 8, 204, 0.30) 0%, rgba(67, 203, 255, 0.70) 144.38%);  
@@ -182,7 +183,7 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 4;
+        z-index: 5;
         width: 557px;
         height: 557px;
         flex-shrink: 0;  
@@ -199,7 +200,7 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 5;
+        z-index: 6;
         width: 397px;
         height: 397px;
         flex-shrink: 0;
