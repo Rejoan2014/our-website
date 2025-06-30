@@ -14,6 +14,12 @@
         @include breakpoint (xxl){
             margin-left: 30px;
         }
+        @include breakpoint (max-lg){
+            padding: 45px 30px;
+        }
+        @include breakpoint (max-md){
+            padding: 35px 20px;
+        }
         &::before {
             content: "";
             display: block;
@@ -33,6 +39,12 @@
         &__icon {
             flex-shrink: 0; 
             margin-right: 84px;
+            @include breakpoint (max-md){
+                margin-right: 36px;
+                img {
+                    width: 70%;
+                }
+            }
         }
 
         &__title {
@@ -47,6 +59,10 @@
             font-weight: 900;
             line-height: 44px; 
             letter-spacing: 0.36px;
+            @include breakpoint(max-md){
+                font-size: 26px;
+                line-height: 35px;
+            }
             @include breakpoint(max-xsmall){
                 font-size: 24px;
                 line-height: 30px;
@@ -75,6 +91,14 @@
                 height: 53.333px;
                 flex-shrink: 0;
                 aspect-ratio: 53.33/53.33;
+            }
+            @include breakpoint (max-md){
+                width: 65px;
+                height: 65px;
+                img {
+                    width: 38px;
+                    height: 38px;
+                }
             }
             &:hover {
                 background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
