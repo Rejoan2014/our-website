@@ -4501,6 +4501,11 @@ img {
   background: var(--100, #F7FAFF);
   position: relative;
 }
+@media (max-width: 1199px) {
+  .service {
+    max-width: 975px;
+  }
+}
 .service.service-alt .service-alt__indicator {
   position: absolute;
   bottom: -31px;
@@ -4611,6 +4616,11 @@ img {
   padding-bottom: 40px;
   flex: none;
 }
+@media (max-width: 1199px) {
+  .service-list-item-content {
+    max-width: 370px;
+  }
+}
 .service-list-item-content__title {
   color: var(--900, #000);
   font-feature-settings: "liga" off, "clig" off;
@@ -4644,6 +4654,11 @@ img {
   background: linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%);
   width: 405px;
   height: 1px;
+}
+@media (max-width: 1199px) {
+  .service-list-item-content__border {
+    width: 320px;
+  }
 }
 
 .project-nav {

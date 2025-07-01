@@ -15,6 +15,9 @@
   border: 1px solid var(--P2, #E5087B);
   background: var(--100, #F7FAFF);
   position: relative;
+  @include breakpoint(max-xl) {
+    max-width: 975px;
+  }
   &.service-alt {
     .service-alt__indicator {
       position: absolute;
@@ -134,6 +137,9 @@
         flex: none;
       }
       &-content {
+        @include breakpoint (max-xl){
+          max-width: 370px;
+        }
         &__title {
           color: var(--900, #000);
           font-feature-settings: 'liga' off, 'clig' off;
@@ -167,6 +173,9 @@
           background: linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%);
           width: 405px;
           height: 1px;
+          @include breakpoint (max-xl){
+            width: 320px;
+          }
         }
       }
     }
