@@ -4884,6 +4884,11 @@ img {
   width: 100%;
   z-index: 999;
 }
+@media (max-width: 991px) {
+  .service-project {
+    bottom: 0;
+  }
+}
 
 .blur-overlay {
   position: fixed;
