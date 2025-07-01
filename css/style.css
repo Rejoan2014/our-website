@@ -4535,6 +4535,11 @@ img {
     max-width: 975px;
   }
 }
+@media (max-width: 991px) {
+  .service {
+    max-width: 600px;
+  }
+}
 .service.service-alt .service-alt__indicator {
   position: absolute;
   bottom: -31px;
@@ -4574,6 +4579,11 @@ img {
   max-width: 485px;
   position: relative;
   z-index: 5;
+}
+@media (max-width: 991px) {
+  .service-thumb {
+    display: none;
+  }
 }
 .service-thumb__one {
   border-radius: 20px;
@@ -4697,9 +4707,16 @@ img {
   height: 80px;
   flex-shrink: 0;
   align-items: center;
+  justify-content: center;
   border-radius: 5px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   padding: 30px 50px;
+}
+@media (max-width: 991px) {
+  .project-nav {
+    gap: 10px;
+    max-width: 724px;
+  }
 }
 .project-nav__btn {
   display: inline-flex;
