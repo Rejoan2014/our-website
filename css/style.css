@@ -4540,15 +4540,31 @@ img {
     max-width: 600px;
   }
 }
+@media (max-width: 767px) {
+  .service {
+    padding: 15px;
+    max-width: 500px;
+  }
+}
 .service.service-alt .service-alt__indicator {
   position: absolute;
   bottom: -31px;
   right: 17%;
 }
+@media (max-width: 991px) {
+  .service.service-alt .service-alt__indicator {
+    display: none;
+  }
+}
 .service.service-main .service-main__indicator {
   position: absolute;
   bottom: -31px;
   left: 30%;
+}
+@media (max-width: 991px) {
+  .service.service-main .service-main__indicator {
+    display: none;
+  }
 }
 .service__shape1 {
   position: absolute;
@@ -4651,6 +4667,11 @@ img {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 449px) {
+  .service-list-item {
+    gap: 10px;
+  }
+}
 .service-list-item__icon {
   padding-bottom: 40px;
   flex: none;
@@ -4678,6 +4699,11 @@ img {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
+@media (max-width: 449px) {
+  .service-list-item-content__title {
+    padding-bottom: 10px;
+  }
+}
 .service-list-item-content__desc {
   color: var(--800, #6B7280);
   font-family: Lato;
@@ -4703,6 +4729,7 @@ img {
 .project-nav {
   display: flex;
   gap: 30px;
+  width: 100%;
   max-width: 835px;
   height: 80px;
   flex-shrink: 0;
@@ -4716,6 +4743,23 @@ img {
   .project-nav {
     gap: 10px;
     max-width: 724px;
+  }
+}
+@media (max-width: 767px) {
+  .project-nav {
+    gap: 10px;
+    max-width: 567px;
+  }
+}
+@media (max-width: 575px) {
+  .project-nav {
+    max-width: 469px;
+  }
+}
+@media (max-width: 499px) {
+  .project-nav {
+    gap: 5px;
+    max-width: 441px;
   }
 }
 .project-nav__btn {
@@ -4735,6 +4779,21 @@ img {
   line-height: 17px;
   text-transform: uppercase;
 }
+@media (max-width: 767px) {
+  .project-nav__btn {
+    font-size: 12px;
+  }
+}
+@media (max-width: 449px) {
+  .project-nav__btn {
+    padding: 13px;
+  }
+}
+@media (max-width: 374px) {
+  .project-nav__btn {
+    padding: 7px;
+  }
+}
 .project-nav__btn--start {
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
@@ -4745,6 +4804,14 @@ img {
   gap: 10px;
   flex-shrink: 0;
   border: none;
+}
+@media (max-width: 575px) {
+  .project-nav__btn--start {
+    padding: 8px 17px;
+  }
+  .project-nav__btn--start span {
+    display: none;
+  }
 }
 .project-nav__btn:hover {
   color: var(--white);

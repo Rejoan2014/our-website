@@ -21,11 +21,18 @@
   @include breakpoint(max-lg) {
     max-width: 600px;
   }
+  @include breakpoint(max-md) {
+    padding: 15px;
+    max-width: 500px;
+  }
   &.service-alt {
     .service-alt__indicator {
       position: absolute;
       bottom: -31px;
       right: 17%;
+      @include breakpoint(max-lg) {
+        display: none;
+      }
     }
   }
   &.service-main {
@@ -33,6 +40,9 @@
       position: absolute;
       bottom: -31px;
       left: 30%;
+      @include breakpoint(max-lg) {
+        display: none;
+      }
     }
   }
   &__shape1 {
@@ -138,6 +148,9 @@
       display: flex;
       align-items: center;
       gap: 20px;
+      @include breakpoint (max-xsmall){
+        gap: 10px;
+      }
       &__icon {
         padding-bottom: 40px;
         flex: none;
@@ -162,6 +175,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             cursor: pointer;
+          }
+          @include breakpoint (max-xsmall){
+            padding-bottom: 10px;
           }
         }
         &__desc {
@@ -191,6 +207,7 @@
 .project-nav {
   display: flex;
   gap: 30px;
+  width: 100%;
   max-width: 835px;
   height: 80px;
   flex-shrink: 0;
@@ -203,6 +220,17 @@
   @include breakpoint (max-lg){
     gap: 10px;
     max-width: 724px;
+  }
+  @include breakpoint (max-md){
+    gap: 10px;
+    max-width: 567px;
+  }
+  @include breakpoint (max-sm){
+    max-width: 469px;
+  }
+  @include breakpoint (max-xs){
+    gap: 5px;
+    max-width: 441px;
   }
 
   &__btn {
@@ -221,6 +249,15 @@
     font-weight: 700;
     line-height: 17px; 
     text-transform: uppercase;
+    @include breakpoint (max-md){
+      font-size: 12px;
+    }
+    @include breakpoint (max-xsmall){
+      padding: 13px;
+    }
+    @include breakpoint (max-xxsmall){
+      padding: 7px;
+    }
     &--start {
       border-radius: 10px;
       background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
@@ -231,6 +268,12 @@
       gap: 10px;
       flex-shrink: 0;
       border: none;
+      @include breakpoint (max-sm) {
+        padding: 8px 17px;
+        span {
+          display: none;
+        }
+      }
     }
 
     &:hover {
