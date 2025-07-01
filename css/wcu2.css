@@ -2650,6 +2650,10 @@ span {
   }
 }
 
+.bg-light-blue {
+  background: var(--100, #F7FAFF);
+}
+
 /* =============================
    TagCloud Helper Styles
 ============================= */
