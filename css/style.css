@@ -4663,6 +4663,9 @@ img {
   letter-spacing: 0.16px;
   padding-bottom: 10px;
 }
+.service-list {
+  z-index: 5;
+}
 .service-list-item {
   display: flex;
   align-items: center;
