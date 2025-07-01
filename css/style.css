@@ -4538,6 +4538,7 @@ img {
 @media (max-width: 991px) {
   .service {
     max-width: 600px;
+    height: auto;
   }
 }
 @media (max-width: 767px) {
@@ -4676,9 +4677,9 @@ img {
   padding-bottom: 40px;
   flex: none;
 }
-@media (max-width: 1199px) {
-  .service-list-item-content {
-    max-width: 370px;
+@media (max-width: 991px) {
+  .service-list-item__icon {
+    padding-bottom: 0px;
   }
 }
 .service-list-item-content__title {
@@ -4692,17 +4693,23 @@ img {
   letter-spacing: 0.36px;
   padding-bottom: 15px;
 }
+@media (max-width: 991px) {
+  .service-list-item-content__title {
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 499px) {
+  .service-list-item-content__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
 .service-list-item-content__title:hover {
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-}
-@media (max-width: 449px) {
-  .service-list-item-content__title {
-    padding-bottom: 10px;
-  }
 }
 .service-list-item-content__desc {
   color: var(--800, #6B7280);
@@ -4712,6 +4719,12 @@ img {
   font-weight: 400;
   line-height: 30px; /* 166.667% */
   letter-spacing: 0.16px;
+}
+@media (max-width: 499px) {
+  .service-list-item-content__desc {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 .service-list-item-content__border {
   margin-top: 20px;
@@ -4723,6 +4736,12 @@ img {
 @media (max-width: 1199px) {
   .service-list-item-content__border {
     width: 320px;
+  }
+}
+@media (max-width: 991px) {
+  .service-list-item-content__border {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -4819,7 +4838,7 @@ img {
 
 .service-project {
   position: fixed;
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   width: 100%;
   z-index: 999;
@@ -4854,6 +4873,26 @@ img {
   position: absolute;
   top: -650px;
   z-index: 10;
+}
+@media (max-width: 991px) {
+  .service-wrapper .service {
+    top: -450px;
+  }
+}
+@media (max-width: 767px) {
+  .service-wrapper .service {
+    top: -400px;
+  }
+}
+@media (max-width: 499px) {
+  .service-wrapper .service {
+    top: -340px;
+  }
+}
+@media (max-width: 449px) {
+  .service-wrapper .service {
+    top: -360px;
+  }
 }
 .service-wrapper .project-nav__btn:hover ~ .service,
 .service-wrapper .project-nav:hover ~ .service,

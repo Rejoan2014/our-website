@@ -20,6 +20,7 @@
   }
   @include breakpoint(max-lg) {
     max-width: 600px;
+    height: auto;
   }
   @include breakpoint(max-md) {
     padding: 15px;
@@ -154,11 +155,11 @@
       &__icon {
         padding-bottom: 40px;
         flex: none;
+        @include breakpoint (max-lg){
+          padding-bottom: 0px;
+        }
       }
       &-content {
-        @include breakpoint (max-xl){
-          max-width: 370px;
-        }
         &__title {
           color: var(--900, #000);
           font-feature-settings: 'liga' off, 'clig' off;
@@ -169,15 +170,19 @@
           line-height: 30px; /* 150% */
           letter-spacing: 0.36px;
           padding-bottom: 15px;
+          @include breakpoint (max-lg){
+            padding-bottom: 5px;
+          }
+          @include breakpoint (max-xs){
+            font-size: 18px;
+            line-height: 25px;
+          }
           &:hover {
             background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             cursor: pointer;
-          }
-          @include breakpoint (max-xsmall){
-            padding-bottom: 10px;
           }
         }
         &__desc {
@@ -188,6 +193,10 @@
           font-weight: 400;
           line-height: 30px; /* 166.667% */
           letter-spacing: 0.16px;
+          @include breakpoint (max-xs){
+            font-size: 16px;
+            line-height: 25px;
+          }
         }
         &__border {
           margin-top: 20px;
@@ -197,6 +206,10 @@
           height: 1px;
           @include breakpoint (max-xl){
             width: 320px;
+          }
+          @include breakpoint (max-lg){
+            margin-top: 10px;
+            margin-bottom: 10px;
           }
         }
       }
@@ -285,7 +298,7 @@
 
 .service-project {
   position: fixed;
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   width: 100%;
   z-index: 999; 
@@ -321,6 +334,18 @@
     position: absolute;
     top: -650px; 
     z-index: 10;
+    @include breakpoint (max-lg){
+      top: -450px;
+    }
+    @include breakpoint (max-md){
+      top: -400px;
+    }
+    @include breakpoint (max-xs){
+      top: -340px;
+    }
+    @include breakpoint (max-xsmall){
+      top: -360px;
+    }
   }
 
   .project-nav__btn:hover ~ .service,
