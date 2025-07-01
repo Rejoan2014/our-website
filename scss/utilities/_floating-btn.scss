@@ -158,8 +158,17 @@
         @include breakpoint (max-lg){
           padding-bottom: 0px;
         }
+        @include breakpoint (max-xsmall){
+          width: 13%;
+        }
       }
       &-content {
+        @include breakpoint (max-xsmall){
+          max-width: 290px;
+        }
+        @include breakpoint (max-xxsmall){
+          max-width: 254px;
+        }
         &__title {
           color: var(--900, #000);
           font-feature-settings: 'liga' off, 'clig' off;
@@ -344,7 +353,10 @@
       top: -340px;
     }
     @include breakpoint (max-xsmall){
-      top: -360px;
+      top: -390px;
+    }
+    @include breakpoint (max-xxsmall){
+      top: -412px;
     }
   }
 

@@ -4653,6 +4653,21 @@ img {
     padding-bottom: 0px;
   }
 }
+@media (max-width: 449px) {
+  .service-list-item__icon {
+    width: 13%;
+  }
+}
+@media (max-width: 449px) {
+  .service-list-item-content {
+    max-width: 290px;
+  }
+}
+@media (max-width: 374px) {
+  .service-list-item-content {
+    max-width: 254px;
+  }
+}
 .service-list-item-content__title {
   color: var(--900, #000);
   font-feature-settings: "liga" off, "clig" off;
@@ -4862,7 +4877,12 @@ img {
 }
 @media (max-width: 449px) {
   .service-wrapper .service {
-    top: -360px;
+    top: -390px;
+  }
+}
+@media (max-width: 374px) {
+  .service-wrapper .service {
+    top: -412px;
   }
 }
 .service-wrapper .project-nav__btn:hover ~ .service,
