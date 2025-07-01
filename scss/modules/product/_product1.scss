@@ -128,6 +128,13 @@
                             padding: 0px 10.455px;
                             font-size: 16px;
                         }
+                        &:hover {
+                            background: linear-gradient(90deg, #FF5F6D 0%, #FFC371 100%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            border-color: #FF5F6D;
+                        }
                     }
                     &__cart {
                         cursor: pointer;
