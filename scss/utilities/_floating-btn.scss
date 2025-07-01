@@ -219,6 +219,22 @@
           @include breakpoint (max-lg){
             margin-top: 10px;
             margin-bottom: 10px;
+            width: 436px;
+          }
+          @include breakpoint (max-md){
+            width: 375px;
+          }
+          @include breakpoint (max-sm){
+            width: 385px;
+          }
+          @include breakpoint (max-xs){
+            width: 340px;
+          }
+          @include breakpoint (max-xsmall){
+            width: 295px;
+          }
+          @include breakpoint (max-xxsmall){
+            width: 249px;
           }
         }
       }
@@ -356,7 +372,7 @@
       top: -390px;
     }
     @include breakpoint (max-xxsmall){
-      top: -412px;
+      top: -430px;
     }
   }
 

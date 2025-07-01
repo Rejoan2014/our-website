@@ -4757,6 +4757,32 @@ img {
   .service-list-item-content__border {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 436px;
+  }
+}
+@media (max-width: 767px) {
+  .service-list-item-content__border {
+    width: 375px;
+  }
+}
+@media (max-width: 575px) {
+  .service-list-item-content__border {
+    width: 385px;
+  }
+}
+@media (max-width: 499px) {
+  .service-list-item-content__border {
+    width: 340px;
+  }
+}
+@media (max-width: 449px) {
+  .service-list-item-content__border {
+    width: 295px;
+  }
+}
+@media (max-width: 374px) {
+  .service-list-item-content__border {
+    width: 249px;
   }
 }
 
@@ -4911,7 +4937,7 @@ img {
 }
 @media (max-width: 374px) {
   .service-wrapper .service {
-    top: -412px;
+    top: -430px;
   }
 }
 .service-wrapper .project-nav__btn:hover ~ .service,
