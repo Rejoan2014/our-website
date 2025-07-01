@@ -10605,6 +10605,11 @@ img {
   border-top: 1px solid #C1C1C1;
   padding: 40px;
 }
+@media (max-width: 1199px) {
+  .testimonial1-card .author-meta {
+    padding: 25px;
+  }
+}
 .testimonial1-card__quote {
   position: absolute;
   bottom: 80%;
