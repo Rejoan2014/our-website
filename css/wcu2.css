@@ -2372,25 +2372,10 @@ span {
   transform: rotate(45deg);
   transition: all 0.4s ease-in-out;
 }
-.submit-btn.style3:before {
-  transition-duration: 800ms;
-  position: absolute;
-  width: 210%;
-  height: 290%;
-  content: "";
-  top: 162%;
-  left: 50%;
-  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%) rotate(-8deg);
-  border-radius: 80%;
-  z-index: -1;
-}
 .submit-btn.style3:hover {
   color: var(--white) !important;
-}
-.submit-btn.style3:hover:before {
-  top: -96%;
+  background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
+  transition: all 0.4s ease-in-out;
 }
 .submit-btn.style3:hover i {
   color: var(--white);
