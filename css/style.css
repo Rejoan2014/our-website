@@ -10882,7 +10882,7 @@ img {
   transition: all 0.4s ease-in-out;
 }
 .testimonial1-card-content {
-  height: 444px;
+  height: 334px;
   padding: 40px;
   transition: all 0.4s ease-in-out;
 }
@@ -10970,7 +10970,7 @@ img {
   transition: all 0.4s ease-in-out;
 }
 .testimonial1-card:hover .testimonial1-card-content {
-  height: 444px;
+  height: 440px;
   transition: all 0.4s ease-in-out;
 }
 .testimonial1-card:hover .testimonial1-card-content__desc {

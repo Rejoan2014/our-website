@@ -24,7 +24,7 @@
       @include transition;
     }
     &-content {
-      height: 444px;
+      height: 334px;
       padding: 40px;
       @include transition;
 
@@ -106,7 +106,7 @@
         &-card {
           @include transition;
           &-content {
-            height: 444px;
+            height: 440px;
             @include transition;
             &__desc {
               display: none;
@@ -124,3 +124,4 @@
     }
   }
 }
+
