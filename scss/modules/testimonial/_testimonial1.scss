@@ -24,7 +24,10 @@
       @include transition;
     }
     &-content {
+      height: 444px;
       padding: 40px;
+      @include transition;
+
       @include breakpoint (max-xl){
         padding: 25px;
       }
@@ -58,6 +61,8 @@
       &__thumb {
         position: relative;
         display: none;
+        opacity: 0;
+        visibility: visible;
         @include transition;
       }
     }
@@ -99,11 +104,17 @@
     &:hover {
       .testimonial1 {
         &-card {
+          @include transition;
           &-content {
+            height: 444px;
+            @include transition;
             &__desc {
               display: none;
+              @include transition;
             }
             &__thumb {
+              opacity: 1;
+              visibility: visible;
               display: block;
               @include transition;
             }
@@ -113,5 +124,3 @@
     }
   }
 }
-
-  
