@@ -118,10 +118,13 @@
 }
 
 .section-padding-footer {
-  padding: 180px 0;
+  padding: 240px 0;
 
   @include breakpoint(max-xxl) {
-    padding: 0;
+    padding: 160px 0;
+  }
+  @include breakpoint(max-xl) {
+    padding: 60px 0;
   }
 }
 .section-padding-footer2 {

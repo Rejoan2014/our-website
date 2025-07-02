@@ -2499,11 +2499,16 @@ span {
 }
 
 .section-padding-footer {
-  padding: 180px 0;
+  padding: 240px 0;
 }
 @media (max-width: 1399px) {
   .section-padding-footer {
-    padding: 0;
+    padding: 160px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .section-padding-footer {
+    padding: 60px 0;
   }
 }
 
@@ -4685,6 +4690,38 @@ img {
 /* =============================
    TagCloud Helper Styles
 ============================= */
+.tag-cloud-section {
+  padding: 150px 0 0;
+}
+@media (max-width: 1399px) {
+  .tag-cloud-section {
+    padding: 120px 0;
+  }
+}
+@media (max-width: 991px) {
+  .tag-cloud-section {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .tag-cloud-section {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 575px) {
+  .tag-cloud-section {
+    padding: 60px 0;
+  }
+}
+.tag-cloud-section .section-top {
+  padding-bottom: 20px;
+}
+@media (max-width: 1399px) {
+  .tag-cloud-section .section-top {
+    padding-bottom: 60px;
+  }
+}
+
 :root {
   --tagcloud-transition-user-duration: 1250ms;
   --tagcloud-transition-user-ease: ease-in-out;
