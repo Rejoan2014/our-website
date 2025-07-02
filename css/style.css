@@ -4739,15 +4739,39 @@ img {
 }
 @media (max-width: 575px) {
   .tag-cloud-section {
-    padding: 60px 0;
+    padding: 60px 0 20px;
+  }
+}
+@media (max-width: 499px) {
+  .tag-cloud-section {
+    padding: 60px 0 0px;
   }
 }
 .tag-cloud-section .section-top {
+  max-width: 659px;
   padding-bottom: 20px;
 }
 @media (max-width: 1399px) {
   .tag-cloud-section .section-top {
     padding-bottom: 60px;
+  }
+}
+@media (max-width: 1199px) {
+  .tag-cloud-section .section-top {
+    max-width: 630px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .tag-cloud-section .section-top {
+    max-width: 491px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .tag-cloud-section .section-top {
+    max-width: 415px;
+    padding-bottom: 0;
   }
 }
 
@@ -4833,6 +4857,21 @@ img {
   justify-content: center;
   min-height: 100vh;
   background-color: rgb(var(--tagcloud-bg-color-rgb));
+}
+@media (max-width: 1199px) {
+  .tagcloud-container {
+    min-height: 50vh;
+  }
+}
+@media (max-width: 991px) {
+  .tagcloud-container {
+    min-height: 60vh;
+  }
+}
+@media (max-width: 767px) {
+  .tagcloud-container {
+    min-height: auto;
+  }
 }
 
 .tagcloud-wrapper {
