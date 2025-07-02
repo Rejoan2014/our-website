@@ -4753,7 +4753,7 @@ img {
 }
 @media (max-width: 1399px) {
   .tag-cloud-section .section-top {
-    padding-bottom: 60px;
+    padding-bottom: 150px;
   }
 }
 @media (max-width: 1199px) {
@@ -4865,7 +4865,7 @@ img {
 }
 @media (max-width: 991px) {
   .tagcloud-container {
-    min-height: 60vh;
+    min-height: 53vh;
   }
 }
 @media (max-width: 767px) {
