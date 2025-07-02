@@ -2,6 +2,15 @@
 @use '../../utilities' as *;
 
 .testimonial1 {
+  .section-top {
+    padding-bottom: 105px;
+    @include breakpoint (max-xxl){
+      padding-bottom: 80px;
+    }
+    @include breakpoint (max-lg){
+      padding-bottom: 50px;
+    }
+  }
   .swiper-wrapper {
     display: flex;
     align-items: center;
@@ -16,6 +25,9 @@
     }
     &-content {
       padding: 40px;
+      @include breakpoint (max-xl){
+        padding: 25px;
+      }
       &__title {
         color: var(--900, #000);
         font-family: Lato;
@@ -74,6 +86,14 @@
         font-style: normal;
         font-weight: 900;
         line-height: 110%; 
+      }
+      @include breakpoint (max-xl){
+        bottom: 72%;
+      }
+      @include breakpoint (max-lg){
+        bottom: 77%;
+        width: 50.976px;
+        height: 50.976px;
       }
     }
     &:hover {
