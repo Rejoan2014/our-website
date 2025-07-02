@@ -4735,6 +4735,48 @@ img {
   --tag-font-size: 1rem;
 }
 
+@media (max-width: 1199px) {
+  :root {
+    --tagcloud-diameter: 52rem;
+    --tag-diameter: 7rem;
+  }
+}
+@media (max-width: 991px) {
+  :root {
+    --tagcloud-diameter: 44rem;
+    --tag-diameter: 6.5rem;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --tagcloud-diameter: 33rem;
+    --tag-diameter: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  :root {
+    --tagcloud-diameter: 28rem;
+    --tag-diameter: 5rem;
+  }
+}
+@media (max-width: 499px) {
+  :root {
+    --tagcloud-diameter: 26rem;
+    --tag-diameter: 4rem;
+  }
+}
+@media (max-width: 449px) {
+  :root {
+    --tagcloud-diameter: 22rem;
+    --tag-diameter: 3.5rem;
+  }
+}
+@media (max-width: 374px) {
+  :root {
+    --tagcloud-diameter: 20rem;
+    --tag-diameter: 3rem;
+  }
+}
 *,
 *::before,
 *::after {
@@ -4765,17 +4807,6 @@ img {
   aspect-ratio: 1/1;
   font-family: var(--tag-font-family);
   font-size: var(--tag-font-size);
-}
-@media only screen and (max-width: 48rem) {
-  .tagcloud-wrapper {
-    --_control-diamater: calc(var(--tagcloud-controls-diameter) * 0.5);
-    --_diameter: calc(var(--tagcloud-diameter) * 0.88);
-  }
-}
-@media only screen and (max-width: 32rem) {
-  .tagcloud-wrapper {
-    --_diameter: calc(var(--tagcloud-diameter) * 0.75);
-  }
 }
 .tagcloud-wrapper:has(.tagcloud-rotation:hover) {
   --tagcloud-animation-play-state: paused;

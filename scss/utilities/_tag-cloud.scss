@@ -22,12 +22,60 @@
   --tagcloud-control-bg-color: transparent;
   --tagcloud-control-bg-hover-color: transparent;
   --tagcloud-control-bg-checked-color: transparent;
-//   --tag-diameter: 5.5rem;
   --tag-diameter: 8rem;
   --tag-font-color-rgb: 255, 255, 255;
   --tag-font-family: 'Open Sans', sans-serif;
   --tag-font-size: 1rem;
 }
+
+// Responsive for all device
+
+@include breakpoint (max-xl){
+    :root {
+    --tagcloud-diameter: 52rem;
+    --tag-diameter: 7rem;
+    }
+}
+
+@include breakpoint (max-lg){
+    :root {
+    --tagcloud-diameter: 44rem;
+    --tag-diameter: 6.5rem;
+    }
+}
+
+@include breakpoint (max-md){
+    :root {
+    --tagcloud-diameter: 33rem;
+    --tag-diameter: 5rem;
+    }
+}
+
+@include breakpoint (max-sm){
+    :root {
+    --tagcloud-diameter: 28rem;
+    --tag-diameter: 5rem;
+    }
+}
+@include breakpoint (max-xs){
+    :root {
+    --tagcloud-diameter: 26rem;
+    --tag-diameter: 4rem;
+    }
+}
+@include breakpoint (max-xsmall){
+    :root {
+    --tagcloud-diameter: 22rem;
+    --tag-diameter: 3.5rem;
+    }
+}
+@include breakpoint (max-xxsmall){
+    :root {
+    --tagcloud-diameter: 20rem;
+    --tag-diameter: 3rem;
+    }
+}
+
 
 // Reset
 *,
@@ -63,15 +111,6 @@
   aspect-ratio: 1 / 1;
   font-family: var(--tag-font-family);
   font-size: var(--tag-font-size);
-
-  @media only screen and (max-width: 48rem) {
-    --_control-diamater: calc(var(--tagcloud-controls-diameter) * 0.5);
-    --_diameter: calc(var(--tagcloud-diameter) * 0.88);
-  }
-
-  @media only screen and (max-width: 32rem) {
-    --_diameter: calc(var(--tagcloud-diameter) * 0.75);
-  }
 
   &:has(.tagcloud-rotation:hover) {
     --tagcloud-animation-play-state: paused;
