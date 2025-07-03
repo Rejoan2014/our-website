@@ -2597,6 +2597,20 @@ span {
   }
 }
 
+.fix-pb-90 {
+  padding-bottom: 90px;
+}
+@media (max-width: 767px) {
+  .fix-pb-90 {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .fix-pb-90 {
+    padding-bottom: 20px;
+  }
+}
+
 .fix-pb-100 {
   padding-bottom: 100px;
 }

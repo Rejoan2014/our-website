@@ -169,6 +169,15 @@
     padding-bottom: 40px;
   }
 }
+.fix-pb-90 {
+  padding-bottom: 90px;
+  @include breakpoint (max-md){
+    padding-bottom: 40px;
+  }
+  @include breakpoint (max-sm){
+    padding-bottom: 20px;
+  }
+}
 .fix-pb-100 {
   padding-bottom: 100px;
   @include breakpoint (max-lg){
