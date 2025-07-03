@@ -9960,6 +9960,22 @@ img {
 
 .service3 {
   position: relative;
+  padding-top: 110px;
+}
+@media (max-width: 1599px) {
+  .service3 {
+    padding-top: 75px;
+  }
+}
+@media (max-width: 1399px) {
+  .service3 {
+    padding-top: 47px;
+  }
+}
+@media (max-width: 1199px) {
+  .service3 {
+    padding-top: 0;
+  }
 }
 .service3-content {
   position: relative;

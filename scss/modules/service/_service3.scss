@@ -2,7 +2,17 @@
 @use '../../utilities' as *;
 
 .service3 {
-    position: relative;;
+    position: relative;
+    padding-top: 110px;
+    @include breakpoint (max-xxxl){
+        padding-top: 75px;
+    }
+    @include breakpoint (max-xxl){
+        padding-top: 47px;
+    }
+    @include breakpoint (max-xl){
+        padding-top: 0;
+    }
     &-content {
         position: relative;
         display: flex;
