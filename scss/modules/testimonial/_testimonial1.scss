@@ -5,10 +5,13 @@
   .section-top {
     padding-bottom: 105px;
     @include breakpoint (max-xxl){
-      padding-bottom: 80px;
+      padding-bottom: 60px;
     }
     @include breakpoint (max-lg){
-      padding-bottom: 50px;
+      padding-bottom: 40px;
+    }
+    @include breakpoint (max-sm){
+      padding-bottom: 30px;
     }
   }
   .swiper-wrapper {

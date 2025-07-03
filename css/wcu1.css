@@ -4709,31 +4709,32 @@ img {
    TagCloud Helper Styles
 ============================= */
 .tag-cloud-section {
-  padding: 150px 0 0;
+  background: var(--White, #FFF);
+  padding: 220px 0 0;
 }
 @media (max-width: 1399px) {
   .tag-cloud-section {
-    padding: 120px 0;
+    padding: 190px 0 120px;
   }
 }
 @media (max-width: 991px) {
   .tag-cloud-section {
-    padding: 100px 0;
+    padding: 170px 0 100px;
   }
 }
 @media (max-width: 767px) {
   .tag-cloud-section {
-    padding: 80px 0;
+    padding: 150px 0 80px;
   }
 }
 @media (max-width: 575px) {
   .tag-cloud-section {
-    padding: 60px 0 20px;
+    padding: 130px 0 20px;
   }
 }
 @media (max-width: 499px) {
   .tag-cloud-section {
-    padding: 60px 0 0px;
+    padding: 130px 0 0px;
   }
 }
 .tag-cloud-section .section-top {
