@@ -151,6 +151,18 @@
     padding-bottom: 20px;
   }
 }
+.fix-pb-60 {
+  padding-bottom: 60px;
+  @include breakpoint (max-md){
+    padding-bottom: 40px;
+  }
+}
+.fix-pb-70 {
+  padding-bottom: 70px;
+  @include breakpoint (max-md){
+    padding-bottom: 40px;
+  }
+}
 .fix-pb-80 {
   padding-bottom: 80px;
   @include breakpoint (max-md){

@@ -2,20 +2,33 @@
 @use '../utilities' as *;
 
 .review1 {
+    .global-slider {
+        padding-top: 60px;
+        @include breakpoint (max-md){
+            padding-top: 40px;
+        }
+    }
     &-card {
         position: relative;
         border-radius: 20px;
         background: var(--White, #FFF);
         box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
         padding: 65px 110px 65px 115px;
-        margin-left: 101px;
+        margin-left: 50px;
+        margin-right: 20px;
         @include breakpoint (max-xxxl){
             padding: 65px 45px 65px 90px;
-            margin-left: 80px;
+            margin-left: 50px;
+            margin-right: 10px; 
         }
         @include breakpoint (max-xxl){
-            padding: 50px 45px 50px 95px;
-            margin-left: 45px;
+            padding: 50px 45px 50px 80px;
+            margin-left: 50px;
+            margin-right: 10px;            
+        }
+        @include breakpoint (max-md){
+            margin-left: 80px;
+            margin-right: 24px;           
         }
         &__icon {
             position: absolute;

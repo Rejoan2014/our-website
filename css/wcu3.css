@@ -2541,6 +2541,24 @@ span {
   }
 }
 
+.fix-pb-60 {
+  padding-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .fix-pb-60 {
+    padding-bottom: 40px;
+  }
+}
+
+.fix-pb-70 {
+  padding-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .fix-pb-70 {
+    padding-bottom: 40px;
+  }
+}
+
 .fix-pb-80 {
   padding-bottom: 80px;
 }
