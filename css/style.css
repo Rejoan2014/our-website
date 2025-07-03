@@ -13667,6 +13667,13 @@ img {
   line-height: 44px; /* 146.667% */
   letter-spacing: 0.36px;
 }
+@media (max-width: 575px) {
+  .milestone1-card__badge {
+    padding: 8px 30px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
 .milestone1-card__icon {
   position: absolute;
   right: 6%;
