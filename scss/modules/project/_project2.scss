@@ -2,13 +2,6 @@
 @use '../../utilities' as *;
 
 .project2 {
-    padding-bottom: 75px;
-    @include breakpoint (max-xxl){
-        padding-bottom: 50px;
-    }
-    @include breakpoint (max-sm){
-        padding-bottom: 20px;
-    }
     &-card {
         &__thumb {
             padding-bottom: 30px;

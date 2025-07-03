@@ -2242,6 +2242,7 @@ span {
   height: 60px;
   padding: 20px;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -10464,19 +10465,6 @@ img {
   fill: var(--black);
 }
 
-.project2 {
-  padding-bottom: 75px;
-}
-@media (max-width: 1399px) {
-  .project2 {
-    padding-bottom: 50px;
-  }
-}
-@media (max-width: 575px) {
-  .project2 {
-    padding-bottom: 20px;
-  }
-}
 .project2-card__thumb {
   padding-bottom: 30px;
   border-radius: 20px;
