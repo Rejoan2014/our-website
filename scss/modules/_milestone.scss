@@ -3,6 +3,19 @@
 
 .milestone1 {
     position: relative;
+    .swiper-slide-next {
+        display: flex;
+        justify-content: end !important;
+    }
+    &__shape {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include breakpoint (max-xxxl){
+            display: none;
+        }
+    }
     &-card {
         position: relative;
         border-radius: 0px 20px 20px 20px;
