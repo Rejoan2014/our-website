@@ -30,6 +30,18 @@
             margin-left: 80px;
             margin-right: 24px;           
         }
+        @include breakpoint (max-sm){
+            margin-left: 65px;
+            margin-right: 14px;
+        }
+        @include breakpoint (max-xsmall){
+            padding: 35px 45px 35px 59px;
+            margin-left: 47px;
+            margin-right: 7px;
+        }
+        @include breakpoint (max-xxsmall){
+            padding: 35px 25px 35px 60px;
+        }
         &__icon {
             position: absolute;
             left: -10%;
@@ -43,6 +55,13 @@
             aspect-ratio: 1/1;
             @include breakpoint (max-xxl){
                 left: -14%;
+            }
+            @include breakpoint (max-xsmall){
+                width: 80px;
+                height: 80px;
+            }
+            @include breakpoint (max-xxsmall){
+                left: -17%;
             }
         }
         &-rating {

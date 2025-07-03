@@ -10900,7 +10900,7 @@ img {
   transition: all 0.4s ease-in-out;
 }
 .testimonial1-card-content {
-  height: 444px;
+  height: 334px;
   padding: 40px;
   transition: all 0.4s ease-in-out;
 }
@@ -10985,11 +10985,10 @@ img {
   }
 }
 .testimonial1-card:hover .testimonial1-card {
-  transform: scale(1.2);
   transition: all 0.4s ease-in-out;
 }
 .testimonial1-card:hover .testimonial1-card-content {
-  height: 444px;
+  height: 440px;
   transition: all 0.4s ease-in-out;
 }
 .testimonial1-card:hover .testimonial1-card-content__desc {
@@ -13376,6 +13375,24 @@ img {
     margin-right: 24px;
   }
 }
+@media (max-width: 575px) {
+  .review1-card {
+    margin-left: 65px;
+    margin-right: 14px;
+  }
+}
+@media (max-width: 449px) {
+  .review1-card {
+    padding: 35px 45px 35px 59px;
+    margin-left: 47px;
+    margin-right: 7px;
+  }
+}
+@media (max-width: 374px) {
+  .review1-card {
+    padding: 35px 25px 35px 60px;
+  }
+}
 .review1-card__icon {
   position: absolute;
   left: -10%;
@@ -13391,6 +13408,17 @@ img {
 @media (max-width: 1399px) {
   .review1-card__icon {
     left: -14%;
+  }
+}
+@media (max-width: 449px) {
+  .review1-card__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 374px) {
+  .review1-card__icon {
+    left: -17%;
   }
 }
 .review1-card-rating {
