@@ -611,3 +611,181 @@
 
   }
 }
+
+//Search button 
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 560px;
+  height: 60px;
+  padding: 5px 5px;
+  border-radius: 999px;
+  border: 1px solid var(--200, #C1C1C1);
+  background: var(--100, #F7FAFF);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 12px 20px;
+  color: var(--800, #6B7280);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; 
+  letter-spacing: 0.16px;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+}
+
+.search-btn i {
+  color: var(--White, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+
+//Filter Box
+.filter-box {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid var(--200, #C1C1C1);
+  overflow: hidden;
+  max-width: 470px;
+  height: 60px;
+  background: var(--White, #FFF);
+  @include breakpoint (max-md){
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.filter-item {
+  position: relative;
+
+  &--one {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-right: 1px solid var(--200, #E2E2E2);
+    gap: 8px;
+    max-width: 249px;
+    width: 100%;
+
+    select {
+      padding-right: 20px;
+      background-position: right 0px center;
+    }
+    @include breakpoint (max-lg){
+      padding: 12px 4px;
+      gap: 4px;
+    }
+    @include breakpoint (max-md){
+      padding: 12px 16px;
+      gap: 8px;
+    }
+    @include breakpoint (max-xsmall){
+      padding: 12px 6px;
+      gap: 4px;
+    }
+    @include breakpoint (max-xxsmall){
+      padding: 12px 4px;
+      gap: 0px;
+      padding-right: 2px;
+    }
+  }
+
+  &--two {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-right: 1px solid var(--200, #E2E2E2);
+    gap: 8px;
+    max-width: 220px;
+    width: 100%;
+
+    select {
+      padding-right: 20px;
+      background-position: right 0px center;
+    }
+    @include breakpoint (max-lg){
+      padding: 12px 4px;
+      gap: 4px;
+    }
+    @include breakpoint (max-md){
+      padding: 12px 16px;
+      gap: 8px;
+    }
+    @include breakpoint (max-xsmall){
+      padding: 12px 6px;
+      gap: 4px;
+    }
+    @include breakpoint (max-xxsmall){
+      padding: 12px 4px;
+      gap: 0px;
+      padding-right: 18px;
+    }
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+
+  label {
+    color: var(--900, #1D2128);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    white-space: nowrap;
+    @include breakpoint (max-lg){
+      font-size: 16px;
+    }
+    @include breakpoint (max-xxsmall){
+      font-size: 15px;
+    }
+  }
+
+  select {
+    border: none;
+    appearance: none;
+    background-image: url('../images/icon/dropdown-gradient-icon.svg');
+    background-repeat: no-repeat;
+
+    color: var(--800, #6B7280);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.16px;
+    @include breakpoint (max-lg){
+      font-size: 16px;
+    }
+    @include breakpoint (max-xxsmall){
+      font-size: 15px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
