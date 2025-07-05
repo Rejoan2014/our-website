@@ -67,6 +67,9 @@
         opacity: 0;
         visibility: visible;
         @include transition;
+        img {
+          width: 100%;
+        }
       }
     }
     .author-meta {

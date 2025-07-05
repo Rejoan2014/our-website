@@ -10967,6 +10967,9 @@ img {
   visibility: visible;
   transition: all 0.4s ease-in-out;
 }
+.testimonial1-card-content__thumb img {
+  width: 100%;
+}
 .testimonial1-card .author-meta {
   border-top: 1px solid #C1C1C1;
   padding: 40px;
