@@ -361,22 +361,28 @@
 
 
     position: absolute;
-    top: -650px; 
+    // top: -650px; 
+    top: -745px;
     z-index: 10;
     @include breakpoint (max-lg){
-      top: -450px;
+      // top: -450px;
+      top: -545px;
     }
     @include breakpoint (max-md){
-      top: -400px;
+      // top: -400px;
+      top: -495px;
     }
     @include breakpoint (max-xs){
-      top: -340px;
+      // top: -340px;
+      top: -435px;
     }
     @include breakpoint (max-xsmall){
-      top: -390px;
+      // top: -390px;
+      top: -485px;
     }
     @include breakpoint (max-xxsmall){
-      top: -430px;
+      // top: -430px;
+      top: -520px;
     }
   }
 
