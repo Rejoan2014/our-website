@@ -19,6 +19,7 @@
     @include breakpoint (max-xs){
         padding: 140px 0 35px;
     }
+
     // &-lines {
     //     position: absolute;
     //     top: 0;
@@ -29,19 +30,21 @@
     //     pointer-events: none;
 
     //     &::before {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-image: repeating-linear-gradient(
-    //         to right,
-    //         rgba(0, 0, 0, 0.10),
-    //         rgba(102, 102, 102, 0.02) 1px,
-    //         transparent 1px,
-    //         transparent 140px
-    //     );
+    //         content: '';
+    //         position: absolute;
+    //         inset: 0;
+
+    //         background-image:
+    //         repeating-linear-gradient(
+    //             to right,
+    //             rgba(0, 0, 0, 0.1),
+    //             rgba(102, 102, 102, 0.02) 1px,
+    //             transparent 1px,
+    //             transparent 140px
+    //         );
+
+    //         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    //         -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     //     }
     // }
 
@@ -59,17 +62,24 @@
             position: absolute;
             inset: 0;
 
-            background-image:
-            repeating-linear-gradient(
-                to right,
-                rgba(0, 0, 0, 0.1),
-                rgba(102, 102, 102, 0.02) 1px,
-                transparent 1px,
-                transparent 140px
+            background-image: repeating-linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.1),
+            rgba(102, 102, 102, 0.02) 1px,
+            transparent 1px,
+            transparent 140px
             );
 
-            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+            mask-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.35) 100%
+            );
+            -webkit-mask-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.35) 100%
+            );
         }
     }
 
