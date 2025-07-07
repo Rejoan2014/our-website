@@ -10,10 +10,9 @@
   --black: #000;
   --black2: #131215;
   --title: #16171A;
-  --title2: #7E7E7E;
+  --title2: #6B7280;
   --title3: #373A3F;
   --title4: #010F34;
-  --title5: #6B7280;
   --dark: #0D0D0D;
   --yellow: #F2D701;
   --yellow2: #FFB400;
@@ -3007,7 +3006,7 @@ span {
   padding-bottom: 15px;
 }
 .checkOut-billingCard__text {
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3037,7 +3036,7 @@ span {
 .checkOut-orderSummary-info {
   display: flex;
   justify-content: space-between;
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3093,7 +3092,7 @@ span {
   outline: none;
   background: transparent;
   padding: 12px 20px;
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3245,7 +3244,7 @@ span {
   appearance: none;
   background-image: url("../images/icon/dropdown-gradient-icon.svg");
   background-repeat: no-repeat;
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3504,7 +3503,7 @@ img {
   padding-bottom: 10px;
 }
 .list.style3 .checklist-item__text {
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3958,7 +3957,7 @@ img {
   background: var(--theme2);
 }
 .global-social3__item a i {
-  color: var(--title5);
+  color: var(--title2);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4055,7 +4054,7 @@ img {
   border: none;
   border-bottom: 1px solid var(--black);
   border-radius: 0;
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4065,7 +4064,7 @@ img {
 }
 .form__group input::placeholder,
 .form__group textarea::placeholder {
-  color: var(--title5);
+  color: var(--title2);
 }
 .form__group textarea {
   padding-top: 18px;
@@ -4076,7 +4075,7 @@ img {
 }
 
 .form__group2 label {
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4093,7 +4092,7 @@ img {
   width: 100%;
   height: 50px;
   outline: none;
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -4130,7 +4129,7 @@ img {
   width: 510px;
   height: 60px;
   flex-shrink: 0;
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4152,7 +4151,7 @@ img {
 }
 .form__group3 input::placeholder,
 .form__group3 textarea::placeholder {
-  color: var(--title5);
+  color: var(--title2);
 }
 .form__group3 select.form__select {
   border: 1px solid transparent;
@@ -4593,7 +4592,7 @@ img {
   cursor: pointer;
 }
 .service-thumb-content__desc {
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4669,7 +4668,7 @@ img {
   cursor: pointer;
 }
 .service-list-item-content__desc {
-  color: var(--title5);
+  color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;

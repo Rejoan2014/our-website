@@ -2865,7 +2865,7 @@ span {
   padding-bottom: 30px;
 }
 .service-thumb__desc {
-  color: $title-color5;
+  color: $title-color2;
   font-family: $body-font;
   font-size: 18px;
   font-style: normal;
@@ -2894,7 +2894,7 @@ span {
   padding-bottom: 15px;
 }
 .service-list-item-content__desc {
-  color: $title-color5;
+  color: $title-color2;
   font-family: $body-font;
   font-size: 18px;
   font-style: normal;
@@ -3219,7 +3219,7 @@ img {
   padding-bottom: 10px;
 }
 .list.style2 .checklist-item__text {
-  color: $title-color5;
+  color: $title-color2;
   font-family: $body-font;
   font-size: 18px;
   font-style: normal;
@@ -3676,7 +3676,7 @@ img {
   border: none;
   border-bottom: 1px solid var(--black);
   border-radius: 0;
-  color: $title-color5;
+  color: $title-color2;
   font-family: $body-font;
   font-size: 18px;
   font-style: normal;
@@ -3686,7 +3686,7 @@ img {
 }
 .form__group input::placeholder,
 .form__group textarea::placeholder {
-  color: $title-color5;
+  color: $title-color2;
 }
 .form__group textarea {
   padding-top: 18px;
@@ -3697,7 +3697,7 @@ img {
 }
 
 .form__group2 label {
-  color: $title-color5;
+  color: $title-color2;
   font-family: $body-font;
   font-size: 18px;
   font-style: normal;
@@ -3714,7 +3714,7 @@ img {
   width: 100%;
   height: 50px;
   outline: none;
-  color: $title-color5;
+  color: $title-color2;
   font-family: $body-font;
   font-size: 16px;
   font-style: normal;
@@ -3751,7 +3751,7 @@ img {
   width: 510px;
   height: 60px;
   flex-shrink: 0;
-  color: $title-color5;
+  color: $title-color2;
   font-family: $body-font;
   font-size: 18px;
   font-style: normal;
@@ -3773,7 +3773,7 @@ img {
 }
 .form__group3 input::placeholder,
 .form__group3 textarea::placeholder {
-  color: $title-color5;
+  color: $title-color2;
 }
 .form__group3 select.form__select {
   border: 1px solid transparent;

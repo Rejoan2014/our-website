@@ -26,7 +26,7 @@
       border-bottom: 1px solid $black;
       border-radius: 0;
 
-      color: $title-color5;
+      color: $title-color2;
       font-family: $body-font;
       font-size: 18px;
       font-style: normal;
@@ -35,7 +35,7 @@
       letter-spacing: 0.16px;
 
       &::placeholder {
-        color: $title-color5;
+        color: $title-color2;
       }
     }
 
@@ -52,7 +52,7 @@
 .form {
   &__group2 {
     label {
-      color: $title-color5;
+      color: $title-color2;
       font-family: $body-font;
       font-size: 18px;
       font-style: normal;
@@ -71,7 +71,7 @@
       height: 50px;
       outline: none;
 
-      color: $title-color5;
+      color: $title-color2;
       font-family: $body-font;
       font-size: 16px;
       font-style: normal;
@@ -117,7 +117,7 @@
       height: 60px;
       flex-shrink: 0;
 
-      color: $title-color5;
+      color: $title-color2;
       font-family: $body-font;
       font-size: 18px;
       font-style: normal;
@@ -132,7 +132,7 @@
       }
 
       &::placeholder {
-        color: $title-color5;
+        color: $title-color2;
       }
     }
     select.form__select {
