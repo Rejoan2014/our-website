@@ -634,7 +634,7 @@ h6 {
 }
 
 h1 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
@@ -654,7 +654,7 @@ h1 {
 }
 
 h2 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -694,7 +694,7 @@ h3 {
 }
 
 h4 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -709,7 +709,7 @@ h4 {
 }
 
 h5 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -719,7 +719,7 @@ h5 {
 }
 
 h6 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -2251,7 +2251,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--100, #F7FAFF);
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2273,7 +2273,7 @@ span {
   display: inline-block;
 }
 .submit-btn.style1 i {
-  color: var(--900, #000);
+  color: var(--black);
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
@@ -2705,7 +2705,7 @@ span {
 }
 
 .cart__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -2756,7 +2756,7 @@ span {
   }
 }
 .cart__col {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -2815,7 +2815,7 @@ span {
 }
 .cart__details .cart__label {
   display: block;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -2835,7 +2835,7 @@ span {
   }
 }
 .cart__details .cart__name {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -2897,7 +2897,7 @@ span {
 }
 .cart__price, .cart__total {
   text-align: end;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -2926,7 +2926,7 @@ span {
   }
 }
 .cart__price span, .cart__total span {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -2959,7 +2959,7 @@ span {
   gap: 8px;
 }
 .cart__quantity--total {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -3008,7 +3008,7 @@ span {
   }
 }
 .cart__quantity .qty-btn__numb {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Outfit", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -3084,7 +3084,7 @@ span {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -3392,7 +3392,7 @@ img {
   }
 }
 .preview-area .preview-item .content p {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -3407,7 +3407,7 @@ img {
   }
 }
 .preview-area .preview-item .content h5 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3459,7 +3459,7 @@ img {
   line-height: normal;
 }
 .list.style1 .checklist-item__text {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -3498,7 +3498,7 @@ img {
   line-height: normal;
 }
 .list.style2 .checklist-item__text {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -3545,7 +3545,7 @@ img {
   letter-spacing: 0.16px;
 }
 .list.style3 .checklist-item__text--bold {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -3563,9 +3563,9 @@ img {
   gap: 15px;
   position: relative;
   border-radius: 0px 10px 10px 0px;
-  border-top: 1px dashed var(--900, #000);
-  border-right: 1px dashed var(--900, #000);
-  border-bottom: 1px dashed var(--900, #000);
+  border-top: 1px dashed var(--black);
+  border-right: 1px dashed var(--black);
+  border-bottom: 1px dashed var(--black);
   background: rgba(106, 90, 205, 0.1);
   width: 322px;
   height: 98px;
@@ -4607,7 +4607,7 @@ img {
   padding: 0px 20px;
 }
 .service-thumb-content__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -4672,7 +4672,7 @@ img {
   }
 }
 .service-list-item-content__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -5673,7 +5673,7 @@ img {
   line-height: normal;
 }
 .fancy-box1-item h4 {
-  color: var(--900, #000);
+  color: var(--black);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -5683,7 +5683,7 @@ img {
   letter-spacing: 0.36px;
 }
 .fancy-box1-item h4 span {
-  color: var(--900, #000);
+  color: var(--black);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -5726,7 +5726,7 @@ img {
   line-height: normal;
 }
 .fancy-box2-item h6 {
-  color: var(--900, #000);
+  color: var(--black);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -6262,7 +6262,7 @@ img {
   border-radius: 0;
   box-shadow: none;
   background: var(--white);
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -6335,7 +6335,7 @@ img {
   gap: 10px;
   border-radius: 5px;
   background: var(--100, #F3F5FA);
-  color: var(--900, #000);
+  color: var(--black);
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -6936,7 +6936,7 @@ img {
   align-items: center;
   border-radius: 999px;
   border: 1px solid var(--200, #C1C1C1);
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -7094,7 +7094,7 @@ img {
   line-height: normal;
 }
 .breadcrumb-heading__title {
-  color: var(--900, #000);
+  color: var(--black);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
@@ -7188,7 +7188,7 @@ img {
   padding-bottom: 11px;
 }
 .widget-card__title h6 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -7204,7 +7204,7 @@ img {
   height: 54px;
   width: 100%;
   border-radius: 5px;
-  background: var(--900, #000);
+  background: var(--black);
   border: none;
   color: var(--white);
   font-family: "Inter", sans-serif;
@@ -7275,7 +7275,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -7355,7 +7355,7 @@ img {
 }
 .widget-card-post-items-content h5 {
   padding-bottom: 12px;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -7474,7 +7474,7 @@ img {
   padding-bottom: 11px;
 }
 .widget2-card__title h6 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -7513,7 +7513,7 @@ img {
   margin-bottom: 30px;
 }
 .widget2-card-categories-content__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -8388,7 +8388,7 @@ img {
 }
 .hero1-content__title {
   padding-bottom: 20px;
-  color: var(--900, #000);
+  color: var(--black);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 80px;
@@ -8434,7 +8434,7 @@ img {
 }
 .hero1-content__desc {
   max-width: 610px;
-  color: var(--900, #000);
+  color: var(--black);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -8566,7 +8566,7 @@ img {
   flex-shrink: 0;
   aspect-ratio: 1/1;
   border-radius: 999px;
-  border: 2px dashed var(--900, #000);
+  border: 2px dashed var(--black);
   background: var(--100, #F7FAFF);
 }
 @media (max-width: 1399px) {
@@ -8612,7 +8612,7 @@ img {
   }
 }
 .about1-thumb-badge__text h2 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -8627,7 +8627,7 @@ img {
   }
 }
 .about1-thumb-badge__text p {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -8736,7 +8736,7 @@ img {
   flex-shrink: 0;
   aspect-ratio: 1/1;
   border-radius: 999px;
-  border: 2px dashed var(--900, #000);
+  border: 2px dashed var(--black);
   background: var(--100, #F7FAFF);
 }
 @media (max-width: 1399px) {
@@ -8782,7 +8782,7 @@ img {
   }
 }
 .about1-counter-item-info__numb {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -8799,7 +8799,7 @@ img {
   }
 }
 .about1-counter-item-info__label {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -8918,7 +8918,7 @@ img {
   }
 }
 .about2-content__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 70px;
   font-weight: 900;
@@ -8996,7 +8996,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 2px dashed var(--900, #000);
+  border: 2px dashed var(--black);
   background: var(--100, #F7FAFF);
   width: 94px;
   height: 94px;
@@ -9515,7 +9515,7 @@ img {
   margin-bottom: 12px;
 }
 .section-top__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -9562,7 +9562,7 @@ img {
   font-feature-settings: "liga" off, "clig" off;
 }
 .section-top__title2 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
@@ -9732,7 +9732,7 @@ img {
   flex: 1;
   text-align: left;
   margin: 0;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -10015,7 +10015,7 @@ img {
   flex: 1;
   text-align: left;
   margin: 0;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -10357,7 +10357,7 @@ img {
   border-radius: 20px;
 }
 .project2-card__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -10389,7 +10389,7 @@ img {
   padding-bottom: 30px;
 }
 .project2-card__title2 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -10641,7 +10641,7 @@ img {
   }
 }
 .project3-content__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -10714,7 +10714,7 @@ img {
   }
 }
 .testimonial1-card-content__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -10905,7 +10905,7 @@ img {
   line-height: normal;
 }
 .contact1-groups-item-info__text {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -10929,7 +10929,7 @@ img {
 }
 .contactForm-card__title {
   padding-bottom: 50px;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -11002,7 +11002,7 @@ img {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -11032,7 +11032,7 @@ img {
 }
 .blog1-card-content__title {
   padding-bottom: 15px;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -11082,7 +11082,7 @@ img {
   margin-bottom: 20px;
 }
 .blog1-card__quote h4 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -11143,7 +11143,7 @@ img {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -11173,7 +11173,7 @@ img {
 }
 .blog2-card-content__title {
   padding-bottom: 15px;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -11227,7 +11227,7 @@ img {
   padding-bottom: 20px;
 }
 .blog2-card-content__quote h4 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -11246,7 +11246,7 @@ img {
   border-radius: 10px;
 }
 .blog2-card-content-profile__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -11296,7 +11296,7 @@ img {
   margin-bottom: 30px;
 }
 .blog2-card-content-profile2__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -11421,7 +11421,7 @@ img {
   padding-bottom: 30px;
 }
 .blog2-card-comment__title h3 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -11480,7 +11480,7 @@ img {
   max-width: fit-content;
 }
 .blog2-card-comment-profile-content__author h5 {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -11519,7 +11519,7 @@ img {
   border-radius: 5px;
   border: 1px solid rgba(28, 28, 28, 0.1);
   background: var(--white);
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -11554,7 +11554,7 @@ img {
   }
 }
 .blog2-form__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -11839,7 +11839,7 @@ img {
   }
 }
 .product1-card-content-meta__category {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Inter", sans-serif;
   font-size: 15.909px;
   font-style: normal;
@@ -11855,7 +11855,7 @@ img {
   line-height: 22.727px;
 }
 .product1-card-content__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -11962,7 +11962,7 @@ img {
   }
 }
 .product1-card-content-footer__price span {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -11999,7 +11999,7 @@ img {
   max-width: 813px;
 }
 .uiux-content__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -12240,7 +12240,7 @@ img {
 }
 .review1-card-rating {
   padding-bottom: 15px;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -12259,7 +12259,7 @@ img {
   color: var(--black);
 }
 .review1-card__source {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -12303,7 +12303,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  border: 2px dashed var(--900, #000);
+  border: 2px dashed var(--black);
   background: var(--100, #F7FAFF);
   width: 145px;
   height: 145px;
@@ -12352,7 +12352,7 @@ img {
   }
 }
 .award1__location {
-  color: var(--900, #000);
+  color: var(--black);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 48px;
@@ -12436,7 +12436,7 @@ img {
   }
 }
 .award1-card__country {
-  color: var(--900, #000);
+  color: var(--black);
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -12639,7 +12639,7 @@ img {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--white);
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -13068,7 +13068,7 @@ img {
   }
 }
 .footer1-wrapper-company__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -13112,7 +13112,7 @@ img {
   }
 }
 .footer1-wrapper-service__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -13160,7 +13160,7 @@ img {
   }
 }
 .footer1-wrapper-solution__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -13208,7 +13208,7 @@ img {
   }
 }
 .footer1-wrapper-product__title {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -13260,7 +13260,7 @@ img {
 .footer1-wrapper-contact-list__item a {
   display: flex !important;
   align-items: center !important;
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Outfit", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -13335,7 +13335,7 @@ img {
   }
 }
 .footer1-bottom-info__links p {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -13354,7 +13354,7 @@ img {
   }
 }
 .footer1-bottom-info__links a {
-  color: var(--900, #000);
+  color: var(--black);
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;

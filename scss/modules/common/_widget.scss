@@ -19,7 +19,7 @@
     &__title {
       padding-bottom: 11px;
       h6 {
-        color: var(--900, #000);
+        color: $black;
         font-family: $body-font;
         font-size: 30px;
         font-style: normal;
@@ -36,7 +36,7 @@
             height: 54px;
             width: 100%;
             border-radius: 5px;
-            background: var(--900, #000);
+            background: $black;
             border: none;
 
             color: $white;
@@ -123,7 +123,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            color: var(--900, #000);
+            color: $black;
             font-family: $body-font;
             font-size: 18px;
             font-style: normal;
@@ -216,7 +216,7 @@
         &-content {
           h5 {
             padding-bottom: 12px;
-            color: var(--900, #000);
+            color: $black;
             font-family: $body-font;
             font-size: 20px;
             font-style: normal;

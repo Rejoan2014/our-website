@@ -94,7 +94,7 @@ img {
         }
         .content {
           p {
-            color: var(--900, #000);
+            color: $black;
             font-family: $body-font;
             font-size: 17px;
             font-style: normal;
@@ -107,7 +107,7 @@ img {
             }
           }
           h5 {
-            color: var(--900, #000);
+            color: $black;
             font-family: $body-font;
             font-size: 18px;
             font-style: normal;
@@ -160,7 +160,7 @@ img {
             }
           }
           &__text {
-            color: var(--900, #000);
+            color: $black;
             font-family: $body-font;
             font-size: 20px;
             font-style: normal;
@@ -199,7 +199,7 @@ img {
             }
           }
           &__text {
-            color: var(--900, #000);
+            color: $black;
             font-family: $body-font;
             font-size: 20px;
             font-style: normal;
@@ -242,7 +242,7 @@ img {
             line-height: 30px; /* 166.667% */
             letter-spacing: 0.16px;
               &--bold {
-                color: var(--900, #000);
+                color: $black;
                 font-family: $body-font;
                 font-size: 20px;
                 font-style: normal;
@@ -269,9 +269,9 @@ img {
       gap: 15px;
       position: relative;
       border-radius: 0px 10px 10px 0px;
-      border-top: 1px dashed var(--900, #000);
-      border-right: 1px dashed var(--900, #000);
-      border-bottom: 1px dashed var(--900, #000);
+      border-top: 1px dashed $black;
+      border-right: 1px dashed $black;
+      border-bottom: 1px dashed $black;
       background: rgba(106, 90, 205, 0.10);
       width: 322px;
       height: 98px;

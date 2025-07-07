@@ -49,7 +49,7 @@
                     display: flex;
                     align-items: center;
                     gap: 7px;
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 20px;
                     font-style: normal;
@@ -78,7 +78,7 @@
             }
             &__title{
                 padding-bottom: 15px;
-                color: var(--900, #000);
+                color: $black;
                 font-family: $body-font;
                 font-size: 40px;
                 font-style: normal;
@@ -124,7 +124,7 @@
                 margin-bottom: 20px;
             }
             h4 {
-                color: var(--900, #000);
+                color: $black;
                 font-family: $body-font;
                 font-size: 20px;
                 font-style: normal;

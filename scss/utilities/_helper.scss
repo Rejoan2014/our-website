@@ -244,7 +244,7 @@
 // Cart Design Start
 .cart {
   &__title {
-    color: var(--900, #000);
+    color: $black;
     font-family: $body-font;
     font-size: 40px;
     font-style: normal;
@@ -291,7 +291,7 @@
   }
 
   &__col {
-    color: var(--900, #000);
+    color: $black;
     font-family: $body-font;
     font-size: 24px;
     font-style: normal;
@@ -339,7 +339,7 @@
   &__details {
     .cart__label {
       display: block;
-      color: var(--900, #000);
+      color: $black;
       font-family: $body-font;
       font-size: 20px;
       font-style: normal;
@@ -356,7 +356,7 @@
     }
 
     .cart__name {
-      color: var(--900, #000);
+      color: $black;
       font-family: $body-font;
       font-size: 30px;
       font-style: normal;
@@ -408,7 +408,7 @@
   &__price,
   &__total {
     text-align: end;
-    color: var(--900, #000);
+    color: $black;
     font-family: $body-font;
     font-size: 24px;
     font-style: normal;
@@ -428,7 +428,7 @@
       font-size: 14px;
     }
     span {
-      color: var(--900, #000);
+      color: $black;
       font-family: $body-font;
       font-size: 40px;
       font-style: normal;
@@ -459,7 +459,7 @@
     gap: 8px;
 
     &--total {
-      color: var(--900, #000);
+      color: $black;
       font-family: $body-font;
       font-size: 40px;
       font-style: normal;
@@ -500,7 +500,7 @@
         height: 26px;
       }
       &__numb {
-        color: var(--900, #000);
+        color: $black;
         font-family: $text-font2;
         font-size: 14px;
         font-style: normal;
@@ -578,7 +578,7 @@
         border-bottom: none;
         padding-bottom: 0;
         margin-bottom: 0;
-        color: var(--900, #000);
+        color: $black;
         font-family: $body-font;
         font-size: 20px;
         font-style: normal;

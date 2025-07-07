@@ -283,7 +283,7 @@
         }
         &__title { 
             padding-bottom: 20px;
-            color: var(--900, #000);
+            color: $black;
             text-align: center;
             font-family: $body-font;
             font-size: 80px;
@@ -317,7 +317,7 @@
         } 
         &__desc {
             max-width: 610px;
-            color: var(--900, #000);
+            color: $black;
             text-align: center;
             font-family: $body-font;
             font-size: 18px;

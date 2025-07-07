@@ -45,7 +45,7 @@
                     display: flex;
                     align-items: center;
                     gap: 7px;
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 20px;
                     font-style: normal;
@@ -74,7 +74,7 @@
             }
             &__title{
                 padding-bottom: 15px;
-                color: var(--900, #000);
+                color: $black;
                 font-family: $body-font;
                 font-size: 30px;
                 font-style: normal;
@@ -121,7 +121,7 @@
                     padding-bottom: 20px;
                 }
                 h4 {
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 20px;
                     font-style: normal;
@@ -140,7 +140,7 @@
                     }
                 }
                 &__title {
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 20px;
                     font-style: normal;
@@ -191,7 +191,7 @@
                     margin-bottom: 30px;
                 }
                 &__title {
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 20px;
                     font-style: normal;
@@ -316,7 +316,7 @@
             &__title {
                 padding-bottom: 30px;
                 h3 {
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 30px;
                     font-style: normal;
@@ -373,7 +373,7 @@
                 &-content {
                     &__author {
                         h5 {
-                            color: var(--900, #000);
+                            color: $black;
                             font-family: $title-font;
                             font-size: 16px;
                             font-style: normal;
@@ -414,7 +414,7 @@
                             border-radius: 5px;
                             border: 1px solid rgba(28, 28, 28, 0.10);
                             background: $white;
-                            color: var(--900, #000);
+                            color: $black;
                             font-family: $body-font;
                             font-size: 17px;
                             font-style: normal;
@@ -451,7 +451,7 @@
             padding: 15px;
         }
         &__title {
-            color: var(--900, #000);
+            color: $black;
             font-family: $body-font;
             font-size: 40px;
             font-style: normal;

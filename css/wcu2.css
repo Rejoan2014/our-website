@@ -601,7 +601,7 @@ h6 {
 }
 
 h1 {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 80px;
   font-style: normal;
@@ -621,7 +621,7 @@ h1 {
 }
 
 h2 {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 48px;
   font-style: normal;
@@ -661,7 +661,7 @@ h3 {
 }
 
 h4 {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 30px;
   font-style: normal;
@@ -676,7 +676,7 @@ h4 {
 }
 
 h5 {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 24px;
   font-style: normal;
@@ -686,7 +686,7 @@ h5 {
 }
 
 h6 {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 20px;
   font-style: normal;
@@ -2218,7 +2218,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--100, #F7FAFF);
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 17px;
   font-style: normal;
@@ -2240,7 +2240,7 @@ span {
   display: inline-block;
 }
 .submit-btn.style1 i {
-  color: var(--900, #000);
+  color: $black;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
@@ -2672,7 +2672,7 @@ span {
 }
 
 .cart__title {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 40px;
   font-style: normal;
@@ -2723,7 +2723,7 @@ span {
   }
 }
 .cart__col {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 24px;
   font-style: normal;
@@ -2782,7 +2782,7 @@ span {
 }
 .cart__details .cart__label {
   display: block;
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 20px;
   font-style: normal;
@@ -2802,7 +2802,7 @@ span {
   }
 }
 .cart__details .cart__name {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 30px;
   font-style: normal;
@@ -2864,7 +2864,7 @@ span {
 }
 .cart__price, .cart__total {
   text-align: end;
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 24px;
   font-style: normal;
@@ -2893,7 +2893,7 @@ span {
   }
 }
 .cart__price span, .cart__total span {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 40px;
   font-style: normal;
@@ -2926,7 +2926,7 @@ span {
   gap: 8px;
 }
 .cart__quantity--total {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 40px;
   font-style: normal;
@@ -2975,7 +2975,7 @@ span {
   }
 }
 .cart__quantity .qty-btn__numb {
-  color: var(--900, #000);
+  color: $black;
   font-family: $text-font2;
   font-size: 14px;
   font-style: normal;
@@ -3051,7 +3051,7 @@ span {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 20px;
   font-style: normal;
@@ -3359,7 +3359,7 @@ img {
   }
 }
 .preview-area .preview-item .content p {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 17px;
   font-style: normal;
@@ -3374,7 +3374,7 @@ img {
   }
 }
 .preview-area .preview-item .content h5 {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 18px;
   font-style: normal;
@@ -3426,7 +3426,7 @@ img {
   line-height: normal;
 }
 .list.style1 .checklist-item__text {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 20px;
   font-style: normal;
@@ -3465,7 +3465,7 @@ img {
   line-height: normal;
 }
 .list.style2 .checklist-item__text {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 20px;
   font-style: normal;
@@ -3512,7 +3512,7 @@ img {
   letter-spacing: 0.16px;
 }
 .list.style3 .checklist-item__text--bold {
-  color: var(--900, #000);
+  color: $black;
   font-family: $body-font;
   font-size: 20px;
   font-style: normal;
@@ -3530,9 +3530,9 @@ img {
   gap: 15px;
   position: relative;
   border-radius: 0px 10px 10px 0px;
-  border-top: 1px dashed var(--900, #000);
-  border-right: 1px dashed var(--900, #000);
-  border-bottom: 1px dashed var(--900, #000);
+  border-top: 1px dashed $black;
+  border-right: 1px dashed $black;
+  border-bottom: 1px dashed $black;
   background: rgba(106, 90, 205, 0.1);
   width: 322px;
   height: 98px;
@@ -4574,7 +4574,7 @@ img {
   padding: 0px 20px;
 }
 .service-thumb-content__title {
-  color: var(--900, #000);
+  color: $black;
   font-feature-settings: "liga" off, "clig" off;
   font-family: $body-font;
   font-size: 20px;
@@ -4639,7 +4639,7 @@ img {
   }
 }
 .service-list-item-content__title {
-  color: var(--900, #000);
+  color: $black;
   font-feature-settings: "liga" off, "clig" off;
   font-family: $body-font;
   font-size: 20px;

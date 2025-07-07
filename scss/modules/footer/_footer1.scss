@@ -28,7 +28,7 @@
         padding-bottom: 5px;
       }
       &__title {
-        color: var(--900, #000);
+        color: $black;
         font-family: $body-font;
         font-size: 24px;
         font-style: normal;
@@ -72,7 +72,7 @@
         padding-top: 7px;
       }
       &__title {
-        color: var(--900, #000);
+        color: $black;
         font-family: $body-font;
         font-size: 24px;
         font-style: normal;
@@ -118,7 +118,7 @@
         padding-top: 7px;
       }
       &__title {
-        color: var(--900, #000);
+        color: $black;
         font-family: $body-font;
         font-size: 24px;
         font-style: normal;
@@ -164,7 +164,7 @@
         padding-top: 7px;
       }
       &__title {
-        color: var(--900, #000);
+        color: $black;
         font-family: $body-font;
         font-size: 24px;
         font-style: normal;
@@ -220,7 +220,7 @@
           a {
             display: flex !important;
             align-items: center !important;
-            color: var(--900, #000);
+            color: $black;
             font-family: $text-font2;
             font-size: 18px;
             font-style: normal;
@@ -293,7 +293,7 @@
           margin-bottom: 14px;
         }
         p {
-          color: var(--900, #000);
+          color: $black;
           font-family: $title-font;
           font-size: 16px;
           font-style: normal;
@@ -308,7 +308,7 @@
           }
         }
         a {
-          color: var(--900, #000);
+          color: $black;
           font-family: $title-font;
           font-size: 16px;
           font-style: normal;

@@ -64,7 +64,7 @@ h6 {
 }
 
 h1 {
-    color: var(--900, #000);
+    color: $black;
     font-family: $body-font;
     font-size: 80px;
     font-style: normal;
@@ -80,7 +80,7 @@ h1 {
 }
 
 h2 {
-    color: var(--900, #000);
+    color: $black;
     font-family: $body-font;
     font-size: 48px;
     font-style: normal;
@@ -113,7 +113,7 @@ h3 {
 }
 
 h4 {
-    color: var(--900, #000);
+    color: $black;
     font-family: $body-font;
     font-size: 30px;
     font-style: normal;
@@ -126,7 +126,7 @@ h4 {
 }
 
 h5 {
-    color: var(--900, #000);
+    color: $black;
     font-family: $body-font;
     font-size: 24px;
     font-style: normal;
@@ -136,7 +136,7 @@ h5 {
 }
 
 h6 {
-    color: var(--900, #000);
+    color: $black;
     font-family: $body-font;
     font-size: 20px;
     font-style: normal;

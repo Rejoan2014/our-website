@@ -95,7 +95,7 @@
                 flex-shrink: 0;
                 aspect-ratio: 1/1;
                 border-radius: 999px;
-                border: 2px dashed var(--900, #000);
+                border: 2px dashed $black;
                 background: var(--100, #F7FAFF);
                 @include breakpoint (max-xxl){
                     width: 75px;
@@ -131,7 +131,7 @@
 
             &__text {
                 h2 {
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 48px;
                     font-style: normal;
@@ -144,7 +144,7 @@
                     }
                 }
                 p {
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 18px;
                     font-style: normal;
@@ -229,7 +229,7 @@
                 flex-shrink: 0;
                 aspect-ratio: 1/1;
                 border-radius: 999px;
-                border: 2px dashed var(--900, #000);
+                border: 2px dashed $black;
                 background: var(--100, #F7FAFF);
                 @include breakpoint (max-xxl){
                     width: 75px;
@@ -264,7 +264,7 @@
             }
             &-info {
                 &__numb {
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 48px;
                     font-style: normal;
@@ -279,7 +279,7 @@
                     }
                 }
                 &__label {
-                    color: var(--900, #000);
+                    color: $black;
                     font-family: $body-font;
                     font-size: 18px;
                     font-style: normal;

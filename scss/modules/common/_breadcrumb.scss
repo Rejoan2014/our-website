@@ -120,7 +120,7 @@
             }
         }  
         &__title {
-            color: var(--900, #000);
+            color: $black;
             text-align: center;
             font-feature-settings: 'liga' off, 'clig' off;
             font-family: $body-font;
