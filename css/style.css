@@ -46,6 +46,7 @@ Description: CleanPro - Creative & Digital Agency Html Template
   --title2: #7E7E7E;
   --title3: #373A3F;
   --title4: #010F34;
+  --title5: #6B7280;
   --dark: #0D0D0D;
   --yellow: #F2D701;
   --yellow2: #FFB400;
@@ -3039,7 +3040,7 @@ span {
   padding-bottom: 15px;
 }
 .checkOut-billingCard__text {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3069,7 +3070,7 @@ span {
 .checkOut-orderSummary-info {
   display: flex;
   justify-content: space-between;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3125,7 +3126,7 @@ span {
   outline: none;
   background: transparent;
   padding: 12px 20px;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3277,7 +3278,7 @@ span {
   appearance: none;
   background-image: url("../images/icon/dropdown-gradient-icon.svg");
   background-repeat: no-repeat;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3536,7 +3537,7 @@ img {
   padding-bottom: 10px;
 }
 .list.style3 .checklist-item__text {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3990,7 +3991,7 @@ img {
   background: var(--theme2);
 }
 .global-social3__item a i {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4087,7 +4088,7 @@ img {
   border: none;
   border-bottom: 1px solid var(--black);
   border-radius: 0;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4097,7 +4098,7 @@ img {
 }
 .form__group input::placeholder,
 .form__group textarea::placeholder {
-  color: var(--800, #6B7280);
+  color: var(--title5);
 }
 .form__group textarea {
   padding-top: 18px;
@@ -4108,7 +4109,7 @@ img {
 }
 
 .form__group2 label {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4125,7 +4126,7 @@ img {
   width: 100%;
   height: 50px;
   outline: none;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -4162,7 +4163,7 @@ img {
   width: 510px;
   height: 60px;
   flex-shrink: 0;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4184,7 +4185,7 @@ img {
 }
 .form__group3 input::placeholder,
 .form__group3 textarea::placeholder {
-  color: var(--800, #6B7280);
+  color: var(--title5);
 }
 .form__group3 select.form__select {
   border: 1px solid transparent;
@@ -4625,7 +4626,7 @@ img {
   cursor: pointer;
 }
 .service-thumb-content__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4701,7 +4702,7 @@ img {
   cursor: pointer;
 }
 .service-list-item-content__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -5735,7 +5736,7 @@ img {
   line-height: 30px; /* 150% */
 }
 .fancy-box2-item p {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -6362,7 +6363,7 @@ img {
 .faq-group .accordion-item .accordion-collapse .accordion-body {
   padding: 0px 78px 23px 90px;
   background-color: var(--white);
-  color: var(--800, #6B7280);
+  color: var(--title5);
   text-align: start;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -7071,7 +7072,7 @@ img {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 12px;
@@ -7140,7 +7141,7 @@ img {
   }
 }
 .breadcrumb-heading__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -7369,7 +7370,7 @@ img {
 .widget-card-post-items-content p {
   display: flex;
   gap: 10px;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -7523,7 +7524,7 @@ img {
   width: 105px;
 }
 .widget2-card-categories-content__text {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -7560,7 +7561,7 @@ img {
   flex-shrink: 0;
   border-radius: 5px;
   background: var(--white);
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -8491,7 +8492,7 @@ img {
   padding-bottom: 20px;
 }
 .about1__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -8962,7 +8963,7 @@ img {
   color: var(--theme);
 }
 .about2-content__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -10169,7 +10170,7 @@ img {
 }
 .service4-card__desc {
   padding-bottom: 50px;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -10379,7 +10380,7 @@ img {
   }
 }
 .project2-card__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -10661,7 +10662,7 @@ img {
   }
 }
 .project3-content__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -10732,7 +10733,7 @@ img {
   font-size: 24px;
 }
 .testimonial1-card-content__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -10915,7 +10916,7 @@ img {
   padding-bottom: 7px;
 }
 .contact1-groups-item-info__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -10970,7 +10971,7 @@ img {
   gap: 25px;
   padding-top: 30px;
   padding-bottom: 11px;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11047,7 +11048,7 @@ img {
 }
 .blog1-card-content__desc {
   padding-right: 5px;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11071,7 +11072,7 @@ img {
   padding-bottom: 21px;
 }
 .blog1-card__quote p {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -11112,7 +11113,7 @@ img {
   gap: 25px;
   padding-top: 30px;
   padding-bottom: 11px;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11188,7 +11189,7 @@ img {
 }
 .blog2-card-content__desc {
   padding-right: 5px;
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11216,7 +11217,7 @@ img {
   padding-bottom: 21px;
 }
 .blog2-card-content__quote p {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -11256,7 +11257,7 @@ img {
   padding-bottom: 30px;
 }
 .blog2-card-content-profile__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11306,7 +11307,7 @@ img {
   padding-bottom: 30px;
 }
 .blog2-card-content-profile2__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11316,7 +11317,7 @@ img {
   padding-bottom: 40px;
 }
 .blog2-card-content-profile2__link {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -11491,7 +11492,7 @@ img {
   padding-bottom: 17px;
 }
 .blog2-card-comment-profile-content__date p {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11500,7 +11501,7 @@ img {
   letter-spacing: 0.16px;
 }
 .blog2-card-comment-profile-content__desc p {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11574,7 +11575,7 @@ img {
   gap: 8px;
 }
 .blog2-form .form-check .form-check-label {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11847,7 +11848,7 @@ img {
   line-height: 22.727px;
 }
 .product1-card-content-meta__sales {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Inter", sans-serif;
   font-size: 15.909px;
   font-style: normal;
@@ -11866,7 +11867,7 @@ img {
   max-width: 380px;
 }
 .product1-card-content__author {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Inter", sans-serif;
   font-size: 18.182px;
   font-style: normal;
@@ -11943,7 +11944,7 @@ img {
   }
 }
 .product1-card-content-footer__price {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -12027,7 +12028,7 @@ img {
   }
 }
 .uiux-content__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -12533,7 +12534,7 @@ img {
   padding-bottom: 30px;
 }
 .milestone1-card__desc {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -13081,7 +13082,7 @@ img {
   padding-bottom: 20px;
 }
 .footer1-wrapper-company-list__item a {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -13125,7 +13126,7 @@ img {
   padding-bottom: 20px;
 }
 .footer1-wrapper-service-list__item a {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -13173,7 +13174,7 @@ img {
   padding-bottom: 20px;
 }
 .footer1-wrapper-solution-list__item a {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -13221,7 +13222,7 @@ img {
   padding-bottom: 20px;
 }
 .footer1-wrapper-product-list__item a {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -13290,7 +13291,7 @@ img {
   -webkit-text-fill-color: transparent;
 }
 .footer1-wrapper-contact-list__item a .text span:first-child {
-  color: var(--800, #6B7280);
+  color: var(--title5);
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
   font-style: normal;

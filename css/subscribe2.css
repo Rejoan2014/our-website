@@ -3288,7 +3288,7 @@ img {
   width: 510px;
   height: 60px;
   flex-shrink: 0;
-  color: var(--800, #6B7280);
+  color: $title-color5;
   font-family: $body-font;
   font-size: 18px;
   font-style: normal;
@@ -3298,7 +3298,7 @@ img {
 }
 .form__group3 input::placeholder,
 .form__group3 textarea::placeholder {
-  color: var(--800, #6B7280);
+  color: $title-color5;
 }
 .form__group3 select.form__select {
   border: 1px solid transparent;
