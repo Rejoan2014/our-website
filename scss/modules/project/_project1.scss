@@ -112,7 +112,7 @@
                 &-card {
                     &-thumb {
                         &-content {
-                            background: var(--P3, #6A5ACD);
+                            background: $theme-color;
                             @include transition;
                             &__title {
                                 color: $white;
