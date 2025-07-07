@@ -336,7 +336,7 @@
       line-height: 1;
   
       &-label {
-        color: #000;
+        color: $black;
         font-feature-settings: 'liga' off, 'clig' off;
         font-family: $body-font;
         font-size: 14px;
@@ -346,7 +346,7 @@
       }
   
       &-number {
-        color: #000;
+        color: $black;
         font-feature-settings: 'liga' off, 'clig' off;
         font-family: $body-font;
         font-size: 18px;

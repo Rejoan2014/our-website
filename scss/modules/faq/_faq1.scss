@@ -11,7 +11,7 @@
     &-content {
       text-align: center;
       &__title {
-        color: #000;
+        color: $black;
         text-align: center;
         font-feature-settings: 'liga' off, 'clig' off;
         font-family: $body-font;

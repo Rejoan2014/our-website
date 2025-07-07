@@ -2141,7 +2141,7 @@ span {
   line-height: 1;
 }
 .help-contact__text-label {
-  color: #000;
+  color: $black;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -2150,7 +2150,7 @@ span {
   line-height: 160%;
 }
 .help-contact__text-number {
-  color: #000;
+  color: $black;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -3658,7 +3658,7 @@ img {
   }
 }
 .form__group label {
-  color: #000;
+  color: $black;
   font-family: $body-font;
   font-size: 20px;
   font-style: normal;

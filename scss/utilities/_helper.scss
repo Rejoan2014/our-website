@@ -524,7 +524,7 @@
     border: 1px solid var(--200, #C1C1C1);
     background: $white;
     &__title {
-      color: #000;
+      color: $black;
       font-family: $body-font;
       font-size: 30px;
       font-style: normal;
@@ -551,7 +551,7 @@
     background: $theme-color2;
     &__title {
       border-bottom: 1px solid #C1C1C1;
-      color: #000;
+      color: $black;
       font-family: $body-font;
       font-size: 30px;
       font-style: normal;

@@ -2141,7 +2141,7 @@ span {
   line-height: 1;
 }
 .help-contact__text-label {
-  color: #000;
+  color: $black;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -2150,7 +2150,7 @@ span {
   line-height: 160%;
 }
 .help-contact__text-number {
-  color: #000;
+  color: $black;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -2996,7 +2996,7 @@ span {
   background: $white;
 }
 .checkOut-billingCard__title {
-  color: #000;
+  color: $black;
   font-family: $body-font;
   font-size: 30px;
   font-style: normal;
@@ -3023,7 +3023,7 @@ span {
 }
 .checkOut-orderSummary__title {
   border-bottom: 1px solid #C1C1C1;
-  color: #000;
+  color: $black;
   font-family: $body-font;
   font-size: 30px;
   font-style: normal;
@@ -4036,7 +4036,7 @@ img {
   }
 }
 .form__group label {
-  color: #000;
+  color: $black;
   font-family: $body-font;
   font-size: 20px;
   font-style: normal;

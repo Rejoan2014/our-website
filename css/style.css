@@ -2174,7 +2174,7 @@ span {
   line-height: 1;
 }
 .help-contact__text-label {
-  color: #000;
+  color: var(--black);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -2183,7 +2183,7 @@ span {
   line-height: 160%;
 }
 .help-contact__text-number {
-  color: #000;
+  color: var(--black);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -3029,7 +3029,7 @@ span {
   background: var(--white);
 }
 .checkOut-billingCard__title {
-  color: #000;
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -3056,7 +3056,7 @@ span {
 }
 .checkOut-orderSummary__title {
   border-bottom: 1px solid #C1C1C1;
-  color: #000;
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -4069,7 +4069,7 @@ img {
   }
 }
 .form__group label {
-  color: #000;
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -5656,7 +5656,7 @@ img {
   align-items: center;
 }
 .fancy-box1-item__star--numb {
-  color: #000;
+  color: var(--black);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -8481,7 +8481,7 @@ img {
   }
 }
 .about1__title {
-  color: #000;
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -9879,7 +9879,7 @@ img {
   }
 }
 .service2-card-item__title {
-  color: #000;
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -9895,7 +9895,7 @@ img {
   }
 }
 .service2-card-item__desc {
-  color: #000;
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -11674,7 +11674,7 @@ img {
   text-align: center;
 }
 .faq1-content__title {
-  color: #000;
+  color: var(--black);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
@@ -12523,7 +12523,7 @@ img {
   }
 }
 .milestone1-card__title {
-  color: #000;
+  color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
