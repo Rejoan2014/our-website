@@ -144,7 +144,7 @@
         &__country {
             color: var(--900, #000);
             text-align: center;
-            font-family: Inter;
+            font-family: $title-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 800;

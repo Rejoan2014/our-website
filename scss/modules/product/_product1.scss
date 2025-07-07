@@ -51,7 +51,7 @@
                 }
                 &__category {
                     color: var(--900, #000);
-                    font-family: Inter;
+                    font-family: $title-font;
                     font-size: 15.909px;
                     font-style: normal;
                     font-weight: 400;
@@ -59,7 +59,7 @@
                 }
                 &__sales {
                     color: var(--800, #6B7280);
-                    font-family: Inter;
+                    font-family: $title-font;
                     font-size: 15.909px;
                     font-style: normal;
                     font-weight: 400;
@@ -79,7 +79,7 @@
             }
             &__author {
                 color: var(--800, #6B7280);
-                font-family: Inter;
+                font-family: $title-font;
                 font-size: 18.182px;
                 font-style: normal;
                 font-weight: 400;

@@ -2976,7 +2976,7 @@ span {
 }
 .cart__quantity .qty-btn__numb {
   color: var(--900, #000);
-  font-family: Outfit;
+  font-family: $text-font2;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;

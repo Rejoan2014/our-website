@@ -3009,7 +3009,7 @@ span {
 }
 .cart__quantity .qty-btn__numb {
   color: var(--900, #000);
-  font-family: Outfit;
+  font-family: "Outfit", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -5972,7 +5972,7 @@ img {
 }
 .progress-wrap2 .progress-meta .percentage {
   color: var(--900, #010003);
-  font-family: Outfit;
+  font-family: "Outfit", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -5981,7 +5981,7 @@ img {
 }
 .progress-wrap2 .progress-meta .percentage2 {
   color: var(--900, #010003);
-  font-family: Outfit;
+  font-family: "Outfit", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -6299,7 +6299,7 @@ img {
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
   color: var(--White, #FFF);
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -6337,7 +6337,7 @@ img {
   background: var(--100, #F3F5FA);
   color: var(--900, #000);
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -7207,7 +7207,7 @@ img {
   background: var(--900, #000);
   border: none;
   color: var(--White, #FFF);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -11481,7 +11481,7 @@ img {
 }
 .blog2-card-comment-profile-content__author h5 {
   color: var(--900, #000);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -11840,7 +11840,7 @@ img {
 }
 .product1-card-content-meta__category {
   color: var(--900, #000);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 15.909px;
   font-style: normal;
   font-weight: 400;
@@ -11848,7 +11848,7 @@ img {
 }
 .product1-card-content-meta__sales {
   color: var(--800, #6B7280);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 15.909px;
   font-style: normal;
   font-weight: 400;
@@ -11867,7 +11867,7 @@ img {
 }
 .product1-card-content__author {
   color: var(--800, #6B7280);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18.182px;
   font-style: normal;
   font-weight: 400;
@@ -12438,7 +12438,7 @@ img {
 .award1-card__country {
   color: var(--900, #000);
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -13336,7 +13336,7 @@ img {
 }
 .footer1-bottom-info__links p {
   color: var(--900, #000);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -13355,7 +13355,7 @@ img {
 }
 .footer1-bottom-info__links a {
   color: var(--900, #000);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

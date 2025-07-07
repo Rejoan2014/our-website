@@ -57,7 +57,7 @@
             background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
             color: var(--White, #FFF);
             text-align: center;
-            font-family: Inter;
+            font-family: $title-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 700;
@@ -89,7 +89,7 @@
                 background: var(--100, #F3F5FA);
                 color: var(--900, #000);
                 text-align: center;
-                font-family: Inter;
+                font-family: $title-font;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 700;
