@@ -2232,7 +2232,7 @@ span {
   width: 100%;
   height: 70px;
   border-radius: 5px;
-  background: var(--900, #010003);
+  background: $title-color3;
   color: $white;
   font-family: Urbanist;
   font-size: 16px;
@@ -3211,13 +3211,13 @@ img {
 .form__group input,
 .form__group textarea {
   border-radius: 5px;
-  border: 1px solid var(--900, #010003);
+  border: 1px solid $title-color3;
   background-color: transparent;
   padding: 17px 21px;
   width: 100%;
   height: 70px;
   outline: none;
-  color: var(--900, #010003);
+  color: $title-color3;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -3251,7 +3251,7 @@ img {
   width: 100%;
   height: 54px;
   outline: none;
-  color: var(--900, #010003);
+  color: $title-color3;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -3648,7 +3648,7 @@ img {
 .subscribe1-info__title {
   display: flex;
   align-items: center;
-  color: var(--900, #010003);
+  color: $title-color3;
   font-family: Marcellus;
   font-size: 40px;
   font-style: normal;
@@ -3692,7 +3692,7 @@ img {
 }
 .subscribe1-info-form__label {
   max-width: 339px;
-  color: var(--900, #010003);
+  color: $title-color3;
   font-family: Marcellus;
   font-size: 40px;
   font-style: normal;
@@ -3736,7 +3736,7 @@ img {
   padding: 12px 40px 12px 20px;
   outline: none;
   box-sizing: border-box;
-  color: var(--900, #010003);
+  color: $title-color3;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -3755,7 +3755,7 @@ img {
   padding: 12px 40px 12px 20px;
   outline: none;
   box-sizing: border-box;
-  color: var(--900, #010003);
+  color: $title-color3;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -3769,7 +3769,7 @@ img {
   position: absolute;
   right: 0;
   border-radius: 5px;
-  background: var(--900, #010003);
+  background: $title-color3;
   padding: 17px 20px;
   color: $white;
   font-family: Urbanist;

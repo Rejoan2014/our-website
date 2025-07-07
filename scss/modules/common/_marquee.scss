@@ -32,7 +32,7 @@
 }
 
 .text-slider {
-	color: var(--900, #010003);
+	color: $title-color3;
 	font-family: Marcellus;
 	font-size: 50px;
 	font-style: normal;
@@ -92,7 +92,7 @@
 
 	&.style-2 {
 		.text-slider {
-			color: var(--900, #010003);
+			color: $title-color3;
 			font-family: Marcellus;
 			font-size: 50px;
 			font-style: normal;

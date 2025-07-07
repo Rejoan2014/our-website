@@ -4046,7 +4046,7 @@ img {
 }
 .form__group input,
 .form__group textarea {
-  border: 1px solid var(--900, #010003);
+  border: 1px solid $title-color3;
   background-color: transparent;
   width: 100%;
   height: 50px;
@@ -5281,7 +5281,7 @@ img {
   }
 }
 .wcu1-info__title {
-  color: var(--900, #010003);
+  color: $title-color3;
   font-family: Marcellus;
   font-size: 28px;
   font-style: normal;
@@ -5290,7 +5290,7 @@ img {
   padding-bottom: 15;
 }
 .wcu1-info__desc {
-  color: var(--900, #010003);
+  color: $title-color3;
   font-feature-settings: "liga" off, "clig" off;
   font-family: Urbanist;
   font-size: 16px;

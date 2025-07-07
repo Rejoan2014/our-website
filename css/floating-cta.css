@@ -3668,7 +3668,7 @@ img {
 }
 .form__group input,
 .form__group textarea {
-  border: 1px solid var(--900, #010003);
+  border: 1px solid $title-color3;
   background-color: transparent;
   width: 100%;
   height: 50px;

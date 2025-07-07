@@ -31,7 +31,7 @@
       }
 
       &__numb {
-        color: var(--900, #010003);
+        color: $title-color3;
         font-family: Marcellus;
         font-size: 40px;
         font-style: normal;
@@ -39,7 +39,7 @@
         line-height: 50px; /* 125% */
       }
       &__text {
-        color: var(--900, #010003);
+        color: $title-color3;
         font-family: Marcellus;
         font-size: 22px;
         font-style: normal;
