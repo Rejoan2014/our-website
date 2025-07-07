@@ -8,7 +8,7 @@
         position: relative;
         padding: 50px;
         border-radius: 5px;
-        background: var(--White, #FFF);
+        background: $white;
         @include breakpoint (max-lg){
             padding: 30px 25px;
         }

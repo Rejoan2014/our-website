@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     padding: 350px 0 230px;
-    background: var(--White, #FFF);
+    background: $white;
     @include breakpoint (max-xl){
         padding: 290px 0 172px;
     }
@@ -111,7 +111,7 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
-                background: var(--White, #FFF);
+                background: $white;
                 box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
                 width: 100px;
                 height: 100px;
@@ -148,7 +148,7 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
-                background: var(--White, #FFF);
+                background: $white;
                 box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
                 width: 100px;
                 height: 100px;
@@ -184,7 +184,7 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
-                background: var(--White, #FFF);
+                background: $white;
                 box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
                 width: 100px;
                 height: 100px;
@@ -265,7 +265,7 @@
             align-items: center;
             gap: 8px;
             border-radius: 10px;
-            background: var(--White, #FFF);
+            background: $white;
             box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
             color: var(--900, #0A0A0A);
             font-family: $body-font;

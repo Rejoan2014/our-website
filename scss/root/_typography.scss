@@ -96,7 +96,7 @@ h2 {
 }
 
 h3 { 
-    color: var(--White, #FFF);
+    color: $white;
     font-family: $body-font;
     font-size: 40px;
     font-style: normal;

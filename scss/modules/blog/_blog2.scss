@@ -180,7 +180,7 @@
                     background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
                     width: fit-content;
 
-                    color: var(--White, #FFF);
+                    color: $white;
                     text-align: center;
                     font-family: $body-font;
                     font-size: 18px;
@@ -413,7 +413,7 @@
                             gap: 7px;
                             border-radius: 5px;
                             border: 1px solid rgba(28, 28, 28, 0.10);
-                            background: var(--White, #FFF);
+                            background: $white;
                             color: var(--900, #000);
                             font-family: $body-font;
                             font-size: 17px;

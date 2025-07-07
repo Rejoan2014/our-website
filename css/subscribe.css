@@ -641,7 +641,7 @@ h2 {
 }
 
 h3 {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -1818,7 +1818,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -1905,7 +1905,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -1992,7 +1992,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2055,7 +2055,7 @@ span {
   padding: 20px 20px;
   border-radius: 5px;
   border: 1px solid var(--theme);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -2283,7 +2283,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2346,7 +2346,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2993,7 +2993,7 @@ span {
   padding: 40px;
   border-radius: 20px;
   border: 1px solid var(--200, #C1C1C1);
-  background: var(--White, #FFF);
+  background: var(--white);
 }
 .checkOut-billingCard__title {
   color: #000;
@@ -3114,7 +3114,7 @@ span {
 }
 
 .search-btn i {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
@@ -3128,7 +3128,7 @@ span {
   overflow: hidden;
   max-width: 470px;
   height: 60px;
-  background: var(--White, #FFF);
+  background: var(--white);
 }
 @media (max-width: 767px) {
   .filter-box {
@@ -3680,7 +3680,7 @@ img {
   opacity: 0;
   visibility: hidden;
   border-radius: 999px;
-  background: var(--White, #FFF);
+  background: var(--white);
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
   -ms-transform: translateY(100px);
@@ -4194,7 +4194,7 @@ img {
   padding: 15px 30px;
   width: 100%;
   outline: none;
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -4529,7 +4529,7 @@ img {
   position: relative;
   padding: 20px;
   border-radius: 20px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   max-width: 485px;
   position: relative;
@@ -4559,7 +4559,7 @@ img {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -4772,7 +4772,7 @@ img {
   flex-shrink: 0;
   border-radius: 10px;
   border: 1px solid var(--100, #F7FAFF);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -4910,7 +4910,7 @@ img {
    TagCloud Helper Styles
 ============================= */
 .tag-cloud-section {
-  background: var(--White, #FFF);
+  background: var(--white);
   padding: 220px 0 0;
 }
 @media (max-width: 1399px) {
@@ -5348,7 +5348,7 @@ img {
   }
 }
 .subscribe-info__title {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;

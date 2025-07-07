@@ -674,7 +674,7 @@ h2 {
 }
 
 h3 {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -1851,7 +1851,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -1938,7 +1938,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2025,7 +2025,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2088,7 +2088,7 @@ span {
   padding: 20px 20px;
   border-radius: 5px;
   border: 1px solid var(--theme);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -2316,7 +2316,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -2379,7 +2379,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -3026,7 +3026,7 @@ span {
   padding: 40px;
   border-radius: 20px;
   border: 1px solid var(--200, #C1C1C1);
-  background: var(--White, #FFF);
+  background: var(--white);
 }
 .checkOut-billingCard__title {
   color: #000;
@@ -3147,7 +3147,7 @@ span {
 }
 
 .search-btn i {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
@@ -3161,7 +3161,7 @@ span {
   overflow: hidden;
   max-width: 470px;
   height: 60px;
-  background: var(--White, #FFF);
+  background: var(--white);
 }
 @media (max-width: 767px) {
   .filter-box {
@@ -3713,7 +3713,7 @@ img {
   opacity: 0;
   visibility: hidden;
   border-radius: 999px;
-  background: var(--White, #FFF);
+  background: var(--white);
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
   -ms-transform: translateY(100px);
@@ -4227,7 +4227,7 @@ img {
   padding: 15px 30px;
   width: 100%;
   outline: none;
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -4562,7 +4562,7 @@ img {
   position: relative;
   padding: 20px;
   border-radius: 20px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   max-width: 485px;
   position: relative;
@@ -4592,7 +4592,7 @@ img {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -4805,7 +4805,7 @@ img {
   flex-shrink: 0;
   border-radius: 10px;
   border: 1px solid var(--100, #F7FAFF);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -4943,7 +4943,7 @@ img {
    TagCloud Helper Styles
 ============================= */
 .tag-cloud-section {
-  background: var(--White, #FFF);
+  background: var(--white);
   padding: 220px 0 0;
 }
 @media (max-width: 1399px) {
@@ -5400,7 +5400,7 @@ img {
   justify-content: center;
   flex-direction: column;
   border-radius: 320px;
-  border: 1px dashed var(--White, #FFF);
+  border: 1px dashed var(--white);
   width: 320px;
   height: 320px;
 }
@@ -5428,7 +5428,7 @@ img {
   }
 }
 .counter2-item-box__value {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Marcellus;
   font-size: 60px;
   font-style: normal;
@@ -5444,7 +5444,7 @@ img {
 }
 .counter2-item-box__label p {
   color: var(--white);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Marcellus;
   font-size: 22px;
   font-style: normal;
@@ -5750,7 +5750,7 @@ img {
   gap: 25px;
 }
 .fancy-box3__item h4 {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Marcellus;
   font-size: 28px;
   font-style: normal;
@@ -5759,7 +5759,7 @@ img {
   padding-bottom: 10px;
 }
 .fancy-box3__item p {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -5798,7 +5798,7 @@ img {
   gap: 15px;
 }
 .fancy-box5__item h4 {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Marcellus;
   font-size: 24px;
   font-style: normal;
@@ -5806,7 +5806,7 @@ img {
   line-height: 30px; /* 125% */
 }
 .fancy-box5__item p {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: Marcellus;
   font-size: 13.2px;
   font-style: normal;
@@ -6297,7 +6297,7 @@ img {
   gap: 10px;
   border-radius: 5px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-  color: var(--White, #FFF);
+  color: var(--white);
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -7206,7 +7206,7 @@ img {
   border-radius: 5px;
   background: var(--900, #000);
   border: none;
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -7214,7 +7214,7 @@ img {
   line-height: 27.2px; /* 170% */
 }
 .widget-card-search form input::placeholder {
-  color: var(--White, #FFF);
+  color: var(--white);
 }
 .widget-card-search form button {
   position: absolute;
@@ -7227,7 +7227,7 @@ img {
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
 }
 .widget-card-search form button i {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
@@ -7396,7 +7396,7 @@ img {
   flex-shrink: 0;
   border-radius: 5px;
   background: var(--700, #1F2125);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -7485,7 +7485,7 @@ img {
 .widget2-card-categories {
   padding: 30px;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
 }
 @media (max-width: 1199px) {
   .widget2-card-categories {
@@ -7496,7 +7496,7 @@ img {
 @media (max-width: 991px) {
   .widget2-card-categories {
     padding: 30px;
-    background: var(--White, #FFF);
+    background: var(--white);
   }
 }
 @media (max-width: 374px) {
@@ -7559,7 +7559,7 @@ img {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 5px;
-  background: var(--White, #FFF);
+  background: var(--white);
   color: var(--800, #6B7280);
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -8110,7 +8110,7 @@ img {
   position: relative;
   overflow: hidden;
   padding: 350px 0 230px;
-  background: var(--White, #FFF);
+  background: var(--white);
 }
 @media (max-width: 1199px) {
   .hero1 {
@@ -8187,7 +8187,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
   width: 100px;
   height: 100px;
@@ -8234,7 +8234,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
   width: 100px;
   height: 100px;
@@ -8280,7 +8280,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 80px 0px rgba(0, 0, 0, 0.08);
   width: 100px;
   height: 100px;
@@ -8369,7 +8369,7 @@ img {
   align-items: center;
   gap: 8px;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   color: var(--900, #0A0A0A);
   font-family: "Lato", sans-serif;
@@ -8462,7 +8462,7 @@ img {
 .about1 .row {
   padding: 120px 68px;
   border-radius: 20px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 1699px) {
@@ -8541,7 +8541,7 @@ img {
   left: 0;
   z-index: 4;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   padding: 25px 100px 25px 30px;
 }
@@ -9031,7 +9031,7 @@ img {
   }
 }
 .about2-thumb-feature-content h4 {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -9065,7 +9065,7 @@ img {
   }
 }
 .about2-thumb-feature-content p {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -9604,7 +9604,7 @@ img {
   color: var(--theme);
 }
 .section-top__title3 {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -9772,7 +9772,7 @@ img {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: var(--White, #FFF);
+  background: var(--white);
 }
 @media (max-width: 991px) {
   .service1-content__link {
@@ -9809,7 +9809,7 @@ img {
 }
 .service1-content:hover {
   border: 1px solid rgba(193, 193, 193, 0.3);
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
 }
 .service1-content:hover::before {
@@ -9825,7 +9825,7 @@ img {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
   padding: 35px 40px;
   flex-wrap: wrap;
   gap: 30px;
@@ -10090,7 +10090,7 @@ img {
 }
 .service3-content:hover {
   border: 1px solid rgba(193, 193, 193, 0.3);
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
 }
 .service3-content:hover::before {
@@ -10110,7 +10110,7 @@ img {
   position: relative;
   padding: 50px;
   border-radius: 5px;
-  background: var(--White, #FFF);
+  background: var(--white);
 }
 @media (max-width: 991px) {
   .service4-card {
@@ -10270,7 +10270,7 @@ img {
   gap: 6.25px;
   flex-shrink: 0;
   border-radius: 25px;
-  background: var(--White, #FFF);
+  background: var(--white);
   background: var(--theme);
 }
 @media (max-width: 575px) {
@@ -10336,7 +10336,7 @@ img {
   transition: all 0.4s ease-in-out;
 }
 .project1-card:hover .project1-card-thumb-content__title {
-  color: var(--White, #FFF);
+  color: var(--white);
   transition: all 0.4s ease-in-out;
 }
 .project1-card:hover .project1-card-thumb-content__title a {
@@ -10773,7 +10773,7 @@ img {
   flex-shrink: 0;
 }
 .testimonial1-card__quote i {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-size: 29.268px;
   font-style: normal;
   font-weight: 900;
@@ -10812,7 +10812,7 @@ img {
 /* 11. Contact */
 .contact1 .section-fix {
   border-radius: 20px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   padding: 60px;
 }
@@ -10898,7 +10898,7 @@ img {
   }
 }
 .contact1-groups-item__icon i {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-size: 27.132px;
   font-style: normal;
   font-weight: 900;
@@ -11285,7 +11285,7 @@ img {
   gap: 12px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   width: fit-content;
-  color: var(--White, #FFF);
+  color: var(--white);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -11518,7 +11518,7 @@ img {
   gap: 7px;
   border-radius: 5px;
   border: 1px solid rgba(28, 28, 28, 0.1);
-  background: var(--White, #FFF);
+  background: var(--white);
   color: var(--900, #000);
   font-family: "Lato", sans-serif;
   font-size: 17px;
@@ -11613,7 +11613,7 @@ img {
   }
 }
 .team1-card-content__title {
-  color: var(--White, #FFF);
+  color: var(--white);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 24px;
@@ -11630,7 +11630,7 @@ img {
   }
 }
 .team1-card-content__desc {
-  color: var(--White, #FFF);
+  color: var(--white);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -11664,7 +11664,7 @@ img {
 /* 14. FAQ */
 .faq1 {
   position: relative;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
 }
 .faq1-box {
@@ -11748,7 +11748,7 @@ img {
   bottom: 22%;
   left: -11%;
   border-radius: 5px;
-  background: var(--White, #FFF);
+  background: var(--white);
   padding: 17px 25px;
 }
 @media (max-width: 1399px) {
@@ -11784,7 +11784,7 @@ img {
 /* 15. Product */
 .product1-card {
   border-radius: 5.682px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 0px 68.182px 0px rgba(0, 0, 0, 0.05);
 }
 .product1-card-thumb {
@@ -11802,7 +11802,7 @@ img {
   padding: 10px 20px;
   border-radius: 0px 10px 0px 0px;
   background: var(--P3, #6A5ACD);
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -12133,7 +12133,7 @@ img {
   padding-right: 10px;
 }
 .uiux-thumb-badge__text h4 {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -12143,7 +12143,7 @@ img {
   padding-bottom: 20px;
 }
 .uiux-thumb-badge__text p {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -12166,7 +12166,7 @@ img {
 .review1-card {
   position: relative;
   border-radius: 20px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   padding: 65px 110px 65px 115px;
   margin-left: 50px;
@@ -12215,7 +12215,7 @@ img {
   left: -10%;
   top: 28%;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(29, 57, 223, 0.2);
   width: 100px;
   height: 100px;
@@ -12418,7 +12418,7 @@ img {
   flex-shrink: 0;
   border-radius: 10px;
   border: 1px dashed var(--P3, #6A5ACD);
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 991px) {
@@ -12485,7 +12485,7 @@ img {
   padding: 8px 35px;
   border-radius: 10px 10px 0px 0px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -12505,7 +12505,7 @@ img {
   right: 6%;
   top: 20%;
   border-radius: 8px;
-  background: var(--White, #FFF);
+  background: var(--white);
   box-shadow: 0px 4px 48px 0px rgba(128, 0, 128, 0.3);
   width: 70px;
   height: 70px;
@@ -12609,7 +12609,7 @@ img {
 .cta1-banner__title {
   max-width: 807px;
   padding-bottom: 30px;
-  color: var(--White, #FFF);
+  color: var(--white);
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 48px;
@@ -12638,7 +12638,7 @@ img {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: var(--white);
   color: var(--900, #000);
   font-family: "Lato", sans-serif;
   font-size: 17px;
@@ -12719,7 +12719,7 @@ img {
   gap: 10px;
   border-radius: 5px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -12997,7 +12997,7 @@ img {
   }
 }
 .subscribe-info__title {
-  color: var(--White, #FFF);
+  color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;

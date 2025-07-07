@@ -96,7 +96,7 @@
             gap: 10px;
             flex-shrink: 0;
             border-radius: 40px;
-            background: var(--White, #FFF);
+            background: $white;
             @include breakpoint(max-lg){
                 width: 65px;
                 height: 65px;
@@ -125,7 +125,7 @@
         }
         &:hover {
             border: 1px solid rgba(193, 193, 193, 0.30);
-            background: var(--White, #FFF);
+            background: $white;
             box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
             &::before {
                 background: none;

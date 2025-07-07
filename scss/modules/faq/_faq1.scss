@@ -3,7 +3,7 @@
 
 .faq1 {
     position: relative;
-    background: var(--White, #FFF);
+    background: $white;
     box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
     &-box {
       box-shadow: none;

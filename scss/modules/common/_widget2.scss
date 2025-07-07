@@ -27,14 +27,14 @@
     &-categories {
       padding: 30px;
       border-radius: 10px;
-      background: var(--White, #FFF);
+      background: $white;
       @include breakpoint (max-xl){
         padding: 0;
         background: var(--100, #F7FAFF);
       }
       @include breakpoint (max-lg){
         padding: 30px;
-        background: var(--White, #FFF);
+        background: $white;
       }
       @include breakpoint (max-xxsmall){
         padding: 0;
@@ -99,7 +99,7 @@
             gap: 10px;
             flex-shrink: 0;
             border-radius: 5px;
-            background: var(--White, #FFF);
+            background: $white;
             color: var(--800, #6B7280);
             font-family: $body-font;
             font-size: 18px;

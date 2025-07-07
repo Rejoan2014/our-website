@@ -641,7 +641,7 @@ h2 {
 }
 
 h3 {
-  color: var(--White, #FFF);
+  color: $white;
   font-family: $body-font;
   font-size: 40px;
   font-style: normal;
@@ -1818,7 +1818,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-  color: var(--White, #FFF);
+  color: $white;
   font-family: $body-font;
   font-size: 17px;
   font-style: normal;
@@ -1881,7 +1881,7 @@ span {
   flex-shrink: 0;
   border-radius: 10px;
   background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
-  color: var(--White, #FFF);
+  color: $white;
   font-family: $body-font;
   font-size: 17px;
   font-style: normal;
@@ -1942,7 +1942,7 @@ span {
   gap: 8px;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--White, #FFF);
+  color: $white;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -2008,7 +2008,7 @@ span {
   padding: 20px 20px;
   border-radius: 5px;
   border: 1px solid var(--theme);
-  color: var(--White, #FFF);
+  color: $white;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -2233,7 +2233,7 @@ span {
   height: 70px;
   border-radius: 5px;
   background: var(--900, #010003);
-  color: var(--White, #FFF);
+  color: $white;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -2752,7 +2752,7 @@ img {
   }
 }
 .preview-area .preview-item .content h5 {
-  color: var(--White, #FFF);
+  color: $white;
   font-family: Marcellus;
   font-size: 22px;
   font-style: normal;
@@ -2816,7 +2816,7 @@ img {
   }
 }
 .list.style1 .checklist-item__text span {
-  color: var(--White, #FFF);
+  color: $white;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -3341,7 +3341,7 @@ img {
   padding: 15px 30px;
   width: 100%;
   outline: none;
-  color: var(--White, #FFF);
+  color: $white;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -3771,7 +3771,7 @@ img {
   border-radius: 5px;
   background: var(--900, #010003);
   padding: 17px 20px;
-  color: var(--White, #FFF);
+  color: $white;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;

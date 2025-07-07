@@ -129,7 +129,7 @@
         flex-shrink: 0;
         border-radius: 10px;
         border: 1px dashed var(--P3, #6A5ACD);
-        background: var(--White, #FFF);
+        background: $white;
         box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
         @include breakpoint (max-lg){
             width: 352px;

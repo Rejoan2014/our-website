@@ -39,7 +39,7 @@
             background: var(--900, #000);
             border: none;
 
-            color: var(--White, #FFF);
+            color: $white;
             font-family: $title-font;
             font-size: 16px;
             font-style: normal;
@@ -47,7 +47,7 @@
             line-height: 27.2px; /* 170% */  
 
             &::placeholder {
-              color: var(--White, #FFF);
+              color: $white;
           }      
         }
 
@@ -62,7 +62,7 @@
           background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
 
           i {
-            color: var(--White, #FFF);
+            color: $white;
             font-size: 16px;
             font-style: normal;
             font-weight: 900;
@@ -264,7 +264,7 @@
             flex-shrink: 0;
             border-radius: 5px;
             background: var(--700, #1F2125);
-            color: var(--White, #FFF);
+            color: $white;
             font-family: $body-font;
             font-size: 18px;
             font-style: normal;

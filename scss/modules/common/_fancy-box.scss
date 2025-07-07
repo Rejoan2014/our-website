@@ -141,7 +141,7 @@
 
     &__item {
       h4 {
-        color: var(--White, #FFF);
+        color: $white;
         font-family: Marcellus;
         font-size: 28px;
         font-style: normal;
@@ -151,7 +151,7 @@
       }
 
       p {
-        color: var(--White, #FFF);
+        color: $white;
         font-family: Urbanist;
         font-size: 16px;
         font-style: normal;
@@ -196,7 +196,7 @@
 
     &__item {
       h4 {
-        color: var(--White, #FFF);
+        color: $white;
         font-family: Marcellus;
         font-size: 24px;
         font-style: normal;
@@ -205,7 +205,7 @@
       }
 
       p {
-        color: var(--White, #FFF);
+        color: $white;
         font-family: Marcellus;
         font-size: 13.2px;
         font-style: normal;

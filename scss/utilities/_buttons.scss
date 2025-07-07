@@ -14,7 +14,7 @@
         flex-shrink: 0;
         border-radius: 10px;
         background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-        color: var(--White, #FFF);
+        color: $white;
         font-family: $body-font;
         font-size: 17px;
         font-style: normal;
@@ -97,7 +97,7 @@
         flex-shrink: 0;
         border-radius: 10px;
         background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
-        color: var(--White, #FFF);
+        color: $white;
         font-family: $body-font;
         font-size: 17px;
         font-style: normal;
@@ -180,7 +180,7 @@
         flex-shrink: 0;
         border-radius: 10px;
         background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
-        color: var(--White, #FFF);
+        color: $white;
         font-family: $body-font;
         font-size: 17px;
         font-style: normal;
@@ -247,7 +247,7 @@
         padding: 20px 20px;
         border-radius: 5px;
         border: 1px solid $theme-color;
-        color: var(--White, #FFF);
+        color: $white;
         font-family: Urbanist;
         font-size: 16px;
         font-style: normal;
@@ -484,7 +484,7 @@
         flex-shrink: 0;
         border-radius: 10px;
         background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-        color: var(--White, #FFF);
+        color: $white;
         font-family: $body-font;
         font-size: 17px;
         font-style: normal;
@@ -547,7 +547,7 @@
         flex-shrink: 0;
         border-radius: 10px;
         background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-        color: var(--White, #FFF);
+        color: $white;
         font-family: $body-font;
         font-size: 17px;
         font-style: normal;

@@ -58,7 +58,7 @@
                     gap: 6.25px;
                     flex-shrink: 0;
                     border-radius: 25px;
-                    background: var(--White, #FFF);
+                    background: $white;
                     background: $theme-color;
                     @include breakpoint (max-sm){
                         width: 40px;
@@ -115,7 +115,7 @@
                             background: var(--P3, #6A5ACD);
                             @include transition;
                             &__title {
-                                color: var(--White, #FFF);
+                                color: $white;
                                 @include transition;
                                 a {
                                     color: $white;

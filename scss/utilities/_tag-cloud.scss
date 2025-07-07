@@ -5,7 +5,7 @@
    TagCloud Helper Styles
 ============================= */
 .tag-cloud-section {
-  background: var(--White, #FFF);
+  background: $white;
   padding: 220px 0 0;
 
   @include breakpoint(max-xxl) {

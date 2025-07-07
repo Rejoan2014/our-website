@@ -522,7 +522,7 @@
     padding: 40px;
     border-radius: 20px;
     border: 1px solid var(--200, #C1C1C1);
-    background: var(--White, #FFF);
+    background: $white;
     &__title {
       color: #000;
       font-family: $body-font;
@@ -646,7 +646,7 @@
 }
 
 .search-btn i {
-  color: var(--White, #FFF);
+  color: $white;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
@@ -662,7 +662,7 @@
   overflow: hidden;
   max-width: 470px;
   height: 60px;
-  background: var(--White, #FFF);
+  background: $white;
   @include breakpoint (max-md){
     width: 100%;
     max-width: none;

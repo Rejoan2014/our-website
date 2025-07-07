@@ -54,7 +54,7 @@
         &__title {
             max-width: 807px;
             padding-bottom: 30px;
-            color: var(--White, #FFF);
+            color: $white;
             text-align: center;
             font-family: $body-font;
             font-size: 48px;
@@ -79,7 +79,7 @@
             gap: 8px;
             flex-shrink: 0;
             border-radius: 10px;
-            background: var(--White, #FFF);
+            background: $white;
             color: var(--900, #000);
             font-family: $body-font;
             font-size: 17px;

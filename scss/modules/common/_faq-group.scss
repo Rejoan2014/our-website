@@ -55,7 +55,7 @@
             gap: 10px;
             border-radius: 5px;
             background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
-            color: var(--White, #FFF);
+            color: $white;
             text-align: center;
             font-family: $title-font;
             font-size: 18px;

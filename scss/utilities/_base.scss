@@ -396,7 +396,7 @@ img {
       opacity: 0;
       visibility: hidden;
       border-radius: 999px;
-      background: var(--White, #FFF);
+      background: $white;
       -webkit-transform: translateY(100px);
       -moz-transform: translateY(100px);
       -ms-transform: translateY(100px);

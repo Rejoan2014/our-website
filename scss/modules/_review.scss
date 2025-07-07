@@ -11,7 +11,7 @@
     &-card {
         position: relative;
         border-radius: 20px;
-        background: var(--White, #FFF);
+        background: $white;
         box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
         padding: 65px 110px 65px 115px;
         margin-left: 50px;
@@ -47,7 +47,7 @@
             left: -10%;
             top: 28%;
             border-radius: 10px;
-            background: var(--White, #FFF);
+            background: $white;
             box-shadow: 0px 5px 60px 0px rgba(29, 57, 223, 0.20);
             width: 100px;
             height: 100px;

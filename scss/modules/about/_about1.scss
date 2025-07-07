@@ -6,7 +6,7 @@
     .row {
         padding: 120px 68px;
         border-radius: 20px;
-        background: var(--White, #FFF);
+        background: $white;
         box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
         @include breakpoint (max-xl2){
             padding: 68px 55px;
@@ -75,7 +75,7 @@
             left: 0;
             z-index: 4;
             border-radius: 10px;
-            background: var(--White, #FFF);
+            background: $white;
             box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
             padding: 25px 100px 25px 30px;
             @include breakpoint (max-xxxl){

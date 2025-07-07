@@ -140,7 +140,7 @@
 
             &-content {
                 h4 {
-                    color: var(--White, #FFF);
+                    color: $white;
                     font-family: $body-font;
                     font-size: 48px;
                     font-style: normal;
@@ -166,7 +166,7 @@
                     }
                 }
                 p {
-                    color: var(--White, #FFF);
+                    color: $white;
                     font-feature-settings: 'liga' off, 'clig' off;
                     font-family: $body-font;
                     font-size: 18px;

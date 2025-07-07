@@ -34,7 +34,7 @@
             padding: 8px 35px;
             border-radius: 10px 10px 0px 0px;
             background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-            color: var(--White, #FFF);
+            color: $white;
             font-family: $body-font;
             font-size: 30px;
             font-style: normal;
@@ -52,7 +52,7 @@
             right: 6%;
             top: 20%;
             border-radius: 8px;
-            background: var(--White, #FFF);
+            background: $white;
             box-shadow: 0px 4px 48px 0px rgba(128, 0, 128, 0.30);
             width: 70px;
             height: 70px;

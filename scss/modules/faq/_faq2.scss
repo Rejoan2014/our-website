@@ -21,7 +21,7 @@
       bottom: 22%;
       left: -11%;
       border-radius: 5px;
-      background: var(--White, #FFF);
+      background: $white;
       padding: 17px 25px;
       @include breakpoint (max-xxl){
         left: -3%;

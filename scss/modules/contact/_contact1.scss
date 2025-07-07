@@ -4,7 +4,7 @@
 .contact1 {
     .section-fix {
         border-radius: 20px;
-        background: var(--White, #FFF);
+        background: $white;
         box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
         padding: 60px;
         @include breakpoint (max-md){
@@ -76,7 +76,7 @@
                 }
 
                 i {
-                    color: var(--White, #FFF);
+                    color: $white;
                     font-size: 27.132px;
                     font-style: normal;
                     font-weight: 900;

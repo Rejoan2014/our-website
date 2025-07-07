@@ -4,7 +4,7 @@
 .product1 {
     &-card {
         border-radius: 5.682px;
-        background: var(--White, #FFF);
+        background: $white;
         box-shadow: 0px 0px 68.182px 0px rgba(0, 0, 0, 0.05);
         &-thumb {
             position: relative;
@@ -20,7 +20,7 @@
                 padding: 10px 20px;
                 border-radius: 0px 10px 0px 0px;
                 background: var(--P3, #6A5ACD);
-                color: var(--White, #FFF);
+                color: $white;
                 font-family: $body-font;
                 font-size: 20px;
                 font-style: normal;

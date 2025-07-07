@@ -26,7 +26,7 @@
             }
 
             &__title {
-                color: var(--White, #FFF);
+                color: $white;
                 text-align: center;
                 font-family: $body-font;
                 font-size: 24px;
@@ -41,7 +41,7 @@
                 }
             }
             &__desc {
-                color: var(--White, #FFF);
+                color: $white;
                 text-align: center;
                 font-family: $body-font;
                 font-size: 18px;
