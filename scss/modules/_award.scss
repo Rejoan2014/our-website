@@ -130,7 +130,7 @@
         border-radius: 10px;
         border: 1px dashed $theme-color;
         background: $white;
-        box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: $shadow;
         @include breakpoint (max-lg){
             width: 352px;
             height: 130.59px;

@@ -4,7 +4,7 @@
 .faq1 {
     position: relative;
     background: $white;
-    box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: $shadow;
     &-box {
       box-shadow: none;
     }

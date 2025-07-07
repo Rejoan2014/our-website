@@ -26,7 +26,7 @@
   --theme: #6A5ACD;
   --theme2: #F7FAFF;
   --theme3: #077CEA;
-  --box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
+  --box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   --icon-font: "Font Awesome 6 Pro";
 }
 
@@ -4531,7 +4531,7 @@ img {
   padding: 20px;
   border-radius: 20px;
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   max-width: 485px;
   position: relative;
   z-index: 5;

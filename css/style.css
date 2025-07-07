@@ -59,7 +59,7 @@ Description: CleanPro - Creative & Digital Agency Html Template
   --theme: #6A5ACD;
   --theme2: #F7FAFF;
   --theme3: #077CEA;
-  --box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
+  --box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   --icon-font: "Font Awesome 6 Pro";
 }
 
@@ -4564,7 +4564,7 @@ img {
   padding: 20px;
   border-radius: 20px;
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   max-width: 485px;
   position: relative;
   z-index: 5;
@@ -8371,7 +8371,7 @@ img {
   gap: 8px;
   border-radius: 10px;
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   color: var(--900, #0A0A0A);
   font-family: "Lato", sans-serif;
   font-size: 17px;
@@ -8464,7 +8464,7 @@ img {
   padding: 120px 68px;
   border-radius: 20px;
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
 }
 @media (max-width: 1699px) {
   .about1 .row {
@@ -8543,7 +8543,7 @@ img {
   z-index: 4;
   border-radius: 10px;
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   padding: 25px 100px 25px 30px;
 }
 @media (max-width: 1599px) {
@@ -9811,7 +9811,7 @@ img {
 .service1-content:hover {
   border: 1px solid rgba(193, 193, 193, 0.3);
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
 }
 .service1-content:hover::before {
   background: none;
@@ -10092,7 +10092,7 @@ img {
 .service3-content:hover {
   border: 1px solid rgba(193, 193, 193, 0.3);
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
 }
 .service3-content:hover::before {
   background: none;
@@ -10814,7 +10814,7 @@ img {
 .contact1 .section-fix {
   border-radius: 20px;
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   padding: 60px;
 }
 @media (max-width: 767px) {
@@ -11666,7 +11666,7 @@ img {
 .faq1 {
   position: relative;
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
 }
 .faq1-box {
   box-shadow: none;
@@ -12168,7 +12168,7 @@ img {
   position: relative;
   border-radius: 20px;
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   padding: 65px 110px 65px 115px;
   margin-left: 50px;
   margin-right: 20px;
@@ -12420,7 +12420,7 @@ img {
   border-radius: 10px;
   border: 1px dashed var(--theme);
   background: var(--white);
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
 }
 @media (max-width: 991px) {
   .award1-card {

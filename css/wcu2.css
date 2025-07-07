@@ -4530,7 +4530,7 @@ img {
   padding: 20px;
   border-radius: 20px;
   background: $white;
-  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: $shadow;
   max-width: 485px;
   position: relative;
   z-index: 5;
