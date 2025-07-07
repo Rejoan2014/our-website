@@ -3686,22 +3686,22 @@ img {
 }
 @media (max-width: 575px) {
   .social-profile {
-    top: -122%;
+    top: -21%;
   }
 }
 @media (max-width: 499px) {
   .social-profile {
-    top: -127%;
+    top: -25%;
   }
 }
 @media (max-width: 449px) {
   .social-profile {
-    top: -130%;
+    top: -28%;
   }
 }
 @media (max-width: 374px) {
   .social-profile {
-    top: -144%;
+    top: -35%;
   }
 }
 .social-profile ul {
