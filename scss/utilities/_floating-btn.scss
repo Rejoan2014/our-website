@@ -99,7 +99,7 @@
       border-radius: 10px;
       background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
       color: var(--White, #FFF);
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 17px;
       font-style: normal;
       font-weight: 700;
@@ -116,7 +116,7 @@
       &__title {
         color: var(--900, #000);
         font-feature-settings: 'liga' off, 'clig' off;
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 20px;
         font-style: normal;
         font-weight: 600;
@@ -134,7 +134,7 @@
       }
       &__desc {
         color: var(--800, #6B7280);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -173,7 +173,7 @@
         &__title {
           color: var(--900, #000);
           font-feature-settings: 'liga' off, 'clig' off;
-          font-family: Lato;
+          font-family: $body-font;
           font-size: 20px;
           font-style: normal;
           font-weight: 600;
@@ -197,7 +197,7 @@
         }
         &__desc {
           color: var(--800, #6B7280);
-          font-family: Lato;
+          font-family: $body-font;
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
@@ -282,7 +282,7 @@
     border-radius: 10px;
     border: 1px solid var(--100, #F7FAFF);
     color: var(--White, #FFF);
-    font-family: Lato;
+    font-family: $body-font;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;

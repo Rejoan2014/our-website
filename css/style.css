@@ -635,7 +635,7 @@ h6 {
 
 h1 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 800;
@@ -655,7 +655,7 @@ h1 {
 
 h2 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -675,7 +675,7 @@ h2 {
 
 h3 {
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -695,7 +695,7 @@ h3 {
 
 h4 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -710,7 +710,7 @@ h4 {
 
 h5 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -720,7 +720,7 @@ h5 {
 
 h6 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -1852,7 +1852,7 @@ span {
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1939,7 +1939,7 @@ span {
   border-radius: 10px;
   background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -2026,7 +2026,7 @@ span {
   border-radius: 10px;
   background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -2252,7 +2252,7 @@ span {
   border-radius: 10px;
   background: var(--100, #F7FAFF);
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -2317,7 +2317,7 @@ span {
   border-radius: 10px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -2380,7 +2380,7 @@ span {
   border-radius: 10px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -2706,7 +2706,7 @@ span {
 
 .cart__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -2757,7 +2757,7 @@ span {
 }
 .cart__col {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -2816,7 +2816,7 @@ span {
 .cart__details .cart__label {
   display: block;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -2836,7 +2836,7 @@ span {
 }
 .cart__details .cart__name {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -2872,7 +2872,7 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -2898,7 +2898,7 @@ span {
 .cart__price, .cart__total {
   text-align: end;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -2927,7 +2927,7 @@ span {
 }
 .cart__price span, .cart__total span {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -2960,7 +2960,7 @@ span {
 }
 .cart__quantity--total {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -3030,7 +3030,7 @@ span {
 }
 .checkOut-billingCard__title {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -3040,7 +3040,7 @@ span {
 }
 .checkOut-billingCard__text {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3057,7 +3057,7 @@ span {
 .checkOut-orderSummary__title {
   border-bottom: 1px solid #C1C1C1;
   color: #000;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -3070,7 +3070,7 @@ span {
   display: flex;
   justify-content: space-between;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3085,7 +3085,7 @@ span {
   padding-bottom: 0;
   margin-bottom: 0;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -3126,7 +3126,7 @@ span {
   background: transparent;
   padding: 12px 20px;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3254,7 +3254,7 @@ span {
 }
 .filter-item label {
   color: var(--900, #1D2128);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -3278,7 +3278,7 @@ span {
   background-image: url("../images/icon/dropdown-gradient-icon.svg");
   background-repeat: no-repeat;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3393,7 +3393,7 @@ img {
 }
 .preview-area .preview-item .content p {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -3408,7 +3408,7 @@ img {
 }
 .preview-area .preview-item .content h5 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3460,7 +3460,7 @@ img {
 }
 .list.style1 .checklist-item__text {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -3499,7 +3499,7 @@ img {
 }
 .list.style2 .checklist-item__text {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -3537,7 +3537,7 @@ img {
 }
 .list.style3 .checklist-item__text {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3546,7 +3546,7 @@ img {
 }
 .list.style3 .checklist-item__text--bold {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -3593,7 +3593,7 @@ img {
 }
 .map-section-card-info__text {
   color: var(--900, #1A1A1A);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3602,7 +3602,7 @@ img {
 }
 .map-section-card-info__numb {
   color: var(--900, #1A1A1A);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -4070,7 +4070,7 @@ img {
 }
 .form__group label {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -4088,7 +4088,7 @@ img {
   border-bottom: 1px solid var(--black);
   border-radius: 0;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4109,7 +4109,7 @@ img {
 
 .form__group2 label {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4126,7 +4126,7 @@ img {
   height: 50px;
   outline: none;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4163,7 +4163,7 @@ img {
   height: 60px;
   flex-shrink: 0;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4593,7 +4593,7 @@ img {
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -4609,7 +4609,7 @@ img {
 .service-thumb-content__title {
   color: var(--900, #000);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -4626,7 +4626,7 @@ img {
 }
 .service-thumb-content__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4674,7 +4674,7 @@ img {
 .service-list-item-content__title {
   color: var(--900, #000);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -4702,7 +4702,7 @@ img {
 }
 .service-list-item-content__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4806,7 +4806,7 @@ img {
   border-radius: 10px;
   border: 1px solid var(--100, #F7FAFF);
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -5658,7 +5658,7 @@ img {
 .fancy-box1-item__star--numb {
   color: #000;
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -5675,7 +5675,7 @@ img {
 .fancy-box1-item h4 {
   color: var(--900, #000);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -5685,7 +5685,7 @@ img {
 .fancy-box1-item h4 span {
   color: var(--900, #000);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -5728,7 +5728,7 @@ img {
 .fancy-box2-item h6 {
   color: var(--900, #000);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -5736,7 +5736,7 @@ img {
 }
 .fancy-box2-item p {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -6263,7 +6263,7 @@ img {
   box-shadow: none;
   background: var(--white);
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -6364,7 +6364,7 @@ img {
   background-color: var(--white);
   color: var(--800, #6B7280);
   text-align: start;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -6937,7 +6937,7 @@ img {
   border-radius: 999px;
   border: 1px solid var(--200, #C1C1C1);
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -7056,7 +7056,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -7073,7 +7073,7 @@ img {
   gap: 5px;
   color: var(--800, #6B7280);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -7097,7 +7097,7 @@ img {
   color: var(--900, #000);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 900;
@@ -7142,7 +7142,7 @@ img {
 .breadcrumb-heading__desc {
   color: var(--800, #6B7280);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -7189,7 +7189,7 @@ img {
 }
 .widget-card__title h6 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -7276,7 +7276,7 @@ img {
   align-items: center;
   justify-content: space-between;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -7356,7 +7356,7 @@ img {
 .widget-card-post-items-content h5 {
   padding-bottom: 12px;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -7370,7 +7370,7 @@ img {
   display: flex;
   gap: 10px;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -7397,7 +7397,7 @@ img {
   border-radius: 5px;
   background: var(--700, #1F2125);
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -7475,7 +7475,7 @@ img {
 }
 .widget2-card__title h6 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -7514,7 +7514,7 @@ img {
 }
 .widget2-card-categories-content__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -7524,7 +7524,7 @@ img {
 }
 .widget2-card-categories-content__text {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -7561,7 +7561,7 @@ img {
   border-radius: 5px;
   background: var(--White, #FFF);
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -8372,7 +8372,7 @@ img {
   background: var(--White, #FFF);
   box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
   color: var(--900, #0A0A0A);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -8390,7 +8390,7 @@ img {
   padding-bottom: 20px;
   color: var(--900, #000);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 800;
@@ -8436,7 +8436,7 @@ img {
   max-width: 610px;
   color: var(--900, #000);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -8482,7 +8482,7 @@ img {
 }
 .about1__title {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -8492,7 +8492,7 @@ img {
 }
 .about1__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -8613,7 +8613,7 @@ img {
 }
 .about1-thumb-badge__text h2 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -8628,7 +8628,7 @@ img {
 }
 .about1-thumb-badge__text p {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -8783,7 +8783,7 @@ img {
 }
 .about1-counter-item-info__numb {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -8800,7 +8800,7 @@ img {
 }
 .about1-counter-item-info__label {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -8881,7 +8881,7 @@ img {
   position: relative;
 }
 .about2-content__subtitle {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -8963,7 +8963,7 @@ img {
 }
 .about2-content__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -9032,7 +9032,7 @@ img {
 }
 .about2-thumb-feature-content h4 {
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -9067,7 +9067,7 @@ img {
 .about2-thumb-feature-content p {
   color: var(--White, #FFF);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -9490,7 +9490,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9516,7 +9516,7 @@ img {
 }
 .section-top__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -9563,7 +9563,7 @@ img {
 }
 .section-top__title2 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 900;
@@ -9605,7 +9605,7 @@ img {
 }
 .section-top__title3 {
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -9733,7 +9733,7 @@ img {
   text-align: left;
   margin: 0;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -9880,7 +9880,7 @@ img {
 }
 .service2-card-item__title {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -9896,7 +9896,7 @@ img {
 }
 .service2-card-item__desc {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -10016,7 +10016,7 @@ img {
   text-align: left;
   margin: 0;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -10134,7 +10134,7 @@ img {
   right: 9%;
   color: #1D2027;
   text-align: right;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -10159,7 +10159,7 @@ img {
 }
 .service4-card__title {
   color: #1D2027;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -10170,7 +10170,7 @@ img {
 .service4-card__desc {
   padding-bottom: 50px;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -10180,7 +10180,7 @@ img {
 }
 .service4-card__link {
   color: #1D2027;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -10235,7 +10235,7 @@ img {
 }
 .project1-card-thumb-content__title {
   color: var(--black);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -10358,7 +10358,7 @@ img {
 }
 .project2-card__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -10380,7 +10380,7 @@ img {
 }
 .project2-card__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -10390,7 +10390,7 @@ img {
 }
 .project2-card__title2 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -10642,7 +10642,7 @@ img {
 }
 .project3-content__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -10662,7 +10662,7 @@ img {
 }
 .project3-content__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -10715,7 +10715,7 @@ img {
 }
 .testimonial1-card-content__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -10733,7 +10733,7 @@ img {
 }
 .testimonial1-card-content__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -10906,7 +10906,7 @@ img {
 }
 .contact1-groups-item-info__text {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -10916,7 +10916,7 @@ img {
 }
 .contact1-groups-item-info__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -10930,7 +10930,7 @@ img {
 .contactForm-card__title {
   padding-bottom: 50px;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -10971,7 +10971,7 @@ img {
   padding-top: 30px;
   padding-bottom: 11px;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11003,7 +11003,7 @@ img {
   align-items: center;
   gap: 7px;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11033,7 +11033,7 @@ img {
 .blog1-card-content__title {
   padding-bottom: 15px;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -11048,7 +11048,7 @@ img {
 .blog1-card-content__desc {
   padding-right: 5px;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11073,7 +11073,7 @@ img {
 .blog1-card__quote p {
   color: var(--800, #6B7280);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11083,7 +11083,7 @@ img {
 }
 .blog1-card__quote h4 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11113,7 +11113,7 @@ img {
   padding-top: 30px;
   padding-bottom: 11px;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11144,7 +11144,7 @@ img {
   align-items: center;
   gap: 7px;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11174,7 +11174,7 @@ img {
 .blog2-card-content__title {
   padding-bottom: 15px;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -11189,7 +11189,7 @@ img {
 .blog2-card-content__desc {
   padding-right: 5px;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11218,7 +11218,7 @@ img {
 .blog2-card-content__quote p {
   color: var(--800, #6B7280);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11228,7 +11228,7 @@ img {
 }
 .blog2-card-content__quote h4 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11247,7 +11247,7 @@ img {
 }
 .blog2-card-content-profile__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11257,7 +11257,7 @@ img {
 }
 .blog2-card-content-profile__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11287,7 +11287,7 @@ img {
   width: fit-content;
   color: var(--White, #FFF);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11297,7 +11297,7 @@ img {
 }
 .blog2-card-content-profile2__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11307,7 +11307,7 @@ img {
 }
 .blog2-card-content-profile2__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11317,7 +11317,7 @@ img {
 }
 .blog2-card-content-profile2__link {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11422,7 +11422,7 @@ img {
 }
 .blog2-card-comment__title h3 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -11492,7 +11492,7 @@ img {
 }
 .blog2-card-comment-profile-content__date p {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11501,7 +11501,7 @@ img {
 }
 .blog2-card-comment-profile-content__desc p {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11520,7 +11520,7 @@ img {
   border: 1px solid rgba(28, 28, 28, 0.1);
   background: var(--White, #FFF);
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -11555,7 +11555,7 @@ img {
 }
 .blog2-form__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -11575,7 +11575,7 @@ img {
 }
 .blog2-form .form-check .form-check-label {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11615,7 +11615,7 @@ img {
 .team1-card-content__title {
   color: var(--White, #FFF);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -11632,7 +11632,7 @@ img {
 .team1-card-content__desc {
   color: var(--White, #FFF);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11677,7 +11677,7 @@ img {
   color: #000;
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 160.731px;
   font-style: normal;
   font-weight: 700;
@@ -11803,7 +11803,7 @@ img {
   border-radius: 0px 10px 0px 0px;
   background: var(--P3, #6A5ACD);
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11856,7 +11856,7 @@ img {
 }
 .product1-card-content__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11908,7 +11908,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11944,7 +11944,7 @@ img {
 }
 .product1-card-content-footer__price {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -11963,7 +11963,7 @@ img {
 }
 .product1-card-content-footer__price span {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -12028,7 +12028,7 @@ img {
 }
 .uiux-content__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -12134,7 +12134,7 @@ img {
 }
 .uiux-thumb-badge__text h4 {
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -12145,7 +12145,7 @@ img {
 .uiux-thumb-badge__text p {
   color: var(--White, #FFF);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -12241,7 +12241,7 @@ img {
 .review1-card-rating {
   padding-bottom: 15px;
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -12260,7 +12260,7 @@ img {
 }
 .review1-card__source {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -12354,7 +12354,7 @@ img {
 .award1__location {
   color: var(--900, #000);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -12486,7 +12486,7 @@ img {
   border-radius: 10px 10px 0px 0px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -12524,7 +12524,7 @@ img {
 }
 .milestone1-card__title {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -12534,7 +12534,7 @@ img {
 }
 .milestone1-card__desc {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -12611,7 +12611,7 @@ img {
   padding-bottom: 30px;
   color: var(--White, #FFF);
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -12640,7 +12640,7 @@ img {
   border-radius: 10px;
   background: var(--White, #FFF);
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -12720,7 +12720,7 @@ img {
   border-radius: 5px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -12998,7 +12998,7 @@ img {
 }
 .subscribe-info__title {
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -13069,7 +13069,7 @@ img {
 }
 .footer1-wrapper-company__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -13082,7 +13082,7 @@ img {
 }
 .footer1-wrapper-company-list__item a {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -13113,7 +13113,7 @@ img {
 }
 .footer1-wrapper-service__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -13126,7 +13126,7 @@ img {
 }
 .footer1-wrapper-service-list__item a {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -13161,7 +13161,7 @@ img {
 }
 .footer1-wrapper-solution__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -13174,7 +13174,7 @@ img {
 }
 .footer1-wrapper-solution-list__item a {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -13209,7 +13209,7 @@ img {
 }
 .footer1-wrapper-product__title {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -13222,7 +13222,7 @@ img {
 }
 .footer1-wrapper-product-list__item a {
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

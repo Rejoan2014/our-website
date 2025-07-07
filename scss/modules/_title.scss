@@ -13,7 +13,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -40,7 +40,7 @@
 
     &__title {
         color: var(--900, #000);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 48px;
         font-style: normal;
         font-weight: 900;
@@ -79,7 +79,7 @@
     }
     &__title2 {
         color: var(--900, #000);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 80px;
         font-style: normal;
         font-weight: 900;
@@ -111,7 +111,7 @@
     }
     &__title3 {
         color: var(--White, #FFF);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 48px;
         font-style: normal;
         font-weight: 900;

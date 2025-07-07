@@ -15,7 +15,7 @@
         border-radius: 10px;
         background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
         color: var(--White, #FFF);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 17px;
         font-style: normal;
         font-weight: 700;
@@ -98,7 +98,7 @@
         border-radius: 10px;
         background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
         color: var(--White, #FFF);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 17px;
         font-style: normal;
         font-weight: 700;
@@ -181,7 +181,7 @@
         border-radius: 10px;
         background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
         color: var(--White, #FFF);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 17px;
         font-style: normal;
         font-weight: 700;
@@ -420,7 +420,7 @@
         border-radius: 10px;
         background: var(--100, #F7FAFF);
         color: var(--900, #000);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 17px;
         font-style: normal;
         font-weight: 400;
@@ -485,7 +485,7 @@
         border-radius: 10px;
         background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
         color: var(--White, #FFF);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 17px;
         font-style: normal;
         font-weight: 400;
@@ -548,7 +548,7 @@
         border-radius: 10px;
         background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
         color: var(--White, #FFF);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 17px;
         font-style: normal;
         font-weight: 400;

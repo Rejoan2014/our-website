@@ -12,7 +12,7 @@
         }
         &__title {
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 40px;
             font-style: normal;
             font-weight: 900;
@@ -30,7 +30,7 @@
         }
         &__desc {
             color: var(--800, #6B7280);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -40,7 +40,7 @@
         }
         &__title2 {
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 30px;
             font-style: normal;
             font-weight: 900;

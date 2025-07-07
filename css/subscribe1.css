@@ -602,7 +602,7 @@ h6 {
 
 h1 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 80px;
   font-style: normal;
   font-weight: 800;
@@ -622,7 +622,7 @@ h1 {
 
 h2 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -642,7 +642,7 @@ h2 {
 
 h3 {
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -662,7 +662,7 @@ h3 {
 
 h4 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -677,7 +677,7 @@ h4 {
 
 h5 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -687,7 +687,7 @@ h5 {
 
 h6 {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -1819,7 +1819,7 @@ span {
   border-radius: 10px;
   background: var(--P2, linear-gradient(90deg, #E5087B 0%, #FDD819 125.62%));
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1882,7 +1882,7 @@ span {
   border-radius: 10px;
   background: linear-gradient(270deg, #9708CC -47.61%, #43CBFF 99.88%);
   color: var(--White, #FFF);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -2171,7 +2171,7 @@ span {
   border-radius: 10px;
   background: var(--100, #F7FAFF);
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -2803,7 +2803,7 @@ img {
 }
 .list.style1 .checklist-item__text {
   color: var(--900, #000);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -3289,7 +3289,7 @@ img {
   height: 60px;
   flex-shrink: 0;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

@@ -20,7 +20,7 @@
       padding-bottom: 11px;
       h6 {
         color: var(--900, #000);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 30px;
         font-style: normal;
         font-weight: 900;
@@ -124,7 +124,7 @@
             align-items: center;
             justify-content: space-between;
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -217,7 +217,7 @@
           h5 {
             padding-bottom: 12px;
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 20px;
             font-style: normal;
             font-weight: 900;
@@ -233,7 +233,7 @@
             display: flex;
             gap: 10px;
             color: var(--800, #6B7280);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -265,7 +265,7 @@
             border-radius: 5px;
             background: var(--700, #1F2125);
             color: var(--White, #FFF);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;

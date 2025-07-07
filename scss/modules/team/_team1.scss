@@ -5,28 +5,11 @@
     background-color: $white;
     &-card {
         position: relative;
-        // border-radius: 20px;
         &-thumb {
             position: relative;
             img {
                 width: 100%;
             }
-            // &__img {
-            //     position: relative;
-            //     padding: 17px 17px 0;
-            //     text-align: center;
-            //     &-shape {
-            //         position: absolute;
-            //         top: 0;
-            //         left: 0;
-            //         z-index: 1;
-            //     }
-            //     img {
-            //         position: relative;
-            //         z-index: 5;                    
-            //     }
-            // }
-
         }
         &-content {
             visibility: hidden;
@@ -45,7 +28,7 @@
             &__title {
                 color: var(--White, #FFF);
                 text-align: center;
-                font-family: Lato;
+                font-family: $body-font;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 900;
@@ -60,7 +43,7 @@
             &__desc {
                 color: var(--White, #FFF);
                 text-align: center;
-                font-family: Lato;
+                font-family: $body-font;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;

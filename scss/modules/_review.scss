@@ -67,7 +67,7 @@
         &-rating {
             padding-bottom: 15px;
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 20px;
             font-style: normal;
             font-weight: 900;
@@ -88,7 +88,7 @@
         }
         &__source {
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 20px;
             font-style: normal;
             font-weight: 900;

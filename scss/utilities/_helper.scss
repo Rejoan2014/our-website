@@ -245,7 +245,7 @@
 .cart {
   &__title {
     color: var(--900, #000);
-    font-family: Lato;
+    font-family: $body-font;
     font-size: 40px;
     font-style: normal;
     font-weight: 900;
@@ -292,7 +292,7 @@
 
   &__col {
     color: var(--900, #000);
-    font-family: Lato;
+    font-family: $body-font;
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
@@ -340,7 +340,7 @@
     .cart__label {
       display: block;
       color: var(--900, #000);
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 20px;
       font-style: normal;
       font-weight: 900;
@@ -357,7 +357,7 @@
 
     .cart__name {
       color: var(--900, #000);
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 30px;
       font-style: normal;
       font-weight: 900;
@@ -386,7 +386,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-feature-settings: 'liga' off, 'clig' off;
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 24px;
       font-style: normal;
       font-weight: 900;
@@ -409,7 +409,7 @@
   &__total {
     text-align: end;
     color: var(--900, #000);
-    font-family: Lato;
+    font-family: $body-font;
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
@@ -429,7 +429,7 @@
     }
     span {
       color: var(--900, #000);
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 40px;
       font-style: normal;
       font-weight: 900;
@@ -460,7 +460,7 @@
 
     &--total {
       color: var(--900, #000);
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 40px;
       font-style: normal;
       font-weight: 900;
@@ -525,7 +525,7 @@
     background: var(--White, #FFF);
     &__title {
       color: #000;
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 30px;
       font-style: normal;
       font-weight: 900;
@@ -535,7 +535,7 @@
     }
     &__text {
       color: var(--800, #6B7280);
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -552,7 +552,7 @@
     &__title {
       border-bottom: 1px solid #C1C1C1;
       color: #000;
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 30px;
       font-style: normal;
       font-weight: 900;
@@ -565,7 +565,7 @@
       display: flex;
       justify-content: space-between;
       color: var(--800, #6B7280);
-      font-family: Lato;
+      font-family: $body-font;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -579,7 +579,7 @@
         padding-bottom: 0;
         margin-bottom: 0;
         color: var(--900, #000);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 20px;
         font-style: normal;
         font-weight: 900;
@@ -625,7 +625,7 @@
   background: transparent;
   padding: 12px 20px;
   color: var(--800, #6B7280);
-  font-family: Lato;
+  font-family: $body-font;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -742,7 +742,7 @@
 
   label {
     color: var(--900, #1D2128);
-    font-family: Lato;
+    font-family: $body-font;
     font-size: 20px;
     font-style: normal;
     font-weight: 900;
@@ -764,7 +764,7 @@
     background-repeat: no-repeat;
 
     color: var(--800, #6B7280);
-    font-family: Lato;
+    font-family: $body-font;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

@@ -95,7 +95,7 @@ img {
         .content {
           p {
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 17px;
             font-style: normal;
             font-weight: 400;
@@ -108,7 +108,7 @@ img {
           }
           h5 {
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -161,7 +161,7 @@ img {
           }
           &__text {
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
@@ -200,7 +200,7 @@ img {
           }
           &__text {
             color: var(--900, #000);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 20px;
             font-style: normal;
             font-weight: 900;
@@ -235,7 +235,7 @@ img {
           padding-bottom: 10px;
           &__text {
             color: var(--800, #6B7280);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -243,7 +243,7 @@ img {
             letter-spacing: 0.16px;
               &--bold {
                 color: var(--900, #000);
-                font-family: Lato;
+                font-family: $body-font;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 900;
@@ -293,7 +293,7 @@ img {
       &-info {
         &__text {
           color: var(--900, #1A1A1A);
-          font-family: Lato;
+          font-family: $body-font;
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
@@ -302,7 +302,7 @@ img {
         }
         &__numb {
           color: var(--900, #1A1A1A);
-          font-family: Lato;
+          font-family: $body-font;
           font-size: 20px;
           font-style: normal;
           font-weight: 900;

@@ -20,7 +20,7 @@
     }
     &__title {
         color: #000;
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 24px;
         font-style: normal;
         font-weight: 900;
@@ -30,7 +30,7 @@
     }
     &__desc {
         color: var(--800, #6B7280);
-        font-family: Lato;
+        font-family: $body-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -132,7 +132,7 @@
             &__text {
                 h2 {
                     color: var(--900, #000);
-                    font-family: Lato;
+                    font-family: $body-font;
                     font-size: 48px;
                     font-style: normal;
                     font-weight: 900;
@@ -145,7 +145,7 @@
                 }
                 p {
                     color: var(--900, #000);
-                    font-family: Lato;
+                    font-family: $body-font;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 700;
@@ -265,7 +265,7 @@
             &-info {
                 &__numb {
                     color: var(--900, #000);
-                    font-family: Lato;
+                    font-family: $body-font;
                     font-size: 48px;
                     font-style: normal;
                     font-weight: 900;
@@ -280,7 +280,7 @@
                 }
                 &__label {
                     color: var(--900, #000);
-                    font-family: Lato;
+                    font-family: $body-font;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 700;

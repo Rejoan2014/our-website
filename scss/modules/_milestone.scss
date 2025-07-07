@@ -35,7 +35,7 @@
             border-radius: 10px 10px 0px 0px;
             background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
             color: var(--White, #FFF);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 30px;
             font-style: normal;
             font-weight: 900;
@@ -67,7 +67,7 @@
         }
         &__title {
             color: #000;
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 30px;
             font-style: normal;
             font-weight: 900;
@@ -77,7 +77,7 @@
         }
         &__desc {
             color: var(--800, #6B7280);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;

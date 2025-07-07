@@ -64,7 +64,7 @@
         }
         &__title {
             color: var(--White, #FFF);
-            font-family: Lato;
+            font-family: $body-font;
             font-size: 40px;
             font-style: normal;
             font-weight: 900;
