@@ -105,7 +105,7 @@
             text-align: center;
             padding: 40px 42px;
             border-radius: 20px;
-            background: var(--100, #F7FAFF);
+            background: $theme-color2;
             @include breakpoint (max-xs){
                 padding: 25px 28px 50px;
             }

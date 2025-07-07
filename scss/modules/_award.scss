@@ -2,7 +2,7 @@
 @use '../utilities' as *;
 
 .award1 {
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
     margin-bottom: -70px;
     &-icon {
         display: flex;
@@ -27,7 +27,7 @@
             justify-content: center;
             border-radius: 999px;
             border: 2px dashed $black;
-            background: var(--100, #F7FAFF);
+            background: $theme-color2;
             width: 145px;
             height: 145px;
             flex-shrink: 0;

@@ -261,7 +261,7 @@
 	transition: all 0.9s ease-in-out;
 	-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-	background: var(--100, #F7FAFF);
+	background: $theme-color2;
 
 	&.header-1{
  		.header-wrap{

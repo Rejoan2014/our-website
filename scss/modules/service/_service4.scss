@@ -3,7 +3,7 @@
 
 .service4 {
     border-radius: 20px;
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
     &-card {
         position: relative;
         padding: 50px;

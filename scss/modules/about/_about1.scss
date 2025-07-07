@@ -96,7 +96,7 @@
                 aspect-ratio: 1/1;
                 border-radius: 999px;
                 border: 2px dashed $black;
-                background: var(--100, #F7FAFF);
+                background: $theme-color2;
                 @include breakpoint (max-xxl){
                     width: 75px;
                     height: 75px;
@@ -230,7 +230,7 @@
                 aspect-ratio: 1/1;
                 border-radius: 999px;
                 border: 2px dashed $black;
-                background: var(--100, #F7FAFF);
+                background: $theme-color2;
                 @include breakpoint (max-xxl){
                     width: 75px;
                     height: 75px;

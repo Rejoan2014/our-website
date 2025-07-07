@@ -3,7 +3,7 @@
 
 .service1 {
     position: relative;;
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
     &__thumb {
         border-radius: 20px;
         img {

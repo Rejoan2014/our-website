@@ -2,7 +2,7 @@
 @use '../../utilities' as *;
 
 .contactForm {
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
     &-card {
         &__title {
             padding-bottom: 50px;

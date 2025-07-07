@@ -237,7 +237,7 @@
 }
 
 .bg-light-blue {
-  background: var(--100, #F7FAFF);
+  background: $theme-color2;
 }
 
 
@@ -548,7 +548,7 @@
     padding: 40px;
     border-radius: 20px;
     border: 1px solid var(--200, #C1C1C1);
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
     &__title {
       border-bottom: 1px solid #C1C1C1;
       color: #000;
@@ -591,7 +591,7 @@
   &-paymentCard {
     padding: 40px;
     border-radius: 20px;
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
     &__title {
       border-bottom: 1px solid #C1C1C1;
       padding-bottom: 15px;
@@ -615,7 +615,7 @@
   padding: 5px 5px;
   border-radius: 999px;
   border: 1px solid var(--200, #C1C1C1);
-  background: var(--100, #F7FAFF);
+  background: $theme-color2;
 }
 
 .search-input {

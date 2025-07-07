@@ -450,7 +450,7 @@ img {
       line-height: 44px;
       text-align: center;
       border-radius: 999px;
-      background: var(--100, #F7FAFF);
+      background: $theme-color2;
       color: #43CBFF;
       font-size: 18px;
       display: inline-block;
@@ -702,7 +702,7 @@ img {
         gap: 10px;
         border: 1px solid rgb(204, 204, 205);
         border-radius: 999px;
-        background: var(--100, #F7FAFF);
+        background: $theme-color2;
 
         i {
           color: var(--800, #6B7280);

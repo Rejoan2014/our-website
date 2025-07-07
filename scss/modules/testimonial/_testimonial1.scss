@@ -20,7 +20,7 @@
   }
   &-card {
     border-radius: 12.195px;
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
     border: 2px solid transparent;
     &:hover {
       border: 2px solid #6A5ACD;

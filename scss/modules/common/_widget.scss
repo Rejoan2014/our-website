@@ -6,7 +6,7 @@
   &-card {
     padding: 40px 40px;
     border-radius: 5px;
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
 
     &:not(:last-child) {
       margin-bottom: 60px;

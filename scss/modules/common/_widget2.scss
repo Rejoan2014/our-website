@@ -6,7 +6,7 @@
   &-card {
     padding: 30px 30px;
     border-radius: 5px;
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
 
     &:not(:last-child) {
       margin-bottom: 40px;
@@ -30,7 +30,7 @@
       background: $white;
       @include breakpoint (max-xl){
         padding: 0;
-        background: var(--100, #F7FAFF);
+        background: $theme-color2;
       }
       @include breakpoint (max-lg){
         padding: 30px;
@@ -38,7 +38,7 @@
       }
       @include breakpoint (max-xxsmall){
         padding: 0;
-        background: var(--100, #F7FAFF);
+        background: $theme-color2;
       }
       &-content {
         display: flex;

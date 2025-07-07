@@ -103,7 +103,7 @@
                 align-items: center;
                 border-radius: 50%; // ensures circular container
                 border: 2px dashed $black;
-                background: var(--100, #F7FAFF);
+                background: $theme-color2;
                 width: 94px;
                 height: 94px;
                 flex-shrink: 0;

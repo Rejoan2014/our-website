@@ -8,7 +8,7 @@
 
 .footer1 {
   position: relative;
-  background: var(--100, #F7FAFF);
+  background: $theme-color2;
   &-wrapper {   
     position: relative;
     z-index: 4;

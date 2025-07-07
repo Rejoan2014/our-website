@@ -2217,7 +2217,7 @@ span {
   gap: 12px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 17px;
@@ -2668,7 +2668,7 @@ span {
 }
 
 .bg-light-blue {
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 
 .cart__title {
@@ -3019,7 +3019,7 @@ span {
   padding: 40px;
   border-radius: 20px;
   border: 1px solid var(--200, #C1C1C1);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .checkOut-orderSummary__title {
   border-bottom: 1px solid #C1C1C1;
@@ -3062,7 +3062,7 @@ span {
 .checkOut-paymentCard {
   padding: 40px;
   border-radius: 20px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .checkOut-paymentCard__title {
   border-bottom: 1px solid #C1C1C1;
@@ -3083,7 +3083,7 @@ span {
   padding: 5px 5px;
   border-radius: 999px;
   border: 1px solid var(--200, #C1C1C1);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 
 .search-input {
@@ -3728,7 +3728,7 @@ img {
   line-height: 44px;
   text-align: center;
   border-radius: 999px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   color: #43CBFF;
   font-size: 18px;
   display: inline-block;
@@ -3954,7 +3954,7 @@ img {
   gap: 10px;
   border: 1px solid rgb(204, 204, 205);
   border-radius: 999px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .global-social3__item a i {
   color: var(--800, #6B7280);
@@ -4465,7 +4465,7 @@ img {
   gap: 30px;
   border-radius: 20px;
   border: 1px solid var(--P2, #E5087B);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -4771,7 +4771,7 @@ img {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 10px;
-  border: 1px solid var(--100, #F7FAFF);
+  border: 1px solid var(--theme2);
   color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;

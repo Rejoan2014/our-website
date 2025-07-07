@@ -103,7 +103,7 @@
         flex-shrink: 0;
         line-height: 36px;
         text-align: center;
-        background: var(--100, #F7FAFF);
+        background: $theme-color2;
         border: 1px solid $title-color;
         z-index: 5;
         border-radius: 50%;
@@ -132,7 +132,7 @@
             line-height: 36px;
             text-align: center;
             z-index: 5;
-            background: var(--100, #F7FAFF);
+            background: $theme-color2;
             border: 1px solid $theme-color;
             transition: all 0.4s ease;
             -webkit-transition: all 0.4s ease;

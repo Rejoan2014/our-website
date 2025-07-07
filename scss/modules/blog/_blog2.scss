@@ -99,7 +99,7 @@
                 text-align: center;
                 padding: 50px 50px;
                 border-radius: 20px;
-                background: var(--100, #F7FAFF);
+                background: $theme-color2;
                 @include breakpoint (max-md){
                     padding: 30px 30px;
                 }
@@ -164,7 +164,7 @@
                     margin-bottom: 40px;
                     padding: 20px;
                     border-radius: 20px;
-                    background: var(--100, #F7FAFF);
+                    background: $theme-color2;
                 &__thumb {
                     border-radius: 10px;
                     img {

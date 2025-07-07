@@ -2250,7 +2250,7 @@ span {
   gap: 12px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 17px;
@@ -2701,7 +2701,7 @@ span {
 }
 
 .bg-light-blue {
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 
 .cart__title {
@@ -3052,7 +3052,7 @@ span {
   padding: 40px;
   border-radius: 20px;
   border: 1px solid var(--200, #C1C1C1);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .checkOut-orderSummary__title {
   border-bottom: 1px solid #C1C1C1;
@@ -3095,7 +3095,7 @@ span {
 .checkOut-paymentCard {
   padding: 40px;
   border-radius: 20px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .checkOut-paymentCard__title {
   border-bottom: 1px solid #C1C1C1;
@@ -3116,7 +3116,7 @@ span {
   padding: 5px 5px;
   border-radius: 999px;
   border: 1px solid var(--200, #C1C1C1);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 
 .search-input {
@@ -3761,7 +3761,7 @@ img {
   line-height: 44px;
   text-align: center;
   border-radius: 999px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   color: #43CBFF;
   font-size: 18px;
   display: inline-block;
@@ -3987,7 +3987,7 @@ img {
   gap: 10px;
   border: 1px solid rgb(204, 204, 205);
   border-radius: 999px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .global-social3__item a i {
   color: var(--800, #6B7280);
@@ -4498,7 +4498,7 @@ img {
   gap: 30px;
   border-radius: 20px;
   border: 1px solid var(--P2, #E5087B);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -4804,7 +4804,7 @@ img {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 10px;
-  border: 1px solid var(--100, #F7FAFF);
+  border: 1px solid var(--theme2);
   color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 17px;
@@ -5567,7 +5567,7 @@ img {
   flex-shrink: 0;
   line-height: 36px;
   text-align: center;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   border: 1px solid var(--title);
   z-index: 5;
   border-radius: 50%;
@@ -5598,7 +5598,7 @@ img {
   line-height: 36px;
   text-align: center;
   z-index: 5;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   border: 1px solid var(--theme);
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -7174,7 +7174,7 @@ img {
 .widget-card {
   padding: 40px 40px;
   border-radius: 5px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .widget-card:not(:last-child) {
   margin-bottom: 60px;
@@ -7465,7 +7465,7 @@ img {
 .widget2-card {
   padding: 30px 30px;
   border-radius: 5px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .widget2-card:not(:last-child) {
   margin-bottom: 40px;
@@ -7490,7 +7490,7 @@ img {
 @media (max-width: 1199px) {
   .widget2-card-categories {
     padding: 0;
-    background: var(--100, #F7FAFF);
+    background: var(--theme2);
   }
 }
 @media (max-width: 991px) {
@@ -7502,7 +7502,7 @@ img {
 @media (max-width: 374px) {
   .widget2-card-categories {
     padding: 0;
-    background: var(--100, #F7FAFF);
+    background: var(--theme2);
   }
 }
 .widget2-card-categories-content {
@@ -7797,7 +7797,7 @@ img {
   transition: all 0.9s ease-in-out;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .sticky.header-1 .header-wrap {
   margin-top: 0px;
@@ -8567,7 +8567,7 @@ img {
   aspect-ratio: 1/1;
   border-radius: 999px;
   border: 2px dashed var(--black);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 @media (max-width: 1399px) {
   .about1-thumb-badge__icon {
@@ -8737,7 +8737,7 @@ img {
   aspect-ratio: 1/1;
   border-radius: 999px;
   border: 2px dashed var(--black);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 @media (max-width: 1399px) {
   .about1-counter-item__icon {
@@ -8997,7 +8997,7 @@ img {
   align-items: center;
   border-radius: 50%;
   border: 2px dashed var(--black);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   width: 94px;
   height: 94px;
   flex-shrink: 0;
@@ -9659,7 +9659,7 @@ img {
 /* 8. Service */
 .service1 {
   position: relative;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .service1__thumb {
   border-radius: 20px;
@@ -9818,7 +9818,7 @@ img {
 
 .service2 {
   position: relative;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .service2-card {
   display: flex;
@@ -10057,7 +10057,7 @@ img {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .service3-content__link img {
   width: 53.333px;
@@ -10104,7 +10104,7 @@ img {
 
 .service4 {
   border-radius: 20px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .service4-card {
   position: relative;
@@ -10225,7 +10225,7 @@ img {
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 20px 20px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   padding: 30px;
 }
 @media (max-width: 575px) {
@@ -10696,7 +10696,7 @@ img {
 }
 .testimonial1-card {
   border-radius: 12.195px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   border: 2px solid transparent;
 }
 .testimonial1-card:hover {
@@ -10868,7 +10868,7 @@ img {
   padding: 30px 30px 30px 77px;
   border-radius: 10.853px;
   border: 1.085px solid var(--200, #C1C1C1);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   width: 100%;
   height: 159px;
   max-width: 545px;
@@ -10925,7 +10925,7 @@ img {
 }
 
 .contactForm {
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .contactForm-card__title {
   padding-bottom: 50px;
@@ -11060,7 +11060,7 @@ img {
   text-align: center;
   padding: 40px 42px;
   border-radius: 20px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 @media (max-width: 499px) {
   .blog1-card__quote {
@@ -11200,7 +11200,7 @@ img {
   text-align: center;
   padding: 50px 50px;
   border-radius: 20px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 @media (max-width: 767px) {
   .blog2-card-content__quote {
@@ -11269,7 +11269,7 @@ img {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 20px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .blog2-card-content-profile2__thumb {
   border-radius: 10px;
@@ -12064,7 +12064,7 @@ img {
   bottom: -55px;
   left: 0;
   border-radius: 26.981px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   width: 559px;
   height: 618px;
   flex-shrink: 0;
@@ -12091,7 +12091,7 @@ img {
   bottom: -61px;
   left: 18px;
   border-radius: 26.981px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   width: 559px;
   height: 623px;
   flex-shrink: 0;
@@ -12271,7 +12271,7 @@ img {
 
 /* 18. Award */
 .award1 {
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   margin-bottom: -70px;
 }
 .award1-icon {
@@ -12304,7 +12304,7 @@ img {
   justify-content: center;
   border-radius: 999px;
   border: 2px dashed var(--black);
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   width: 145px;
   height: 145px;
   flex-shrink: 0;
@@ -12467,7 +12467,7 @@ img {
 .milestone1-card {
   position: relative;
   border-radius: 0px 20px 20px 20px;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
   padding: 80px 50px 50px;
   max-width: 640px;
   margin-top: 35px;
@@ -13041,7 +13041,7 @@ img {
 ----------------------------------------------*/
 .footer1 {
   position: relative;
-  background: var(--100, #F7FAFF);
+  background: var(--theme2);
 }
 .footer1-wrapper {
   position: relative;

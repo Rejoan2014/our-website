@@ -3,7 +3,7 @@
 
 .service2 {
     position: relative;;
-    background: var(--100, #F7FAFF);
+    background: $theme-color2;
     &-card {
         display: flex;
         align-items: center;
