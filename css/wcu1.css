@@ -2527,12 +2527,6 @@ span {
   }
 }
 
-@media (min-width: 1700px) {
-  .wcu1-fix {
-    padding-left: 62px;
-  }
-}
-
 .fix-pb-50 {
   padding-bottom: 50px;
 }

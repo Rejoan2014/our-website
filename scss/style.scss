@@ -18,13 +18,17 @@ Description: CleanPro - Creative & Digital Agency Html Template
 9. Testimonial
 10. Contact
 11. Blog
-12. Pricing
-13. WCU
-14. Team
-15. FAQ
-16. Work Process
-17. Appointment
-18. Footer
+12. Team
+13. FAQ
+14. UI/UX
+15. Review
+16. Award
+17. Milestone
+18. CTA
+19. Map
+20. Video
+21. Subscribe
+22. Footer
 ------------------------------------------------------------------*/
 
 //====== modules Start ======//
@@ -56,62 +60,42 @@ Description: CleanPro - Creative & Digital Agency Html Template
 /* 4. About */
 @use "./modules/about/about1";   
 @use "./modules/about/about2";   
-@use "./modules/about/about3";   
 
 /* 5. Meanmenu */
 @use "./modules/meanmenu";
 
-/* 5. Offcanvas */
+/* 6. Offcanvas */
 @use "./modules/offcanvas";
   
-/* 6. Title */
+/* 7. Title */
 @use "./modules/title";
 
-/* 7. Service */
+/* 8. Service */
 @use "./modules/service/service1";   
 @use "./modules/service/service2";   
 @use "./modules/service/service3";   
 @use "./modules/service/service4";   
-@use "./modules/service/service5";   
 
-/* 8. Project */
+/* 9. Project */
 @use "./modules/project/project1";   
 @use "./modules/project/project2";   
 @use "./modules/project/project3";   
-@use "./modules/project/project4";   
 
-/* 9. Testimonial */
+/* 10. Testimonial */
 @use "./modules/testimonial/testimonial1";   
-@use "./modules/testimonial/testimonial2";   
-@use "./modules/testimonial/testimonial3";   
-@use "./modules/testimonial/testimonial4";   
-@use "./modules/testimonial/testimonial5";   
 
-/* 10. Contact */
+/* 11. Contact */
 @use "./modules/contact/contact1";   
 @use "./modules/contact/contact2";   
 
-/* 11. Blog */
+/* 12. Blog */
 @use "./modules/blog/blog1";
 @use "./modules/blog/blog2";
 
-/* 12. Pricing */
-@use "./modules/pricing/pricing1";   
-@use "./modules/pricing/pricing2";   
-@use "./modules/pricing/pricing3";   
-
-/* 13. WCU */
-@use "./modules/wcu/wcu1";   
-@use "./modules/wcu/wcu2";   
-@use "./modules/wcu/wcu3";   
-
-/* 14. Team */
+/* 13. Team */
 @use "./modules/team/team1";   
-@use "./modules/team/team2";   
-@use "./modules/team/team3";   
-@use "./modules/team/team4";   
 
-/* 15. FAQ */
+/* 14. FAQ */
 @use "./modules/faq/faq1";  
 @use "./modules/faq/faq2";  
 
@@ -124,27 +108,26 @@ Description: CleanPro - Creative & Digital Agency Html Template
 /* 17. Review */
 @use "./modules/review";
 
-/* 17. Award */
+/* 18. Award */
 @use "./modules/award";
 
-/* 17. Milestone */
+/* 19. Milestone */
 @use "./modules/milestone";
 
-/* 17. CTA */
+/* 20. CTA */
 @use "./modules/cta";
 
-/* 17. Map */
+/* 21. Map */
 @use "./modules/map";
 
-/* 17. Video */
+/* 22. Video */
 @use "./modules/video/video1";
 
-/* 17. Subscribe */
+/* 23. Subscribe */
 @use "./modules/subscribe";
 
-/* 18. Footer */
+/* 24. Footer */
 @use "./modules/footer/footer1";
-@use "./modules/footer/footer2";
 
 //====== modules End ======//
 

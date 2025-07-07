@@ -138,13 +138,6 @@
   }
 }
 
-
-.wcu1-fix {
-  @include breakpoint (xl2){
-    padding-left: 62px;
-  }
-}
-
 .fix-pb-50 {
   padding-bottom: 50px;
   @include breakpoint (max-md){
