@@ -3091,7 +3091,7 @@ img {
   gap: 10px;
   border-radius: 50px;
   background: var(--black);
-  border: 1px solid var(--P, #B8E451);
+  border: 1px solid $border-color2;
 }
 @media (max-width: 374px) {
   .preview-area .preview-item .icon {

@@ -50,7 +50,7 @@ Description: CleanPro - Creative & Digital Agency Html Template
   --yellow: #F2D701;
   --yellow2: #FFB400;
   --border: #C1C1C1;
-  --border2: #D8DDE1;
+  --border2: #B8E451;
   --gray: #696969;
   --gray2: #727272;
   --smoke: #FAF8F7;
@@ -3379,7 +3379,7 @@ img {
   gap: 10px;
   border-radius: 50px;
   background: var(--black);
-  border: 1px solid var(--P, #B8E451);
+  border: 1px solid var(--border2);
 }
 @media (max-width: 374px) {
   .preview-area .preview-item .icon {
@@ -5458,8 +5458,8 @@ img {
   }
 }
 .counter2-item-box:hover {
-  background: var(--P, #B8E451);
-  border: 1px dashed #B8E451;
+  background: var(--border2);
+  border: 1px dashed var(--border2);
   transition: all 0.4s ease-in-out;
 }
 .counter2-item-box:hover .counter2-item-box__value {
@@ -5528,7 +5528,7 @@ img {
   background: var(--100, #FCF9EB);
 }
 .slider-btn .style2 i {
-  color: var(--P, #B8E451);
+  color: var(--border2);
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
@@ -6047,7 +6047,7 @@ img {
 .progress-wrap2 .progress-container .progress-bar {
   height: 6px;
   border-radius: 10px;
-  background: var(--P, #B8E451);
+  background: var(--border2);
   position: relative;
   display: flex;
   align-items: center;
@@ -11734,7 +11734,7 @@ img {
   justify-content: center;
   padding: 30px;
   border-radius: 5px;
-  border: 1px dashed var(--P, #B8E451);
+  border: 1px dashed var(--border2);
   background: linear-gradient(0deg, #B8E451 0%, rgba(184, 228, 81, 0) 100%);
 }
 @media (max-width: 991px) {

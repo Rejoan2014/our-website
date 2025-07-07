@@ -9,7 +9,7 @@
     justify-content: center;
     padding: 30px;
     border-radius: 5px;
-    border: 1px dashed var(--P, #B8E451);
+    border: 1px dashed $border-color2;
     background: linear-gradient(0deg, #B8E451 0%, rgba(184, 228, 81, 0.00) 100%);
     @include breakpoint (max-lg){
       margin-bottom: 30px;

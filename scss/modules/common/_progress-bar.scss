@@ -211,7 +211,7 @@
 		.progress-bar {
 			height: 6px;
 			border-radius: 10px;
-			background: var(--P, #B8E451);
+			background: $border-color2;
 			position: relative;
 			display: flex;
 			align-items: center;

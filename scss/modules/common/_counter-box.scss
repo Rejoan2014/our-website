@@ -155,8 +155,8 @@
                 }
             }
             &:hover {
-                background: var(--P, #B8E451);
-                border: 1px dashed #B8E451;    
+                background: $border-color2;
+                border: 1px dashed $border-color2;    
                 @include transition;                        
                 .counter2 {
                     &-item {

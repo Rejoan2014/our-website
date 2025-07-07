@@ -17,7 +17,7 @@
   --yellow: #F2D701;
   --yellow2: #FFB400;
   --border: #C1C1C1;
-  --border2: #D8DDE1;
+  --border2: #B8E451;
   --gray: #696969;
   --gray2: #727272;
   --smoke: #FAF8F7;
@@ -3346,7 +3346,7 @@ img {
   gap: 10px;
   border-radius: 50px;
   background: var(--black);
-  border: 1px solid var(--P, #B8E451);
+  border: 1px solid var(--border2);
 }
 @media (max-width: 374px) {
   .preview-area .preview-item .icon {
