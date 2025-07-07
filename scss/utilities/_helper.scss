@@ -490,7 +490,7 @@
       align-items: center;
       flex-shrink: 0;
       border-radius: 10px;
-      border: 1px solid var(--200, #C1C1C1);
+      border: 1px solid $border-color;
       @include breakpoint (max-md){
         padding: 10px 15px;
         height: 30px;
@@ -521,7 +521,7 @@
   &-billingCard {
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid var(--200, #C1C1C1);
+    border: 1px solid $border-color;
     background: $white;
     &__title {
       color: $black;
@@ -547,7 +547,7 @@
   &-orderSummary {
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid var(--200, #C1C1C1);
+    border: 1px solid $border-color;
     background: $theme-color2;
     &__title {
       border-bottom: 1px solid #C1C1C1;
@@ -614,7 +614,7 @@
   height: 60px;
   padding: 5px 5px;
   border-radius: 999px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid $border-color;
   background: $theme-color2;
 }
 
@@ -658,7 +658,7 @@
 .filter-box {
   display: flex;
   border-radius: 5px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid $border-color;
   overflow: hidden;
   max-width: 470px;
   height: 60px;

@@ -49,7 +49,8 @@ Description: CleanPro - Creative & Digital Agency Html Template
   --dark: #0D0D0D;
   --yellow: #F2D701;
   --yellow2: #FFB400;
-  --border: #D8DDE1;
+  --border: #C1C1C1;
+  --border2: #D8DDE1;
   --gray: #696969;
   --gray2: #727272;
   --smoke: #FAF8F7;
@@ -2993,7 +2994,7 @@ span {
   align-items: center;
   flex-shrink: 0;
   border-radius: 10px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
 }
 @media (max-width: 767px) {
   .cart__quantity .qty-btn {
@@ -3025,7 +3026,7 @@ span {
 .checkOut-billingCard {
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
   background: var(--white);
 }
 .checkOut-billingCard__title {
@@ -3051,7 +3052,7 @@ span {
 .checkOut-orderSummary {
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
   background: var(--theme2);
 }
 .checkOut-orderSummary__title {
@@ -3115,7 +3116,7 @@ span {
   height: 60px;
   padding: 5px 5px;
   border-radius: 999px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
   background: var(--theme2);
 }
 
@@ -3157,7 +3158,7 @@ span {
 .filter-box {
   display: flex;
   border-radius: 5px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
   overflow: hidden;
   max-width: 470px;
   height: 60px;
@@ -6250,7 +6251,7 @@ img {
 .faq-group .accordion-item {
   margin-bottom: 25px;
   border-radius: 5px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
   overflow: hidden;
 }
 .faq-group .accordion-item .accordion-header .accordion-button {
@@ -6935,7 +6936,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 999px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
   color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -7043,7 +7044,7 @@ img {
   align-items: center;
   gap: 6px;
   border-radius: 999px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
   margin-bottom: 20px;
 }
 @media (max-width: 767px) {
@@ -10867,7 +10868,7 @@ img {
   gap: 20px;
   padding: 30px 30px 30px 77px;
   border-radius: 10.853px;
-  border: 1.085px solid var(--200, #C1C1C1);
+  border: 1.085px solid var(--border);
   background: var(--theme2);
   width: 100%;
   height: 159px;
@@ -11902,7 +11903,7 @@ img {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 5px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid var(--border);
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   background-clip: text;
   -webkit-background-clip: text;

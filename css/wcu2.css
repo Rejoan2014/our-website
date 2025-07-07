@@ -2960,7 +2960,7 @@ span {
   align-items: center;
   flex-shrink: 0;
   border-radius: 10px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid $border-color;
 }
 @media (max-width: 767px) {
   .cart__quantity .qty-btn {
@@ -2992,7 +2992,7 @@ span {
 .checkOut-billingCard {
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid $border-color;
   background: $white;
 }
 .checkOut-billingCard__title {
@@ -3018,7 +3018,7 @@ span {
 .checkOut-orderSummary {
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid $border-color;
   background: $theme-color2;
 }
 .checkOut-orderSummary__title {
@@ -3082,7 +3082,7 @@ span {
   height: 60px;
   padding: 5px 5px;
   border-radius: 999px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid $border-color;
   background: $theme-color2;
 }
 
@@ -3124,7 +3124,7 @@ span {
 .filter-box {
   display: flex;
   border-radius: 5px;
-  border: 1px solid var(--200, #C1C1C1);
+  border: 1px solid $border-color;
   overflow: hidden;
   max-width: 470px;
   height: 60px;

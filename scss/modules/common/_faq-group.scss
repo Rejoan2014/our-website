@@ -11,7 +11,7 @@
     .accordion-item {
       margin-bottom: 25px;
       border-radius: 5px;
-      border: 1px solid var(--200, #C1C1C1);
+      border: 1px solid $border-color;
       overflow: hidden;
   
       .accordion-header {
