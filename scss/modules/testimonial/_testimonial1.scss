@@ -23,7 +23,7 @@
     background: $theme-color2;
     border: 2px solid transparent;
     &:hover {
-      border: 2px solid #6A5ACD;
+      border: 2px solid $theme-color;
       @include transition;
     }
     &-content {

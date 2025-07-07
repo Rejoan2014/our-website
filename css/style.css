@@ -10700,7 +10700,7 @@ img {
   border: 2px solid transparent;
 }
 .testimonial1-card:hover {
-  border: 2px solid #6A5ACD;
+  border: 2px solid var(--theme);
   transition: all 0.4s ease-in-out;
 }
 .testimonial1-card-content {
@@ -12249,7 +12249,7 @@ img {
   letter-spacing: 0.36px;
 }
 .review1-card-rating__star i {
-  color: #6A5ACD;
+  color: var(--theme);
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
