@@ -59,6 +59,9 @@
             @include breakpoint (max-xsmall){
                 padding: 30px 30px 30px 50px;
             }
+            @include breakpoint (max-xxsmall){
+                padding: 30px 30px 30px 39px;
+            }
             &__icon {
                 position: absolute;
                 left: -40px;
@@ -70,9 +73,9 @@
                 width: 75px;
                 height: 75px;
                 flex-shrink: 0;
-                @include breakpoint (max-xxsmall){
-                    width: 40px;
-                    height: 40px;
+                @include breakpoint (max-xsmall){
+                    width: 60px;
+                    height: 60px;
                 }
 
                 i {

@@ -10880,6 +10880,11 @@ img {
     padding: 30px 30px 30px 50px;
   }
 }
+@media (max-width: 374px) {
+  .contact1-groups-item {
+    padding: 30px 30px 30px 39px;
+  }
+}
 .contact1-groups-item__icon {
   position: absolute;
   left: -40px;
@@ -10892,10 +10897,10 @@ img {
   height: 75px;
   flex-shrink: 0;
 }
-@media (max-width: 374px) {
+@media (max-width: 449px) {
   .contact1-groups-item__icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
 }
 .contact1-groups-item__icon i {
