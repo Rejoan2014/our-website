@@ -120,6 +120,7 @@ img {
             }
             @include breakpoint (max-xsmall) {
               font-size: 14px;
+              padding-right: 12px;
             }
             &:hover {
               color: $theme-color;
@@ -127,7 +128,12 @@ img {
           }
   
             &.text-right {
-                text-align: right;
+              text-align: right;
+              @include breakpoint (max-xsmall) {
+                h5 {
+                  padding-right: 0;
+                }
+              }
             }
         }
     }

@@ -3392,6 +3392,7 @@ img {
 @media (max-width: 449px) {
   .preview-area .preview-item .content h5 {
     font-size: 14px;
+    padding-right: 12px;
   }
 }
 .preview-area .preview-item .content h5:hover {
@@ -3399,6 +3400,11 @@ img {
 }
 .preview-area .preview-item .content.text-right {
   text-align: right;
+}
+@media (max-width: 449px) {
+  .preview-area .preview-item .content.text-right h5 {
+    padding-right: 0;
+  }
 }
 
 .list.style1 .checklist {
