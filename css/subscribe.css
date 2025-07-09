@@ -4262,7 +4262,7 @@ img {
   font-size: 18px;
   position: fixed;
   display: inline-block;
-  z-index: 99;
+  z-index: 9999;
   right: 30px;
   bottom: 30px;
   transition: all 0.4s ease-in-out;
@@ -4277,6 +4277,11 @@ img {
   opacity: 1;
   visibility: visible;
   transform: translate(0);
+}
+@media (max-width: 991px) {
+  .back-to-top.fix-home-one {
+    display: none;
+  }
 }
 
 /*------------------------------------
