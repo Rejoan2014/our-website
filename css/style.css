@@ -10147,11 +10147,16 @@ img {
   padding: 50px;
   border-radius: 5px;
   background: var(--white);
+  transition: all 0.4s ease-in-out;
 }
 @media (max-width: 991px) {
   .service4-card {
     padding: 30px 25px;
   }
+}
+.service4-card:hover {
+  transform: scale(1.03);
+  transition: all 0.4s ease-in-out;
 }
 .service4-card__icon {
   display: inline-flex;
@@ -11631,8 +11636,14 @@ img {
 }
 .team1-card-thumb {
   position: relative;
+  overflow: hidden;
 }
-.team1-card-thumb img {
+.team1-card-thumb__img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.team1-card-thumb__img img {
+  border-radius: 20px;
   width: 100%;
 }
 .team1-card-content {
@@ -11645,6 +11656,7 @@ img {
   padding: 20px 30px 20px;
   border-radius: 0px 0px 20px 20px;
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  transition: all 0.4s ease-in-out;
 }
 @media (max-width: 991px) {
   .team1-card-content {
@@ -11828,11 +11840,17 @@ img {
 }
 .product1-card-thumb {
   position: relative;
+  overflow: hidden;
   border-radius: 11.364px 11.364px 0px 0px;
 }
 .product1-card-thumb img {
   width: 100%;
   border-radius: 11.364px 11.364px 0px 0px;
+  transition: all 0.4s ease-in-out;
+}
+.product1-card-thumb img:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
 }
 .product1-card-thumb__badge {
   position: absolute;

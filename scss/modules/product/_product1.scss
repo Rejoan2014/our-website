@@ -8,10 +8,16 @@
         box-shadow: 0px 0px 68.182px 0px rgba(0, 0, 0, 0.05);
         &-thumb {
             position: relative;
+            overflow: hidden;
             border-radius: 11.364px 11.364px 0px 0px;
             img {
                 width: 100%;
                 border-radius: 11.364px 11.364px 0px 0px;
+                @include transition;
+                &:hover {
+                    transform: scale(1.1);
+                    @include transition;
+                }
             }
             &__badge {
                 position: absolute;
