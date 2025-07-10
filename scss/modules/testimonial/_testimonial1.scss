@@ -40,6 +40,12 @@
       @include breakpoint (max-md){
         height: 440px;
       }
+      @include breakpoint (max-xsmall){
+        height: 383px;
+      }
+      @include breakpoint (max-xxsmall){
+        height: 360px;
+      }
       &__title {
         color: $black;
         font-family: $body-font;
@@ -125,6 +131,12 @@
             }
             @include breakpoint (max-md){
               height: 440px;
+            }
+            @include breakpoint (max-xsmall){
+              height: 383px;
+            }
+            @include breakpoint (max-xxsmall){
+              height: 360px;
             }
             &__desc {
               display: none;

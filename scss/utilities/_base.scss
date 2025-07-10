@@ -30,6 +30,12 @@ img {
     @include breakpoint (max-md){
       max-height: 218px;
     }
+    @include breakpoint (max-xsmall){
+      max-height: 180px;
+    }
+    @include breakpoint (max-xxsmall){
+      max-height: 157px;
+    }
   }
   
   .navigation-controls {

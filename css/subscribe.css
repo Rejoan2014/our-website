@@ -3324,6 +3324,16 @@ img {
     max-height: 218px;
   }
 }
+@media (max-width: 449px) {
+  .truncate-text {
+    max-height: 180px;
+  }
+}
+@media (max-width: 374px) {
+  .truncate-text {
+    max-height: 157px;
+  }
+}
 
 .navigation-controls {
   padding-top: 20px;
