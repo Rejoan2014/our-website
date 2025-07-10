@@ -3307,12 +3307,22 @@ img {
 
 .truncate-text {
   display: block;
-  max-height: 56px;
+  max-height: 256px;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5em;
   white-space: normal;
   word-break: break-word;
+}
+@media (max-width: 991px) {
+  .truncate-text {
+    max-height: 185px;
+  }
+}
+@media (max-width: 767px) {
+  .truncate-text {
+    max-height: 218px;
+  }
 }
 
 .navigation-controls {

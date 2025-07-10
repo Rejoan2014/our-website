@@ -24,6 +24,8 @@
                 border-radius: 0px 0px 20px 20px;
                 background: $theme-color2;
                 padding: 30px;
+                @include transition;
+
                 @include breakpoint (max-sm){
                     padding: 20px;
                 }

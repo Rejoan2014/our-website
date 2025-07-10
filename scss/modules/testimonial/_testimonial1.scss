@@ -27,12 +27,18 @@
       @include transition;
     }
     &-content {
-      height: 334px;
+      height: 440px;
       padding: 40px;
       @include transition;
 
       @include breakpoint (max-xl){
         padding: 25px;
+      }
+      @include breakpoint (max-lg){
+        height: 380px;
+      }
+      @include breakpoint (max-md){
+        height: 440px;
       }
       &__title {
         color: $black;
@@ -114,6 +120,12 @@
           &-content {
             height: 440px;
             @include transition;
+            @include breakpoint (max-lg){
+              height: 380px;
+            }
+            @include breakpoint (max-md){
+              height: 440px;
+            }
             &__desc {
               display: none;
               @include transition;

@@ -18,12 +18,18 @@ img {
   
   .truncate-text {
     display: block;
-    max-height: 56px;
+    max-height: 256px;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.5em;
     white-space: normal;
     word-break: break-word;
+    @include breakpoint (max-lg){
+      max-height: 185px;
+    }
+    @include breakpoint (max-md){
+      max-height: 218px;
+    }
   }
   
   .navigation-controls {
