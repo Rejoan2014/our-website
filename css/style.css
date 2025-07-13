@@ -6404,7 +6404,7 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 21.6px;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 @media (max-width: 575px) {
   .faq-group .accordion-item .accordion-header .accordion-button span {
@@ -6454,7 +6454,7 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 21.6px;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 @media (max-width: 575px) {
   .faq-group .accordion-item .accordion-header .accordion-button.collapsed span {
@@ -6502,7 +6502,7 @@ img {
   border: none;
 }
 .faq-group .accordion-item .accordion-collapse .accordion-body {
-  padding: 0px 78px 23px 90px;
+  padding: 0px 78px 23px 84px;
   background-color: var(--white);
   color: var(--title2);
   text-align: start;

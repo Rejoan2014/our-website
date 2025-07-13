@@ -62,7 +62,7 @@
             font-style: normal;
             font-weight: 700;
             line-height: 21.6px; 
-            margin-right: 20px;
+            margin-right: 18px;
             @include breakpoint (max-sm) {
               font-size: 18px;
             }
@@ -102,7 +102,7 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: 21.6px; 
-                margin-right: 20px;
+                margin-right: 18px;
                 @include breakpoint (max-sm) {
                   font-size: 18px;
                 }
@@ -148,7 +148,7 @@
         border: none;
   
         .accordion-body {
-          padding: 0px 78px 23px 90px;
+          padding: 0px 78px 23px 84px;
           background-color: $white;
           color: $title-color2;
           text-align: start;
