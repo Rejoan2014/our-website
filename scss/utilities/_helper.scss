@@ -121,6 +121,26 @@
   }
 }
 
+.section-padding3 {
+  padding: 80px 0 150px;
+
+  @include breakpoint(max-xxl) {
+    padding: 75px 0 120px;
+  }
+
+  @include breakpoint(max-lg) {
+    padding: 70px 0 100px;
+  }
+
+  @include breakpoint(max-md) {
+    padding: 65px 0 80px;
+  }
+
+  @include breakpoint(max-sm) {
+    padding: 40px 0 60px;
+  }
+}
+
 .section-padding-110 {
   padding: 110px 0;
 
