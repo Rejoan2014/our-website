@@ -4912,6 +4912,7 @@ img {
   font-weight: 700;
   line-height: 17px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .project-nav__btn {
