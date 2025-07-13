@@ -6117,7 +6117,6 @@ img {
   white-space: nowrap;
   height: 107px;
   padding-top: 22px;
-  background: var(--theme);
   z-index: 9;
 }
 .marquee-wrapper.style-1 {
@@ -6201,7 +6200,7 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 50px;
-  padding-right: 40px;
+  padding-right: 80px;
 }
 @media (max-width: 767px) {
   .marquee-item.style-2 .text-slider {
