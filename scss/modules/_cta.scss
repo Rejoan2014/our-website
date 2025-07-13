@@ -94,6 +94,7 @@
                 -moz-transform: rotate(45deg);
                 -ms-transform: rotate(45deg);
                 -o-transform: rotate(45deg);
+                @include transition;
             }
             &:hover {
                 background-color: $theme-color;
