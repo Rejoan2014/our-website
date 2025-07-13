@@ -16,7 +16,7 @@
   
       .accordion-header {
         .accordion-button {
-          height: 60px;
+          height: 87px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -34,7 +34,7 @@
           line-height: 30px; 
           letter-spacing: 0.36px;
 
-          padding: 0 30px;
+          padding: 0 20px;
           @include breakpoint (max-xxl){
             height: 75px;
             font-size: 18px;
@@ -80,7 +80,7 @@
           }
   
           &.collapsed {
-            padding: 0 30px;
+            padding: 0 20px;
             background: $white;
             color: $black;
             @include breakpoint (max-xsmall) {
