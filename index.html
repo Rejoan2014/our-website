@@ -1460,72 +1460,7 @@
 
     <!--===== Main.js =====-->
     <script src="js/main.js"></script>
-
-
-    <script>
-        const blurOverlay = document.querySelector('.blur-overlay');
-        const navBtns = document.querySelectorAll('.project-nav__btn');
-        const serviceMain = document.querySelector('.service-main');
-        const serviceAlt = document.querySelector('.service-alt');
-
-        let isHovering = false;
-
-        function showBlur() {
-            blurOverlay.classList.add('active');
-        }
-
-        function hideBlurAndServices() {
-            blurOverlay.classList.remove('active');
-            serviceMain.classList.remove('visible');
-            serviceAlt.classList.remove('visible');
-        }
-
-        function showService(type) {
-            showBlur();
-            if (type === 'main') {
-            serviceMain.classList.add('visible');
-            serviceAlt.classList.remove('visible');
-            } else if (type === 'alt') {
-            serviceAlt.classList.add('visible');
-            serviceMain.classList.remove('visible');
-            }
-        }
-
-        navBtns.forEach(btn => {
-            const type = btn.dataset.service;
-
-            btn.addEventListener('mouseenter', () => {
-            isHovering = true;
-            if (type === 'main' || type === 'alt') {
-                showService(type);
-            } else {
-                // Do nothing if not main/alt
-                hideBlurAndServices();
-            }
-            });
-
-            btn.addEventListener('mouseleave', () => {
-            isHovering = false;
-            setTimeout(() => {
-                if (!isHovering) hideBlurAndServices();
-            }, 200);
-            });
-        });
-
-        [serviceMain, serviceAlt].forEach(serviceBox => {
-            serviceBox.addEventListener('mouseenter', () => {
-            isHovering = true;
-            showBlur();
-            });
-            serviceBox.addEventListener('mouseleave', () => {
-            isHovering = false;
-            setTimeout(() => {
-                if (!isHovering) hideBlurAndServices();
-            }, 200);
-            });
-        });
-    </script>
-
+    
 </body>
 
 </html>

@@ -517,6 +517,71 @@
     $("#tab2").removeClass("d-none");
 
 
+    /*-----------------------------------
+      Floating Button Section
+    -----------------------------------*/
+    $(document).ready(function () {
+        const $blurOverlay = $('.blur-overlay');
+        const $navBtns = $('.project-nav__btn');
+        const $serviceMain = $('.service-main');
+        const $serviceAlt = $('.service-alt');
+
+        let isHovering = false;
+
+        function showBlur() {
+            $blurOverlay.addClass('active');
+        }
+
+        function hideBlurAndServices() {
+            $blurOverlay.removeClass('active');
+            $serviceMain.removeClass('visible');
+            $serviceAlt.removeClass('visible');
+        }
+
+        function showService(type) {
+            showBlur();
+            if (type === 'main') {
+                $serviceMain.addClass('visible');
+                $serviceAlt.removeClass('visible');
+            } else if (type === 'alt') {
+                $serviceAlt.addClass('visible');
+                $serviceMain.removeClass('visible');
+            }
+        }
+
+        $navBtns.each(function () {
+            const type = $(this).data('service');
+
+            $(this).on('mouseenter', function () {
+                isHovering = true;
+                if (type === 'main' || type === 'alt') {
+                    showService(type);
+                } else {
+                    hideBlurAndServices();
+                }
+            });
+
+            $(this).on('mouseleave', function () {
+                isHovering = false;
+                setTimeout(function () {
+                    if (!isHovering) hideBlurAndServices();
+                }, 200);
+            });
+        });
+
+        $serviceMain.add($serviceAlt).on('mouseenter', function () {
+            isHovering = true;
+            showBlur();
+        });
+
+        $serviceMain.add($serviceAlt).on('mouseleave', function () {
+            isHovering = false;
+            setTimeout(function () {
+                if (!isHovering) hideBlurAndServices();
+            }, 200);
+        });
+    });
+
 
   }); // End Document Ready Function
 
