@@ -2753,6 +2753,19 @@ span {
   background: var(--theme2);
 }
 
+.cart {
+  padding-bottom: 52px;
+}
+@media (max-width: 991px) {
+  .cart {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .cart {
+    padding-bottom: 0px;
+  }
+}
 .cart__title {
   color: var(--black);
   font-family: "Lato", sans-serif;
@@ -2803,6 +2816,9 @@ span {
   .cart__header, .cart__row {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+.cart__header:last-child, .cart__row:last-child {
+  border-bottom: 0;
 }
 .cart__col {
   color: var(--black);

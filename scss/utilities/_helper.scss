@@ -283,6 +283,13 @@
 
 // Cart Design Start
 .cart {
+  padding-bottom: 52px;
+  @include breakpoint (max-lg){
+    padding-bottom: 30px;
+  }
+  @include breakpoint (max-md){
+    padding-bottom: 0px;
+  }
   &__title {
     color: $black;
     font-family: $body-font;
@@ -327,6 +334,9 @@
     }
     @include breakpoint (max-xxsmall){
       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &:last-child {
+        border-bottom: 0;
     }
   }
 
