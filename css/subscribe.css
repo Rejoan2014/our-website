@@ -4141,6 +4141,26 @@ img {
 .form__group textarea::placeholder {
   color: var(--title2);
 }
+.form__group select.form__select {
+  border: 1px solid var(--title3);
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  border-radius: 0;
+  color: var(--title2);
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.16px;
+}
+.form__group select.form__select::placeholder {
+  color: var(--title2);
+}
 .form__group textarea {
   padding-top: 18px;
   height: 50px;

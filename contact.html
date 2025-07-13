@@ -404,13 +404,20 @@
                                 <div class="col-md-6">
                                     <div class="form__group mb-5">
                                         <label for="service" class="form-label">Service Required*</label>
-                                        <input type="text" id="service" name="service" placeholder="Select your Service">
+                                        <input type="text" id="service" name="service" placeholder="Your Service">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form__group mb-5">
-                                        <label for="budge" class="form-label">Project Budget*</label>
-                                        <input type="text" id="budge" name="budge" placeholder="Select your Range">
+                                        <label for="budget" class="form-label">Project Budget*</label>
+                                        <select class="form__select" id="budget" name="budget" required>
+                                            <option value="">Select your Range</option>
+                                            <option value="under-1k">Under $1,000</option>
+                                            <option value="1k-5k">$1,000 – $5,000</option>
+                                            <option value="5k-10k">$5,000 – $10,000</option>
+                                            <option value="10k-50k">$10,000 – $50,000</option>
+                                            <option value="50k-plus">$50,000+</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
