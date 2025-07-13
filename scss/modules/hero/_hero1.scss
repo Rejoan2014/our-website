@@ -276,8 +276,11 @@
             text-transform: uppercase;
             margin-bottom: 18px;
             @include breakpoint (max-xsmall){
-                padding: 0 5px;
+                padding: 7px 10px;
                 font-size: 14px;
+            }
+            @include breakpoint (max-xxsmall){
+                padding: 7px 9px;
             }
             
         }

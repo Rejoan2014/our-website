@@ -8482,8 +8482,13 @@ img {
 }
 @media (max-width: 449px) {
   .hero1-content__subtitle {
-    padding: 0 5px;
+    padding: 7px 10px;
     font-size: 14px;
+  }
+}
+@media (max-width: 374px) {
+  .hero1-content__subtitle {
+    padding: 7px 9px;
   }
 }
 .hero1-content__title {
