@@ -4,7 +4,7 @@
 .about1 {
     position: relative;
     .row {
-        padding: 120px 68px;
+        padding: 120px 68px 148px;
         border-radius: 20px;
         background: $white;
         box-shadow: $shadow;
@@ -37,6 +37,7 @@
         line-height: 30px; 
         letter-spacing: 0.16px;
         padding-bottom: 40px;
+        max-width: 689px;
     }
 
     &-thumb {
@@ -49,7 +50,8 @@
         }
         &__shape3 {
             position: absolute;
-            top: 20px;
+            top: 45px;
+            left: -10%;
             @include breakpoint (max-xxxl){
                 left: -50px;
             }
@@ -57,9 +59,12 @@
         &__shape4 {
             position: absolute;
             bottom: -5%;
-            right: 7%;
+            right: -2%;
             @include breakpoint (max-xxxl){
-                right: -4%;
+                right: -9%;
+                img {
+                    width: 92%;
+                }
             }
             @include breakpoint (max-xxl){
                 display: none;
@@ -71,8 +76,8 @@
             align-items: center;
             gap: 15px;
             position: absolute;
-            top: 62%;
-            left: 0;
+            top: 65%;
+            left: -66px;
             z-index: 4;
             border-radius: 10px;
             background: $white;
@@ -164,7 +169,7 @@
         row-gap: 80px;
         &__shape1 {
             position: absolute;
-            left: 40%;
+            left: 41%;
             width: 1px;
             height: 268px;
             background: #C1C1C1;
