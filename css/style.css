@@ -7297,6 +7297,18 @@ img {
     line-height: 40px;
   }
 }
+.breadcrumb-heading__title--mxw1 {
+  max-width: 1075px;
+}
+.breadcrumb-heading__title--mxw2 {
+  max-width: 1302px;
+}
+.breadcrumb-heading__title--mxw3 {
+  max-width: 1150px;
+}
+.breadcrumb-heading__title--mxw4 {
+  max-width: 1022px;
+}
 .breadcrumb-heading__desc {
   color: var(--title2);
   text-align: center;
