@@ -10467,8 +10467,7 @@ img {
   gap: 6.25px;
   flex-shrink: 0;
   border-radius: 25px;
-  background: var(--white);
-  background: var(--theme);
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
 }
 @media (max-width: 575px) {
   .project1-card-thumb-content__link {
@@ -10529,7 +10528,7 @@ img {
   }
 }
 .project1-card:hover .project1-card-thumb-content {
-  background: var(--theme);
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   transition: all 0.4s ease-in-out;
 }
 .project1-card:hover .project1-card-thumb-content__title {
@@ -12054,7 +12053,7 @@ img {
   bottom: 0;
   padding: 10px 20px;
   border-radius: 0px 10px 0px 0px;
-  background: var(--theme);
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   color: var(--white);
   font-family: "Lato", sans-serif;
   font-size: 20px;

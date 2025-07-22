@@ -60,8 +60,7 @@
                     gap: 6.25px;
                     flex-shrink: 0;
                     border-radius: 25px;
-                    background: $white;
-                    background: $theme-color;
+                    background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
                     @include breakpoint (max-sm){
                         width: 40px;
                         height: 40px;
@@ -114,7 +113,7 @@
                 &-card {
                     &-thumb {
                         &-content {
-                            background: $theme-color;
+                            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
                             @include transition;
                             &__title {
                                 color: $white;
