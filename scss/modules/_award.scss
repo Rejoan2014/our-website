@@ -5,6 +5,30 @@
     background: $theme-color2;
     margin-bottom: -70px;
     &-icon {
+        position: relative;
+        &__shape1 {
+            position: absolute;
+            top: 16%;
+            @include breakpoint (max-xxxl){
+                width: 90%;
+            }
+            @include breakpoint (max-xxl){
+                width: 85%;
+            }
+            @include breakpoint (max-md){
+                display: none;
+            }
+        }
+        &__shape2 {
+            position: absolute;
+            top: 76%;
+            @include breakpoint (max-xxxl){
+                width: 63%;
+            }
+            @include breakpoint (max-md){
+                display: none;
+            }
+        }
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -31,6 +55,7 @@
             width: 145px;
             height: 145px;
             flex-shrink: 0;
+            z-index: 1;
             img {
                 width: 79.5px;
                 height: 90px;
