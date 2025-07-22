@@ -8289,7 +8289,7 @@ img {
 }
 @media (max-width: 991px) {
   .hero1 {
-    padding: 235px 0 65px;
+    padding: 235px 0 100px;
   }
 }
 @media (max-width: 767px) {
@@ -8345,6 +8345,7 @@ img {
 @media (max-width: 991px) {
   .hero1-icon__topLayer {
     gap: 505px;
+    padding-bottom: 150px;
   }
 }
 @media (max-width: 767px) {
@@ -8392,6 +8393,7 @@ img {
 @media (max-width: 991px) {
   .hero1-icon__middleLayer {
     gap: 578px;
+    padding-bottom: 150px;
   }
 }
 @media (max-width: 767px) {
@@ -8461,6 +8463,9 @@ img {
   .hero1-icon__bottomLayer--three {
     width: 75px;
     height: 75px;
+  }
+  .hero1-icon__bottomLayer--three img {
+    width: 50%;
   }
 }
 @media (max-width: 991px) {
