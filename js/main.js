@@ -582,6 +582,21 @@
         });
     });
 
+    // Hover effect service card
+    $('.service1-content').each(function(index) {
+        $(this).on('mouseenter', function() {
+            if (index > 0) {
+                $('.service1-content').eq(index - 1).addClass('no-bottom-border');
+            }
+        });
+
+        $(this).on('mouseleave', function() {
+            if (index > 0) {
+                $('.service1-content').eq(index - 1).removeClass('no-bottom-border');
+            }
+        });
+    });
+
 
   }); // End Document Ready Function
 

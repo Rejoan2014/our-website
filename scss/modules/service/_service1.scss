@@ -133,3 +133,6 @@
         }
     }
 }
+.no-bottom-border::before {
+  display: none !important;
+}

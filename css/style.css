@@ -10001,6 +10001,10 @@ img {
   background: none;
 }
 
+.no-bottom-border::before {
+  display: none !important;
+}
+
 .service2 {
   position: relative;
   background: var(--theme2);
