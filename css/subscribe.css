@@ -730,6 +730,9 @@ span {
   .container {
     max-width: 1644px;
   }
+  .review1 .container {
+    max-width: 1700px;
+  }
 }
 /*----------------------------------------------
     # Gutter  style here

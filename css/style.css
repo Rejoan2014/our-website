@@ -763,6 +763,9 @@ span {
   .container {
     max-width: 1644px;
   }
+  .review1 .container {
+    max-width: 1700px;
+  }
 }
 /*----------------------------------------------
     # Gutter  style here
@@ -12416,10 +12419,32 @@ img {
 /* 17. Review */
 .review1 .global-slider {
   padding-top: 60px;
+  padding-right: 10px;
+  padding-left: 35px;
+}
+@media (max-width: 1199px) {
+  .review1 .global-slider {
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .review1 .global-slider {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 @media (max-width: 767px) {
   .review1 .global-slider {
     padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 374px) {
+  .review1 .global-slider {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 .review1-card {
@@ -12429,7 +12454,7 @@ img {
   box-shadow: var(--box-shadow);
   padding: 65px 110px 65px 115px;
   margin-left: 50px;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 @media (max-width: 1599px) {
   .review1-card {
