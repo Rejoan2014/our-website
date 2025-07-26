@@ -37,6 +37,7 @@
         visibility: hidden;
         opacity: 0;
         position: absolute;
+        z-index: 5;
         bottom: 15%;
         left: 110%;
         width: max-content;
@@ -58,6 +59,10 @@
             @include breakpoint (max-lg){
                 font-size: 16px;
                 line-height: 24px;
+            }
+            @include breakpoint (max-xs){
+                font-size: 14px;
+                line-height: 20px;
             }
         }
         @include breakpoint (max-xxl){
@@ -184,8 +189,11 @@
         }
         &__icon5 {
             position: absolute;
-            right: 39%;
+            right: 35%;
             top: 31%;
+            @include breakpoint (max-xxl){
+                right: 28%;
+            }
             @include breakpoint (max-lg){
                 img {
                     width: 70%;
@@ -206,6 +214,7 @@
             right: 46%;
             top: 60%;
             @include breakpoint (max-lg){
+                right: 42%;
                 img {
                     width: 70%;
                 }

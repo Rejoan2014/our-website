@@ -13031,6 +13031,7 @@ img {
   visibility: hidden;
   opacity: 0;
   position: absolute;
+  z-index: 5;
   bottom: 15%;
   left: 110%;
   width: max-content;
@@ -13055,6 +13056,12 @@ img {
   .map__country span {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+@media (max-width: 499px) {
+  .map__country span {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 @media (max-width: 1399px) {
@@ -13187,8 +13194,13 @@ img {
 }
 .map-area__icon5 {
   position: absolute;
-  right: 39%;
+  right: 35%;
   top: 31%;
+}
+@media (max-width: 1399px) {
+  .map-area__icon5 {
+    right: 28%;
+  }
 }
 @media (max-width: 991px) {
   .map-area__icon5 img {
@@ -13206,6 +13218,9 @@ img {
   top: 60%;
 }
 @media (max-width: 991px) {
+  .map-area__icon6 {
+    right: 42%;
+  }
   .map-area__icon6 img {
     width: 70%;
   }
