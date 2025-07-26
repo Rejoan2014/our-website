@@ -13028,6 +13028,8 @@ img {
   }
 }
 .map__country {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   bottom: 15%;
   left: 110%;
@@ -13036,6 +13038,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  transition: all 0.4s ease-in-out;
 }
 .map__country span {
   padding: 5px;
@@ -13084,6 +13087,11 @@ img {
     width: 70%;
   }
 }
+.map-area__icon1:hover .map__country {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
 .map-area__icon2 {
   position: absolute;
   bottom: 23%;
@@ -13108,6 +13116,11 @@ img {
   .map-area__icon2 img {
     width: 70%;
   }
+}
+.map-area__icon2:hover .map__country {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 .map-area__icon3 {
   position: absolute;
@@ -13134,6 +13147,11 @@ img {
     width: 70%;
   }
 }
+.map-area__icon3:hover .map__country {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
 .map-area__icon4 {
   position: absolute;
   right: 45%;
@@ -13143,6 +13161,11 @@ img {
   .map-area__icon4 img {
     width: 70%;
   }
+}
+.map-area__icon4:hover .map__country {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 .map-area__icon5 {
   position: absolute;
@@ -13154,6 +13177,11 @@ img {
     width: 70%;
   }
 }
+.map-area__icon5:hover .map__country {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
 .map-area__icon6 {
   position: absolute;
   right: 46%;
@@ -13163,6 +13191,11 @@ img {
   .map-area__icon6 img {
     width: 70%;
   }
+}
+.map-area__icon6:hover .map__country {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 .map-area__icon7 {
   position: absolute;
@@ -13188,6 +13221,11 @@ img {
   .map-area__icon7 img {
     width: 70%;
   }
+}
+.map-area__icon7:hover .map__country {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 
 /* 22. Video */

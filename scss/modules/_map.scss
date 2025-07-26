@@ -34,6 +34,8 @@
         }
     }
     &__country {
+        visibility: hidden;
+        opacity: 0;
         position: absolute;
         bottom: 15%;
         left: 110%;
@@ -42,6 +44,7 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
+        @include transition;
         span {
             padding: 5px;
             border-radius: 5px;
@@ -80,6 +83,15 @@
                     width: 70%;
                 }
             }
+            &:hover {
+                .map {
+                    &__country {
+                        visibility: visible;
+                        opacity: 1;
+                        @include transition;
+                    }
+                }
+            }
         }
         &__icon2 {
             position: absolute;
@@ -97,6 +109,15 @@
             @include breakpoint (max-md){
                 img {
                     width: 70%;
+                }
+            }
+            &:hover {
+                .map {
+                    &__country {
+                        visibility: visible;
+                        opacity: 1;
+                        @include transition;
+                    }
                 }
             }
         }
@@ -118,6 +139,15 @@
                     width: 70%;
                 }
             }
+            &:hover {
+                .map {
+                    &__country {
+                        visibility: visible;
+                        opacity: 1;
+                        @include transition;
+                    }
+                }
+            }
         }
         &__icon4 {
             position: absolute;
@@ -126,6 +156,15 @@
             @include breakpoint (max-md){
                 img {
                     width: 70%;
+                }
+            }
+            &:hover {
+                .map {
+                    &__country {
+                        visibility: visible;
+                        opacity: 1;
+                        @include transition;
+                    }
                 }
             }
         }
@@ -138,6 +177,15 @@
                     width: 70%;
                 }
             }
+            &:hover {
+                .map {
+                    &__country {
+                        visibility: visible;
+                        opacity: 1;
+                        @include transition;
+                    }
+                }
+            }
         }
         &__icon6 {
             position: absolute;
@@ -146,6 +194,15 @@
             @include breakpoint (max-md){
                 img {
                     width: 70%;
+                }
+            }
+            &:hover {
+                .map {
+                    &__country {
+                        visibility: visible;
+                        opacity: 1;
+                        @include transition;
+                    }
                 }
             }
         }
@@ -165,6 +222,15 @@
             @include breakpoint (max-md){
                 img {
                     width: 70%;
+                }
+            }
+            &:hover {
+                .map {
+                    &__country {
+                        visibility: visible;
+                        opacity: 1;
+                        @include transition;
+                    }
                 }
             }
         }
