@@ -13051,9 +13051,37 @@ img {
   font-weight: 900;
   line-height: 30px;
 }
-@media (max-width: 1599px) {
+@media (max-width: 991px) {
+  .map__country span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 1399px) {
   .map__country {
-    right: 4.5%;
+    left: 20%;
+  }
+  .map__country img {
+    width: 37%;
+  }
+}
+@media (max-width: 1199px) {
+  .map__country {
+    left: 126%;
+  }
+  .map__country img {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .map__country {
+    left: 90%;
+  }
+}
+@media (max-width: 575px) {
+  .map__country {
+    left: -80%;
+    bottom: 120%;
   }
 }
 .map-area {
@@ -13082,7 +13110,7 @@ img {
     left: 15%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .map-area__icon1 img {
     width: 70%;
   }
@@ -13112,7 +13140,7 @@ img {
     left: 28%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .map-area__icon2 img {
     width: 70%;
   }
@@ -13129,20 +13157,10 @@ img {
 }
 @media (max-width: 1599px) {
   .map-area__icon3 {
-    left: 34%;
+    left: 50%;
   }
 }
-@media (max-width: 1399px) {
-  .map-area__icon3 {
-    left: 31%;
-  }
-}
-@media (max-width: 1199px) {
-  .map-area__icon3 {
-    left: 28%;
-  }
-}
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .map-area__icon3 img {
     width: 70%;
   }
@@ -13157,7 +13175,7 @@ img {
   right: 45%;
   top: 16%;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .map-area__icon4 img {
     width: 70%;
   }
@@ -13172,7 +13190,7 @@ img {
   right: 39%;
   top: 31%;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .map-area__icon5 img {
     width: 70%;
   }
@@ -13187,7 +13205,7 @@ img {
   right: 46%;
   top: 60%;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .map-area__icon6 img {
     width: 70%;
   }
@@ -13217,7 +13235,7 @@ img {
     right: 10%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .map-area__icon7 img {
     width: 70%;
   }

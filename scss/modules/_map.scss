@@ -55,9 +55,29 @@
             font-style: normal;
             font-weight: 900;
             line-height: 30px; 
+            @include breakpoint (max-lg){
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
-        @include breakpoint (max-xxxl){
-            right: 4.5%;
+        @include breakpoint (max-xxl){
+            left: 20%;
+            img {
+                width: 37%;
+            }
+        }
+        @include breakpoint (max-xl){
+            left: 126%;
+            img {
+                display: none;
+            }
+        }
+        @include breakpoint (max-md){
+            left: 90%;
+        }
+        @include breakpoint (max-sm){
+            left: -80%;
+            bottom: 120%;
         }
     }
     &-area {
@@ -78,7 +98,7 @@
             @include breakpoint (max-xl){
                 left: 15%;
             }
-            @include breakpoint (max-md){
+            @include breakpoint (max-lg){
                 img {
                     width: 70%;
                 }
@@ -106,7 +126,7 @@
             @include breakpoint (max-xl){
                 left: 28%;
             } 
-            @include breakpoint (max-md){
+            @include breakpoint (max-lg){
                 img {
                     width: 70%;
                 }
@@ -126,15 +146,9 @@
             bottom: 2%;
             left: 47%;
             @include breakpoint (max-xxxl){
-                left: 34%;
+                left: 50%;
             }            
-            @include breakpoint (max-xxl){
-                left: 31%;
-            }            
-            @include breakpoint (max-xl){
-                left: 28%;
-            } 
-            @include breakpoint (max-md){
+            @include breakpoint (max-lg){
                 img {
                     width: 70%;
                 }
@@ -153,7 +167,7 @@
             position: absolute;
             right: 45%;
             top: 16%;
-            @include breakpoint (max-md){
+            @include breakpoint (max-lg){
                 img {
                     width: 70%;
                 }
@@ -172,7 +186,7 @@
             position: absolute;
             right: 39%;
             top: 31%;
-            @include breakpoint (max-md){
+            @include breakpoint (max-lg){
                 img {
                     width: 70%;
                 }
@@ -191,7 +205,7 @@
             position: absolute;
             right: 46%;
             top: 60%;
-            @include breakpoint (max-md){
+            @include breakpoint (max-lg){
                 img {
                     width: 70%;
                 }
@@ -219,7 +233,7 @@
             @include breakpoint (max-xl){
                 right: 10%;
             }  
-            @include breakpoint (max-md){
+            @include breakpoint (max-lg){
                 img {
                     width: 70%;
                 }
