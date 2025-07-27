@@ -7044,25 +7044,6 @@ img {
 }
 
 /* Style the pagination container */
-.swiper-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding-top: 60px;
-  padding-bottom: 5px;
-}
-@media (max-width: 1199px) {
-  .swiper-pagination {
-    padding-top: 40px;
-  }
-}
-@media (max-width: 575px) {
-  .swiper-pagination {
-    padding-top: 35px;
-  }
-}
-
 .slider-pagination {
   display: flex;
   align-items: center;
@@ -11067,6 +11048,27 @@ img {
 
 .testimonial1-card-content__desc {
   display: block;
+}
+
+.testimonial-slider {
+  position: relative;
+  padding-bottom: 85px;
+}
+@media (max-width: 499px) {
+  .testimonial-slider {
+    padding-bottom: 65px;
+  }
+}
+
+.testimonial-slider .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute !important;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* 11. Contact */

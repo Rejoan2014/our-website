@@ -304,3 +304,21 @@
   display: block;
 }
 
+.testimonial-slider {
+  position: relative;
+  padding-bottom: 85px;
+  @include breakpoint (max-xs){
+    padding-bottom: 65px;
+  }
+}
+
+.testimonial-slider .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute !important;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
