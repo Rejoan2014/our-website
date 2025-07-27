@@ -1491,7 +1491,6 @@
     <!--===== Main.js =====-->
     <script src="js/main.js"></script>
 
-
 <script>
     const swiper = new Swiper('.testimonial-slider', {
         loop: true,
@@ -1499,12 +1498,10 @@
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
-            pauseOnMouseEnter: false,
-            stopOnLastSlide: false
+            pauseOnMouseEnter: false
         },
         centeredSlides: true,
         spaceBetween: 30,
-        touchStartPreventDefault: false, 
         pagination: {
             el: '.swiper-pagination',
             clickable: true
@@ -1526,13 +1523,20 @@
                 document.querySelectorAll('.testimonial1-card-content__desc').forEach(el => {
                     el.style.display = 'block';
                 });
-            },
-            slideChangeTransitionEnd: function () {
+
+                // Remove active class from all
+                document.querySelectorAll('.testimonial1-card-content').forEach(card => {
+                    card.classList.remove('active-card');
+                });
+
+                // Add active class to current
                 const activeSlide = document.querySelector('.swiper-slide-active');
                 if (activeSlide) {
+                    const card = activeSlide.querySelector('.testimonial1-card-content');
                     const thumb = activeSlide.querySelector('.testimonial1-card-content__thumb');
                     const desc = activeSlide.querySelector('.testimonial1-card-content__desc');
 
+                    if (card) card.classList.add('active-card');
                     if (thumb) thumb.classList.add('show-thumb');
                     if (desc) desc.style.display = 'none';
                 }
@@ -1542,10 +1546,8 @@
 
     window.addEventListener('load', () => {
         swiper.emit('slideChangeTransitionStart');
-        swiper.emit('slideChangeTransitionEnd');
     });
 </script>
-
 
 </body>
 

@@ -10914,33 +10914,11 @@ img {
   border: 2px solid var(--theme);
 }
 .testimonial1-card-content {
-  height: 340px;
   padding: 40px;
-  transition: all 0.4s ease-in-out;
 }
 @media (max-width: 1199px) {
   .testimonial1-card-content {
     padding: 25px;
-  }
-}
-@media (max-width: 991px) {
-  .testimonial1-card-content {
-    height: 280px;
-  }
-}
-@media (max-width: 767px) {
-  .testimonial1-card-content {
-    height: 340px;
-  }
-}
-@media (max-width: 449px) {
-  .testimonial1-card-content {
-    height: 283px;
-  }
-}
-@media (max-width: 374px) {
-  .testimonial1-card-content {
-    height: 260px;
   }
 }
 .testimonial1-card-content__title {
@@ -11018,31 +10996,6 @@ img {
   }
 }
 
-.swiper-slide-active .testimonial1-card-content {
-  height: 440px;
-  transition: all 0.4s ease-in-out;
-}
-@media (max-width: 991px) {
-  .swiper-slide-active .testimonial1-card-content {
-    height: 380px;
-  }
-}
-@media (max-width: 767px) {
-  .swiper-slide-active .testimonial1-card-content {
-    height: 440px;
-  }
-}
-@media (max-width: 449px) {
-  .swiper-slide-active .testimonial1-card-content {
-    height: 383px;
-  }
-}
-@media (max-width: 374px) {
-  .swiper-slide-active .testimonial1-card-content {
-    height: 360px;
-  }
-}
-
 .testimonial1-card-content__thumb {
   opacity: 0;
   visibility: hidden;
@@ -11077,6 +11030,49 @@ img {
   left: 0;
   width: 100%;
   text-align: center;
+}
+
+.testimonial1-card-content {
+  height: 340px;
+  transition: height 0.3s ease-in-out;
+}
+@media (max-width: 991px) {
+  .testimonial1-card-content {
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial1-card-content {
+    height: 340px;
+  }
+}
+@media (max-width: 449px) {
+  .testimonial1-card-content {
+    height: 280px;
+  }
+}
+.testimonial1-card-content.active-card {
+  height: 440px;
+}
+@media (max-width: 991px) {
+  .testimonial1-card-content.active-card {
+    height: 380px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial1-card-content.active-card {
+    height: 440px;
+  }
+}
+@media (max-width: 449px) {
+  .testimonial1-card-content.active-card {
+    height: 383px;
+  }
+}
+@media (max-width: 374px) {
+  .testimonial1-card-content.active-card {
+    height: 360px;
+  }
 }
 
 /* 11. Contact */
