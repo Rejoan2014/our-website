@@ -10010,6 +10010,10 @@ img {
   display: none !important;
 }
 
+#serviceThumbImage {
+  transition: all 0.4s ease-in-out;
+}
+
 .service2 {
   position: relative;
   background: var(--theme2);
