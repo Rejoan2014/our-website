@@ -5827,7 +5827,15 @@ img {
   align-items: center;
   gap: 24px;
 }
-.fancy-box2-item__icon {
+.fancy-box2__item {
+  position: relative;
+}
+.fancy-box2__item__flagIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fancy-box2__item__icon {
   border-radius: 50px;
   background: white;
   width: 60px;
@@ -5838,14 +5846,14 @@ img {
   justify-content: center;
   border: 1px dashed black;
 }
-.fancy-box2-item__star i {
+.fancy-box2__item__star i {
   color: #FFA800;
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
-.fancy-box2-item h6 {
+.fancy-box2__item h6 {
   color: var(--black);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Lato", sans-serif;
@@ -5854,7 +5862,7 @@ img {
   font-weight: 900;
   line-height: 30px; /* 150% */
 }
-.fancy-box2-item p {
+.fancy-box2__item p {
   color: var(--title2);
   font-family: "Lato", sans-serif;
   font-size: 18px;
