@@ -597,6 +597,14 @@
         });
     });
 
+    // Hover effect showing image service card
+    $('.service1-content').hover(function () {
+        var newThumb = $(this).data('thumb');
+        $('.service1__thumb img').attr('src', newThumb);
+    }, function () {
+        $('.service1__thumb img').attr('src', 'images/service/service-thumb1_1.png');
+    });
+
 
   }); // End Document Ready Function
 
