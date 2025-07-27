@@ -277,7 +277,7 @@
         </div>
     </header>
 
-    <div class="blur-overlay"></div> 
+    <!-- <div class="blur-overlay"></div> 
     <section class="service-project">
         <div class="service-wrapper position-relative">
             <div class="row align-items-center">
@@ -409,7 +409,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 <div id="smooth-wrapper">
     <div id="smooth-content">
@@ -835,8 +835,7 @@
             </div>
             <div class="row g-4">
                 <div class="col-12">
-                    <div class="swiper global-slider"
-                        data-slider-options='{"loop": true, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":2},"1200":{"slidesPerView":3},"1400":{"slidesPerView":3}}}'>
+                    <div class="swiper testimonial-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial1-card">
@@ -849,7 +848,7 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                         </div>
-                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support throughout the entire project. I really love their work and professionalism. They were incredibly responsive, attentive to detail, and open to feedback at every stage. What impressed me the most is that they were able to bring our ideas to life exactly the way we envisioned them — and in some cases, even better.</div>
+                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
                                         <div class="testimonial1-card-content__thumb">
                                             <img src="images/testimonial/testi-thumb1_4.png" alt="png">
                                             <div class="video3-icon">
@@ -885,7 +884,7 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                         </div>
-                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support throughout the entire project. I really love their work and professionalism. They were incredibly responsive, attentive to detail, and open to feedback at every stage. What impressed me the most is that they were able to bring our ideas to life exactly the way we envisioned them — and in some cases, even better.</div>
+                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
                                         <div class="testimonial1-card-content__thumb">
                                             <img src="images/testimonial/testi-thumb1_4.png" alt="png">
                                             <div class="video3-icon">
@@ -921,7 +920,7 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                         </div>
-                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support throughout the entire project. I really love their work and professionalism. They were incredibly responsive, attentive to detail, and open to feedback at every stage. What impressed me the most is that they were able to bring our ideas to life exactly the way we envisioned them — and in some cases, even better.</div>
+                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
                                         <div class="testimonial1-card-content__thumb">
                                             <img src="images/testimonial/testi-thumb1_4.png" alt="png">
                                             <div class="video3-icon">
@@ -947,7 +946,7 @@
                                 </div>
                             </div>                    
                         </div>
-                        <div class="slider-pagination"></div>
+                        <!-- <div class="swiper-pagination"></div> -->
                     </div>            
                 </div>
             </div>
@@ -1487,7 +1486,63 @@
 
     <!--===== Main.js =====-->
     <script src="js/main.js"></script>
-    
+
+
+<script>
+    const swiper = new Swiper('.testimonial-slider', {
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+            stopOnLastSlide: false
+        },
+        centeredSlides: true,
+        spaceBetween: 30,
+        touchStartPreventDefault: false, 
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        breakpoints: {
+            0:     { slidesPerView: 1 },
+            576:   { slidesPerView: 1 },
+            768:   { slidesPerView: 2 },
+            992:   { slidesPerView: 2 },
+            1200:  { slidesPerView: 3 },
+            1400:  { slidesPerView: 3 },
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                document.querySelectorAll('.testimonial1-card-content__thumb').forEach(el => {
+                    el.classList.remove('show-thumb');
+                });
+
+                document.querySelectorAll('.testimonial1-card-content__desc').forEach(el => {
+                    el.style.display = 'block';
+                });
+            },
+            slideChangeTransitionEnd: function () {
+                const activeSlide = document.querySelector('.swiper-slide-active');
+                if (activeSlide) {
+                    const thumb = activeSlide.querySelector('.testimonial1-card-content__thumb');
+                    const desc = activeSlide.querySelector('.testimonial1-card-content__desc');
+
+                    if (thumb) thumb.classList.add('show-thumb');
+                    if (desc) desc.style.display = 'none';
+                }
+            }
+        }
+    });
+
+    window.addEventListener('load', () => {
+        swiper.emit('slideChangeTransitionStart');
+        swiper.emit('slideChangeTransitionEnd');
+    });
+</script>
+
+
 </body>
 
 </html>

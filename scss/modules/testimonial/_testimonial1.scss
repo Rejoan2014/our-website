@@ -1,6 +1,160 @@
 @use '../../root' as *;
 @use '../../utilities' as *;
 
+// .testimonial1 {
+//   .section-top {
+//     padding-bottom: 105px;
+//     @include breakpoint (max-xxl){
+//       padding-bottom: 60px;
+//     }
+//     @include breakpoint (max-lg){
+//       padding-bottom: 40px;
+//     }
+//     @include breakpoint (max-sm){
+//       padding-bottom: 30px;
+//     }
+//   }
+//   .swiper-wrapper {
+//     display: flex;
+//     align-items: center;
+//   }
+//   &-card {
+//     border-radius: 12.195px;
+//     background: $theme-color2;
+//     border: 2px solid transparent;
+//     &:hover {
+//       border: 2px solid $theme-color;
+//       @include transition;
+//     }
+//     &-content {
+//       height: 440px;
+//       padding: 40px;
+//       @include transition;
+
+//       @include breakpoint (max-xl){
+//         padding: 25px;
+//       }
+//       @include breakpoint (max-lg){
+//         height: 380px;
+//       }
+//       @include breakpoint (max-md){
+//         height: 440px;
+//       }
+//       @include breakpoint (max-xsmall){
+//         height: 383px;
+//       }
+//       @include breakpoint (max-xxsmall){
+//         height: 360px;
+//       }
+//       &__title {
+//         color: $black;
+//         font-family: $body-font;
+//         font-size: 20px;
+//         font-style: normal;
+//         font-weight: 900;
+//         line-height: 30px; /* 150% */
+//         letter-spacing: 0.36px;
+//         padding-bottom: 20px;
+//         max-width: 273px;
+//       }
+//       &__star {
+//         padding-bottom: 30px;
+//         i {
+//           color: #FFBA08;
+//           font-size: 24px;
+//         }
+//       }
+//       &__desc {
+//         color: $title-color2;
+//         font-family: $body-font;
+//         font-size: 18px;
+//         font-style: normal;
+//         font-weight: 400;
+//         line-height: 30px; /* 166.667% */
+//         letter-spacing: 0.16px;
+//       }
+//       &__thumb {
+//         position: relative;
+//         display: none;
+//         opacity: 0;
+//         visibility: visible;
+//         @include transition;
+//         img {
+//           width: 100%;
+//         }
+//       }
+//     }
+//     .author-meta {
+//       border-top: 1px solid #C1C1C1;
+//       padding: 40px;
+//       @include breakpoint (max-xl){
+//         padding: 25px;
+//       }
+//     }
+//     &__quote {
+//       position: absolute;
+//       bottom: 80%;
+//       right: 7%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 50px;
+//       background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+//       width: 60.976px;
+//       height: 60.976px;
+//       flex-shrink: 0;
+//       i {
+//         color: $white;
+//         font-size: 29.268px;
+//         font-style: normal;
+//         font-weight: 900;
+//         line-height: 110%; 
+//       }
+//       @include breakpoint (max-xl){
+//         bottom: 72%;
+//       }
+//       @include breakpoint (max-lg){
+//         bottom: 77%;
+//         width: 50.976px;
+//         height: 50.976px;
+//       }
+//     }
+//     &:hover {
+//       .testimonial1 {
+//         &-card {
+//           @include transition;
+//           &-content {
+//             height: 440px;
+//             @include transition;
+//             @include breakpoint (max-lg){
+//               height: 380px;
+//             }
+//             @include breakpoint (max-md){
+//               height: 440px;
+//             }
+//             @include breakpoint (max-xsmall){
+//               height: 383px;
+//             }
+//             @include breakpoint (max-xxsmall){
+//               height: 360px;
+//             }
+//             &__desc {
+//               display: none;
+//               @include transition;
+//             }
+//             &__thumb {
+//               opacity: 1;
+//               visibility: visible;
+//               display: block;
+//               @include transition;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
 .testimonial1 {
   .section-top {
     padding-bottom: 105px;
@@ -22,12 +176,12 @@
     border-radius: 12.195px;
     background: $theme-color2;
     border: 2px solid transparent;
-    &:hover {
+    .swiper-slide-active & {
       border: 2px solid $theme-color;
-      @include transition;
     }
     &-content {
-      height: 440px;
+      // height: 440px;
+      height: 340px;
       padding: 40px;
       @include transition;
 
@@ -35,16 +189,16 @@
         padding: 25px;
       }
       @include breakpoint (max-lg){
-        height: 380px;
+        height: 280px;
       }
       @include breakpoint (max-md){
-        height: 440px;
+        height: 340px;
       }
       @include breakpoint (max-xsmall){
-        height: 383px;
+        height: 283px;
       }
       @include breakpoint (max-xxsmall){
-        height: 360px;
+        height: 260px;
       }
       &__title {
         color: $black;
@@ -75,10 +229,6 @@
       }
       &__thumb {
         position: relative;
-        display: none;
-        opacity: 0;
-        visibility: visible;
-        @include transition;
         img {
           width: 100%;
         }
@@ -118,40 +268,39 @@
         width: 50.976px;
         height: 50.976px;
       }
-    }
-    &:hover {
-      .testimonial1 {
-        &-card {
-          @include transition;
-          &-content {
-            height: 440px;
-            @include transition;
-            @include breakpoint (max-lg){
-              height: 380px;
-            }
-            @include breakpoint (max-md){
-              height: 440px;
-            }
-            @include breakpoint (max-xsmall){
-              height: 383px;
-            }
-            @include breakpoint (max-xxsmall){
-              height: 360px;
-            }
-            &__desc {
-              display: none;
-              @include transition;
-            }
-            &__thumb {
-              opacity: 1;
-              visibility: visible;
-              display: block;
-              @include transition;
-            }
-          }
-        }
-      }
-    }
+    }    
   }
+}
+
+.swiper-slide-active .testimonial1-card-content {
+  height: 440px;
+  @include transition;
+  @include breakpoint (max-lg){
+    height: 380px;
+  }
+  @include breakpoint (max-md){
+    height: 440px;
+  }
+  @include breakpoint (max-xsmall){
+    height: 383px;
+  }
+  @include breakpoint (max-xxsmall){
+    height: 360px;
+  }
+}
+
+.testimonial1-card-content__thumb {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.testimonial1-card-content__thumb.show-thumb {
+  opacity: 1;
+  visibility: visible;
+}
+
+.testimonial1-card-content__desc {
+  display: block;
 }
 

@@ -3,6 +3,21 @@
 
 
 /* Style the pagination container */
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    padding-top: 60px;
+    padding-bottom: 5px;
+    @include breakpoint (max-xl){
+        padding-top: 40px;
+    }
+    @include breakpoint (max-sm){
+        padding-top: 35px;
+    }
+}
+
 .slider-pagination {
     display: flex;
     align-items: center;

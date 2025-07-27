@@ -7044,6 +7044,25 @@ img {
 }
 
 /* Style the pagination container */
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 60px;
+  padding-bottom: 5px;
+}
+@media (max-width: 1199px) {
+  .swiper-pagination {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .swiper-pagination {
+    padding-top: 35px;
+  }
+}
+
 .slider-pagination {
   display: flex;
   align-items: center;
@@ -10902,12 +10921,11 @@ img {
   background: var(--theme2);
   border: 2px solid transparent;
 }
-.testimonial1-card:hover {
+.swiper-slide-active .testimonial1-card {
   border: 2px solid var(--theme);
-  transition: all 0.4s ease-in-out;
 }
 .testimonial1-card-content {
-  height: 440px;
+  height: 340px;
   padding: 40px;
   transition: all 0.4s ease-in-out;
 }
@@ -10918,22 +10936,22 @@ img {
 }
 @media (max-width: 991px) {
   .testimonial1-card-content {
-    height: 380px;
+    height: 280px;
   }
 }
 @media (max-width: 767px) {
   .testimonial1-card-content {
-    height: 440px;
+    height: 340px;
   }
 }
 @media (max-width: 449px) {
   .testimonial1-card-content {
-    height: 383px;
+    height: 283px;
   }
 }
 @media (max-width: 374px) {
   .testimonial1-card-content {
-    height: 360px;
+    height: 260px;
   }
 }
 .testimonial1-card-content__title {
@@ -10965,10 +10983,6 @@ img {
 }
 .testimonial1-card-content__thumb {
   position: relative;
-  display: none;
-  opacity: 0;
-  visibility: visible;
-  transition: all 0.4s ease-in-out;
 }
 .testimonial1-card-content__thumb img {
   width: 100%;
@@ -11014,42 +11028,45 @@ img {
     height: 50.976px;
   }
 }
-.testimonial1-card:hover .testimonial1-card {
-  transition: all 0.4s ease-in-out;
-}
-.testimonial1-card:hover .testimonial1-card-content {
+
+.swiper-slide-active .testimonial1-card-content {
   height: 440px;
   transition: all 0.4s ease-in-out;
 }
 @media (max-width: 991px) {
-  .testimonial1-card:hover .testimonial1-card-content {
+  .swiper-slide-active .testimonial1-card-content {
     height: 380px;
   }
 }
 @media (max-width: 767px) {
-  .testimonial1-card:hover .testimonial1-card-content {
+  .swiper-slide-active .testimonial1-card-content {
     height: 440px;
   }
 }
 @media (max-width: 449px) {
-  .testimonial1-card:hover .testimonial1-card-content {
+  .swiper-slide-active .testimonial1-card-content {
     height: 383px;
   }
 }
 @media (max-width: 374px) {
-  .testimonial1-card:hover .testimonial1-card-content {
+  .swiper-slide-active .testimonial1-card-content {
     height: 360px;
   }
 }
-.testimonial1-card:hover .testimonial1-card-content__desc {
-  display: none;
-  transition: all 0.4s ease-in-out;
+
+.testimonial1-card-content__thumb {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
-.testimonial1-card:hover .testimonial1-card-content__thumb {
+
+.testimonial1-card-content__thumb.show-thumb {
   opacity: 1;
   visibility: visible;
+}
+
+.testimonial1-card-content__desc {
   display: block;
-  transition: all 0.4s ease-in-out;
 }
 
 /* 11. Contact */
