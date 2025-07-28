@@ -606,6 +606,55 @@
     });
 
 
+    /*-----------------------------------
+      Testimonial Slider Section
+    -----------------------------------*/
+    const swiper = new Swiper('.testimonial-slider', {
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false
+        },
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        breakpoints: {
+            0:     { slidesPerView: 1 },
+            576:   { slidesPerView: 1 },
+            768:   { slidesPerView: 2 },
+            992:   { slidesPerView: 2 },
+            1200:  { slidesPerView: 3 },
+            1400:  { slidesPerView: 3 },
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                $('.testimonial1-card-content__thumb').removeClass('show-thumb');
+                $('.testimonial1-card-content__desc').css('display', 'block');
+                $('.testimonial1-card-content').removeClass('active-card');
+
+                const $activeSlide = $('.swiper-slide-active');
+                const $card = $activeSlide.find('.testimonial1-card-content');
+                const $thumb = $activeSlide.find('.testimonial1-card-content__thumb');
+                const $desc = $activeSlide.find('.testimonial1-card-content__desc');
+
+                if ($card.length) $card.addClass('active-card');
+                if ($thumb.length) $thumb.addClass('show-thumb');
+                if ($desc.length) $desc.css('display', 'none');
+            }
+        }
+    });
+
+    $(window).on('load', function () {
+        swiper.emit('slideChangeTransitionStart');
+    });
+
+
+
   }); // End Document Ready Function
 
 

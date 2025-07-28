@@ -1491,64 +1491,6 @@
     <!--===== Main.js =====-->
     <script src="js/main.js"></script>
 
-<script>
-    const swiper = new Swiper('.testimonial-slider', {
-        loop: true,
-        speed: 600,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: false
-        },
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
-        breakpoints: {
-            0:     { slidesPerView: 1 },
-            576:   { slidesPerView: 1 },
-            768:   { slidesPerView: 2 },
-            992:   { slidesPerView: 2 },
-            1200:  { slidesPerView: 3 },
-            1400:  { slidesPerView: 3 },
-        },
-        on: {
-            slideChangeTransitionStart: function () {
-                document.querySelectorAll('.testimonial1-card-content__thumb').forEach(el => {
-                    el.classList.remove('show-thumb');
-                });
-
-                document.querySelectorAll('.testimonial1-card-content__desc').forEach(el => {
-                    el.style.display = 'block';
-                });
-
-                // Remove active class from all
-                document.querySelectorAll('.testimonial1-card-content').forEach(card => {
-                    card.classList.remove('active-card');
-                });
-
-                // Add active class to current
-                const activeSlide = document.querySelector('.swiper-slide-active');
-                if (activeSlide) {
-                    const card = activeSlide.querySelector('.testimonial1-card-content');
-                    const thumb = activeSlide.querySelector('.testimonial1-card-content__thumb');
-                    const desc = activeSlide.querySelector('.testimonial1-card-content__desc');
-
-                    if (card) card.classList.add('active-card');
-                    if (thumb) thumb.classList.add('show-thumb');
-                    if (desc) desc.style.display = 'none';
-                }
-            }
-        }
-    });
-
-    window.addEventListener('load', () => {
-        swiper.emit('slideChangeTransitionStart');
-    });
-</script>
-
 </body>
 
 </html>
