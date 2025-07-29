@@ -246,6 +246,25 @@
   }
 }
 
+.fix-height {
+  height: 690px;
+  @include breakpoint (max-xl){
+    height: 660px;
+  }
+  @include breakpoint (max-lg){
+    height: 600px;
+  }
+  @include breakpoint (max-md){
+    height: 660px;
+  }
+  @include breakpoint (max-xs){
+    height: 640px;
+  }
+  @include breakpoint (max-xsmall){
+    height: 590px;
+  }
+}
+
 .mxw-405 {
   max-width: 405px;
   @include breakpoint (max-xl){

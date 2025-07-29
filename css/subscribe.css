@@ -2681,6 +2681,35 @@ span {
   }
 }
 
+.fix-height {
+  height: 690px;
+}
+@media (max-width: 1199px) {
+  .fix-height {
+    height: 660px;
+  }
+}
+@media (max-width: 991px) {
+  .fix-height {
+    height: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .fix-height {
+    height: 660px;
+  }
+}
+@media (max-width: 499px) {
+  .fix-height {
+    height: 640px;
+  }
+}
+@media (max-width: 449px) {
+  .fix-height {
+    height: 590px;
+  }
+}
+
 .mxw-405 {
   max-width: 405px;
 }
