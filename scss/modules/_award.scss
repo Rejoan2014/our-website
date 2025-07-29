@@ -6,6 +6,11 @@
     margin-bottom: -70px;
     &-icon {
         position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 141px;
+        row-gap: 60px;
         &__shape1 {
             position: absolute;
             top: 16%;
@@ -29,11 +34,7 @@
                 display: none;
             }
         }
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        column-gap: 141px;
-        row-gap: 60px;
+
         @include breakpoint (max-xxxl){
             column-gap: 90px;
         }

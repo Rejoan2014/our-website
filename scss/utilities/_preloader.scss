@@ -78,7 +78,7 @@
 
                 &::before {
                     animation: letters-loading 4s infinite;
-                    color: $theme-color;
+                    color: #43CBFF;
                     content: attr(data-text-preloader);
                     left: 0;
                     opacity: 0;
@@ -86,13 +86,14 @@
                     position: absolute;
                     top: -3px;
                     transform: rotateY(-90deg);
+                    -webkit-animation: letters-loading 4s infinite;
                 }
             }
         }
     }
 
     p {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 8px;
@@ -117,7 +118,7 @@
             padding: 0px;
 
             .bg {
-                background-color: $title-color;
+                background-color: #F7FAFF;
                 height: 100%;
                 left: 0;
                 width: 100%;
@@ -135,11 +136,7 @@
         .loader-section {
             .bg {
                 width: 0;
-                transition: 0.7s;
-                -webkit-transition: 0.7s;
-                -moz-transition: 0.7s;
-                -ms-transition: 0.7s;
-                -o-transition: 0.7s;
+                transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
             }
         }
     }
