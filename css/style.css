@@ -13015,6 +13015,16 @@ img {
   background: linear-gradient(90deg, #6A5ACD 0%, #352D67 100%);
   padding: 106px 30px;
 }
+@media (max-width: 767px) {
+  .cta1-banner {
+    padding: 75px 30px;
+  }
+}
+@media (max-width: 575px) {
+  .cta1-banner {
+    padding: 50px 30px;
+  }
+}
 .cta1-banner__shape1 {
   position: absolute;
   bottom: 0;
@@ -13053,16 +13063,6 @@ img {
 @media (max-width: 1399px) {
   .cta1-banner__shape4 {
     display: none;
-  }
-}
-@media (max-width: 767px) {
-  .cta1-banner {
-    padding: 75px 30px;
-  }
-}
-@media (max-width: 575px) {
-  .cta1-banner {
-    padding: 50px 30px;
   }
 }
 .cta1-banner__title {
