@@ -1142,6 +1142,16 @@ span {
     -o-transform: rotate(-360deg);
   }
 }
+.hoverRotate360 {
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 10s linear;
+}
+
+.hoverRotate360:hover {
+  transform: rotate(-360deg);
+}
+
 .img-shine {
   position: relative;
   overflow: hidden;

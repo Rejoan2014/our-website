@@ -1175,6 +1175,16 @@ span {
     -o-transform: rotate(-360deg);
   }
 }
+.hoverRotate360 {
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 10s linear;
+}
+
+.hoverRotate360:hover {
+  transform: rotate(-360deg);
+}
+
 .img-shine {
   position: relative;
   overflow: hidden;
@@ -12767,6 +12777,9 @@ img {
   height: 145px;
   flex-shrink: 0;
   z-index: 1;
+}
+.award1-icon__item:hover {
+  background: #FFF;
 }
 .award1-icon__item img {
   width: 79.5px;

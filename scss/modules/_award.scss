@@ -57,6 +57,9 @@
             height: 145px;
             flex-shrink: 0;
             z-index: 1;
+            &:hover {
+                background: #FFF;
+            }
             img {
                 width: 79.5px;
                 height: 90px;
