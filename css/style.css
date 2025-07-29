@@ -5875,15 +5875,30 @@ img {
   gap: 10px;
 }
 .fancy-box1-item__icon {
-  border-radius: 50px;
-  background: white;
+  position: relative;
   width: 60px;
   height: 60px;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed black;
+}
+.fancy-box1-item__icon::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../images/icon/circle-1.svg");
+  animation: cir36 10s linear infinite;
+}
+.fancy-box1-item__icon img {
+  position: relative;
+  z-index: 5;
 }
 @media (max-width: 575px) {
   .fancy-box1-item__icon {
