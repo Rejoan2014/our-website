@@ -174,10 +174,23 @@
     height: 584px;
     display: flex;
     align-items: center;
+    @include breakpoint (max-lg){
+      height: 500px;
+    }
+    @include breakpoint (max-md){
+      height: 550px;
+    }
+    @include breakpoint (max-xsmall){
+      height: 500px;
+    }
   }
   .swiper-slide-prev,
   .swiper-slide-next {
     display: flex !important;
     align-items: center;
   }
+}
+
+.swiper-pagination {
+  height: 30px;
 }

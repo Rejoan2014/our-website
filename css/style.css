@@ -11280,10 +11280,29 @@ img {
   display: flex;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .testimonial-slider .swiper-wrapper {
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-slider .swiper-wrapper {
+    height: 550px;
+  }
+}
+@media (max-width: 449px) {
+  .testimonial-slider .swiper-wrapper {
+    height: 500px;
+  }
+}
 .testimonial-slider .swiper-slide-prev,
 .testimonial-slider .swiper-slide-next {
   display: flex !important;
   align-items: center;
+}
+
+.swiper-pagination {
+  height: 30px;
 }
 
 /* 11. Contact */
