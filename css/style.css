@@ -5902,34 +5902,37 @@ img {
 }
 .fancy-box1-item__icon {
   position: relative;
+  border-radius: 50px;
+  background: white;
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .fancy-box1-item__icon::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../../images/icon/circle-1.svg");
-  animation: cir36 10s linear infinite;
+  border-radius: 50%;
+  border: 1px dashed black;
+  box-sizing: border-box;
+  animation: cir36 5s linear infinite;
+  z-index: 0;
 }
 .fancy-box1-item__icon img {
   position: relative;
-  z-index: 5;
+  z-index: 1;
 }
 @media (max-width: 575px) {
   .fancy-box1-item__icon {
     width: 50px;
     height: 50px;
+    z-index: 1;
   }
   .fancy-box1-item__icon img {
     width: 50%;
@@ -8918,6 +8921,7 @@ img {
   }
 }
 .about1-thumb-badge__icon {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -8926,8 +8930,24 @@ img {
   flex-shrink: 0;
   aspect-ratio: 1/1;
   border-radius: 999px;
-  border: 2px dashed var(--black);
   background: var(--theme2);
+}
+.about1-thumb-badge__icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px dashed var(--black);
+  box-sizing: border-box;
+  animation: cir36 5s linear infinite;
+  z-index: 0;
+}
+.about1-thumb-badge__icon img {
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 1399px) {
   .about1-thumb-badge__icon {
@@ -9140,6 +9160,9 @@ img {
     width: 30px;
     height: 30px;
   }
+}
+.about1-counter-item__icon:hover {
+  border: 2px dashed #E5087B;
 }
 .about1-counter-item-info__numb {
   color: var(--black);
