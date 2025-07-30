@@ -88,44 +88,44 @@
                 }
             }
             &--fix-padding1 {
-                padding: 83px;
-                padding-left: 0;
+                margin: 83px;
+                margin-left: 0;
                 @include breakpoint (max-xl){
-                    padding: 30px;
+                    margin: 30px;
                 }
                 @include breakpoint (max-lg){
-                    padding: 0px;
+                    margin: 0px;
                 }
             }
             &--fix-padding2 {
-                padding: 83px;
-                padding-right: 0;
+                margin: 83px;
+                margin-right: 0;
                 @include breakpoint (max-xl){
-                    padding: 30px;
+                    margin: 30px;
                 }
                 @include breakpoint (max-lg){
-                    padding: 0px;
+                    margin: 0px;
                 }
             }
-        }
-        &:hover {
-            .project1 {
-                &-card {
-                    &-thumb {
-                        &-content {
-                            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-                            @include transition;
-                            &__title {
-                                color: $white;
+            &:hover {
+                .project1 {
+                    &-card {
+                        &-thumb {
+                            &-content {
+                                background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
                                 @include transition;
-                                a {
+                                &__title {
                                     color: $white;
+                                    @include transition;
+                                    a {
+                                        color: $white;
+                                    }
                                 }
-                            }
-                            &__link {
-                                background: $white;
-                                svg path {
-                                    fill: $black;
+                                &__link {
+                                    background: $white;
+                                    svg path {
+                                        fill: $black;
+                                    }
                                 }
                             }
                         }

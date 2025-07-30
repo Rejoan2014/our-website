@@ -10715,48 +10715,48 @@ img {
   }
 }
 .project1-card-thumb--fix-padding1 {
-  padding: 83px;
-  padding-left: 0;
+  margin: 83px;
+  margin-left: 0;
 }
 @media (max-width: 1199px) {
   .project1-card-thumb--fix-padding1 {
-    padding: 30px;
+    margin: 30px;
   }
 }
 @media (max-width: 991px) {
   .project1-card-thumb--fix-padding1 {
-    padding: 0px;
+    margin: 0px;
   }
 }
 .project1-card-thumb--fix-padding2 {
-  padding: 83px;
-  padding-right: 0;
+  margin: 83px;
+  margin-right: 0;
 }
 @media (max-width: 1199px) {
   .project1-card-thumb--fix-padding2 {
-    padding: 30px;
+    margin: 30px;
   }
 }
 @media (max-width: 991px) {
   .project1-card-thumb--fix-padding2 {
-    padding: 0px;
+    margin: 0px;
   }
 }
-.project1-card:hover .project1-card-thumb-content {
+.project1-card-thumb:hover .project1-card-thumb-content {
   background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   transition: all 0.4s ease-in-out;
 }
-.project1-card:hover .project1-card-thumb-content__title {
+.project1-card-thumb:hover .project1-card-thumb-content__title {
   color: var(--white);
   transition: all 0.4s ease-in-out;
 }
-.project1-card:hover .project1-card-thumb-content__title a {
+.project1-card-thumb:hover .project1-card-thumb-content__title a {
   color: var(--white);
 }
-.project1-card:hover .project1-card-thumb-content__link {
+.project1-card-thumb:hover .project1-card-thumb-content__link {
   background: var(--white);
 }
-.project1-card:hover .project1-card-thumb-content__link svg path {
+.project1-card-thumb:hover .project1-card-thumb-content__link svg path {
   fill: var(--black);
 }
 
