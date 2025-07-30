@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
@@ -939,6 +940,31 @@ span {
     transform: translateY(-30px);
   }
 }
+/* Diagonal float animation (45° axis) */
+@keyframes float-bob-xy {
+  0% {
+    transform: translate(-30px, -30px);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(-30px, -30px);
+  }
+}
+/* Animation class */
+.float-bob-xy {
+  animation-name: float-bob-xy;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* Optional: add vendor prefixes if needed */
+  -webkit-animation-name: float-bob-xy;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
 @keyframes shine {
   from {
     -webkit-mask-position: 150%;
