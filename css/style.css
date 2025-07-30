@@ -7237,7 +7237,8 @@ img {
   justify-content: center;
   gap: 10px;
   padding-top: 60px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+  height: 30px;
 }
 @media (max-width: 1199px) {
   .slider-pagination {
@@ -11274,6 +11275,17 @@ img {
   }
 }
 
+.testimonial-slider .swiper-wrapper {
+  height: 584px;
+  display: flex;
+  align-items: center;
+}
+.testimonial-slider .swiper-slide-prev,
+.testimonial-slider .swiper-slide-next {
+  display: flex !important;
+  align-items: center;
+}
+
 /* 11. Contact */
 .contact1 .section-fix {
   border-radius: 20px;
@@ -12843,21 +12855,36 @@ img {
   }
 }
 .award1-icon__item {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  border: 2px dashed var(--black);
   background: var(--theme2);
   width: 145px;
   height: 145px;
   flex-shrink: 0;
   z-index: 1;
 }
+.award1-icon__item::before {
+  content: "";
+  position: absolute;
+  border: 2px dashed var(--black);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: cir36 10s linear infinite;
+  z-index: 0;
+}
 .award1-icon__item:hover {
   background: #FFF;
 }
 .award1-icon__item img {
+  position: relative;
+  z-index: 1;
   width: 79.5px;
   height: 90px;
   flex-shrink: 0;

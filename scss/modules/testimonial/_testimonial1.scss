@@ -166,3 +166,18 @@
     }
   }
 }
+
+
+
+.testimonial-slider {
+  .swiper-wrapper {
+    height: 584px;
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    display: flex !important;
+    align-items: center;
+  }
+}
