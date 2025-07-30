@@ -4810,10 +4810,17 @@ img {
 }
 .service-thumb__one {
   border-radius: 20px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 .service-thumb__one img {
+  width: 100%;
   border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.service-thumb__one:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
 }
 .service-thumb__btn {
   position: absolute;
@@ -4834,6 +4841,11 @@ img {
   font-weight: 700;
   line-height: 17px; /* 100% */
   text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+.service-thumb__btn:hover {
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  transition: all 0.4s ease-in-out;
 }
 .service-thumb__btn:hover a {
   color: var(--white);

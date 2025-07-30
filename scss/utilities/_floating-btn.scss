@@ -81,9 +81,19 @@
     }
     &__one {
       border-radius: 20px;
-      padding-bottom: 30px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      
       img {
+        width: 100%;
         border-radius: 20px;
+        @include transition;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+          @include transition;
+        }
       }
     }
     &__btn {
@@ -105,7 +115,10 @@
       font-weight: 700;
       line-height: 17px; /* 100% */
       text-transform: uppercase;
+      @include transition;
       &:hover {
+        background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+        @include transition;
         a {
           color: $white;
         }
