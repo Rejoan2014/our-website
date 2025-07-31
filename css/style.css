@@ -11032,6 +11032,7 @@ img {
   position: absolute;
   bottom: 10%;
   right: 3%;
+  z-index: 3;
 }
 @media (max-width: 1599px) {
   .project3-thumb3__shape9 {

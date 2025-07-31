@@ -141,6 +141,7 @@
             position: absolute;
             bottom: 10%;
             right: 3%;
+            z-index: 3;
             @include breakpoint (max-xxxl){
                 right: -12%;
             }
