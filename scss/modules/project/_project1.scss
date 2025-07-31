@@ -22,7 +22,10 @@
                 justify-content: space-between;
                 align-items: center;
                 border-radius: 0px 0px 20px 20px;
-                background: $theme-color2;
+                background: var(--White, #FFF);
+                border-right: 1px solid rgba(193, 193, 193, 0.20);
+                border-bottom: 1px solid rgba(193, 193, 193, 0.20);
+                border-left: 1px solid rgba(193, 193, 193, 0.20);
                 padding: 30px;
                 @include transition;
 
@@ -60,7 +63,8 @@
                     gap: 6.25px;
                     flex-shrink: 0;
                     border-radius: 25px;
-                    background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+                    border: 1px solid var(--200, #C1C1C1);
+                    @include transition;
                     @include breakpoint (max-sm){
                         width: 40px;
                         height: 40px;
@@ -86,6 +90,24 @@
                         }
                     }
                 }
+                &:hover {
+                    .project1 {
+                        &-card {
+                            &-thumb {
+                                &-content {
+                                    &__link {
+                                        background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+                                        transform: rotate(45deg);
+                                        @include transition;
+                                        svg path {
+                                            fill: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             &--fix-padding1 {
                 margin: 83px;
@@ -105,31 +127,6 @@
                 }
                 @include breakpoint (max-lg){
                     margin: 0px;
-                }
-            }
-            &:hover {
-                .project1 {
-                    &-card {
-                        &-thumb {
-                            &-content {
-                                background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
-                                @include transition;
-                                &__title {
-                                    color: $white;
-                                    @include transition;
-                                    a {
-                                        color: $white;
-                                    }
-                                }
-                                &__link {
-                                    background: $white;
-                                    svg path {
-                                        fill: $black;
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
