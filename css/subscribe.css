@@ -965,6 +965,30 @@ span {
   -webkit-animation-timing-function: linear;
 }
 
+/* Diagonal float animation (45° axis - right bottom) */
+@keyframes float-bob-xz {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.float-bob-xz {
+  animation-name: float-bob-xz;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /* Optional vendor prefixes */
+  -webkit-animation-name: float-bob-xz;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
 @keyframes shine {
   from {
     -webkit-mask-position: 150%;
