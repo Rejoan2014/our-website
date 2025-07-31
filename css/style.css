@@ -10750,31 +10750,39 @@ img {
 .project1-card-thumb-content:hover .project1-card-thumb-content__link svg path {
   fill: var(--white);
 }
-.project1-card-thumb--fix-padding1 {
-  margin: 83px;
-  margin-left: 0;
+.project1-card-thumb--fix-margin1 {
+  margin: 180px 115px 45px 0;
 }
-@media (max-width: 1199px) {
-  .project1-card-thumb--fix-padding1 {
-    margin: 30px;
+@media (max-width: 1599px) {
+  .project1-card-thumb--fix-margin1 {
+    margin: 130px 90px 45px 0;
+  }
+}
+@media (max-width: 1399px) {
+  .project1-card-thumb--fix-margin1 {
+    margin: 116px 65px 45px 0;
   }
 }
 @media (max-width: 991px) {
-  .project1-card-thumb--fix-padding1 {
+  .project1-card-thumb--fix-margin1 {
     margin: 0px;
   }
 }
-.project1-card-thumb--fix-padding2 {
-  margin: 83px;
-  margin-right: 0;
+.project1-card-thumb--fix-margin2 {
+  margin: 60px 0 184px 115px;
 }
-@media (max-width: 1199px) {
-  .project1-card-thumb--fix-padding2 {
-    margin: 30px;
+@media (max-width: 1599px) {
+  .project1-card-thumb--fix-margin2 {
+    margin: 45px 0 125px 90px;
+  }
+}
+@media (max-width: 1399px) {
+  .project1-card-thumb--fix-margin2 {
+    margin: 45px 0 100px 65px;
   }
 }
 @media (max-width: 991px) {
-  .project1-card-thumb--fix-padding2 {
+  .project1-card-thumb--fix-margin2 {
     margin: 0px;
   }
 }
