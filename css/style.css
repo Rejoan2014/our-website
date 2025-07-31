@@ -10650,6 +10650,7 @@ img {
 }
 .project1-card-thumb {
   border-radius: 20px 20px 0px 0px;
+  transition: all 4s ease;
 }
 .project1-card-thumb img {
   border-radius: 20px 20px 0px 0px;
@@ -10662,7 +10663,7 @@ img {
   border-radius: 0px 0px 20px 20px;
   background: var(--theme2);
   padding: 30px;
-  transition: all 0.4s ease-in-out;
+  transition: all 4s ease;
 }
 @media (max-width: 575px) {
   .project1-card-thumb-content {
@@ -10767,7 +10768,7 @@ img {
   }
 }
 .project1-card-thumb:hover .project1-card-thumb-content {
-  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  background: linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%);
   transition: all 0.4s ease-in-out;
 }
 .project1-card-thumb:hover .project1-card-thumb-content__title {
