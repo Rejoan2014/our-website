@@ -5,10 +5,10 @@
 .hero1 {
     position: relative;
     overflow: hidden;
-    padding: 350px 0 230px;
+    padding: 270px 0 170px;
     background: $white;
     @include breakpoint (max-xl){
-        padding: 290px 0 172px;
+        padding: 250px 0 170px;
     }
     @include breakpoint (max-lg){
         padding: 235px 0 100px;

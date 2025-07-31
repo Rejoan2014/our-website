@@ -8494,12 +8494,12 @@ img {
 .hero1 {
   position: relative;
   overflow: hidden;
-  padding: 350px 0 230px;
+  padding: 270px 0 170px;
   background: var(--white);
 }
 @media (max-width: 1199px) {
   .hero1 {
-    padding: 290px 0 172px;
+    padding: 250px 0 170px;
   }
 }
 @media (max-width: 991px) {
@@ -9842,7 +9842,7 @@ img {
   margin-right: 20px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li .offcanvas__contact-icon i {
-  color: var(--theme-color);
+  color: black;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact span {
   text-transform: initial;
@@ -10650,7 +10650,6 @@ img {
 }
 .project1-card-thumb {
   border-radius: 20px 20px 0px 0px;
-  transition: all 4s ease;
 }
 .project1-card-thumb img {
   border-radius: 20px 20px 0px 0px;
@@ -10663,7 +10662,7 @@ img {
   border-radius: 0px 0px 20px 20px;
   background: var(--theme2);
   padding: 30px;
-  transition: all 4s ease;
+  transition: all 0.4s ease-in-out;
 }
 @media (max-width: 575px) {
   .project1-card-thumb-content {
@@ -10768,7 +10767,7 @@ img {
   }
 }
 .project1-card-thumb:hover .project1-card-thumb-content {
-  background: linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%);
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
   transition: all 0.4s ease-in-out;
 }
 .project1-card-thumb:hover .project1-card-thumb-content__title {
