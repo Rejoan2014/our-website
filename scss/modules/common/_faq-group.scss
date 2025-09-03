@@ -16,7 +16,7 @@
   
       .accordion-header {
         .accordion-button {
-          height: 60px;
+          height: 87px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -34,7 +34,7 @@
           line-height: 30px; 
           letter-spacing: 0.36px;
 
-          padding: 0 30px;
+          padding: 0 20px;
           @include breakpoint (max-xxl){
             height: 75px;
             font-size: 18px;
@@ -62,7 +62,15 @@
             font-style: normal;
             font-weight: 700;
             line-height: 21.6px; 
-            margin-right: 20px;
+            margin-right: 18px;
+            @include breakpoint (max-sm) {
+              font-size: 18px;
+            }
+            @include breakpoint (max-xsmall) {
+              font-size: 16px;
+              padding: 8px;
+              margin-right: 15px;
+            }
           }
           @include breakpoint (max-sm) {
             font-size: 18px;
@@ -72,7 +80,7 @@
           }
   
           &.collapsed {
-            padding: 0 30px;
+            padding: 0 20px;
             background: $white;
             color: $black;
             @include breakpoint (max-xsmall) {
@@ -94,7 +102,15 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: 21.6px; 
-                margin-right: 20px;
+                margin-right: 18px;
+                @include breakpoint (max-sm) {
+                  font-size: 18px;
+                }
+                @include breakpoint (max-xsmall) {
+                  font-size: 16px;
+                  padding: 8px;
+                  margin-right: 15px;
+                }             
             }
           }
   
@@ -104,12 +120,26 @@
             background-image: url(../images/icon/faq-plus.svg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 18px 18px;
+            background-size: 30px 30px;
+            width: 30px;
+            height: 30px;
+            @include breakpoint (max-xsmall){
+              background-size: 25px 25px;
+              width: 25px;
+              height: 25px;
+            }
           }
   
           &:not(.collapsed):after {
             background-image: url(../images/icon/faq-minus.svg);
             transform: rotate(0deg);
+            width: 30px;
+            height: 30px;
+            @include breakpoint (max-xsmall){
+              background-size: 25px 25px;
+              width: 25px;
+              height: 25px;
+            }
           }
         }
       }
@@ -118,7 +148,7 @@
         border: none;
   
         .accordion-body {
-          padding: 0px 78px 23px 90px;
+          padding: 0px 78px 23px 84px;
           background-color: $white;
           color: $title-color2;
           text-align: start;
@@ -140,7 +170,7 @@
             font-size: 14px;
           }
           @include breakpoint (max-xsmall) {
-            padding: 0px 60px 23px 73px;
+            padding: 0px 37px 23px 60px;
           }
         }
       }

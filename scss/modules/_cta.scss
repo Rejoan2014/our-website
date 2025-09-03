@@ -4,6 +4,20 @@
 .cta1 {
     position: relative;
     &-banner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background: linear-gradient(90deg, #6A5ACD 0%, #352D67 100%);
+        padding: 106px 30px;
+        @include breakpoint (max-md){
+            padding: 75px 30px;
+        }
+        @include breakpoint (max-sm){
+            padding: 50px 30px;
+        }
         &__shape1 {
             position: absolute;
             bottom: 0;
@@ -35,20 +49,6 @@
             @include breakpoint (max-xxl){
                 display: none;
             }
-        }
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        background: linear-gradient(90deg, #6A5ACD 0%, #352D67 100%);
-        padding: 106px 30px;
-        @include breakpoint (max-md){
-            padding: 75px 30px;
-        }
-        @include breakpoint (max-sm){
-            padding: 50px 30px;
         }
 
         &__title {
@@ -94,6 +94,7 @@
                 -moz-transform: rotate(45deg);
                 -ms-transform: rotate(45deg);
                 -o-transform: rotate(45deg);
+                @include transition;
             }
             &:hover {
                 background-color: $theme-color;

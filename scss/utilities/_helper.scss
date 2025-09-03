@@ -101,6 +101,46 @@
   }
 }
 
+.section-padding2 {
+  padding: 135px 0 150px;
+
+  @include breakpoint(max-xxl) {
+    padding: 120px 0;
+  }
+
+  @include breakpoint(max-lg) {
+    padding: 100px 0;
+  }
+
+  @include breakpoint(max-md) {
+    padding: 80px 0;
+  }
+
+  @include breakpoint(max-sm) {
+    padding: 60px 0;
+  }
+}
+
+.section-padding3 {
+  padding: 80px 0 150px;
+
+  @include breakpoint(max-xxl) {
+    padding: 75px 0 120px;
+  }
+
+  @include breakpoint(max-lg) {
+    padding: 70px 0 100px;
+  }
+
+  @include breakpoint(max-md) {
+    padding: 65px 0 80px;
+  }
+
+  @include breakpoint(max-sm) {
+    padding: 40px 0 60px;
+  }
+}
+
 .section-padding-110 {
   padding: 110px 0;
 
@@ -206,6 +246,25 @@
   }
 }
 
+.fix-height {
+  height: 690px;
+  @include breakpoint (max-xl){
+    height: 660px;
+  }
+  @include breakpoint (max-lg){
+    height: 600px;
+  }
+  @include breakpoint (max-md){
+    height: 660px;
+  }
+  @include breakpoint (max-xs){
+    height: 640px;
+  }
+  @include breakpoint (max-xsmall){
+    height: 590px;
+  }
+}
+
 .mxw-405 {
   max-width: 405px;
   @include breakpoint (max-xl){
@@ -243,6 +302,13 @@
 
 // Cart Design Start
 .cart {
+  padding-bottom: 52px;
+  @include breakpoint (max-lg){
+    padding-bottom: 30px;
+  }
+  @include breakpoint (max-md){
+    padding-bottom: 0px;
+  }
   &__title {
     color: $black;
     font-family: $body-font;
@@ -287,6 +353,9 @@
     }
     @include breakpoint (max-xxsmall){
       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &:last-child {
+        border-bottom: 0;
     }
   }
 

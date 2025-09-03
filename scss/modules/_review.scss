@@ -4,8 +4,24 @@
 .review1 {
     .global-slider {
         padding-top: 60px;
+        padding-right: 10px;
+        padding-left: 35px;
+        @include breakpoint (max-xl){
+            padding-right: 10px;
+            padding-left: 20px;
+        }
+        @include breakpoint (max-lg){
+            padding-right: 0px;
+            padding-left: 0px;
+        }
         @include breakpoint (max-md){
             padding-top: 40px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        @include breakpoint (max-xxsmall){
+            padding-right: 0px;
+            padding-left: 0px;
         }
     }
     &-card {
@@ -15,7 +31,7 @@
         box-shadow: $shadow;
         padding: 65px 110px 65px 115px;
         margin-left: 50px;
-        margin-right: 20px;
+        margin-right: 30px;
         @include breakpoint (max-xxxl){
             padding: 65px 45px 65px 90px;
             margin-left: 50px;

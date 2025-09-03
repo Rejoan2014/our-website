@@ -517,8 +517,147 @@
     $("#tab2").removeClass("d-none");
 
 
+<<<<<<< HEAD
      //nice select
       $('select').niceSelect();
+=======
+    /*-----------------------------------
+      Floating Button Section
+    -----------------------------------*/
+    $(document).ready(function () {
+        const $blurOverlay = $('.blur-overlay');
+        const $navBtns = $('.project-nav__btn');
+        const $serviceMain = $('.service-main');
+        const $serviceAlt = $('.service-alt');
+
+        let isHovering = false;
+
+        function showBlur() {
+            $blurOverlay.addClass('active');
+        }
+
+        function hideBlurAndServices() {
+            $blurOverlay.removeClass('active');
+            $serviceMain.removeClass('visible');
+            $serviceAlt.removeClass('visible');
+        }
+
+        function showService(type) {
+            showBlur();
+            if (type === 'main') {
+                $serviceMain.addClass('visible');
+                $serviceAlt.removeClass('visible');
+            } else if (type === 'alt') {
+                $serviceAlt.addClass('visible');
+                $serviceMain.removeClass('visible');
+            }
+        }
+
+        $navBtns.each(function () {
+            const type = $(this).data('service');
+
+            $(this).on('mouseenter', function () {
+                isHovering = true;
+                if (type === 'main' || type === 'alt') {
+                    showService(type);
+                } else {
+                    hideBlurAndServices();
+                }
+            });
+
+            $(this).on('mouseleave', function () {
+                isHovering = false;
+                setTimeout(function () {
+                    if (!isHovering) hideBlurAndServices();
+                }, 200);
+            });
+        });
+
+        $serviceMain.add($serviceAlt).on('mouseenter', function () {
+            isHovering = true;
+            showBlur();
+        });
+
+        $serviceMain.add($serviceAlt).on('mouseleave', function () {
+            isHovering = false;
+            setTimeout(function () {
+                if (!isHovering) hideBlurAndServices();
+            }, 200);
+        });
+    });
+
+    // Hover effect service card
+    $('.service1-content').each(function(index) {
+        $(this).on('mouseenter', function() {
+            if (index > 0) {
+                $('.service1-content').eq(index - 1).addClass('no-bottom-border');
+            }
+        });
+
+        $(this).on('mouseleave', function() {
+            if (index > 0) {
+                $('.service1-content').eq(index - 1).removeClass('no-bottom-border');
+            }
+        });
+    });
+
+    // Hover effect showing image service card
+    $('.service1-content').hover(function () {
+        var newThumb = $(this).data('thumb');
+        $('.service1__thumb img').attr('src', newThumb);
+    }, function () {
+        $('.service1__thumb img').attr('src', 'images/service/service-thumb1_1.png');
+    });
+
+
+    /*-----------------------------------
+      Testimonial Slider Section
+    -----------------------------------*/
+    const swiper = new Swiper('.testimonial-slider', {
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false
+        },
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        breakpoints: {
+            0:     { slidesPerView: 1 },
+            576:   { slidesPerView: 1 },
+            768:   { slidesPerView: 2 },
+            992:   { slidesPerView: 2 },
+            1200:  { slidesPerView: 3 },
+            1400:  { slidesPerView: 3 },
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                $('.testimonial1-card-content__thumb').removeClass('show-thumb');
+                $('.testimonial1-card-content__desc').css('display', 'block');
+                $('.testimonial1-card-content').removeClass('active-card');
+
+                const $activeSlide = $('.swiper-slide-active');
+                const $card = $activeSlide.find('.testimonial1-card-content');
+                const $thumb = $activeSlide.find('.testimonial1-card-content__thumb');
+                const $desc = $activeSlide.find('.testimonial1-card-content__desc');
+
+                if ($card.length) $card.addClass('active-card');
+                if ($thumb.length) $thumb.addClass('show-thumb');
+                if ($desc.length) $desc.css('display', 'none');
+            }
+        }
+    });
+
+    $(window).on('load', function () {
+        swiper.emit('slideChangeTransitionStart');
+    });
+
+>>>>>>> 107367a6d2037b856b751a54733298fd082ac9de
 
 
   }); // End Document Ready Function

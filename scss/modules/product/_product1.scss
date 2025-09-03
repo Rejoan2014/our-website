@@ -8,10 +8,16 @@
         box-shadow: 0px 0px 68.182px 0px rgba(0, 0, 0, 0.05);
         &-thumb {
             position: relative;
+            overflow: hidden;
             border-radius: 11.364px 11.364px 0px 0px;
             img {
                 width: 100%;
                 border-radius: 11.364px 11.364px 0px 0px;
+                @include transition;
+                &:hover {
+                    transform: scale(1.1);
+                    @include transition;
+                }
             }
             &__badge {
                 position: absolute;
@@ -19,7 +25,7 @@
                 bottom: 0;
                 padding: 10px 20px;
                 border-radius: 0px 10px 0px 0px;
-                background: $theme-color;
+                background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
                 color: $white;
                 font-family: $body-font;
                 font-size: 20px;
@@ -146,26 +152,33 @@
                     }
                 }
                 &__price {
-                    color: $title-color2;
-                    font-family: $body-font;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 900;
-                    line-height: 30px; 
-                    letter-spacing: 0.36px;
-                    @include breakpoint (max-xxl){
-                        font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .price-old {
+                        color: var(--800, #6B7280);
+                        font-family: Lato;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 30px; 
+                        letter-spacing: 0.36px;
+                        text-decoration: line-through;
+                        margin-left: 10px;
+                        @include breakpoint (max-xxl){
+                            font-size: 18px;
+                        }
+                        @include breakpoint (max-lg){
+                            font-size: 16px;
+                        }
                     }
-                    @include breakpoint (max-lg){
-                        font-size: 16px;
-                    }
-                    span {
-                        color: $black;
-                        font-family: $body-font;
+                    .price-new {
+                        color: var(--900, #000);
+                        font-family: Lato;
                         font-size: 24px;
                         font-style: normal;
                         font-weight: 900;
-                        line-height: 34px; /* 141.667% */
+                        line-height: 34px;
                         letter-spacing: 0.36px;
                         @include breakpoint (max-xxl){
                             font-size: 20px;

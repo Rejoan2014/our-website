@@ -18,12 +18,24 @@ img {
   
   .truncate-text {
     display: block;
-    max-height: 56px;
+    max-height: 256px;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.5em;
     white-space: normal;
     word-break: break-word;
+    @include breakpoint (max-lg){
+      max-height: 185px;
+    }
+    @include breakpoint (max-md){
+      max-height: 218px;
+    }
+    @include breakpoint (max-xsmall){
+      max-height: 180px;
+    }
+    @include breakpoint (max-xxsmall){
+      max-height: 157px;
+    }
   }
   
   .navigation-controls {
@@ -120,6 +132,7 @@ img {
             }
             @include breakpoint (max-xsmall) {
               font-size: 14px;
+              padding-right: 12px;
             }
             &:hover {
               color: $theme-color;
@@ -127,7 +140,12 @@ img {
           }
   
             &.text-right {
-                text-align: right;
+              text-align: right;
+              @include breakpoint (max-xsmall) {
+                h5 {
+                  padding-right: 0;
+                }
+              }
             }
         }
     }

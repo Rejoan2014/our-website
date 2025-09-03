@@ -5,13 +5,13 @@
 .hero1 {
     position: relative;
     overflow: hidden;
-    padding: 350px 0 230px;
+    padding: 270px 0 170px;
     background: $white;
     @include breakpoint (max-xl){
-        padding: 290px 0 172px;
+        padding: 250px 0 170px;
     }
     @include breakpoint (max-lg){
-        padding: 235px 0 65px;
+        padding: 235px 0 100px;
     }
     @include breakpoint (max-md){
         padding: 167px 0 35px;
@@ -19,34 +19,6 @@
     @include breakpoint (max-xs){
         padding: 140px 0 35px;
     }
-
-    // &-lines {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     z-index: 1;
-    //     pointer-events: none;
-
-    //     &::before {
-    //         content: '';
-    //         position: absolute;
-    //         inset: 0;
-
-    //         background-image:
-    //         repeating-linear-gradient(
-    //             to right,
-    //             rgba(0, 0, 0, 0.1),
-    //             rgba(102, 102, 102, 0.02) 1px,
-    //             transparent 1px,
-    //             transparent 140px
-    //         );
-
-    //         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    //         -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    //     }
-    // }
 
     &-lines {
         position: absolute;
@@ -102,6 +74,7 @@
             }
             @include breakpoint (max-lg){
                 gap: 505px;
+                padding-bottom: 150px;
             }
             @include breakpoint (max-md){
                 display: none;
@@ -139,6 +112,7 @@
             }
             @include breakpoint (max-lg){
                 gap: 578px;
+                padding-bottom: 150px;
             }
             @include breakpoint (max-md){
                 display: none;
@@ -193,6 +167,9 @@
                 @include breakpoint (max-lg){
                     width: 75px;
                     height: 75px;
+                    img {
+                        width: 50%;
+                    }
                 }
             }
         }
@@ -276,8 +253,11 @@
             text-transform: uppercase;
             margin-bottom: 18px;
             @include breakpoint (max-xsmall){
-                padding: 0 5px;
+                padding: 7px 10px;
                 font-size: 14px;
+            }
+            @include breakpoint (max-xxsmall){
+                padding: 7px 9px;
             }
             
         }

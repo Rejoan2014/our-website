@@ -9,8 +9,14 @@
         padding: 50px;
         border-radius: 5px;
         background: $white;
+        @include transition;
+        
         @include breakpoint (max-lg){
             padding: 30px 25px;
+        }
+        &:hover {
+            transform: scale(1.03);
+            @include transition;
         }
 
         &__icon {

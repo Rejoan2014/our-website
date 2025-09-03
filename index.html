@@ -37,6 +37,7 @@
     <!--===== Preloader Start =====-->
     <div id="preloader" class="preloader">
         <div class="animation-preloader">
+            <div class="spinner"></div>
             <div class="txt-loading">
                 <span data-text-preloader="S" class="letters-loading">
                     S
@@ -95,7 +96,7 @@
     <div class="mouse-cursor cursor-inner"></div>
 
     <!--===== Back To Top Start =====-->
-    <button id="back-top" class="back-to-top">
+    <button id="back-top" class="back-to-top fix-home-one">
         <i class="fa-solid fa-chevron-up"></i>
     </button>
 
@@ -116,7 +117,7 @@
                     <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
                             <a href="index.html">
-                                <img src="images/logo/Logo-dark.png" alt="logo">
+                                <img src="images/logo/logo-dark.svg" alt="logo">
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -142,7 +143,7 @@
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="mailto:example@gmail.com"><span>tanya.hill@example.com</span></a>
+                                    <a href="mailto:softcrafty@gmail.com"><span>softcrafty@example.com</span></a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -150,7 +151,7 @@
                                     <i class="fal fa-clock"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                    <a target="_blank" href="#">Sat-Thu, 09am -06pm</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -194,20 +195,17 @@
             <div class="container">
                 <div class="header-wrap">
                     <div class="logo">
-                        <a class="primary-logo" href="index.html"><img src="images/logo/Logo-dark.png" alt="logo"></a>
-                        <a class="sticky-logo" href="index.html"><img src="images/logo/Logo-dark.png" alt="logo"></a>
+                        <a class="primary-logo" href="index.html"><img src="images/logo/logo-dark.svg" alt="logo"></a>
+                        <a class="sticky-logo" href="index.html"><img src="images/logo/logo-dark.svg" alt="logo"></a>
                     </div>
                     <div class="main-menu-wrap">
                         <div class="main-menu">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li class="has-dropdown menu-thumb">
+                                    <li>
                                         <a href="index.html">
-                                            Home  <span class="dropdown-icon"><img src="images/icon/dropdown-icon.svg" alt="icon"></span>                                                   
+                                            Home                                                     
                                         </a>
-                                        <ul class="submenu">
-                                            <li><a href="index.html">Home 01</a></li>
-                                        </ul>
                                     </li>
                                     <li>
                                         <a href="project.html">
@@ -271,7 +269,7 @@
                                     <path d="M21.875 23.75H3.125C2.78 23.75 2.5 23.47 2.5 23.125C2.5 22.78 2.78 22.5 3.125 22.5H21.875C22.22 22.5 22.5 22.78 22.5 23.125C22.5 23.47 22.22 23.75 21.875 23.75Z" fill="black"/>
                             </svg>
                         </button>
-                        <div class="pl-30 btn-wrapper return-left d-none d-xl-block">
+                        <div class="pl-30 btn-wrapper d-none d-xl-block wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
                                 <a class="theme-btn style1" href="contact.html">Lets talk<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -280,7 +278,7 @@
         </div>
     </header>
 
-    <div class="blur-overlay"></div> 
+   <div class="blur-overlay"></div> 
     <section class="service-project">
         <div class="service-wrapper position-relative">
             <div class="row align-items-center">
@@ -290,7 +288,7 @@
                         <div class="service__shape1"></div>
                         <div class="service-thumb">
                             <div class="service-thumb__one">
-                                <img src="images/service/service-thumb1_3.png" alt="thumb">
+                                <img src="images/service/service-thumb1_6.png" alt="thumb">
                             </div>
                             <div class="service-thumb-content">
                                 <div class="service-thumb-content__title"><a href="project.html">Xume-Corporate Project</a></div>
@@ -388,7 +386,7 @@
                         </div>
                         <div class="service-thumb">
                             <div class="service-thumb__one">
-                                <img src="images/service/service-thumb1_2.png" alt="thumb">
+                                <img src="images/service/service-thumb1_5.png" alt="thumb">
                             </div>
                             <div class="service-thumb-content">
                                 <div class="service-thumb-content__title"><a href="project.html">Xume-Corporate Project</a></div>
@@ -423,26 +421,26 @@
         <div class="hero1-lines"></div>
         <div class="hero1-icon">
             <div class="hero1-icon__topLayer">
-                <div class="hero1-icon__topLayer--one">
+                <div class="hero1-icon__topLayer--one float-bob-y">
                     <img src="images/icon/hero-icon1_1.svg" alt="svg">
                 </div>
-                <div class="hero1-icon__topLayer--one">
+                <div class="hero1-icon__topLayer--one float-bob-y">
                     <img src="images/icon/hero-icon1_2.svg" alt="svg">
                 </div>
             </div>
             <div class="hero1-icon__middleLayer">
-                <div class="hero1-icon__middleLayer--two">
+                <div class="hero1-icon__middleLayer--two float-bob-y">
                     <img src="images/icon/hero-icon1_3.svg" alt="svg">
                 </div>
-                <div class="hero1-icon__middleLayer--two">
+                <div class="hero1-icon__middleLayer--two float-bob-y">
                     <img src="images/icon/hero-icon1_4.svg" alt="svg">
                 </div>
             </div>
             <div class="hero1-icon__bottomLayer">
-                <div class="hero1-icon__bottomLayer--three">
+                <div class="hero1-icon__bottomLayer--three float-bob-y">
                     <img src="images/icon/hero-icon1_5.svg" alt="svg">
                 </div>
-                <div class="hero1-icon__bottomLayer--three">
+                <div class="hero1-icon__bottomLayer--three float-bob-y">
                     <img src="images/icon/hero-icon1_6.svg" alt="svg">
                 </div>
             </div>
@@ -454,11 +452,11 @@
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-lg-7">
                     <div class="hero1-content">
-                        <h6 class="hero1-content__subtitle">
+                        <h6 class="hero1-content__subtitle wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                             <img src="images/icon/shines-icon.svg" alt="icon"> More than 1k finished Project
                         </h6>
-                        <h1 class="hero1-content__title">Turning Ideas into Digital Realities</h1>
-                        <p class="hero1-content__desc">Softcrafty is a dynamic software development company dedicated  innovative digital solutions for businesses of all sizes.</p>
+                        <h1 class="hero1-content__title  wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Turning Ideas into Digital Realities</h1>
+                        <p class="hero1-content__desc  wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">Softcrafty is a dynamic software development company dedicated  innovative digital solutions for businesses of all sizes.</p>
                         <div class="hero1-content-cta">
                             <a class="theme-btn style3" href="contact.html">
                                 Free consulting <i class="fa-solid fa-arrow-right"></i>
@@ -502,49 +500,32 @@
         </div>
     </section>
 
-    <!--===== Brand Section    S T A R T =====-->
-    <div class="brandLogo1 section-padding-110 fix pb-0">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-xl-12">
-                    <div class="brandLogo1-slider">
-                        <div class="swiper global-slider" id="brandLogo1"
-                            data-slider-options='{"loop": true, "breakpoints": {"0": {"slidesPerView": 2}, "576": {"slidesPerView": 3, "centeredSlides": true}, "768": {"slidesPerView": 4}, "992": {"slidesPerView": 5}, "1200": {"slidesPerView": 6}, "1600": {"slidesPerView": 6}}}'>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="brandLogo1-slider__thumb">
-                                        <img src="images/brand/brand-logo1_1.svg" alt="svg">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brandLogo1-slider__thumb">
-                                        <img src="images/brand/brand-logo1_2.svg" alt="svg">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brandLogo1-slider__thumb">
-                                        <img class="svg" src="images/brand/brand-logo1_3.svg" alt="svg">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brandLogo1-slider__thumb">
-                                        <img src="images/brand/brand-logo1_4.svg" alt="svg">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brandLogo1-slider__thumb">
-                                        <img src="images/brand/brand-logo1_5.svg" alt="svg">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brandLogo1-slider__thumb">
-                                        <img src="images/brand/brand-logo1_6.svg" alt="svg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!--===== Marque Section    S T A R T =====-->
+    <div class="marque-section section-padding-110 fix pb-0">
+        <div class="marquee-wrapper">
+            <div class="marquee-inner to-left">
+                <ul class="marqee-list d-flex">
+                    <li class="marquee-item style-2">
+                        <span class="text-slider"><img src="images/brand/brand-logo1_1.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_2.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_3.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_4.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_5.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_6.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_1.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_2.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_3.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_4.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_5.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_6.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_1.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_2.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_3.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_4.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_5.svg" alt="svg"></span>
+                        <span class="text-slider"><img src="images/brand/brand-logo1_6.svg" alt="svg"></span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -593,7 +574,7 @@
                         </div>
                     </div>                   
                 </div>
-                <div class="d-none d-lg-block col-lg-6">
+                <div class="d-none d-lg-block col-lg-6 col-xxl-5 offset-xxl-1">
                     <div class="about1-thumb">
                         <div class="about1-thumb__one">
                             <img src="images/about/about-thumb1_1.png" alt="png">
@@ -601,12 +582,12 @@
                         <div class="about1-thumb-badge">
                             <div class="about1-thumb-badge__icon"><img src="images/icon/about-icon1_5.svg" alt="svg"></div>
                             <div class="about1-thumb-badge__text">
-                                <h2>2100+</h2>
+                                <h2><span class="counter-number">2100</span>+</h2>
                                 <p>Installation Done</p>
                             </div>
                         </div>
-                        <div class="about1-thumb__shape3"><img src="images/shape/about-sahpe3.svg" alt="shape"></div>
-                        <div class="about1-thumb__shape4"><img src="images/shape/about-sahpe4.svg" alt="shape"></div>
+                        <div class="about1-thumb__shape3 movingX"><img src="images/shape/about-sahpe3.svg" alt="shape"></div>
+                        <div class="about1-thumb__shape4 float-bob-xy"><img src="images/shape/about-sahpe4.svg" alt="shape"></div>
                     </div>                      
                 </div>
             </div>                                     
@@ -614,7 +595,7 @@
     </section>
 
     <!--===== Service Section    S T A R T =====-->
-    <section class="service1 section-padding fix">
+    <section class="service1 section-padding2 fix">
         <div class="container">
             <div class="row g-4 d-flex align-items-end pb-60">
                 <div class="col-md-8 col-xxl-6">
@@ -631,11 +612,11 @@
             <div class="row g-4">
                 <div class="col-lg-9 col-xl-4">
                     <div class="service1__thumb">
-                        <img src="images/service/service-thumb1_1.png" alt="png">
+                        <img id="serviceThumbImage" src="images/service/service-thumb1_1.png" alt="png">
                     </div>                      
                 </div>
                 <div class="col-lg-12 col-xl-8">
-                    <div class="service1-content">
+                    <div class="service1-content" data-thumb="images/service/service-thumb1_1.png">
                         <div class="service1-content__icon"><img src="images/icon/service-icon1_1.svg" alt="svg"></div>
                         <h4 class="service1-content__title">
                             <a href="service-mobile-app.html">Mobile App Development</a>
@@ -644,7 +625,7 @@
                             <a href="service-mobile-app.html"><img src="images/icon/arrow-up-md.svg" alt="icon"></a>
                         </div>
                     </div>
-                    <div class="service1-content">
+                    <div class="service1-content" data-thumb="images/service/service-thumb1_2.png">
                         <div class="service1-content__icon"><img src="images/icon/service-icon1_2.svg" alt="svg"></div>
                         <h4 class="service1-content__title">
                             <a href="service-uiux.html">UI/UX Design</a>
@@ -653,7 +634,7 @@
                             <a href="service-uiux.html"><img src="images/icon/arrow-up-md.svg" alt="icon"></a>
                         </div>
                     </div>
-                    <div class="service1-content">
+                    <div class="service1-content" data-thumb="images/service/service-thumb1_3.png">
                         <div class="service1-content__icon"><img src="images/icon/service-icon1_3.svg" alt="svg"></div>
                         <h4 class="service1-content__title">
                             <a href="service-wordpress.html">Wordpress Development</a>
@@ -662,7 +643,7 @@
                             <a href="service-wordpress.html"><img src="images/icon/arrow-up-md.svg" alt="icon"></a>                         
                         </div>
                     </div>
-                    <div class="service1-content">
+                    <div class="service1-content" data-thumb="images/service/service-thumb1_4.png">
                         <div class="service1-content__icon"><img src="images/icon/service-icon1_4.svg" alt="svg"></div>
                         <h4 class="service1-content__title">
                             <a href="service-web.html">Web Development</a>
@@ -677,7 +658,7 @@
     </section>
 
     <!--===== Product Section    S T A R T =====-->
-    <section class="product1 section-padding fix">
+    <section class="product1 section-padding2 fix">
         <div class="container">
             <div class="row g-4 d-flex align-items-end pb-60">
                 <div class="col-md-8 col-xxl-6">
@@ -696,7 +677,7 @@
                     <div class="product1-card">
                         <div class="product1-card-thumb">
                             <img src="images/product/product-thumb1_1.png" alt="png">
-                            <sapn class="product1-card-thumb__badge"><img src="images/icon/badge-icon.svg" alt="svg"> Featured</sapn>
+                            <div class="product1-card-thumb__badge"><img src="images/icon/badge-icon.svg" alt="svg"> Featured</div>
                         </div>
                         <div class="product1-card-content">
                             <div class="product1-card-content-meta">
@@ -704,15 +685,18 @@
                                 <span class="product1-card-content-meta__sales"><img src="images/icon/sales-report.svg" alt="svg"> Sales 110</span>
                             </div>
                             <h3 class="product1-card-content__title">
-                                <a href="product-details.html">Wedea - Personal Portfolio Figma Templete</a>
+                                <a href="product.html">Wedea - Personal Portfolio Figma Templete</a>
                             </h3>
                             <div class="product1-card-content__author">Designed By Softcrafty Team In Figma</div>
                             <div class="product1-card-content-footer">
                                 <div class="product1-card-content-footer-btn">
-                                    <div class="product1-card-content-footer-btn__demo">Live Demo</div>
+                                    <button type="button" class="product1-card-content-footer-btn__demo">Live Demo</button>
                                     <div class="product1-card-content-footer-btn__cart"> <img src="images/icon/cart-icon.svg" alt="svg"></div>
                                 </div>
-                                <div class="product1-card-content-footer__price">$70 <span>$80.00</span></div>
+                                <div class="product1-card-content-footer__price">
+                                    <span class="price-old">$70</span>
+                                    <span class="price-new">$80.00</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -721,7 +705,7 @@
                     <div class="product1-card">
                         <div class="product1-card-thumb">
                             <img src="images/product/product-thumb1_2.png" alt="png">
-                            <sapn class="product1-card-thumb__badge"><img src="images/icon/badge-icon.svg" alt="svg">Hot</sapn>
+                            <div class="product1-card-thumb__badge"><img src="images/icon/badge-icon.svg" alt="svg">Hot</div>
                         </div>
                         <div class="product1-card-content">
                             <div class="product1-card-content-meta">
@@ -729,15 +713,18 @@
                                 <span class="product1-card-content-meta__sales"><img src="images/icon/sales-report.svg" alt="svg"> Sales 110</span>
                             </div>
                             <h3 class="product1-card-content__title">
-                                <a href="product-details.html">WOCON - Construction Agency Figma Templete</a>
+                                <a href="product.html">WOCON - Construction Agency Figma Templete</a>
                             </h3>
                             <div class="product1-card-content__author">Designed By Softcrafty Team In Figma</div>
                             <div class="product1-card-content-footer">
                                 <div class="product1-card-content-footer-btn">
-                                    <div class="product1-card-content-footer-btn__demo">Live Demo</div>
+                                    <button type="button" class="product1-card-content-footer-btn__demo">Live Demo</button>
                                     <div class="product1-card-content-footer-btn__cart"> <img src="images/icon/cart-icon.svg" alt="svg"></div>
                                 </div>
-                                <div class="product1-card-content-footer__price">$70 <span>$80.00</span></div>
+                                <div class="product1-card-content-footer__price">
+                                    <span class="price-old">$70</span>
+                                    <span class="price-new">$80.00</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -746,7 +733,7 @@
                     <div class="product1-card">
                         <div class="product1-card-thumb">
                             <img src="images/product/product-thumb1_3.png" alt="png">
-                            <sapn class="product1-card-thumb__badge"><img src="images/icon/badge-icon.svg" alt="svg">New</sapn>
+                            <div class="product1-card-thumb__badge"><img src="images/icon/badge-icon.svg" alt="svg">New</div>
                         </div>
                         <div class="product1-card-content">
                             <div class="product1-card-content-meta">
@@ -754,15 +741,18 @@
                                 <span class="product1-card-content-meta__sales"><img src="images/icon/sales-report.svg" alt="svg"> Sales 110</span>
                             </div>
                             <h3 class="product1-card-content__title">
-                                <a href="product-details.html">XUME - Creative Agency Figma Templete</a>
+                                <a href="product.html">XUME - Creative Agency Figma Templete</a>
                             </h3>
                             <div class="product1-card-content__author">Designed By Softcrafty Team In Figma</div>
                             <div class="product1-card-content-footer">
                                 <div class="product1-card-content-footer-btn">
-                                    <div class="product1-card-content-footer-btn__demo">Live Demo</div>
+                                    <button type="button" class="product1-card-content-footer-btn__demo">Live Demo</button>
                                     <div class="product1-card-content-footer-btn__cart"> <img src="images/icon/cart-icon.svg" alt="svg"></div>
                                 </div>
-                                <div class="product1-card-content-footer__price">$70 <span>$80.00</span></div>
+                                <div class="product1-card-content-footer__price">
+                                    <span class="price-old">$70</span>
+                                    <span class="price-new">$80.00</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -799,7 +789,7 @@
                         </div>
                     </div>
                     <div class="project1-card">
-                        <div class="project1-card-thumb project1-card-thumb--fix-padding1">
+                        <div class="project1-card-thumb project1-card-thumb--fix-margin1">
                             <img src="images/project/project-thumb1_2.png" alt="png">
                             <div class="project1-card-thumb-content">
                                 <h4 class="project1-card-thumb-content__title"><a href="project-details.html">Pixel to Profit</a></h4>
@@ -810,7 +800,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="project1-card">
-                        <div class="project1-card-thumb project1-card-thumb--fix-padding2">
+                        <div class="project1-card-thumb project1-card-thumb--fix-margin2">
                             <img src="images/project/project-thumb1_3.png" alt="png">
                             <div class="project1-card-thumb-content">
                                 <h4 class="project1-card-thumb-content__title"><a href="project-details.html">Pixel to Profit</a></h4>
@@ -819,7 +809,7 @@
                         </div>
                     </div>
                     <div class="project1-card fix-mb">
-                        <div class="project1-card-humb">
+                        <div class="project1-card-thumb">
                             <img src="images/project/project-thumb1_4.png" alt="png">
                             <div class="project1-card-thumb-content">
                                 <h4 class="project1-card-thumb-content__title"><a href="project-details.html">Pixel to Profit</a></h4>
@@ -838,14 +828,15 @@
         <div class="container">
             <div class="row g-4 d-flex justify-content-center">
                 <div class="col-lg-7 col-xxl-5">
-                    <div class="section-top">
-                        <p class="section-top__subtitle justify-content-center">Testomonials</p>
+                    <div class="section-top text-center">
+                        <p class="section-top__subtitle">Testomonials</p>
                         <h2 class="section-top__title text-center">Our Clients <span>Feedback</span></h2>
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 fix-height">
                 <div class="col-12">
+<<<<<<< HEAD
                     <div class="swiper global-slider sc-testimonial-slider"
                         data-slider-options='{
                             "loop": true,
@@ -1098,6 +1089,9 @@
                 <div class="col-12">
                     <div class="swiper global-slider"
                         data-slider-options='{"loop": true, "autoplay": false, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":2},"1200":{"slidesPerView":3},"1400":{"slidesPerView":3}}}'>
+=======
+                    <div class="swiper testimonial-slider">
+>>>>>>> 107367a6d2037b856b751a54733298fd082ac9de
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial1-card">
@@ -1110,7 +1104,7 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                         </div>
-                                        <div class="testimonial1-card-content__desc">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
+                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
                                         <div class="testimonial1-card-content__thumb">
                                             <img src="images/testimonial/testi-thumb1_4.png" alt="png">
                                             <div class="video3-icon">
@@ -1122,7 +1116,9 @@
                                     </div>
                                     <div class="author-meta">
                                         <div class="fancy-box2">
-                                            <div class="fancy-box2__item"><img src="images/testimonial/testi-thumb1_1.png" alt="thumb">
+                                            <div class="fancy-box2__item">
+                                                <img src="images/testimonial/testi-thumb1_1.png" alt="thumb">
+                                                <div class="fancy-box2__item__flagIcon"><img src="images/flag/germany-sm.png" alt="icon"></div>
                                             </div>
                                             <div class="fancy-box2__item">
                                                 <h6>Darrell Steward</h6>
@@ -1138,7 +1134,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial1-card">
                                     <div class="testimonial1-card-content">
-                                        <h4 class="testimonial1-card-content__title">Timely Delivery with Exceptional Quality</h4>
+                                        <h4 class="testimonial1-card-content__title">Professionalism and Promptness in Every Project</h4>
                                         <div class="testimonial1-card-content__star">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -1146,7 +1142,7 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                         </div>
-                                        <div class="testimonial1-card-content__desc">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
+                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
                                         <div class="testimonial1-card-content__thumb">
                                             <img src="images/testimonial/testi-thumb1_4.png" alt="png">
                                             <div class="video3-icon">
@@ -1158,10 +1154,11 @@
                                     </div>
                                     <div class="author-meta">
                                         <div class="fancy-box2">
-                                            <div class="fancy-box2__item"><img src="images/testimonial/testi-thumb1_3.png" alt="thumb">
+                                            <div class="fancy-box2__item"><img src="images/testimonial/testi-thumb1_2.png" alt="thumb">
+                                                <div class="fancy-box2__item__flagIcon"><img src="images/flag/united-kingdom-sm.png" alt="icon"></div>
                                             </div>
                                             <div class="fancy-box2__item">
-                                                <h6>Bessie Cooper</h6>
+                                                <h6>Albert Flores</h6>
                                                 <p>Marketing specialist</p>
                                             </div>
                                         </div>
@@ -1182,7 +1179,7 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                         </div>
-                                        <div class="testimonial1-card-content__desc">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
+                                        <div class="testimonial1-card-content__desc truncate-text">The team gave us excellent support. Really love their work. They can build most of the stuff based on my requirement</div>
                                         <div class="testimonial1-card-content__thumb">
                                             <img src="images/testimonial/testi-thumb1_4.png" alt="png">
                                             <div class="video3-icon">
@@ -1195,6 +1192,7 @@
                                     <div class="author-meta">
                                         <div class="fancy-box2">
                                             <div class="fancy-box2__item"><img src="images/testimonial/testi-thumb1_3.png" alt="thumb">
+                                                <div class="fancy-box2__item__flagIcon"><img src="images/flag/united-state-sm.png" alt="icon"></div>
                                             </div>
                                             <div class="fancy-box2__item">
                                                 <h6>Bessie Cooper</h6>
@@ -1208,7 +1206,7 @@
                                 </div>
                             </div>                    
                         </div>
-                        <div class="slider-pagination"></div>
+                        <div class="swiper-pagination"></div>
                     </div>            
                 </div>
             </div>
@@ -1219,12 +1217,10 @@
     <section class="map fix section-padding">
         <div class="map__shape1"><img src="images/shape/map-shape1.svg" alt="shape"></div>
         <div class="map__shape2"><img src="images/shape/map-shape2.svg" alt="shape"></div>
-        <div class="map__shape3"><img src="images/shape/map-shape3.svg" alt="shape"></div>
-        <div class="map__country">Australia</div>
         <div class="container">
             <div class="row g-4 d-flex justify-content-center">
                 <div class="col-lg-12">
-                    <div class="section-top fix-pb-100">
+                    <div class="section-top fix-pb-100  wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
                         <h2 class="section-top__title3 text-center">Our Worldwide Happy clients</h2>
                     </div>
                 </div>
@@ -1235,13 +1231,34 @@
                         <div class="map-area__img">
                             <img src="images/shape/world-map.png" alt="map">
                         </div>
-                        <div class="map-area__icon1"><img src="images/icon/map-location.svg" alt="location"></div>
-                        <div class="map-area__icon2"><img src="images/icon/map-location.svg" alt="location"></div>
-                        <div class="map-area__icon3"><img src="images/icon/map-location.svg" alt="location"></div>
-                        <div class="map-area__icon4"><img src="images/icon/map-location.svg" alt="location"></div>
-                        <div class="map-area__icon5"><img src="images/icon/map-location.svg" alt="location"></div>
-                        <div class="map-area__icon6"><img src="images/icon/map-location.svg" alt="location"></div>
-                        <div class="map-area__icon7"><img src="images/icon/map-location.svg" alt="location"></div>
+                        <div class="map-area__icon1">
+                            <img src="images/icon/map-location.svg" alt="location">
+                            <div class="map__country"><img src="images/shape/map-shape3.svg" alt="line"> <span>North America</span></div>
+                        </div>
+                        <div class="map-area__icon2">
+                            <img src="images/icon/map-location.svg" alt="location">
+                            <div class="map__country"><img src="images/shape/map-shape3.svg" alt="line"> <span>South America</span></div>
+                        </div>
+                        <div class="map-area__icon3">
+                            <img src="images/icon/map-location.svg" alt="location">
+                            <div class="map__country"><img src="images/shape/map-shape3.svg" alt="line"> <span>Antarctica</span></div>
+                        </div>
+                        <div class="map-area__icon4">
+                            <img src="images/icon/map-location.svg" alt="location">
+                            <div class="map__country"><img src="images/shape/map-shape3.svg" alt="line"> <span>Europe</span></div>
+                        </div>
+                        <div class="map-area__icon5">
+                            <img src="images/icon/map-location.svg" alt="location">
+                            <div class="map__country"><img src="images/shape/map-shape3.svg" alt="line"> <span>Asia</span></div>
+                        </div>
+                        <div class="map-area__icon6">
+                            <img src="images/icon/map-location.svg" alt="location">
+                            <div class="map__country"><img src="images/shape/map-shape3.svg" alt="line"> <span>Africa</span></div>
+                        </div>
+                        <div class="map-area__icon7">
+                            <img src="images/icon/map-location.svg" alt="location">
+                            <div class="map__country"><img src="images/shape/map-shape3.svg" alt="line"> <span>Australia</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1253,7 +1270,7 @@
         <div class="container">
         <div class="row g-4 d-flex justify-content-center">
             <div class="col-lg-8 col-xxl-7">
-                <div class="section-top">
+                <div class="section-top  wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
                     <h2 class="section-top__title text-center">Our Product Are Highly Rated <span>By Thousand</span> Of Customer</h2>
                 </div>
             </div>
@@ -1261,7 +1278,7 @@
           <div class="row g-4">
             <div class="col-12">
                 <div class="swiper global-slider"
-                    data-slider-options='{"loop": true, "autoplay": false, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":2},"1200":{"slidesPerView":3},"1400":{"slidesPerView":3}}}'>
+                    data-slider-options='{"loop": true, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":2},"1200":{"slidesPerView":3},"1400":{"slidesPerView":3}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="review1-card">
@@ -1329,6 +1346,8 @@
           <div class="row g-4 d-flex justify-content-center">
             <div class="col-md-12 col-xl-10 col-xxl-8">
                 <div class="award1-icon">
+                    <div class="award1-icon__shape1"><img src="images/icon/award-shape1_1.svg" alt="svg"></div>
+                    <div class="award1-icon__shape2"><img src="images/icon/award-shape1_2.svg" alt="svg"></div>
                     <div class="award1-icon__item">
                         <img src="images/icon/award-icon1_1.png" alt="icon">
                     </div>
@@ -1502,7 +1521,7 @@
     </section>
 
     <!--===== Subscribe Section    S T A R T =====-->
-    <section class="subscribe section-padding-footer pb-0 fix">
+    <section class="subscribe section-padding-footer pb-0 fix float-bob-y">
         <div class="container">
             <div class="row g-4">
                 <div class="col-12 d-flex justify-content-center">
@@ -1533,73 +1552,75 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <div class="footer1-wrapper__logo">
-                            <a href="index.html">
-                                <img src="./images/logo/Logo-dark.png" alt="logo">
-                            </a>
-                        </div>
-                        <div class="footer1-wrapper-contact">
-                            <ul class="footer1-wrapper-contact-list">
-                                <li class="footer1-wrapper-contact-list__item">
-                                    <a href="mailto:jennings@example.com" class="d-flex align-items-start">
+                        <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <div class="footer1-wrapper__logo">
+                                <a href="index.html">
+                                    <img src="./images/logo/logo-dark.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer1-wrapper-contact">
+                                <ul class="footer1-wrapper-contact-list">
+                                    <li class="footer1-wrapper-contact-list__item">
+                                        <a href="mailto:jennings@example.com" class="d-flex align-items-start">
+                                            <span class="icon me-3">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </span>
+                                            <span class="text d-flex flex-column">
+                                                <span>Email</span>
+                                                <span>jennings@example.com</span>
+                                            </span>
+                                        </a>
+                                    </li> 
+                                    <li class="footer1-wrapper-contact-list__item">
+                                        <a href="tel:+2095550104" class="d-flex align-items-start">
                                         <span class="icon me-3">
-                                            <i class="fa-solid fa-envelope"></i>
+                                            <i class="fa-solid fa-phone"></i>
                                         </span>
                                         <span class="text d-flex flex-column">
-                                            <span>Email</span>
-                                            <span>jennings@example.com</span>
+                                            <span>Phone</span>
+                                            <span>(307) 555-0133</span>
                                         </span>
-                                    </a>
-                                </li> 
-                                <li class="footer1-wrapper-contact-list__item">
-                                    <a href="tel:+2095550104" class="d-flex align-items-start">
-                                    <span class="icon me-3">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </span>
-                                    <span class="text d-flex flex-column">
-                                        <span>Phone</span>
-                                        <span>(307) 555-0133</span>
-                                    </span>
-                                    </a>
-                                </li>             
-                                <li class="footer1-wrapper-contact-list__item">
-                                    <a href="https://www.google.com/maps/search/?q=27+Division+St,+New+York,+NY+10002,+USA" target="_blank" class="d-flex align-items-start">
-                                    <span class="icon me-3">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                    </span>
-                                    <span class="text d-flex flex-column">
-                                        <span>Location</span>
-                                        <span>2464 Royal Ln. Mesa</span>
-                                    </span>
-                                    </a>
-                                </li>                                
-                            </ul>
-                        </div>
-                        <div class="global-social3">
-                            <div class="global-social3__item">
-                                <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
+                                        </a>
+                                    </li>             
+                                    <li class="footer1-wrapper-contact-list__item">
+                                        <a href="https://www.google.com/maps/search/?q=27+Division+St,+New+York,+NY+10002,+USA" target="_blank" class="d-flex align-items-start">
+                                        <span class="icon me-3">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        <span class="text d-flex flex-column">
+                                            <span>Location</span>
+                                            <span>2464 Royal Ln. Mesa</span>
+                                        </span>
+                                        </a>
+                                    </li>                                
+                                </ul>
                             </div>
-                            <div class="global-social3__item">
-                                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
+                            <div class="global-social3">
+                                <div class="global-social3__item">
+                                    <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="global-social3__item">
+                                    <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="global-social3__item">
+                                    <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="global-social3__item">
+                                    <a href="https://pinterest.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-pinterest-p"></i>
+                                    </a>
+                                </div>                                  
                             </div>
-                            <div class="global-social3__item">
-                                <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                            <div class="global-social3__item">
-                                <a href="https://pinterest.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-pinterest-p"></i>
-                                </a>
-                            </div>                                  
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-6 col-lg-4 col-xl-2">
-                        <div class="footer1-wrapper-company">
+                        <div class="footer1-wrapper-company wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
                             <h5 class="footer1-wrapper-company__title">Company</h5>
                             <ul class="footer1-wrapper-company-list">
                                 <li class="footer1-wrapper-company-list__item"><a href="index.html">Home</a></li>
@@ -1615,7 +1636,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-3">
-                        <div class="footer1-wrapper-service">
+                        <div class="footer1-wrapper-service  wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                             <h5 class="footer1-wrapper-service__title">Services</h5>
                             <ul class="footer1-wrapper-service-list">
                                 <li class="footer1-wrapper-service-list__item"><a href="service.html">Installation & Deployment</a></li>
@@ -1630,7 +1651,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2">
-                        <div class="footer1-wrapper-solution">
+                        <div class="footer1-wrapper-solution  wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
                             <h5 class="footer1-wrapper-solution__title">Solution</h5>
                             <ul class="footer1-wrapper-solution-list">
                                 <li class="footer1-wrapper-solution-list__item"><a href="check-out.html">Mobile Banking</a></li>
@@ -1642,7 +1663,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2">
-                        <div class="footer1-wrapper-product">
+                        <div class="footer1-wrapper-product  wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
                             <h5 class="footer1-wrapper-product__title">Products</h5>
                             <ul class="footer1-wrapper-product-list">
                                 <li class="footer1-wrapper-product-list__item"><a href="product.html"><img src="images/icon/product-icon1.png" alt="png">QRPay</a></li>
@@ -1727,93 +1748,6 @@
 
     <!--===== Main.js =====-->
     <script src="js/main.js"></script>
-
-    <!-- TAG CANVAS -->
-    <script src="https://www.goat1000.com/tagcanvas.min.js"></script>
-    <script>
-        window.onload = function () {
-            try {
-            TagCanvas.Start('myCanvas', 'tags-list', {
-                textColour: '#000',
-                outlineColour: '#ffb703',
-                reverse: true,
-                depth: 0.9,
-                maxSpeed: 0.06,
-                weight: true,
-                weightFrom: 'data-weight',
-                initial: [0.1, -0.1],
-                zoom: 1.1,
-                wheelZoom: false,
-            });
-            } catch (e) {
-            document.getElementById('myCanvasContainer').style.display = 'none';
-            }
-        };
-    </script>
-
-    <script>
-        const blurOverlay = document.querySelector('.blur-overlay');
-        const navBtns = document.querySelectorAll('.project-nav__btn');
-        const serviceMain = document.querySelector('.service-main');
-        const serviceAlt = document.querySelector('.service-alt');
-
-        let isHovering = false;
-
-        function showBlur() {
-            blurOverlay.classList.add('active');
-        }
-
-        function hideBlurAndServices() {
-            blurOverlay.classList.remove('active');
-            serviceMain.classList.remove('visible');
-            serviceAlt.classList.remove('visible');
-        }
-
-        function showService(type) {
-            showBlur();
-            if (type === 'main') {
-            serviceMain.classList.add('visible');
-            serviceAlt.classList.remove('visible');
-            } else if (type === 'alt') {
-            serviceAlt.classList.add('visible');
-            serviceMain.classList.remove('visible');
-            }
-        }
-
-        navBtns.forEach(btn => {
-            const type = btn.dataset.service;
-
-            btn.addEventListener('mouseenter', () => {
-            isHovering = true;
-            if (type === 'main' || type === 'alt') {
-                showService(type);
-            } else {
-                // Do nothing if not main/alt
-                hideBlurAndServices();
-            }
-            });
-
-            btn.addEventListener('mouseleave', () => {
-            isHovering = false;
-            setTimeout(() => {
-                if (!isHovering) hideBlurAndServices();
-            }, 200);
-            });
-        });
-
-        [serviceMain, serviceAlt].forEach(serviceBox => {
-            serviceBox.addEventListener('mouseenter', () => {
-            isHovering = true;
-            showBlur();
-            });
-            serviceBox.addEventListener('mouseleave', () => {
-            isHovering = false;
-            setTimeout(() => {
-                if (!isHovering) hideBlurAndServices();
-            }, 200);
-            });
-        });
-    </script>
 
 </body>
 
