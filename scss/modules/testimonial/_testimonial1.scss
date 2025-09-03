@@ -46,17 +46,10 @@
     border-radius: 12.195px;
     background: $theme-color2;
     border: 2px solid transparent;
-<<<<<<< HEAD
     transition: all 0.4s;
    
     &-content {
       
-=======
-    .swiper-slide-active & {
-      border: 2px solid $theme-color;
-    }
-    &-content {
->>>>>>> 107367a6d2037b856b751a54733298fd082ac9de
       padding: 40px;
       @include breakpoint (max-xl){
         padding: 25px;
@@ -89,11 +82,7 @@
         letter-spacing: 0.16px;
       }
       &__thumb {
-<<<<<<< HEAD
         
-=======
-        position: relative;
->>>>>>> 107367a6d2037b856b751a54733298fd082ac9de
         img {
           width: 100%;
         }
@@ -190,19 +179,7 @@
    @include breakpoint (max-lg){
       height: 380px;
     }
-<<<<<<< HEAD
     
-=======
-    @include breakpoint (max-md){
-      height: 440px;
-    }
-    @include breakpoint (max-xsmall){
-      height: 383px;
-    }
-    @include breakpoint (max-xxsmall){
-      height: 360px;
-    }
->>>>>>> 107367a6d2037b856b751a54733298fd082ac9de
   }
 }
 
