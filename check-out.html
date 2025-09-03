@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/meanmenu.css">
     <!-- Flatpickr CSS -->
     <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/nice-select.min.css">
     <!--===== Main.css =====-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -316,11 +317,66 @@
                 <div class="col-lg-8">
                     <div class="checkOut-billingCard">
                         <h4 class="checkOut-billingCard__title">Biling Details</h4>
-                        <p class="checkOut-billingCard__text">Name: Jhon smith </p>
-                        <p class="checkOut-billingCard__text">Hoiding no.23, kandirpur </p>
-                        <p class="checkOut-billingCard__text">Adorsho Sadar, Cumilla</p>
-                        <p class="checkOut-billingCard__text">Cumilla, 3500</p>
-                        <p class="checkOut-billingCard__text">Bangladesh</p>
+
+                        <!-- new code start-->
+                        <div class="sc-input-field-wrapper">
+                            <div class="sc-field-item">
+                                <label>First Name</label>
+                                <input type="text" required placeholder="Type Here">
+                            </div>
+                            <div class="sc-field-item">
+                                <label>Last Name</label>
+                                <input type="text" required placeholder="Type Here">
+                            </div>
+                            <div class="sc-field-item">
+                                <label>Company Name</label>
+                                <input type="text" required placeholder="Type Here">
+                            </div>
+                            <div class="sc-field-item">
+                                <label>Street Address</label>
+                                <input type="text" required placeholder="Type Here">
+                            </div>                            
+                            <div class="sc-field-item">
+                                <label>Appartment</label>
+                                <input type="text" required placeholder="Type Here">
+                            </div>
+                            <div class="sc-field-item">
+                                <label>Town / City</label>
+                                <select>
+                                    <option>Select City</option>
+                                    <option>Dhaka</option>
+                                    <option>New York</option>
+                                    <option>Manchester</option>
+                                </select>
+                            </div>
+                            <div class="sc-field-item">
+                                <label>Country</label>
+                                <select>
+                                    <option>Select Country</option>
+                                    <option>USA</option>
+                                    <option>Bangladesh</option>
+                                    <option>England</option>
+                                    <option>India</option>
+                                </select>
+                            </div>
+                            <div class="sc-field-item">
+                                <label>Post Code / Zip</label>
+                                <input type="text" required placeholder="Type Here">
+                            </div>
+                            <div class="sc-field-item">
+                                <label>Email</label>
+                                <input type="email" required placeholder="Type Here">
+                            </div>
+                            <div class="sc-field-item">
+                                <label>Phone</label>
+                                <input type="text" required placeholder="Type Here">
+                            </div>
+                        </div>
+                        <div class="sc-field-item textarea-field">
+                            <label>Note</label>
+                            <textarea rows="4" placeholder="Type Here"></textarea>
+                        </div>
+                        <!-- new code end -->
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -346,7 +402,20 @@
                                 </div>
                             </li>                            
                         </ul>
+                        <!-- new code  start-->
+                            <div class="sc-checkout-btn">
+                                <a class="theme-btn style2" href="#">CHECKOUT<i class="fa-solid fa-arrow-right"></i></a>
+                            </div> 
+                        <!-- new code  end-->
                     </div>
+                    <!-- new code  start -->
+                        <div class="sc-secure-checkout-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-lock-keyhole"></i>
+                                <span>Secure Checkout</span>
+                            </a>
+                        </div>
+                    <!-- new code  end-->
                 </div>
                 <div class="col-lg-8">
                     <div class="checkOut-paymentCard">
@@ -658,6 +727,8 @@
     <script src="js/gsap-comp/pin-spacer.min.js"></script> 
     <script src="js/gsap-comp/title-fade-up.min.js"></script>
     <script src="js/gsap-comp/scroll-fixing.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+
 
     <!--===== Main.js =====-->
     <script src="js/main.js"></script>

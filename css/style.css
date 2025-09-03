@@ -3300,6 +3300,137 @@ span {
   outline: none;
 }
 
+.sc-input-field-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.sc-field-item label {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.sc-field-item input, .sc-field-item textarea, .sc-field-item .nice-select {
+  border-radius: 6px;
+  border: 1px solid rgba(193, 193, 193, 0.3019607843);
+  background-color: #F7FAFF;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  height: 54px;
+  padding: 0 20px;
+  transition: all 0.3;
+}
+.sc-field-item input:focus, .sc-field-item textarea:focus, .sc-field-item .nice-select:focus {
+  border-color: #9708CC;
+}
+.sc-field-item input::placeholder, .sc-field-item textarea::placeholder, .sc-field-item .nice-select::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #6B7280;
+  font-size: 18px;
+}
+.sc-field-item textarea {
+  height: auto;
+  padding: 20px;
+}
+.sc-field-item.textarea-field {
+  margin-top: 30px;
+}
+.sc-field-item .nice-select {
+  display: inline-flex;
+  align-items: center;
+}
+.sc-field-item .nice-select span {
+  color: #6B7280;
+}
+
+.checkOut-billingCard {
+  border-color: transparent;
+  padding: 0;
+  margin-right: 25px;
+}
+
+.checkOut-orderSummary {
+  margin-top: 109px;
+  border-color: rgba(193, 193, 193, 0.3019607843);
+}
+
+.sc-checkout-btn {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sc-secure-checkout-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.sc-secure-checkout-btn a {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s;
+}
+.sc-secure-checkout-btn a i {
+  font-size: 20px;
+  color: #000;
+}
+.sc-secure-checkout-btn a span {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #6B7280;
+  font-size: 18px;
+}
+.sc-secure-checkout-btn a:hover span {
+  color: #000;
+}
+
+@media (max-width: 1199px) {
+  .checkOut-orderSummary__title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 991px) {
+  .checkOut-billingCard {
+    margin-right: 0;
+  }
+  .checkOut-orderSummary {
+    margin-top: 40px;
+  }
+  .sc-secure-checkout-btn {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .sc-input-field-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sc-field-item label {
+    font-size: 18px;
+  }
+  .sc-field-item input, .sc-field-item textarea, .sc-field-item .nice-select {
+    font-size: 16px;
+  }
+}
+@media (max-width: 479px) {
+  .checkOut-billingCard__title {
+    font-size: 26px;
+  }
+  .sc-input-field-wrapper {
+    gap: 24px;
+  }
+  .sc-field-item label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -10695,17 +10826,35 @@ img {
   display: flex;
   align-items: center;
 }
+.testimonial1 .review-content {
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+.testimonial1 .swiper-slide.swiper-slide-active .testimonial1-card {
+  transform: scale(1.08);
+  border: 2px solid var(--theme);
+}
+@media (max-width: 767px) {
+  .testimonial1 .swiper-slide.swiper-slide-active .testimonial1-card {
+    transform: scale(1);
+  }
+}
+.testimonial1 .sc-testimonial-slider {
+  padding: 50px 0;
+}
+@media (max-width: 767px) {
+  .testimonial1 .sc-testimonial-slider {
+    padding: 0px;
+  }
+}
 .testimonial1-card {
   border-radius: 12.195px;
   background: var(--theme2);
   border: 2px solid transparent;
-}
-.testimonial1-card:hover {
-  border: 2px solid var(--theme);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s;
 }
 .testimonial1-card-content {
-  height: 334px;
   padding: 40px;
   transition: all 0.4s ease-in-out;
 }
@@ -10740,13 +10889,6 @@ img {
   font-weight: 400;
   line-height: 30px; /* 166.667% */
   letter-spacing: 0.16px;
-}
-.testimonial1-card-content__thumb {
-  position: relative;
-  display: none;
-  opacity: 0;
-  visibility: visible;
-  transition: all 0.4s ease-in-out;
 }
 .testimonial1-card-content__thumb img {
   width: 100%;
@@ -10791,23 +10933,6 @@ img {
     width: 50.976px;
     height: 50.976px;
   }
-}
-.testimonial1-card:hover .testimonial1-card {
-  transition: all 0.4s ease-in-out;
-}
-.testimonial1-card:hover .testimonial1-card-content {
-  height: 440px;
-  transition: all 0.4s ease-in-out;
-}
-.testimonial1-card:hover .testimonial1-card-content__desc {
-  display: none;
-  transition: all 0.4s ease-in-out;
-}
-.testimonial1-card:hover .testimonial1-card-content__thumb {
-  opacity: 1;
-  visibility: visible;
-  display: block;
-  transition: all 0.4s ease-in-out;
 }
 
 /* 11. Contact */
@@ -13392,4 +13517,6 @@ img {
 .footer1-bottom-info__payment {
   display: flex;
   gap: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

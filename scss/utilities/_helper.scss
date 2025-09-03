@@ -782,3 +782,156 @@
     }
   }
 }
+
+
+// start form css
+.sc-input-field-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.sc-field-item{
+  label{
+    font-family: $body-font;
+    font-weight: 900;
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  input, textarea, .nice-select{
+    border-radius: 6px;
+    border: 1px solid #C1C1C14D;
+    background-color: #F7FAFF;
+    width: 100%;
+    font-family: $body-font;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    height: 54px;
+    padding: 0 20px;
+    transition: all 0.3;
+
+    &:focus{
+      border-color: #9708CC;
+    }
+
+    
+    &::placeholder{
+      font-family: $body-font;
+      font-weight: 400;
+      color: #6B7280;
+      font-size: 18px;
+      
+    }
+  }
+  textarea{
+    height: auto;
+    padding: 20px;
+   
+  }
+
+  &.textarea-field{
+    margin-top: 30px;
+  }
+
+  .nice-select{
+    display: inline-flex;
+    align-items: center;
+
+    span{
+      color: #6B7280;
+    }
+  }
+}
+
+//billing card 
+.checkOut-billingCard{
+  border-color: transparent;
+  padding: 0;
+  margin-right: 25px;
+}
+
+// card summury
+.checkOut-orderSummary{
+  margin-top: 109px;
+  border-color: #C1C1C14D;
+}
+.sc-checkout-btn{
+  margin-top: 40px;
+  text-align: center;
+}
+
+//secure btn
+.sc-secure-checkout-btn{
+  text-align: center;
+  margin-top: 20px;
+
+  a{
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s;
+
+    i{
+      font-size: 20px;
+      color: #000;
+    }
+    span{
+      font-family: $body-font;
+      font-weight: 400;
+      color: #6B7280;
+      font-size: 18px;
+    }
+
+    &:hover{
+      span{
+        color: #000;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px){
+  .checkOut-orderSummary__title{
+    font-size: 26px;
+  }
+}
+@media (max-width: 991px){
+  .checkOut-billingCard{
+    margin-right: 0;
+  }
+  .checkOut-orderSummary{
+    margin-top: 40px;
+  }
+  .sc-secure-checkout-btn{
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px){
+  .sc-input-field-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sc-field-item label{
+    font-size: 18px;
+  }
+  .sc-field-item input, .sc-field-item textarea, .sc-field-item .nice-select{
+    font-size: 16px;
+  }
+}
+@media (max-width: 479px ){
+  .checkOut-billingCard__title{
+    font-size: 26px;
+  }
+  .sc-input-field-wrapper{
+    gap: 24px;
+  }
+   .sc-field-item label{
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+// end form css

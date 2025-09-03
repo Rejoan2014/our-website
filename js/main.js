@@ -517,6 +517,9 @@
     $("#tab2").removeClass("d-none");
 
 
+     //nice select
+      $('select').niceSelect();
+
 
   }); // End Document Ready Function
 
