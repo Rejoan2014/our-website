@@ -517,10 +517,8 @@
     $("#tab2").removeClass("d-none");
 
 
-<<<<<<< HEAD
      //nice select
       $('select').niceSelect();
-=======
     /*-----------------------------------
       Floating Button Section
     -----------------------------------*/
@@ -657,7 +655,6 @@
         swiper.emit('slideChangeTransitionStart');
     });
 
->>>>>>> 107367a6d2037b856b751a54733298fd082ac9de
 
 
   }); // End Document Ready Function
