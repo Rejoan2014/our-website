@@ -11309,6 +11309,7 @@ img {
 }
 .testimonial1-card-content {
   padding: 40px;
+  transition: all 0.4s ease-in-out;
 }
 @media (max-width: 1199px) {
   .testimonial1-card-content {
@@ -11385,100 +11386,6 @@ img {
     width: 50.976px;
     height: 50.976px;
   }
-}
-
-.testimonial1-card-content__thumb {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.testimonial1-card-content__thumb.show-thumb {
-  opacity: 1;
-  visibility: visible;
-}
-
-.testimonial1-card-content__desc {
-  display: block;
-}
-
-.testimonial-slider {
-  position: relative;
-  padding-bottom: 85px;
-}
-@media (max-width: 499px) {
-  .testimonial-slider {
-    padding-bottom: 65px;
-  }
-}
-
-.testimonial-slider .swiper-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: absolute !important;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.testimonial1-card-content {
-  height: 340px;
-  transition: height 0.3s ease-in-out;
-}
-@media (max-width: 991px) {
-  .testimonial1-card-content {
-    height: 300px;
-  }
-}
-@media (max-width: 767px) {
-  .testimonial1-card-content {
-    height: 340px;
-  }
-}
-@media (max-width: 449px) {
-  .testimonial1-card-content {
-    height: 280px;
-  }
-}
-.testimonial1-card-content.active-card {
-  height: 440px;
-}
-@media (max-width: 991px) {
-  .testimonial1-card-content.active-card {
-    height: 380px;
-  }
-}
-
-.testimonial-slider .swiper-wrapper {
-  height: 584px;
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 991px) {
-  .testimonial-slider .swiper-wrapper {
-    height: 500px;
-  }
-}
-@media (max-width: 767px) {
-  .testimonial-slider .swiper-wrapper {
-    height: 550px;
-  }
-}
-@media (max-width: 449px) {
-  .testimonial-slider .swiper-wrapper {
-    height: 500px;
-  }
-}
-.testimonial-slider .swiper-slide-prev,
-.testimonial-slider .swiper-slide-next {
-  display: flex !important;
-  align-items: center;
-}
-
-.swiper-pagination {
-  height: 30px;
 }
 
 /* 11. Contact */
