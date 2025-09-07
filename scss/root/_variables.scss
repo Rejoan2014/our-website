@@ -10,15 +10,21 @@
     --title2: #6B7280; 
     --title3: #010003; 
     --title4: #010F34; 
+    --title5: #161824; 
+    --title6: #07000E; 
+    --title7: #161824; 
 
     --dark: #0D0D0D;
     --yellow: #F2D701; 
     --yellow2: #FFB400; 
+    --yellow3: #FF9916; 
+    --yellow4: #DEBB2E; 
     --border: #C1C1C1;
     --border2: #B8E451;
     
     --gray: #696969;
     --gray2: #727272;
+    --gray3: #716F73;
 
     --smoke: #FAF8F7;
     --smoke2: #ECF1F5;
@@ -42,13 +48,19 @@ $title-color: var(--title);
 $title-color2: var(--title2); 
 $title-color3: var(--title3); 
 $title-color4: var(--title4); 
+$title-color5: var(--title5); 
+$title-color6: var(--title6); 
+$title-color7: var(--title7); 
 $dark: var(--dark);
 $yellow: var(--yellow);
 $yellow2: var(--yellow2);
+$yellow3: var(--yellow3);
+$yellow4: var(--yellow4);
 $border-color: var(--border);
 $border-color2: var(--border2);
 $gray: var(--gray);
 $gray2: var(--gray2);
+$gray3: var(--gray3);
 $smoke: var(--smoke);
 $smoke2: var(--smoke2);
 $smoke3: var(--smoke3);
