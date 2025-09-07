@@ -13037,19 +13037,19 @@ img {
   border-radius: 5px;
 }
 .rb_pagination .slider-pagination .swiper-pagination-bullet:nth-child(1) {
-  background-image: url("../../../images/slider/slider1.png");
+  background-image: url("../images/slider/slider1.png");
 }
 .rb_pagination .slider-pagination .swiper-pagination-bullet:nth-child(2) {
-  background-image: url("../../../images/slider/slider2.png");
+  background-image: url("../images/slider/slider2.png");
 }
 .rb_pagination .slider-pagination .swiper-pagination-bullet:nth-child(3) {
-  background-image: url("../../../images/slider/slider3.png");
+  background-image: url("../images/slider/slider3.png");
 }
 .rb_pagination .slider-pagination .swiper-pagination-bullet:nth-child(4) {
-  background-image: url("../../../images/slider/slider4.png");
+  background-image: url("../images/slider/slider4.png");
 }
 .rb_pagination .slider-pagination .swiper-pagination-bullet:nth-child(5) {
-  background-image: url("../../../images/slider/slider5.png");
+  background-image: url("../images/slider/slider5.png");
 }
 
 .form__group4 label {
@@ -13058,7 +13058,7 @@ img {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
   letter-spacing: 0.16px;
 }
 .form__group4 input,
