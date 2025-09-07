@@ -13019,9 +13019,13 @@ img {
   border-radius: 5px;
   padding: 10px;
   border: 1px solid rgba(193, 193, 193, 0.2);
+  opacity: 1;
+  background-color: white;
   background-size: cover;
   background-position: center;
   transition: all 0.3s ease;
+  cursor: pointer;
+  pointer-events: auto;
 }
 @media (max-width: 449px) {
   .rb_pagination .slider-pagination .swiper-pagination-bullet {
@@ -13031,7 +13035,6 @@ img {
 }
 .rb_pagination .slider-pagination .swiper-pagination-bullet-active {
   border-radius: 5px;
-  border: 1px solid var(--P1, #9708CC);
 }
 .rb_pagination .slider-pagination .swiper-pagination-bullet:nth-child(1) {
   background-image: url("../../../images/slider/slider1.png");
@@ -14646,4 +14649,6 @@ img {
 .footer1-bottom-info__payment {
   display: flex;
   gap: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
