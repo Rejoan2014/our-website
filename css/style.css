@@ -7566,7 +7566,7 @@ img {
   padding-bottom: 15px;
 }
 .breadcrumb-heading__title span {
-  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+  background: var(--P1, linear-gradient(90deg, #9708CC -54.69%, #43CBFF 99.85%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10724,6 +10724,7 @@ img {
   text-transform: uppercase;
 }
 .service4-card__link i {
+  padding-left: 7px;
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
@@ -14649,6 +14650,4 @@ img {
 .footer1-bottom-info__payment {
   display: flex;
   gap: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
