@@ -440,7 +440,7 @@
                             <h4>Cody Fisher</h4>
                             <h5>Ceo</h5>
                             <p>I’m impressed with Softcrafty’s ability to turn ideas into clean, functional designs. They communicate clearly, meet deadlines, and their work quality is top-notch. What I appreciate most is how they listen to client needs and add their own creative touch to make the final result even better. A reliable agency for any project</p>
-                            <button class="reply_button">Reply</button>
+                            <button class="reply_button" onclick="openReplyModal()">Reply</button>
                         </div>
                         <div class="rb_input_form">
                             <h4 class="rb_title">Leave A Comment</h4>  
@@ -757,6 +757,16 @@
         </div>
     </footer>
 
+    <!-- Reply Modal -->
+    <div id="replyModal" class="reply-modal" style="display:none;">
+        <div class="reply-modal-content">
+            <span class="close" onclick="closeReplyModal()">&times;</span>
+            <h4 class="rb_write_reply">Write a Reply</h4>
+            <textarea rows="4" placeholder="Write your reply..." style="width:100%;"></textarea>
+            <button class="reply-submit">Reply</button>
+        </div>
+    </div>
+
     </div>
 </div>
 
@@ -829,7 +839,78 @@
             });
         });
     </script>
+    <script>
+        function openReplyModal() {
+        document.getElementById("replyModal").style.display = "flex";
+        }
+        function closeReplyModal() {
+        document.getElementById("replyModal").style.display = "none";
+        }
+        // close when clicking outside content
+        window.onclick = function(e) {
+        const modal = document.getElementById("replyModal");
+        if (e.target === modal) {
+            closeReplyModal();
+        }
+        }
+    </script>
 
 </body>
 
 </html>
+
+
+
+<style>
+/* modal background */
+.reply-modal {
+  display: none;   /* hidden on load */
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+}
+/* modal card */
+.reply-modal-content {
+  top: -15%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+.rb_write_reply {
+    color: #161824;
+    font-size: 24.68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29.8px; /* 120.747% */
+    padding-bottom: 28px;
+}
+/* close button */
+.reply-modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+.reply-modal-content .close:hover {
+  color: #0d6efd;
+}
+.reply-submit {
+  margin-top: 10px;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>

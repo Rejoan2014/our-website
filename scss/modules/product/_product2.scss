@@ -321,10 +321,7 @@
     .rb_profile_box {
       position: relative;
       margin-bottom: 35px;
-      padding: 30px 40px;
-      @include breakpoint (max-md){
-        padding: 26px 25px;
-      }
+      padding: 30px 40px 70px 40px;
       &::before {
         content: "";
         position: absolute;
@@ -392,6 +389,8 @@
         line-height: 28.01px; /* 155.611% */
       }
       .reply_button {
+        position: absolute;
+        z-index: 7;
         display: inline-flex;
         height: 40px;
         padding: 10px 20px;
