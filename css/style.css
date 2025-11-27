@@ -4471,6 +4471,74 @@ img {
   color: var(--white);
 }
 
+.global-social6 {
+  display: flex;
+  gap: 10px;
+}
+.global-social6__item a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: var(--theme2);
+}
+.global-social6__item a i {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.global-social6__item a:hover {
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+}
+.global-social6__item a:hover i {
+  color: var(--white);
+}
+.global-social6__item.one a {
+  background: #1877F2;
+}
+.global-social6__item.one a:hover {
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+}
+.global-social6__item.one a:hover i {
+  color: var(--white);
+}
+.global-social6__item.two a {
+  border-radius: 40px;
+  background: var(--900, #000);
+}
+.global-social6__item.two a:hover {
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+}
+.global-social6__item.two a:hover i {
+  color: var(--white);
+}
+.global-social6__item.three a {
+  border-radius: 40px;
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+}
+.global-social6__item.three a:hover {
+  background: #1877F2;
+}
+.global-social6__item.three a:hover i {
+  color: var(--white);
+}
+.global-social6__item.four a {
+  border-radius: 40px;
+  background: #CB2027;
+}
+.global-social6__item.four a:hover {
+  background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+}
+.global-social6__item.four a:hover i {
+  color: var(--white);
+}
+
 @media (max-width: 767px) {
   .form__group {
     margin-bottom: 26px !important;

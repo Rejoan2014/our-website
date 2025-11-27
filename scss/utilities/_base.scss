@@ -806,3 +806,82 @@ img {
       }
     }
   }
+  .global-social6 {
+    display: flex;
+    gap: 10px;
+    &__item {
+      a {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 50px;
+        background: $theme-color2;
+
+        i {
+          color: #FFF;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        &:hover {
+          background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+          i {
+            color: $white;
+          }
+        }
+      }
+      &.one {
+        a {
+          background: #1877F2;
+          &:hover {
+            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+            i {
+              color: $white;
+            }
+          }
+        }
+      }
+      &.two {
+        a {
+          border-radius: 40px;
+          background: var(--900, #000);
+          &:hover {
+            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+            i {
+              color: $white;
+            }
+          }
+        }
+      }
+      &.three {
+        a {
+          border-radius: 40px;
+          background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+          &:hover {
+            background: #1877F2;            
+            i {
+              color: $white;
+            }
+          }
+        }
+      }
+      &.four {
+        a {
+          border-radius: 40px;
+          background: #CB2027;
+          &:hover {
+            background: var(--P1, linear-gradient(270deg, #9708CC -54.69%, #43CBFF 99.85%));
+            i {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
